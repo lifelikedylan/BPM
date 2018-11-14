@@ -1,0 +1,38 @@
+* SPICE3 file created from bc1a.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 inverter_1/Y gnd vdd Vdd pfet w=20 l=2
++  ad=100 pd=50 as=200 ps=100
+M1001 inverter_1/Y gnd mux21_0/in_1 Gnd nfet w=10 l=2
++  ad=50 pd=30 as=150 ps=90
+M1002 mux21_0/Out gnd reg_in Vdd pfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1003 mux21_0/in_1 inverter_0/Y mux21_0/Out Vdd pfet w=10 l=2
++  ad=178 pd=158 as=0 ps=0
+M1004 mux21_0/Out inverter_0/Y reg_in Gnd nfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1005 mux21_0/in_1 gnd mux21_0/Out Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 inverter_0/Y gnd vdd Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1007 inverter_0/Y gnd mux21_0/in_1 Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1008 a_44_1# inverter_1/Y a_in Gnd nfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1009 b_in gnd a_44_1# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1010 a_44_1# gnd a_in Vdd pfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1011 b_in inverter_1/Y a_44_1# Vdd pfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+C0 b_in gnd! 5.068800fF
+C1 a_44_1# gnd! 3.112470fF
+C2 a_in gnd! 5.722200fF
+C3 mux21_0/Out gnd! 3.112470fF
+C4 reg_in gnd! 5.716080fF
+C5 inverter_0/Y gnd! 8.925479fF
+C6 gnd gnd! 15.653479fF
+C7 vdd gnd! 10.295999fF
+C8 mux21_0/in_1 gnd! 12.846239fF
+C9 inverter_1/Y gnd! 8.212680fF

@@ -1,17 +1,17 @@
 | units: 30 tech: scmos format: MIT
 p Sel In_0 Out 2 10 -18 24
-p Sel_bar Out In_1 2 10 -10 24
-n Sel_bar In_0 Out 2 10 -18 1
-n Sel Out In_1 2 10 -10 1
-C Gnd GND 2.152800
-R Gnd 598
-R In_1 371
+p Sel_bar Out in_1 2 10 -10 24
+n Sel_bar In_0 Out 2 10 -18 -18
+n Sel Out in_1 2 10 -10 -18
+C in_1 GND 6.038640
+R in_1 1153
+C Out GND 3.112470
 R Out 309
-C In_0 GND 2.523240
-R In_0 370
-C Sel_bar GND 3.587760
+C In_0 GND 3.891600
+R In_0 371
+C Sel_bar GND 3.893760
 R Sel_bar 910
-C Sel GND 3.624480
-R Sel 754
-C Vdd GND 2.152800
+C Sel GND 2.701440
+R Sel 1001
+C Vdd GND 2.491200
 R Vdd 479

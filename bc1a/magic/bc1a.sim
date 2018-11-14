@@ -1,0 +1,33 @@
+| units: 30 tech: scmos format: MIT
+p gnd vdd inverter_1/Y 2 20 20 16
+n gnd mux21_0/in_1 inverter_1/Y 2 10 20 62
+p gnd reg_in mux21_0/Out 2 10 42 139
+p inverter_0/Y mux21_0/Out mux21_0/in_1 2 10 50 139
+n inverter_0/Y reg_in mux21_0/Out 2 10 42 97
+n gnd mux21_0/Out mux21_0/in_1 2 10 50 97
+p gnd vdd inverter_0/Y 2 20 20 133
+n gnd mux21_0/in_1 inverter_0/Y 2 10 20 87
+n inverter_1/Y a_in a_44_1# 2 10 42 43
+n gnd a_44_1# b_in 2 10 50 43
+p gnd a_in a_44_1# 2 10 42 1
+p inverter_1/Y a_44_1# b_in 2 10 50 1
+C b_in GND 5.068800
+R b_in 372
+C a_44_1# GND 3.112470
+R a_44_1# 309
+C a_in GND 5.722200
+R a_in 372
+C mux21_0/Out GND 3.112470
+R mux21_0/Out 309
+C reg_in GND 5.716080
+R reg_in 372
+C inverter_0/Y GND 8.925479
+R inverter_0/Y 1487
+C gnd GND 15.653479
+R gnd 3986
+C vdd GND 10.295999
+R vdd 3530
+C mux21_0/in_1 GND 12.846239
+R mux21_0/in_1 4325
+C inverter_1/Y GND 8.212680
+R inverter_1/Y 1487

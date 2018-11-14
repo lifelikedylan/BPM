@@ -1,0 +1,130 @@
+magic
+tech scmos
+timestamp 1542169151
+<< ntransistor >>
+rect 42 43 44 53
+rect 50 43 52 53
+<< ptransistor >>
+rect 42 1 44 11
+rect 50 1 52 11
+<< ndiffusion >>
+rect 41 43 42 53
+rect 44 43 45 53
+rect 49 43 50 53
+rect 52 43 53 53
+<< pdiffusion >>
+rect 41 1 42 11
+rect 44 1 45 11
+rect 49 1 50 11
+rect 52 1 53 11
+<< ndcontact >>
+rect 37 43 41 53
+rect 45 43 49 53
+rect 53 43 57 53
+<< pdcontact >>
+rect 37 1 41 11
+rect 45 1 49 11
+rect 53 1 57 11
+<< psubstratepcontact >>
+rect 45 67 49 71
+rect 55 67 59 71
+<< nsubstratencontact >>
+rect 35 -11 39 -7
+rect 54 -11 58 -7
+<< polysilicon >>
+rect 42 58 60 60
+rect 42 53 44 58
+rect 50 53 52 55
+rect 42 41 44 43
+rect 50 38 52 43
+rect 42 36 52 38
+rect 42 11 44 36
+rect 50 12 60 14
+rect 50 11 52 12
+rect 42 0 44 1
+rect 34 -2 44 0
+rect 50 -1 52 1
+<< polycontact >>
+rect 60 57 64 61
+rect 60 11 64 15
+rect 30 -3 34 1
+<< metal1 >>
+rect -1 156 9 162
+rect -1 100 8 104
+rect -1 87 8 91
+rect -1 78 9 84
+rect 33 78 64 80
+rect -1 71 64 78
+rect -1 66 9 71
+rect 33 67 45 71
+rect 49 67 55 71
+rect 59 67 64 71
+rect 33 66 64 67
+rect -1 59 8 63
+rect 37 53 41 59
+rect -1 37 8 41
+rect 30 1 34 19
+rect 37 11 41 43
+rect 45 53 49 59
+rect 45 11 49 43
+rect 53 41 57 43
+rect 53 11 57 37
+rect 60 30 64 57
+rect 60 15 64 26
+rect -1 -12 9 -6
+rect 30 -7 64 -6
+rect 30 -11 35 -7
+rect 39 -11 54 -7
+rect 58 -11 64 -7
+rect 30 -12 64 -11
+<< m2contact >>
+rect 30 126 34 130
+rect 23 119 27 123
+rect 60 119 64 123
+rect 8 100 12 104
+rect 8 87 12 91
+rect 8 59 12 63
+rect 37 59 41 63
+rect 8 46 12 50
+rect 8 37 12 41
+rect 23 26 27 30
+rect 30 19 34 23
+rect 45 59 49 63
+rect 53 37 57 41
+rect 60 26 64 30
+<< metal2 >>
+rect 8 126 30 130
+rect 8 104 12 126
+rect 27 119 60 123
+rect 8 98 12 100
+rect 1 94 12 98
+rect 1 50 5 94
+rect 12 87 30 91
+rect 12 59 37 63
+rect 49 59 64 63
+rect 1 46 8 50
+rect 1 23 5 46
+rect 12 37 53 41
+rect 27 26 60 30
+rect 1 19 30 23
+use ../../inv/magic/inverter  inverter_0 ../../inv/magic
+timestamp 1542167958
+transform 1 0 13 0 1 79
+box -4 -1 20 83
+use ../../mux21/magic/mux21  mux21_0 ../../mux21/magic
+timestamp 1542168919
+transform 1 0 60 0 1 115
+box -30 -37 4 47
+use ../../inv/magic/inverter  inverter_1
+timestamp 1542167958
+transform 1 0 13 0 -1 71
+box -4 -1 20 83
+<< labels >>
+rlabel metal1 1 89 1 89 3 reg_in
+rlabel metal1 1 102 1 102 3 init
+rlabel metal1 1 61 1 61 3 a_in
+rlabel metal1 1 39 1 39 3 b_in
+rlabel metal1 1 -9 1 -9 2 vdd
+rlabel metal2 1 75 1 75 3 gnd
+rlabel metal1 1 159 1 159 4 vdd
+<< end >>

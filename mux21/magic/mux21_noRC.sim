@@ -1,5 +1,5 @@
 | units: 30 tech: scmos format: MIT
 p Sel In_0 Out 2 10 -18 24
-p Sel_bar Out In_1 2 10 -10 24
-n Sel_bar In_0 Out 2 10 -18 1
-n Sel Out In_1 2 10 -10 1
+p Sel_bar Out in_1 2 10 -10 24
+n Sel_bar In_0 Out 2 10 -18 -18
+n Sel Out in_1 2 10 -10 -18

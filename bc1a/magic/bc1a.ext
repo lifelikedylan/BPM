@@ -1,0 +1,66 @@
+timestamp 1542169151
+version 8.0
+tech scmos
+style AMI0.5um(amic5)from:T01X
+scale 1000 1 30
+resistclasses 82100 102500 827000 827000 1 26000 26500 26500 90 90 50
+use ../../inv/magic/inverter inverter_0 1 0 13 0 1 79
+use ../../mux21/magic/mux21 mux21_0 1 0 60 0 1 115
+use ../../inv/magic/inverter inverter_1 1 0 13 0 -1 71
+node "vdd" 0 964.8 -1 -12 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 32 0 0 0 0
+node "reg_in" 1 2082.24 -1 87 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 88 52 0 0
+node "m1_23_119#" 1 2919.24 23 119 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 164 90 0 0
+node "vdd" 0 964.8 -1 156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 32 0 0 0 0
+node "a_35_n11#" 479 2491.2 35 -11 noc 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 204 80 0 0 0 0
+node "b_in" 372 5068.8 52 1 pdif 50 30 50 30 0 0 0 0 0 0 0 0 0 0 0 0 260 146 196 106 0 0
+node "a_44_1#" 309 3112.47 44 1 pdif 60 32 60 32 0 0 0 0 0 0 0 0 0 0 0 0 248 132 76 46 0 0
+node "a_in" 372 5722.2 37 1 pdc 50 30 50 30 0 0 0 0 0 0 0 0 0 0 0 0 300 166 132 74 0 0
+node "gnd" 1006 11345 30 -3 pc 0 0 0 0 0 0 0 0 0 0 162 162 0 0 0 0 188 126 704 360 0 0
+equiv "gnd" "init"
+node "a_42_41#" 912 5552.28 42 41 p 0 0 0 0 0 0 0 0 0 0 148 148 0 0 0 0 216 124 164 90 0 0
+node "a_45_67#" 598 6912 45 67 poc 0 0 32 32 0 0 0 0 0 0 0 0 0 0 0 0 782 180 0 0 0 0
+cap "a_45_67#" "gnd" 919.92
+cap "a_42_41#" "a_in" 303.36
+cap "a_42_41#" "gnd" 181.44
+cap "gnd" "a_in" 303.36
+cap "gnd" "reg_in" 303.36
+cap "a_42_41#" "b_in" 627.84
+cap "a_in" "b_in" 303.36
+cap "a_42_41#" "a_44_1#" 1164.3
+cap "gnd" "b_in" 603.12
+cap "gnd" "a_44_1#" 269.28
+cap "a_44_1#" "b_in" 303.36
+fet pfet 50 1 51 2 20 24 "Vdd!" "a_42_41#" 4 0 "a_44_1#" 10 0 "b_in" 10 0
+fet pfet 42 1 43 2 20 24 "Vdd!" "gnd" 4 0 "a_in" 10 0 "a_44_1#" 10 0
+fet nfet 50 43 51 44 20 24 "Gnd!" "gnd" 4 0 "a_44_1#" 10 0 "b_in" 10 0
+fet nfet 42 43 43 44 20 24 "Gnd!" "a_42_41#" 4 0 "a_in" 10 0 "a_44_1#" 10 0
+cap "gnd" "b_in" 15.84
+cap "inverter_1/Y" "a_in" 58.68
+cap "inverter_0/Y" "reg_in" 14.67
+cap "inverter_0/A" "reg_in" 3.96
+cap "gnd" "a_in" 15.84
+cap "inverter_1/Y" "b_in" 48.96
+cap "gnd" "inverter_1/Y" 48.96
+cap "inverter_0/gnd" "a_in" 58.68
+cap "inverter_0/gnd" "reg_in" 14.67
+cap "inverter_0/gnd" "gnd" 2.84217e-14
+cap "reg_in" "inverter_0/gnd" 44.01
+cap "init" "reg_in" 11.88
+cap "inverter_0/Y" "reg_in" 92.97
+cap "inverter_0/Y" "mux21_0/Out" 48.96
+cap "inverter_0/Y" "inverter_0/gnd" 48.96
+cap "init" "inverter_0/Y" 64.8
+merge "mux21_0/Vdd" "inverter_0/vdd" -1533.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -60 0 0 0 0
+merge "inverter_0/vdd" "inverter_1/vdd"
+merge "inverter_1/vdd" "a_35_n11#"
+merge "a_35_n11#" "vdd"
+merge "mux21_0/Sel_bar" "inverter_0/Y" -979.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 0 0 0 0
+merge "inverter_0/Y" "m1_23_119#"
+merge "inverter_1/Y" "a_42_41#" -432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "mux21_0/Sel" "init" -852.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -30 0 0 0 0
+merge "inverter_0/A" "inverter_1/A" -420.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0
+merge "inverter_1/A" "gnd"
+merge "mux21_0/In_0" "reg_in" -257.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "inverter_1/gnd" "mux21_0/in_1" -4554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126 -214 0 0 0 0
+merge "mux21_0/in_1" "inverter_0/gnd"
+merge "inverter_0/gnd" "a_45_67#"

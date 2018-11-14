@@ -4,12 +4,14 @@
 
 M1000 Out Sel In_0 Vdd pfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1001 In_1 Sel_bar Out Vdd pfet w=10 l=2
-+  ad=50 pd=30 as=0 ps=0
+M1001 in_1 Sel_bar Out Vdd pfet w=10 l=2
++  ad=82 pd=62 as=0 ps=0
 M1002 Out Sel_bar In_0 Gnd nfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1003 In_1 Sel Out Gnd nfet w=10 l=2
+M1003 in_1 Sel Out Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-C0 In_0 gnd! 2.523240fF
-C1 Sel_bar gnd! 3.587760fF
-C2 Sel gnd! 3.624480fF
+C0 in_1 gnd! 6.038640fF
+C1 Out gnd! 3.112470fF
+C2 In_0 gnd! 3.891600fF
+C3 Sel_bar gnd! 3.893760fF
+C4 Sel gnd! 2.701440fF
