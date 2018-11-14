@@ -1,8 +1,10 @@
 # Boynton Power Multiplier
 
+
 Shadoan, Dylan L.
 
 Viveros, Edgar
+
 
 Digital Integrated Circuit Design Project
 
