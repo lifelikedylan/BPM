@@ -1,0 +1,75 @@
+* SPICE3 file created from fa.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 a_13_55# a vdd vdd pfet w=20 l=2
++  ad=220 pd=102 as=820 ps=402
+M1001 vdd b a_13_55# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_37_9# c_in a_13_55# vdd pfet w=20 l=2
++  ad=200 pd=100 as=0 ps=0
+M1003 a_53_55# b vdd vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1004 a_37_9# a a_53_55# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 a_74_55# c_in vdd vdd pfet w=20 l=2
++  ad=320 pd=152 as=0 ps=0
+M1006 vdd b a_74_55# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_74_55# a vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_106_9# a_37_9# a_74_55# vdd pfet w=20 l=2
++  ad=200 pd=100 as=0 ps=0
+M1009 a_122_55# c_in vdd vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1010 a_127_55# b a_122_55# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1011 a_106_9# a a_127_55# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 sum a_106_9# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1013 c_out a_37_9# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1014 a_13_9# a gnd Gnd nfet w=10 l=2
++  ad=110 pd=62 as=410 ps=242
+M1015 gnd b a_13_9# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 a_37_9# c_in a_13_9# Gnd nfet w=10 l=2
++  ad=100 pd=60 as=0 ps=0
+M1017 a_53_9# b gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1018 a_37_9# a a_53_9# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 a_74_9# c_in gnd Gnd nfet w=10 l=2
++  ad=160 pd=92 as=0 ps=0
+M1020 gnd b a_74_9# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 a_74_9# a gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 a_106_9# a_37_9# a_74_9# Gnd nfet w=10 l=2
++  ad=100 pd=60 as=0 ps=0
+M1023 a_122_9# c_in gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1024 a_127_9# b a_122_9# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1025 a_106_9# a a_127_9# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 sum a_106_9# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1027 c_out a_37_9# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+C0 vdd a_74_55# 2.349000fF
+C1 vdd a_37_9# 2.415240fF
+C2 vdd c_in 2.046270fF
+C3 b a_37_9# 2.021040fF
+C4 a_37_9# a 2.034300fF
+C5 a_74_9# gnd! 2.554200fF
+C6 gnd gnd! 14.551200fF
+C7 c_out gnd! 3.346200fF
+C8 sum gnd! 2.612520fF
+C9 a_106_9# gnd! 5.923080fF
+C10 a_37_9# gnd! 10.555600fF
+C11 c_in gnd! 5.215050fF
+C12 b gnd! 9.316080fF
+C13 a gnd! 7.896330fF
+C14 vdd gnd! 21.842500fF

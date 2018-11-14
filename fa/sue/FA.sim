@@ -1,0 +1,66 @@
+| units: 30.0  tech: scmos  format: MIT
+A a input
+A b input
+A c_in input
+A c_out output
+A sum output
+| device nmos 430 370
+n net_4 net_2 net_9 2 10
+| device nmos_1 250 450
+n a gnd net_2 2 10
+| device nmos_2 430 450
+n b gnd net_2 2 10
+| device nmos_3 610 450
+n c_in gnd net_2 2 10
+| device nmos_4 810 370
+n c_in net_8 net_9 2 10
+| device nmos_5 810 450
+n b net_3 net_8 2 10
+| device nmos_6 810 530
+n a gnd net_3 2 10
+| device nmos_7 -250 370
+n c_in net_6 net_4 2 10
+| device nmos_8 -320 450
+n a gnd net_6 2 10
+| device nmos_9 -150 450
+n b gnd net_6 2 10
+| device nmos_10 40 370
+n b net_12 net_4 2 10
+| device nmos_11 40 450
+n a gnd net_12 2 10
+| device pmos 250 210
+p a vdd net_5 2 20
+| device pmos_1 430 210
+p b vdd net_5 2 20
+| device pmos_2 610 210
+p c_in vdd net_5 2 20
+| device pmos_3 430 290
+p net_4 net_5 net_9 2 20
+| device pmos_4 810 210
+p b net_11 net_7 2 20
+| device pmos_5 810 290
+p c_in net_7 net_9 2 20
+| device pmos_6 810 130
+p a vdd net_11 2 20
+| device pmos_7 -320 210
+p a vdd net_1 2 20
+| device pmos_8 -150 210
+p b vdd net_1 2 20
+| device pmos_9 -250 290
+p c_in net_1 net_4 2 20
+| device pmos_10 40 290
+p b net_10 net_4 2 20
+| device pmos_11 40 210
+p a vdd net_10 2 20
+| begin inv 890 680
+| device inv.nmos 440 -610
+n net_4 gnd c_out 2 10
+| device inv.pmos 440 -770
+p net_4 vdd c_out 2 20
+| end inv
+| begin inv_1 900 330
+| device inv_1.nmos 440 -610
+n net_9 gnd sum 2 10
+| device inv_1.pmos 440 -770
+p net_9 vdd sum 2 20
+| end inv_1

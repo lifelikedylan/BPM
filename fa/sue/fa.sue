@@ -1,6 +1,6 @@
 # SUE version MMI_SUE5.6.37
 
-proc SCHEMATIC_FA {} {
+proc SCHEMATIC_fa {} {
   make nmos -origin {430 370}
   make nmos -origin {250 450}
   make nmos -origin {430 450}
@@ -41,7 +41,7 @@ proc SCHEMATIC_FA {} {
   make input -name b -origin {-200 450}
   make input -name b -origin {-20 290}
   make input -orient RY -name b -origin {-20 370}
-  make output -name sum -origin {970 330}
+  make output -name sum -origin {1070 330}
   make global -orient RXY -name vdd -origin {-250 170}
   make global -name gnd -origin {-250 490}
   make global -orient RXY -name vdd -origin {40 170}
@@ -50,14 +50,20 @@ proc SCHEMATIC_FA {} {
   make global -name gnd -origin {430 490}
   make global -orient RXY -name vdd -origin {810 90}
   make global -name gnd -origin {810 570}
-  make inv -origin {890 680}
-  make inv -origin {900 330}
-  make output -name c_out -origin {960 680}
+  make output -name c_out -origin {960 820}
   make input -name c_in -origin {-380 330}
   make input -name c_in -origin {550 450}
   make input -name c_in -origin {550 210}
   make input -name c_in -origin {750 290}
   make input -orient RY -name c_in -origin {750 370}
+  make global -orient RY -name vdd -origin {1020 160}
+  make global -name gnd -origin {1020 500}
+  make nmos -origin {1020 410}
+  make pmos -origin {1020 250}
+  make global -orient RY -name vdd -origin {530 660}
+  make global -name gnd -origin {530 1000}
+  make nmos -origin {530 910}
+  make pmos -origin {530 750}
   make_wire 250 250 430 250
   make_wire 430 250 610 250
   make_wire 430 170 250 170
@@ -66,7 +72,6 @@ proc SCHEMATIC_FA {} {
   make_wire 430 490 610 490
   make_wire 430 410 250 410
   make_wire 430 410 610 410
-  make_wire 810 330 840 330
   make_wire -320 250 -250 250
   make_wire -250 170 -320 170
   make_wire -320 490 -250 490
@@ -76,10 +81,8 @@ proc SCHEMATIC_FA {} {
   make_wire -250 250 -150 250
   make_wire -250 490 -150 490
   make_wire -250 410 -150 410
-  make_wire 100 680 830 680
   make_wire 100 330 40 330
   make_wire 100 330 370 330
-  make_wire 100 330 100 680
   make_wire 370 290 370 330
   make_wire 370 330 370 370
   make_wire -250 330 40 330
@@ -88,9 +91,31 @@ proc SCHEMATIC_FA {} {
   make_wire -210 450 -200 450
   make_wire -210 210 -200 210
   make_wire 430 330 810 330
+  make_wire 100 330 100 820
+  make_wire 960 250 900 250
+  make_wire 900 410 960 410
+  make_wire 1020 450 1020 500
+  make_wire 1020 160 1020 210
+  make_wire 810 330 900 330
+  make_wire 900 330 900 410
+  make_wire 900 330 900 250
+  make_wire 1070 330 1020 330
+  make_wire 1020 330 1020 370
+  make_wire 1020 330 1020 290
+  make_wire 470 750 410 750
+  make_wire 410 910 470 910
+  make_wire 530 950 530 1000
+  make_wire 530 660 530 710
+  make_wire 100 820 410 820
+  make_wire 410 820 410 750
+  make_wire 410 820 410 910
+  make_wire 530 820 530 790
+  make_wire 530 820 530 870
+  make_wire 960 820 970 820
+  make_wire 960 820 530 820
 }
 
-proc ICON_FA args {
+proc ICON_fa args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}}}
   icon_term -type input -origin {-100 -20} -name a
   icon_term -type input -origin {-100 0} -name b
@@ -98,16 +123,18 @@ proc ICON_FA args {
   icon_term -type output -origin {100 -10} -name sum
   icon_term -type output -origin {100 20} -name c_out
   icon_term -type input -origin {0 0} -name c_in
+  icon_term -type input -origin {0 0} -name In
+  icon_term -type output -origin {0 0} -name Out_b
   icon_property -origin {-160 110} -type user -name name
   icon_line -100 -50 -100 50 100 50 100 -50 -100 -50
-  icon_property -origin {-20 0} -size large -label FA
+  icon_property -origin {-20 0} -size large -label fa
   icon_property -origin {-90 -20} -label a
   icon_property -origin {-90 0} -label b
   icon_property -origin {-90 20} -label c
   icon_property -origin {90 -10} -anchor e -label sum
   icon_property -origin {90 20} -anchor e -label cout
-  icon_property -origin {-160 170} -type auto -name verilog -text {FA [unique_name "" $name FA]
+  icon_property -origin {-160 170} -type auto -name verilog -text {fa [unique_name "" $name fa]
 (.a($a), .b($b), .c($c), .sum($sum), 
-.c_out($c_out), .c_in($c_in))\;}
+.c_out($c_out), .c_in($c_in), .In($In), .Out_b($Out_b))\;}
 }
 

@@ -10,6 +10,8 @@
 
 set auto_index(SCHEMATIC_inv) [list source [file join $dir inv.sue]]
 set auto_index(ICON_inv) [list source [file join $dir inv.sue]]
+set auto_index(SCHEMATIC_fa) [list source [file join $dir fa.sue]]
+set auto_index(ICON_fa) [list source [file join $dir fa.sue]]
 set auto_index(SCHEMATIC_FA) [list source [file join $dir FA.sue]]
 set auto_index(ICON_FA) [list source [file join $dir FA.sue]]
-set mtimes {{inv.sue 1542162681} {FA.sue 1542162681}}
+set mtimes {{inv.sue 1542162681} {fa.sue 1542181299} {FA.sue 1542180330}}
