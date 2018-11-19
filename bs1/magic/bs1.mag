@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1542302220
+timestamp 1542654395
 << ntransistor >>
 rect 96 65 98 75
 << ptransistor >>
@@ -44,6 +44,7 @@ rect 64 78 244 79
 rect 91 75 95 78
 rect 86 54 91 58
 rect 73 48 74 52
+rect 88 32 91 36
 rect 99 29 103 65
 rect -1 24 8 28
 rect -1 17 8 21
@@ -57,6 +58,7 @@ rect -1 -3 244 1
 rect 8 145 12 149
 rect 74 48 78 52
 rect 67 38 71 42
+rect 91 32 95 36
 rect 8 24 12 28
 rect 8 17 12 21
 << metal2 >>
@@ -69,6 +71,7 @@ rect 64 71 108 75
 rect 67 28 71 38
 rect 12 24 71 28
 rect 74 21 78 48
+rect 95 32 108 36
 rect 12 17 78 21
 use ../../fa/magic/fa  fa_0 ../../fa/magic
 timestamp 1542251572
@@ -88,5 +91,5 @@ rlabel metal1 1 147 1 147 3 fa_in
 rlabel metal1 1 26 1 26 3 clk
 rlabel metal1 1 19 1 19 3 en
 rlabel metal2 106 73 106 73 1 from_mux
-rlabel metal1 101 48 101 48 1 from_and
+rlabel metal2 106 34 106 34 1 clk_b
 << end >>

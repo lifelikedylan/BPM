@@ -1,4 +1,59 @@
 magic
 tech scmos
-timestamp 0
+timestamp 1542656247
+<< ntransistor >>
+rect 33 65 35 75
+<< ptransistor >>
+rect 33 9 35 29
+<< ndiffusion >>
+rect 32 65 33 75
+rect 35 65 36 75
+<< pdiffusion >>
+rect 32 9 33 29
+rect 35 9 36 29
+<< ndcontact >>
+rect 28 65 32 75
+rect 36 65 40 75
+<< pdcontact >>
+rect 28 9 32 29
+rect 36 9 40 29
+<< psubstratepcontact >>
+rect 24 79 28 83
+rect 40 79 44 83
+<< nsubstratencontact >>
+rect 25 1 29 5
+rect 39 1 43 5
+<< polysilicon >>
+rect 33 75 35 77
+rect 33 58 35 65
+rect 32 54 35 58
+rect 33 29 35 54
+rect 33 7 35 9
+<< polycontact >>
+rect 28 54 32 58
+<< metal1 >>
+rect 18 83 129 84
+rect 18 79 24 83
+rect 28 79 40 83
+rect 44 79 129 83
+rect 18 78 129 79
+rect 28 75 32 78
+rect 22 54 28 58
+rect 22 36 25 54
+rect 22 32 28 36
+rect 36 29 40 65
+rect 28 6 32 9
+rect 18 5 129 6
+rect 18 1 25 5
+rect 29 1 39 5
+rect 43 1 129 5
+rect 18 0 129 1
+<< m2contact >>
+rect 28 32 32 36
+<< metal2 >>
+rect 22 71 45 75
+rect 32 32 45 36
+<< labels >>
+rlabel metal2 24 73 24 73 1 D
+rlabel metal1 23 45 23 45 3 clk_b
 << end >>

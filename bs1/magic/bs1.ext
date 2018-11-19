@@ -1,4 +1,4 @@
-timestamp 1542302220
+timestamp 1542654395
 version 8.0
 tech scmos
 style AMI0.5um(amic5)from:T01X
@@ -9,45 +9,48 @@ use ../../bc1a/magic/bc1a bc1a_0 1 0 0 0 1 12
 use ../../nand/magic/nand nand_0 1 0 65 0 -1 81
 node "from_mux" 1 1809.36 64 71 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176 96 0 0
 node "m2_60_102#" 0 972.36 60 102 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 42 0 0
+node "clk_b" 1 1188.36 88 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 68 42 0 0
 node "clk" 2 5114.52 -1 24 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 50 308 162 0 0
 node "en" 3 6245.64 -1 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 52 404 210 0 0
 node "fa_in" 3 6104.16 -1 145 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 424 220 0 0
 node "c_in" 7 15094.8 -1 174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 813 520 0 0 0 0
 node "a_88_1#" 891 20361.6 88 1 noc 32 32 100 50 0 0 0 0 0 0 0 0 0 0 0 0 2297 554 0 0 0 0
-node "from_and" 576 3092.4 98 9 pdif 50 30 100 50 0 0 0 0 0 0 0 0 0 0 0 0 264 140 0 0 0 0
+node "a_98_9#" 576 3092.4 98 9 pdif 50 30 100 50 0 0 0 0 0 0 0 0 0 0 0 0 264 140 0 0 0 0
 node "a_91_54#" 911 1378.8 91 54 pc 0 0 0 0 0 0 0 0 0 0 160 154 0 0 0 0 36 26 0 0 0 0
 node "a_87_79#" 763 21232.8 87 79 poc 50 30 32 32 0 0 0 0 0 0 0 0 0 0 0 0 3292 422 0 0 0 0
+cap "a_98_9#" "from_mux" 269.28
+cap "a_91_54#" "from_mux" 181.44
+cap "a_98_9#" "clk_b" 303.36
 cap "a_87_79#" "from_mux" 332.88
-cap "from_mux" "from_and" 269.28
-cap "from_mux" "a_91_54#" 181.44
-fet pfet 96 9 97 10 40 44 "Vdd!" "a_91_54#" 4 0 "a_88_1#" 20 0 "from_and" 20 0
-fet nfet 96 65 97 66 20 24 "Gnd!" "a_91_54#" 4 0 "a_87_79#" 10 0 "from_and" 10 0
-cap "clk" "bc1a_0/vdd" 119.88
+cap "a_91_54#" "clk_b" 181.44
+fet pfet 96 9 97 10 40 44 "Vdd!" "a_91_54#" 4 0 "a_88_1#" 20 0 "a_98_9#" 20 0
+fet nfet 96 65 97 66 20 24 "Gnd!" "a_91_54#" 4 0 "a_87_79#" 10 0 "a_98_9#" 10 0
 cap "from_mux" "nand_0/a_9_6#" 29.16
 cap "en" "bc1a_0/b_in" 58.68
 cap "en" "bc1a_0/vdd" 117.36
 cap "clk" "bc1a_0/b_in" 48.96
-cap "nand_0/a_9_52#" "from_mux" 58.68
+cap "clk" "bc1a_0/vdd" 119.88
+cap "clk_b" "from_mux" 58.68
 cap "clk" "from_mux" 64.8
 cap "en" "bc1a_0/a_in" 58.68
 cap "en" "bc1a_0/inverter_1/Y" 74.52
-cap "en" "nand_0/a_9_52#" 176.04
+cap "en" "clk_b" 176.04
 cap "clk" "bc1a_0/a_in" 48.96
 cap "clk" "bc1a_0/inverter_1/Y" 131.4
 cap "en" "from_mux" 84.24
 cap "bc1a_0/gnd" "en" 80.64
 cap "bc1a_0/gnd" "clk" 80.64
-cap "fa_0/gnd" "from_mux" 58.68
 cap "en" "clk" 86.22
+cap "fa_0/gnd" "from_mux" 58.68
 cap "fa_0/c_out" "fa_0/gnd" 48.96
+cap "fa_in" "bc1a_0/inverter_0/gnd" 48.96
+cap "fa_in" "fa_0/a_13_55#" 144.36
+cap "fa_in" "bc1a_0/reg_in" 48.96
 cap "fa_in" "bc1a_0/inverter_0/Y" 119.52
+cap "bc1a_0/mux21_0/Out" "bc1a_0/inverter_0/Y" 159.12
 cap "bc1a_0/mux21_0/Out" "fa_in" 64.8
 cap "bc1a_0/init" "fa_in" 80.64
-cap "bc1a_0/mux21_0/Out" "bc1a_0/inverter_0/Y" 159.12
 cap "bc1a_0/vdd" "fa_in" 117.36
-cap "bc1a_0/inverter_0/gnd" "fa_in" 48.96
-cap "bc1a_0/reg_in" "fa_in" 48.96
-cap "fa_0/a_13_55#" "fa_in" 144.36
 cap "c_in" "fa_0/c_in" 36.72
 merge "fa_0/a_19_7#" "fa_in" -715.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
 merge "fa_0/vdd" "nand_0/vdd" -12247.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 -516 0 0 0 0
@@ -59,7 +62,8 @@ merge "bc1a_0/mux21_0/Out" "m2_60_102#"
 merge "nand_0/gnd" "bc1a_0/inverter_0/gnd" -14947.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1071 -474 0 0 0 0
 merge "bc1a_0/inverter_0/gnd" "fa_0/gnd"
 merge "fa_0/gnd" "a_87_79#"
-merge "nand_0/a_9_52#" "a_91_54#" -309.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0 0 0
+merge "nand_0/a_9_52#" "a_91_54#" -496.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 0 0 0 0
+merge "a_91_54#" "clk_b"
 merge "nand_0/A" "en" -747.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
 merge "bc1a_0/a_44_1#" "from_mux" -299.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
 merge "nand_0/B" "clk" -779.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
