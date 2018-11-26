@@ -10,4 +10,4 @@
 
 set auto_index(SCHEMATIC_dffpos) [list source [file join $dir dffpos.sue]]
 set auto_index(ICON_dffpos) [list source [file join $dir dffpos.sue]]
-set mtimes {{dffpos.sue 1542162681}}
+set mtimes {{dffpos.sue 1543267772}}

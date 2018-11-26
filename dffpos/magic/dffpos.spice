@@ -1,0 +1,64 @@
+* SPICE3 file created from dffpos.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 a_35_65# clk_b a_28_65# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=290 ps=158
+M1001 clk clk_b a_35_65# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1002 a_56_65# D a_28_65# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1003 a_61_9# clk_b a_56_65# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1004 a_69_65# clk a_61_9# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1005 a_28_65# a_72_7# a_69_65# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_72_7# a_61_9# a_28_65# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1007 a_99_65# a_72_7# a_28_65# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1008 a_104_9# clk a_99_65# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1009 a_112_65# clk_b a_104_9# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1010 a_28_65# Q a_112_65# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 a_126_65# a_104_9# a_28_65# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1012 Q a_104_9# a_126_65# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1013 a_35_9# clk_b a_28_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=580 ps=258
+M1014 clk clk_b a_35_9# Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1015 a_56_9# D a_28_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1016 a_61_9# clk a_56_9# Vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1017 a_69_9# clk_b a_61_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1018 a_28_9# a_72_7# a_69_9# Vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 a_72_7# a_61_9# a_28_9# Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1020 a_99_9# a_72_7# a_28_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1021 a_104_9# clk_b a_99_9# Vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1022 a_112_9# clk a_104_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1023 a_28_9# Q a_112_9# Vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 a_126_9# a_104_9# a_28_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1025 Q a_104_9# a_126_9# Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+C0 a_28_9# gnd! 10.209600fF
+C1 a_104_9# gnd! 4.015080fF
+C2 Q gnd! 4.362840fF
+C3 a_61_9# gnd! 3.452040fF
+C4 a_72_7# gnd! 4.794840fF
+C5 clk gnd! 9.795990fF
+C6 clk_b gnd! 9.192930fF
+C7 a_28_65# gnd! 9.950399fF

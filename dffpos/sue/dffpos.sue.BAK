@@ -2,15 +2,15 @@
 
 proc SCHEMATIC_dffpos {} {
   make input -name D -origin {50 400}
-  make global -orient RXY -name vdd -origin {160 -240}
-  make global -name gnd -origin {160 100}
+  make global -orient RXY -name vdd -origin {160 -110}
+  make global -name gnd -origin {160 90}
   make global -name gnd -origin {510 480}
   make global -orient RXY -name vdd -origin {510 320}
   make global -orient RX -name gnd -origin {420 200}
   make global -orient RY -name vdd -origin {420 -140}
   make output -name Q -origin {1350 400}
-  make global -name gnd -origin {1190 560}
-  make global -orient RXY -name vdd -origin {1190 240}
+  make global -name gnd -origin {1190 480}
+  make global -orient RXY -name vdd -origin {1190 320}
   make global -orient RX -name gnd -origin {1100 200}
   make global -orient RY -name vdd -origin {1100 -140}
   make nmos -orient RX -origin {420 160}
@@ -43,17 +43,13 @@ proc SCHEMATIC_dffpos {} {
   make pmos -orient RX -origin {420 -20}
   make nmos -origin {510 440}
   make pmos -origin {510 360}
-  make input -name Clk_b -origin {50 -70}
-  make name_net_s -name Clk -origin {240 -70}
-  make nmos -origin {1190 440}
-  make nmos -origin {1190 520}
-  make pmos -origin {1190 280}
-  make pmos -origin {1190 360}
-  make nmos -origin {160 60}
-  make nmos -origin {160 -20}
-  make pmos -origin {160 -200}
-  make pmos -origin {160 -120}
-  make_wire 240 -70 160 -70
+  make nmos -W 6 -origin {160 40}
+  make pmos -W 12 -origin {160 -60}
+  make nmos -W 6 -origin {1190 440}
+  make pmos -W 12 -origin {1190 360}
+  make input -name Clk_b -origin {50 -10}
+  make name_net_s -name Clk -origin {240 -10}
+  make_wire 240 -10 160 -10
   make_wire 440 440 450 440
   make_wire 440 360 450 360
   make_wire 440 400 440 360
@@ -62,17 +58,19 @@ proc SCHEMATIC_dffpos {} {
   make_wire 480 160 580 160
   make_wire 420 30 420 40
   make_wire 420 30 420 20
-  make_wire 160 -80 160 -70
-  make_wire 90 -120 100 -120
-  make_wire 90 -20 100 -20
-  make_wire 90 -120 90 -70
-  make_wire 90 -70 90 -20
-  make_wire 160 -70 160 -60
+  make_wire 160 -110 160 -100
+  make_wire 160 -20 160 -10
+  make_wire 90 -60 100 -60
+  make_wire 90 40 100 40
+  make_wire 90 -60 90 -10
+  make_wire 90 -10 90 40
+  make_wire 160 -10 160 0
+  make_wire 160 80 160 90
   make_wire 580 40 630 40
   make_wire 580 40 580 160
   make_wire 580 40 580 -100
   make_wire 630 40 630 400
-  make_wire 90 -70 50 -70
+  make_wire 90 -10 50 -10
   make_wire 520 80 480 80
   make_wire 520 -20 480 -20
   make_wire 1120 440 1130 440
@@ -118,14 +116,6 @@ proc SCHEMATIC_dffpos {} {
   make_wire 1310 400 1350 400
   make_wire 890 400 1010 400
   make_wire 1010 400 1120 400
-  make_wire 1130 520 1120 520
-  make_wire 1120 520 1120 440
-  make_wire 1120 360 1120 280
-  make_wire 1120 280 1130 280
-  make_wire 100 60 90 60
-  make_wire 90 60 90 -20
-  make_wire 100 -200 90 -200
-  make_wire 90 -200 90 -120
 }
 
 proc ICON_dffpos args {

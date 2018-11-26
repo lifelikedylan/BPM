@@ -10,4 +10,4 @@
 
 set auto_index(SCHEMATIC_nand) [list source [file join $dir nand.sue]]
 set auto_index(ICON_nand) [list source [file join $dir nand.sue]]
-set mtimes {{nand.sue 1508338310}}
+set mtimes {{nand.sue 1542162682}}
