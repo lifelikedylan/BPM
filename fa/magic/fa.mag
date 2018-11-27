@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1542251572
+timestamp 1543282397
 << ntransistor >>
 rect 11 9 13 19
 rect 19 9 21 19
@@ -168,9 +168,9 @@ rect 125 75 127 77
 rect 130 75 132 77
 rect 146 75 148 77
 rect 162 75 164 77
-rect 11 26 13 55
-rect 10 22 13 26
-rect 11 19 13 22
+rect 11 30 13 55
+rect 10 26 13 30
+rect 11 19 13 26
 rect 19 33 21 55
 rect 35 45 37 55
 rect 34 41 37 45
@@ -235,7 +235,7 @@ rect 130 7 132 9
 rect 146 7 148 9
 rect 162 7 164 9
 << polycontact >>
-rect 6 22 10 26
+rect 6 26 10 30
 rect 30 41 34 45
 rect 22 29 26 33
 rect 46 40 50 44
@@ -334,8 +334,8 @@ rect 169 1 175 5
 rect 0 0 175 1
 << m2contact >>
 rect 26 41 30 45
-rect 6 26 10 30
 rect 26 29 30 33
+rect 6 22 10 26
 rect 46 36 50 40
 rect 67 44 71 48
 rect 52 22 56 26
@@ -349,15 +349,16 @@ rect 149 48 153 52
 rect 157 25 161 29
 rect 169 22 173 26
 << metal2 >>
-rect 113 55 117 89
+rect 113 55 117 87
 rect 67 52 117 55
 rect 67 51 113 52
 rect 67 48 71 51
 rect 153 48 175 52
-rect 26 45 67 48
+rect 32 45 67 48
 rect 30 44 67 45
 rect 74 45 110 48
 rect 74 44 121 45
+rect 30 41 36 44
 rect 74 40 78 44
 rect 107 42 117 44
 rect 39 36 46 40
@@ -368,15 +369,17 @@ rect 30 29 43 33
 rect 67 33 71 36
 rect 85 33 89 36
 rect 85 26 89 29
-rect 6 22 52 26
+rect 10 22 52 26
 rect 56 22 89 26
 rect 111 32 122 36
 rect 99 25 157 29
 rect 169 -4 173 22
 << labels >>
-rlabel metal2 173 50 173 50 7 sum
-rlabel metal2 171 -2 171 -2 8 c_out
 rlabel metal1 3 81 3 81 4 vdd
 rlabel metal1 3 3 3 3 3 gnd
-rlabel metal2 115 86 115 86 5 c_in
+rlabel polysilicon 12 39 12 39 1 a
+rlabel polysilicon 20 39 20 39 1 b
+rlabel metal2 112 53 112 53 5 c_in
+rlabel metal2 159 50 159 50 7 sum
+rlabel metal2 171 20 171 20 8 c_out
 << end >>

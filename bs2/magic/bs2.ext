@@ -1,10 +1,9 @@
-timestamp 1543282590
+timestamp 1543282798
 version 8.0
 tech scmos
 style AMI0.5um(amic5)from:T01X
 scale 1000 1 30
 resistclasses 82100 102500 827000 827000 1 26000 26500 26500 90 90 50
-use ../../fa/magic/fa fa_0 1 0 43 0 1 90
 use ../../bc1a/magic/bc1a bc1a_0 1 0 0 0 1 12
 use ../../nand/magic/nand nand_0 1 0 65 0 -1 81
 use ../../dffpos/magic/dffpos dffpos_0 1 0 63 0 1 0
@@ -16,56 +15,46 @@ node "clk" 2 5114.52 -1 24 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 50 308 162 0 0
 node "Out" 0 1465.2 199 42 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95 48 0 0 0 0
 node "en" 3 6245.64 -1 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 52 404 210 0 0
 node "m1_86_54#" 0 248.4 86 54 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0
-node "m1_64_78#" 1 18154.8 64 78 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2742 354 0 0 0 0
-node "fa_in" 3 6050.88 -1 145 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 26 440 228 0 0
-node "Cin" 7 13143.6 -1 174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 687 456 0 0 0 0
+node "m1_58_89#" 1 18586.8 58 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2784 366 0 0 0 0
+node "fa_in" 1 2890.8 -1 145 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 26 176 96 0 0
+node "m1_n1_174#" 3 16426.8 -1 174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1599 456 0 0 0 0
 cap "Cout" "m2_156_n3#" 2441.76
 cap "Out" "m2_156_n3#" 347.4
-cap "m1_64_78#" "m2_156_n3#" 967.02
-cap "en" "vdd" 117.36
+cap "m1_58_89#" "m2_156_n3#" 967.02
 cap "clk" "vdd" 119.88
 cap "bc1a_0/a_44_1#" "nand_0/a_9_6#" 29.16
+cap "en" "vdd" 117.36
+cap "clk" "bc1a_0/b_in" 48.96
+cap "nand_0/a_9_52#" "bc1a_0/a_44_1#" 58.68
 cap "en" "bc1a_0/b_in" 58.68
 cap "en" "bc1a_0/a_in" 58.68
+cap "en" "bc1a_0/inverter_1/Y" 74.52
 cap "en" "nand_0/a_9_52#" 176.04
-cap "clk" "bc1a_0/b_in" 48.96
 cap "clk" "bc1a_0/a_in" 48.96
-cap "nand_0/a_9_52#" "bc1a_0/a_44_1#" 58.68
+cap "clk" "bc1a_0/inverter_1/Y" 131.4
 cap "clk" "bc1a_0/a_44_1#" 64.8
 cap "en" "bc1a_0/a_44_1#" 84.24
+cap "bc1a_0/gnd" "bc1a_0/a_44_1#" 58.68
 cap "bc1a_0/inverter_1/A" "en" 80.64
 cap "bc1a_0/inverter_1/A" "clk" 80.64
 cap "en" "clk" 86.22
-cap "fa_0/gnd" "bc1a_0/a_44_1#" 58.68
-cap "bc1a_0/inverter_1/Y" "en" 74.52
-cap "bc1a_0/inverter_1/Y" "clk" 131.4
-cap "fa_0/gnd" "m2_156_n3#" 48.96
-cap "fa_in" "fa_0/a_13_55#" 169.92
 cap "fa_in" "bc1a_0/mux21_0/in_1" 48.96
+cap "fa_in" "bc1a_0/mux21_0/Out" 48.96
 cap "fa_in" "bc1a_0/reg_in" 48.96
 cap "fa_in" "bc1a_0/mux21_0/Sel_bar" 60.84
 cap "fa_in" "bc1a_0/init" 64.8
-cap "bc1a_0/mux21_0/Out" "fa_in" 64.8
-cap "bc1a_0/vdd" "fa_in" 117.36
-cap "Cin" "fa_0/c_in" 36.72
-merge "fa_0/b" "fa_0/c_in" -1673.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -52 0 0
-merge "fa_0/c_in" "fa_in"
-merge "fa_0/c_out" "m2_156_n3#" -4593.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -401 -204 0 0
 merge "dffpos_0/Q" "Out" -216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 -10 0 0 0 0
-merge "fa_0/a" "bc1a_0/mux21_0/Out" -191.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
-merge "fa_0/vdd" "dffpos_0/a_28_9#" -12150 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -138 -498 0 0 0 0
-merge "dffpos_0/a_28_9#" "nand_0/vdd"
-merge "nand_0/vdd" "bc1a_0/vdd"
-merge "bc1a_0/vdd" "vdd"
-merge "vdd" "Cout"
-merge "Cout" "Cin"
 merge "dffpos_0/clk_b" "nand_0/a_9_52#" -1886.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82 -68 0 0 0 0
 merge "nand_0/a_9_52#" "m1_86_54#"
-merge "bc1a_0/mux21_0/in_1" "dffpos_0/a_28_65#" -22442.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1437 -738 0 0 0 0
+merge "bc1a_0/mux21_0/in_1" "dffpos_0/a_28_65#" -10209.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -314 -388 0 0 0 0
 merge "dffpos_0/a_28_65#" "nand_0/gnd"
 merge "nand_0/gnd" "bc1a_0/gnd"
-merge "bc1a_0/gnd" "fa_0/gnd"
-merge "fa_0/gnd" "m1_64_78#"
+merge "bc1a_0/gnd" "m1_58_89#"
+merge "dffpos_0/a_28_9#" "nand_0/vdd" -3182.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -136 0 0 0 0
+merge "nand_0/vdd" "vdd"
+merge "vdd" "bc1a_0/vdd"
+merge "bc1a_0/vdd" "Cout"
+merge "Cout" "m1_n1_174#"
 merge "nand_0/A" "en" -747.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
 merge "dffpos_0/D" "bc1a_0/a_44_1#" -553.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 0 0
 merge "bc1a_0/a_44_1#" "m2_64_71#"

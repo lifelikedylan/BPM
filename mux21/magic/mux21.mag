@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1542168919
+timestamp 1543281763
 << ntransistor >>
 rect -18 -18 -16 -8
 rect -10 -18 -8 -8
@@ -26,8 +26,8 @@ rect -23 24 -19 34
 rect -15 24 -11 34
 rect -7 24 -3 34
 << psubstratepcontact >>
-rect -15 -36 -11 -32
-rect -5 -36 -1 -32
+rect -23 -36 -19 -32
+rect -7 -36 -3 -32
 << nsubstratencontact >>
 rect -25 42 -21 46
 rect -6 42 -2 46
@@ -56,33 +56,21 @@ rect -2 42 4 46
 rect -30 41 4 42
 rect -30 11 -26 34
 rect -23 -8 -19 24
-rect -23 -24 -19 -18
-rect -26 -28 -19 -24
 rect -15 -8 -11 24
-rect -7 -2 -3 24
-rect -7 -8 -3 -6
-rect -15 -24 -11 -18
+rect -7 -8 -3 24
+rect -23 -24 -19 -18
+rect -30 -28 -19 -24
 rect 0 -22 4 20
 rect -30 -32 4 -31
 rect -30 -36 -23 -32
-rect -19 -36 -15 -32
-rect -11 -36 -5 -32
-rect -1 -36 4 -32
+rect -19 -36 -7 -32
+rect -3 -36 4 -32
 rect -30 -37 4 -36
-<< m2contact >>
-rect -30 -28 -26 -24
-rect -7 -6 -3 -2
-rect -15 -28 -11 -24
-rect -23 -36 -19 -32
-<< metal2 >>
-rect -23 -6 -7 -2
-rect -23 -32 -19 -6
-rect -11 -28 4 -24
 << labels >>
 rlabel polycontact 2 22 2 22 0 Sel_bar
 rlabel polycontact -28 36 -28 36 0 Sel
 rlabel nsubstratencontact -3 43 -3 43 3 Vdd
-rlabel m2contact -28 -26 -28 -26 3 In_0
-rlabel metal2 -4 -26 -4 -26 3 Out
+rlabel metal1 -28 -26 -28 -26 3 In_0
 rlabel metal1 -5 10 -5 11 1 in_1
+rlabel metal1 -13 15 -13 15 3 Out
 << end >>

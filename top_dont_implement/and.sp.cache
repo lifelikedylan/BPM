@@ -1,0 +1,9 @@
+set NETLIST_CACHE(and,cells) {{schematic inv /home/dshadoa/Desktop/BPM/top_dont_implement/inv.sue} {schematic nand /home/dshadoa/Desktop/BPM/top_dont_implement/nand.sue}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(and,globals) {vdd gnd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(and,version) MMI_SUE5.6.37
+set NETLIST_CACHE(and) {{.SUBCKT and A B Z } {Xnand A B net_1 nand } {Xinv net_1 Z inv } {.ENDS	$ and} {}}
+set NETLIST_CACHE(and,names) {{460 290 {0 Xinv}} {330 290 {0 A} {2 A}} {380 300 {0 Xnand}} {560 290 {0 Z} {2 Z}} {330 310 {0 B} {2 B}} {440 290 {0 net_1} {1 net_1}}}
+set NETLIST_CACHE(and,wires) {}

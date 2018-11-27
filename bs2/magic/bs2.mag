@@ -1,11 +1,12 @@
 magic
 tech scmos
-timestamp 1543282590
+timestamp 1543282798
 << metal1 >>
 rect -1 174 218 177
-rect 64 168 69 174
+rect 61 168 218 174
 rect -1 145 4 149
-rect 64 83 218 96
+rect 58 89 218 96
+rect 64 83 218 89
 rect 64 78 87 83
 rect 93 78 218 83
 rect 86 54 87 58
@@ -23,9 +24,7 @@ rect 67 38 71 42
 rect 8 24 12 28
 rect 8 17 12 21
 << metal2 >>
-rect 8 145 79 149
-rect 75 123 79 145
-rect 75 119 88 123
+rect 8 145 48 149
 rect 201 82 216 86
 rect 201 81 206 82
 rect 64 71 87 75
@@ -36,10 +35,6 @@ rect 12 17 78 21
 rect 201 4 205 81
 rect 156 0 205 4
 rect 156 -3 160 0
-use ../../fa/magic/fa  fa_0 ../../fa/magic
-timestamp 1543282397
-transform 1 0 43 0 1 90
-box 0 -4 175 87
 use ../../bc1a/magic/bc1a  bc1a_0 ../../bc1a/magic
 timestamp 1543282357
 transform 1 0 0 0 1 12
@@ -60,8 +55,6 @@ rlabel space 5 173 5 173 5 vdd
 rlabel metal1 1 147 1 147 3 fa_in
 rlabel space 1 114 1 114 3 Init
 rlabel space 0 101 0 101 3 reg_in
-rlabel metal1 158 175 158 175 5 Cin
-rlabel space 216 140 216 140 7 add_out
 rlabel metal1 216 45 216 45 7 Out
 rlabel space 0 51 0 51 3 muxB_in
 rlabel space 0 44 0 44 3 muxA_in
