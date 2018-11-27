@@ -1,9 +1,34 @@
 magic
 tech scmos
-timestamp 1543282957
+timestamp 1543296653
+<< error_s >>
+rect 221 1791 223 1800
+<< metal1 >>
+rect 214 1791 220 1800
+rect 214 1701 221 1719
+rect 214 1611 221 1629
+rect 214 1521 221 1539
+rect 214 1431 221 1449
+rect 214 1341 221 1359
+rect 214 1251 221 1269
+rect 214 1161 221 1179
+rect 214 1071 221 1089
+rect 214 981 221 999
+rect 214 891 221 909
+rect 214 801 221 819
+rect 214 711 221 729
+rect 214 621 221 639
+rect 214 531 221 549
+rect 214 441 221 459
+rect 214 360 221 369
 use ../../bs1/magic/bs1  bs1_0 ../../bs1/magic
-array 0 0 220 0 7 180
-timestamp 1543282590
-transform 1 0 1 0 1 3
-box -2 -3 218 177
+array 0 0 215 0 7 180
+timestamp 1543296296
+transform 1 0 0 0 1 363
+box -1 -3 214 177
+use ../../bs2/magic/bs2  bs2_0 ../../bs2/magic
+array 0 0 215 0 7 180
+timestamp 1543295795
+transform 1 0 222 0 1 363
+box -1 -3 214 177
 << end >>
