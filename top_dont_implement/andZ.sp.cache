@@ -1,0 +1,9 @@
+set NETLIST_CACHE(andZ,cells) {{icon nmos /programs/micromagic/mmi/sue/schematics/mspice/nmos.sue {}} {schematic nand /home/dshadoa/Desktop/BPM/top_dont_implement/nand.sue} {icon pmos /programs/micromagic/mmi/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(andZ,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(andZ,version) MMI_SUE5.6.37
+set NETLIST_CACHE(andZ) {{.SUBCKT andZ A B Z Z_b } {Xnand A B Z_b nand } {M_1 Z Z_b net_1 gnd n W='3*1u' L='0.6*1u' } {M_2 net_1 Z_b gnd gnd n W='3*1u' L='0.6*1u' } {M_3 net_2 Z_b vdd vdd p W='6*1u' L='0.6*1u' } {M_4 Z Z_b net_2 vdd p W='6*1u' L='0.6*1u' } {.ENDS	$ andZ} {}}
+set NETLIST_CACHE(andZ,names) {{600 280 {0 Z}} {540 160 {0 Z_b}} {540 340 {0 Z_b}} {600 460 {0 gnd} {2 gnd}} {330 290 {0 A} {2 A}} {600 380 {0 net_1} {1 net_1}} {670 290 {1 Z}} {580 560 {1 Z_b}} {600 200 {0 net_2} {1 net_2}} {600 300 {0 Z}} {600 120 {1 vdd} {2 vdd}} {330 310 {0 B} {2 B}} {440 290 {0 Z_b}} {600 240 {0 M_4}} {600 420 {0 M_2}} {600 160 {0 M_3}} {600 340 {0 M_1}} {380 300 {0 Xnand}} {540 240 {0 Z_b}} {540 420 {0 Z_b}}}
+set NETLIST_CACHE(andZ,wires) {{440 290 450 290 Z_b} {450 560 580 560 Z_b} {450 290 450 560 Z_b} {540 340 540 420 Z_b} {540 160 540 240 Z_b} {540 290 540 340 Z_b} {540 240 540 290 Z_b} {600 290 670 290 Z} {600 290 600 300 Z} {600 280 600 290 Z} {450 290 540 290 Z_b}}

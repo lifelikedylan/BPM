@@ -1,47 +1,59 @@
 magic
 tech scmos
-timestamp 1543296296
+timestamp 1543348710
 << metal1 >>
-rect -1 174 214 177
+rect -31 174 214 177
+rect -31 168 -1 174
 rect 64 168 69 174
-rect -1 145 8 149
+rect -14 160 -1 164
+rect -14 145 8 149
+rect -14 99 -1 103
 rect 31 96 35 109
+rect -31 78 -1 96
 rect 64 83 214 96
 rect 64 78 87 83
 rect 93 78 214 83
 rect 86 54 87 58
+rect -14 49 -1 53
 rect 66 48 68 52
-rect 193 42 214 47
+rect -14 42 -1 46
+rect 193 43 201 47
 rect 67 38 71 42
-rect -1 24 8 28
-rect -1 17 8 21
-rect -1 1 87 6
+rect -17 24 8 28
+rect -24 17 8 21
+rect -31 1 87 6
 rect 93 1 214 6
-rect -1 -3 214 1
+rect -31 -3 214 1
 << m2contact >>
 rect 8 145 12 149
 rect 23 128 27 132
 rect 68 48 72 52
+rect 201 43 205 47
 rect 61 38 65 42
+rect -21 24 -17 28
 rect 8 24 12 28
+rect -28 17 -24 21
 rect 8 17 12 21
 << metal2 >>
+rect 152 173 156 177
 rect 12 145 60 149
 rect 27 128 49 132
 rect 45 116 49 128
 rect 56 123 60 145
+rect 208 138 212 142
 rect 56 119 69 123
 rect 194 82 212 86
-rect 194 81 206 82
 rect 58 71 87 75
 rect 12 24 56 28
 rect 61 24 65 38
 rect 68 21 72 48
 rect 12 17 56 21
 rect 62 17 72 21
-rect 194 4 198 81
+rect 194 4 198 82
 rect 152 0 198 4
+rect 201 1 205 43
 rect 152 -3 156 0
+rect 201 -3 214 1
 use ../../fa/magic/fa  fa_0 ../../fa/magic
 timestamp 1543290821
 transform 1 0 39 0 1 90
@@ -59,18 +71,18 @@ timestamp 1543271063
 transform 1 0 57 0 1 0
 box 18 0 139 84
 << labels >>
-rlabel metal1 1 26 1 26 3 clk
-rlabel metal1 1 19 1 19 3 en
-rlabel metal1 5 1 5 1 1 vdd
-rlabel space 5 173 5 173 5 vdd
-rlabel metal1 1 147 1 147 3 fa_in
-rlabel space 0 101 0 101 3 reg_in
-rlabel space 0 51 0 51 3 muxB_in
-rlabel space 0 44 0 44 3 muxA_in
-rlabel space 0 162 0 162 3 Init
-rlabel metal1 210 45 210 45 7 Out
-rlabel space 211 140 211 140 7 add_out
-rlabel space 0 87 0 87 3 gnd
-rlabel metal1 154 175 154 175 5 Cin
-rlabel metal1 154 -2 154 -2 1 Cout
+rlabel metal2 211 140 211 140 7 add_out
+rlabel metal1 -22 19 -22 19 3 en
+rlabel metal1 -15 26 -15 26 3 clk
+rlabel metal1 -29 1 -29 1 1 vdd
+rlabel metal1 -29 173 -29 173 5 vdd
+rlabel metal1 -29 87 -29 87 3 gnd
+rlabel metal1 -12 162 -12 162 3 Init
+rlabel metal1 -12 147 -12 147 3 fa_in
+rlabel metal1 -12 101 -12 101 3 reg_in
+rlabel metal1 -12 51 -12 51 3 muxB_in
+rlabel metal1 -12 44 -12 44 3 muxA_in
+rlabel metal1 212 -1 212 -1 7 Out
+rlabel metal2 154 175 154 175 0 Cin
+rlabel metal2 154 -2 154 -2 0 Cout
 << end >>

@@ -1,9 +1,9 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1543278048 1543278048
+lvs_ExtRunTimes 1543443290 1543443291
 lvs_ExtOutFile RUNDIR /home/dshadoa/Desktop/BPM/bs1/lvs
 lvs_ExtOutFile RULES_FILE /home/dshadoa/Desktop/BPM/bs1/lvs/./_calibreLVS_scn3me_subm.rul_
-lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoExtSummary {1 0 0 0 1 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
 lvs_ExtOutFile LAYOUT_NETLIST /home/dshadoa/Desktop/BPM/bs1/lvs/./extracted.sp
 lvs_ExtOutFile EXTRACTION_REPORT bs1.lvs.report.ext

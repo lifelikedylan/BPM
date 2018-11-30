@@ -31,12 +31,12 @@ catch {source /usr/local/lib/magic/sys/site.def}
 : 1
 Extracting ../../dffpos/magic/dffpos into ../../dffpos/magic/dffpos.ext:
 Extracting ../../nand/magic/nand into ../../nand/magic/nand.ext:
-Extracting ../../mux21/magic/mux21 into ../../mux21/magic/mux21.ext:
 Extracting ../../inv/magic/inverter into ../../inv/magic/inverter.ext:
+Extracting ../../mux21/magic/mux21 into ../../mux21/magic/mux21.ext:
 Extracting ../../bc1a/magic/bc1a into ../../bc1a/magic/bc1a.ext:
-../../bc1a/magic/bc1a: 2 warnings
 Extracting ../../fa/magic/fa into ../../fa/magic/fa.ext:
 Extracting bs1 into bs1.ext:
+bs1: 2 warnings
 Total of 2 warnings.
 exttosim finished.
 Devices merged: 0
@@ -52,15 +52,6 @@ Warning: character '/' changed to '_' in name ../../fa/magic/fa
 Warning: character '/' changed to '_' in name ../../fa/magic/fa
 Warning: character '/' changed to '_' in name ../../fa/magic/fa
 Warning: characters changed in string '../../fa/magic/fa'; modified string is '______fa_magic_fa'
-Warning: character '.' changed to '_' in name ../../inv/magic/inverter
-Warning: character '.' changed to '_' in name ../../inv/magic/inverter
-Warning: character '/' changed to '_' in name ../../inv/magic/inverter
-Warning: character '.' changed to '_' in name ../../inv/magic/inverter
-Warning: character '.' changed to '_' in name ../../inv/magic/inverter
-Warning: character '/' changed to '_' in name ../../inv/magic/inverter
-Warning: character '/' changed to '_' in name ../../inv/magic/inverter
-Warning: character '/' changed to '_' in name ../../inv/magic/inverter
-Warning: characters changed in string '../../inv/magic/inverter'; modified string is '______inv_magic_inverter'
 Warning: character '.' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '.' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '/' changed to '_' in name ../../mux21/magic/mux21
@@ -70,15 +61,6 @@ Warning: character '/' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '/' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '/' changed to '_' in name ../../mux21/magic/mux21
 Warning: characters changed in string '../../mux21/magic/mux21'; modified string is '______mux21_magic_mux21'
-Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
-Warning: characters changed in string '../../bc1a/magic/bc1a'; modified string is '______bc1a_magic_bc1a'
 Warning: character '.' changed to '_' in name ../../inv/magic/inverter
 Warning: character '.' changed to '_' in name ../../inv/magic/inverter
 Warning: character '/' changed to '_' in name ../../inv/magic/inverter
@@ -88,6 +70,15 @@ Warning: character '/' changed to '_' in name ../../inv/magic/inverter
 Warning: character '/' changed to '_' in name ../../inv/magic/inverter
 Warning: character '/' changed to '_' in name ../../inv/magic/inverter
 Warning: characters changed in string '../../inv/magic/inverter'; modified string is '______inv_magic_inverter'
+Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '.' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: character '/' changed to '_' in name ../../bc1a/magic/bc1a
+Warning: characters changed in string '../../bc1a/magic/bc1a'; modified string is '______bc1a_magic_bc1a'
 Warning: character '.' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '.' changed to '_' in name ../../mux21/magic/mux21
 Warning: character '/' changed to '_' in name ../../mux21/magic/mux21

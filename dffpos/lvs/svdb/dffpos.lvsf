@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT dffpos.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/dffpos/lvs/./../sue/dffpos.sp
 lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/dffpos/lvs/./_calibreLVS_scn3me_subm.rul_
-lvs_LvsRunTimes 1543270613 1543270613
+lvs_LvsRunTimes 1543442966 1543442966

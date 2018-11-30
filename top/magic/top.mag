@@ -1,34 +1,40 @@
 magic
 tech scmos
-timestamp 1543296653
-<< error_s >>
-rect 221 1791 223 1800
+timestamp 1543348113
 << metal1 >>
-rect 214 1791 220 1800
-rect 214 1701 221 1719
-rect 214 1611 221 1629
-rect 214 1521 221 1539
-rect 214 1431 221 1449
-rect 214 1341 221 1359
-rect 214 1251 221 1269
-rect 214 1161 221 1179
-rect 214 1071 221 1089
-rect 214 981 221 999
-rect 214 891 221 909
-rect 214 801 221 819
-rect 214 711 221 729
-rect 214 621 221 639
-rect 214 531 221 549
-rect 214 441 221 459
-rect 214 360 221 369
+rect 10 1434 14 1438
+rect 0 -4 502 -3
+rect 0 -8 3 -4
+rect 7 -8 261 -4
+rect 265 -8 502 -4
+rect 0 -9 502 -8
+rect 0 -13 502 -12
+rect 0 -17 10 -13
+rect 14 -17 268 -13
+rect 272 -17 502 -13
+rect 0 -18 502 -17
+<< m2contact >>
+rect 3 -8 7 -4
+rect 261 -8 265 -4
+rect 10 -17 14 -13
+rect 268 -17 272 -13
+<< metal2 >>
+rect 3 -4 7 1284
+rect 10 -13 14 1291
+rect 261 -4 265 1284
+rect 268 -13 272 1291
 use ../../bs1/magic/bs1  bs1_0 ../../bs1/magic
-array 0 0 215 0 7 180
-timestamp 1543296296
-transform 1 0 0 0 1 363
-box -1 -3 214 177
+array 0 0 245 0 7 180
+timestamp 1543347284
+transform 1 0 31 0 1 3
+box -31 -3 214 177
 use ../../bs2/magic/bs2  bs2_0 ../../bs2/magic
-array 0 0 215 0 7 180
-timestamp 1543295795
-transform 1 0 222 0 1 363
-box -1 -3 214 177
+array 0 0 257 0 7 180
+timestamp 1543347637
+transform 1 0 288 0 1 3
+box -43 -3 214 177
+<< labels >>
+rlabel space 2 4 2 4 3 vdd
+rlabel metal1 2 -15 2 -15 2 clk
+rlabel metal1 2 -6 2 -6 3 en
 << end >>

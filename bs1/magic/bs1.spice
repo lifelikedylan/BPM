@@ -2,171 +2,166 @@
 
 .option scale=0.3u
 
-M1000 dffpos_0/a_35_65# dffpos_0/clk_b fa_0/gnd Gnd nfet w=10 l=2
-+  ad=30 pd=26 as=950 ps=540
+M1000 dffpos_0/a_35_65# dffpos_0/clk_b gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=900 ps=510
 M1001 dffpos_0/clk dffpos_0/clk_b dffpos_0/a_35_65# Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1002 dffpos_0/a_56_65# dffpos_0/D fa_0/gnd Gnd nfet w=10 l=2
+M1002 dffpos_0/a_56_65# dffpos_0/D gnd Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
 M1003 dffpos_0/a_61_9# dffpos_0/clk_b dffpos_0/a_56_65# Gnd nfet w=10 l=2
 +  ad=60 pd=32 as=0 ps=0
 M1004 dffpos_0/a_69_65# dffpos_0/clk dffpos_0/a_61_9# Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1005 fa_0/gnd dffpos_0/a_72_7# dffpos_0/a_69_65# Gnd nfet w=10 l=2
+M1005 gnd dffpos_0/a_72_7# dffpos_0/a_69_65# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1006 dffpos_0/a_72_7# dffpos_0/a_61_9# fa_0/gnd Gnd nfet w=10 l=2
+M1006 dffpos_0/a_72_7# dffpos_0/a_61_9# gnd Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1007 dffpos_0/a_99_65# dffpos_0/a_72_7# fa_0/gnd Gnd nfet w=10 l=2
+M1007 dffpos_0/a_99_65# dffpos_0/a_72_7# gnd Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
 M1008 dffpos_0/a_104_9# dffpos_0/clk dffpos_0/a_99_65# Gnd nfet w=10 l=2
 +  ad=60 pd=32 as=0 ps=0
 M1009 dffpos_0/a_112_65# dffpos_0/clk_b dffpos_0/a_104_9# Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1010 fa_0/gnd Out dffpos_0/a_112_65# Gnd nfet w=10 l=2
+M1010 gnd dffpos_0/Q dffpos_0/a_112_65# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1011 dffpos_0/a_126_65# dffpos_0/a_104_9# fa_0/gnd Gnd nfet w=10 l=2
+M1011 dffpos_0/a_126_65# dffpos_0/a_104_9# gnd Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1012 Out dffpos_0/a_104_9# dffpos_0/a_126_65# Gnd nfet w=10 l=2
+M1012 dffpos_0/Q dffpos_0/a_104_9# dffpos_0/a_126_65# Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1013 dffpos_0/a_35_9# dffpos_0/clk_b Cin Vdd pfet w=20 l=2
-+  ad=60 pd=46 as=1800 ps=860
+M1013 dffpos_0/a_35_9# dffpos_0/clk_b vdd Vdd pfet w=20 l=2
++  ad=60 pd=46 as=1700 ps=810
 M1014 dffpos_0/clk dffpos_0/clk_b dffpos_0/a_35_9# Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1015 dffpos_0/a_56_9# dffpos_0/D Cin Vdd pfet w=20 l=2
+M1015 dffpos_0/a_56_9# dffpos_0/D vdd Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
 M1016 dffpos_0/a_61_9# dffpos_0/clk dffpos_0/a_56_9# Vdd pfet w=20 l=2
 +  ad=120 pd=52 as=0 ps=0
 M1017 dffpos_0/a_69_9# dffpos_0/clk_b dffpos_0/a_61_9# Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1018 Cin dffpos_0/a_72_7# dffpos_0/a_69_9# Vdd pfet w=20 l=2
+M1018 vdd dffpos_0/a_72_7# dffpos_0/a_69_9# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1019 dffpos_0/a_72_7# dffpos_0/a_61_9# Cin Vdd pfet w=20 l=2
+M1019 dffpos_0/a_72_7# dffpos_0/a_61_9# vdd Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1020 dffpos_0/a_99_9# dffpos_0/a_72_7# Cin Vdd pfet w=20 l=2
+M1020 dffpos_0/a_99_9# dffpos_0/a_72_7# vdd Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
 M1021 dffpos_0/a_104_9# dffpos_0/clk_b dffpos_0/a_99_9# Vdd pfet w=20 l=2
 +  ad=120 pd=52 as=0 ps=0
 M1022 dffpos_0/a_112_9# dffpos_0/clk dffpos_0/a_104_9# Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1023 Cin Out dffpos_0/a_112_9# Vdd pfet w=20 l=2
+M1023 vdd dffpos_0/Q dffpos_0/a_112_9# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1024 dffpos_0/a_126_9# dffpos_0/a_104_9# Cin Vdd pfet w=20 l=2
+M1024 dffpos_0/a_126_9# dffpos_0/a_104_9# vdd Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1025 Out dffpos_0/a_104_9# dffpos_0/a_126_9# Vdd pfet w=20 l=2
+M1025 dffpos_0/Q dffpos_0/a_104_9# dffpos_0/a_126_9# Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1026 dffpos_0/clk_b en Cin Vdd pfet w=20 l=2
+M1026 dffpos_0/clk_b en vdd Vdd pfet w=20 l=2
 +  ad=120 pd=52 as=0 ps=0
-M1027 Cin clk dffpos_0/clk_b Vdd pfet w=20 l=2
+M1027 vdd clk dffpos_0/clk_b Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1028 nand_0/a_9_6# en fa_0/gnd Gnd nfet w=20 l=2
+M1028 nand_0/a_9_6# en gnd Gnd nfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
 M1029 dffpos_0/clk_b clk nand_0/a_9_6# Gnd nfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1030 bc1a_0/inverter_1/Y bc1a_0/gnd Cin Vdd pfet w=20 l=2
+M1030 bc1a_0/inverter_1/Y Init vdd Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1031 bc1a_0/inverter_1/Y bc1a_0/gnd fa_0/gnd Gnd nfet w=10 l=2
+M1031 bc1a_0/inverter_1/Y Init gnd Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1032 bc1a_0/mux21_0/Out bc1a_0/gnd bc1a_0/reg_in Vdd pfet w=10 l=2
+M1032 fa_0/a Init reg_in Vdd pfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1033 fa_0/gnd bc1a_0/inverter_0/Y bc1a_0/mux21_0/Out Vdd pfet w=10 l=2
-+  ad=658 pd=638 as=0 ps=0
-M1034 bc1a_0/mux21_0/Out bc1a_0/inverter_0/Y bc1a_0/reg_in Gnd nfet w=10 l=2
+M1033 gnd bc1a_0/inverter_1/Y fa_0/a Vdd pfet w=10 l=2
++  ad=626 pd=606 as=0 ps=0
+M1034 fa_0/a bc1a_0/inverter_1/Y reg_in Gnd nfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1035 fa_0/gnd bc1a_0/gnd bc1a_0/mux21_0/Out Gnd nfet w=10 l=2
+M1035 gnd Init fa_0/a Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1036 bc1a_0/inverter_0/Y bc1a_0/gnd Cin Vdd pfet w=20 l=2
-+  ad=100 pd=50 as=0 ps=0
-M1037 bc1a_0/inverter_0/Y bc1a_0/gnd fa_0/gnd Gnd nfet w=10 l=2
-+  ad=50 pd=30 as=0 ps=0
-M1038 dffpos_0/D bc1a_0/inverter_1/Y bc1a_0/a_in Gnd nfet w=10 l=2
+M1036 dffpos_0/D bc1a_0/inverter_1/Y muxA_in Gnd nfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1039 bc1a_0/b_in bc1a_0/gnd dffpos_0/D Gnd nfet w=10 l=2
+M1037 muxB_in Init dffpos_0/D Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1040 dffpos_0/D bc1a_0/gnd bc1a_0/a_in Vdd pfet w=10 l=2
+M1038 dffpos_0/D Init muxA_in Vdd pfet w=10 l=2
 +  ad=60 pd=32 as=50 ps=30
-M1041 bc1a_0/b_in bc1a_0/inverter_1/Y dffpos_0/D Vdd pfet w=10 l=2
+M1039 muxB_in bc1a_0/inverter_1/Y dffpos_0/D Vdd pfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1042 fa_0/a_13_55# bc1a_0/mux21_0/Out Cin Vdd pfet w=20 l=2
+M1040 fa_0/a_13_55# fa_0/a vdd Vdd pfet w=20 l=2
 +  ad=220 pd=102 as=0 ps=0
-M1043 Cin fa_in fa_0/a_13_55# Vdd pfet w=20 l=2
+M1041 vdd fa_in fa_0/a_13_55# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1044 fa_0/a_37_9# fa_0/c_in fa_0/a_13_55# Vdd pfet w=20 l=2
+M1042 fa_0/a_37_9# Cin fa_0/a_13_55# Vdd pfet w=20 l=2
 +  ad=200 pd=100 as=0 ps=0
-M1045 fa_0/a_53_55# fa_in Cin Vdd pfet w=20 l=2
+M1043 fa_0/a_53_55# fa_in vdd Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1046 fa_0/a_37_9# bc1a_0/mux21_0/Out fa_0/a_53_55# Vdd pfet w=20 l=2
+M1044 fa_0/a_37_9# fa_0/a fa_0/a_53_55# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1047 fa_0/a_74_55# fa_0/c_in Cin Vdd pfet w=20 l=2
+M1045 fa_0/a_74_55# Cin vdd Vdd pfet w=20 l=2
 +  ad=320 pd=152 as=0 ps=0
-M1048 Cin fa_in fa_0/a_74_55# Vdd pfet w=20 l=2
+M1046 vdd fa_in fa_0/a_74_55# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1049 fa_0/a_74_55# bc1a_0/mux21_0/Out Cin Vdd pfet w=20 l=2
+M1047 fa_0/a_74_55# fa_0/a vdd Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1050 fa_0/a_106_9# fa_0/a_37_9# fa_0/a_74_55# Vdd pfet w=20 l=2
+M1048 fa_0/a_106_9# fa_0/a_37_9# fa_0/a_74_55# Vdd pfet w=20 l=2
 +  ad=200 pd=100 as=0 ps=0
-M1051 fa_0/a_122_55# fa_0/c_in Cin Vdd pfet w=20 l=2
+M1049 fa_0/a_122_55# Cin vdd Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1052 fa_0/a_127_55# fa_in fa_0/a_122_55# Vdd pfet w=20 l=2
+M1050 fa_0/a_127_55# fa_in fa_0/a_122_55# Vdd pfet w=20 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1053 fa_0/a_106_9# bc1a_0/mux21_0/Out fa_0/a_127_55# Vdd pfet w=20 l=2
+M1051 fa_0/a_106_9# fa_0/a fa_0/a_127_55# Vdd pfet w=20 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1054 fa_0/sum fa_0/a_106_9# Cin Vdd pfet w=20 l=2
+M1052 add_out fa_0/a_106_9# vdd Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1055 Cout fa_0/a_37_9# Cin Vdd pfet w=20 l=2
+M1053 Cout fa_0/a_37_9# vdd Vdd pfet w=20 l=2
 +  ad=100 pd=50 as=0 ps=0
-M1056 fa_0/a_13_9# bc1a_0/mux21_0/Out fa_0/gnd Gnd nfet w=10 l=2
+M1054 fa_0/a_13_9# fa_0/a gnd Gnd nfet w=10 l=2
 +  ad=110 pd=62 as=0 ps=0
-M1057 fa_0/gnd fa_in fa_0/a_13_9# Gnd nfet w=10 l=2
+M1055 gnd fa_in fa_0/a_13_9# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1058 fa_0/a_37_9# fa_0/c_in fa_0/a_13_9# Gnd nfet w=10 l=2
+M1056 fa_0/a_37_9# Cin fa_0/a_13_9# Gnd nfet w=10 l=2
 +  ad=100 pd=60 as=0 ps=0
-M1059 fa_0/a_53_9# fa_in fa_0/gnd Gnd nfet w=10 l=2
+M1057 fa_0/a_53_9# fa_in gnd Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1060 fa_0/a_37_9# bc1a_0/mux21_0/Out fa_0/a_53_9# Gnd nfet w=10 l=2
+M1058 fa_0/a_37_9# fa_0/a fa_0/a_53_9# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1061 fa_0/a_74_9# fa_0/c_in fa_0/gnd Gnd nfet w=10 l=2
+M1059 fa_0/a_74_9# Cin gnd Gnd nfet w=10 l=2
 +  ad=160 pd=92 as=0 ps=0
-M1062 fa_0/gnd fa_in fa_0/a_74_9# Gnd nfet w=10 l=2
+M1060 gnd fa_in fa_0/a_74_9# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1063 fa_0/a_74_9# bc1a_0/mux21_0/Out fa_0/gnd Gnd nfet w=10 l=2
+M1061 fa_0/a_74_9# fa_0/a gnd Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1064 fa_0/a_106_9# fa_0/a_37_9# fa_0/a_74_9# Gnd nfet w=10 l=2
+M1062 fa_0/a_106_9# fa_0/a_37_9# fa_0/a_74_9# Gnd nfet w=10 l=2
 +  ad=100 pd=60 as=0 ps=0
-M1065 fa_0/a_122_9# fa_0/c_in fa_0/gnd Gnd nfet w=10 l=2
+M1063 fa_0/a_122_9# Cin gnd Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1066 fa_0/a_127_9# fa_in fa_0/a_122_9# Gnd nfet w=10 l=2
+M1064 fa_0/a_127_9# fa_in fa_0/a_122_9# Gnd nfet w=10 l=2
 +  ad=30 pd=26 as=0 ps=0
-M1067 fa_0/a_106_9# bc1a_0/mux21_0/Out fa_0/a_127_9# Gnd nfet w=10 l=2
+M1065 fa_0/a_106_9# fa_0/a fa_0/a_127_9# Gnd nfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1068 fa_0/sum fa_0/a_106_9# fa_0/gnd Gnd nfet w=10 l=2
+M1066 add_out fa_0/a_106_9# gnd Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-M1069 Cout fa_0/a_37_9# fa_0/gnd Gnd nfet w=10 l=2
+M1067 Cout fa_0/a_37_9# gnd Gnd nfet w=10 l=2
 +  ad=50 pd=30 as=0 ps=0
-C0 bc1a_0/mux21_0/Out fa_0/a_37_9# 2.034300fF
-C1 dffpos_0/D dffpos_0/clk 2.254440fF
-C2 fa_in fa_0/a_37_9# 2.021040fF
+C0 dffpos_0/D dffpos_0/clk 2.254440fF
+C1 fa_0/a_37_9# fa_in 2.021040fF
+C2 fa_0/a_37_9# fa_0/a 2.034300fF
 C3 fa_0/a_74_9# gnd! 2.554200fF
-C4 fa_0/sum gnd! 4.320240fF
-C5 fa_0/a_74_55# gnd! 2.973600fF
-C6 fa_0/a_13_55# gnd! 2.124000fF
-C7 fa_0/a_106_9# gnd! 7.911000fF
-C8 fa_0/a_37_9# gnd! 12.970800fF
-C9 fa_0/c_in gnd! 7.948140fF
-C10 fa_in gnd! 14.148181fF
-C11 bc1a_0/mux21_0/Out gnd! 12.043439fF
-C12 bc1a_0/b_in gnd! 5.068800fF
-C13 bc1a_0/a_in gnd! 5.722200fF
-C14 bc1a_0/reg_in gnd! 5.716080fF
-C15 bc1a_0/inverter_0/Y gnd! 8.925479fF
-C16 bc1a_0/gnd gnd! 15.653479fF
-C17 bc1a_0/inverter_1/Y gnd! 8.212680fF
-C18 clk gnd! 5.889600fF
-C19 en gnd! 6.419250fF
+C4 add_out gnd! 4.320240fF
+C5 fa_0/a_74_55# gnd! 4.457040fF
+C6 fa_0/a_13_55# gnd! 2.378400fF
+C7 fa_0/a_106_9# gnd! 8.443080fF
+C8 fa_0/a_37_9# gnd! 14.655600fF
+C9 fa_in gnd! 15.257791fF
+C10 fa_0/a gnd! 12.371250fF
+C11 vdd gnd! 56.606758fF
+C12 muxB_in gnd! 5.209919fF
+C13 muxA_in gnd! 5.092919fF
+C14 gnd gnd! 38.504879fF
+C15 reg_in gnd! 4.633200fF
+C16 Init gnd! 13.479880fF
+C17 bc1a_0/inverter_1/Y gnd! 11.778479fF
+C18 clk gnd! 6.251400fF
+C19 en gnd! 7.547130fF
 C20 dffpos_0/a_104_9# gnd! 4.015080fF
-C21 Out gnd! 6.873840fF
+C21 dffpos_0/Q gnd! 7.667160fF
 C22 dffpos_0/a_61_9# gnd! 3.452040fF
 C23 dffpos_0/a_72_7# gnd! 4.794840fF
 C24 dffpos_0/clk gnd! 7.541550fF
-C25 dffpos_0/D gnd! 7.319070fF
+C25 dffpos_0/D gnd! 6.951870fF
 C26 dffpos_0/clk_b gnd! 9.353609fF
-C27 fa_0/gnd gnd! 38.759578fF

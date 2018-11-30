@@ -1,76 +1,74 @@
 | units: 30 tech: scmos format: MIT
-n dffpos_0/clk_b fa_0/gnd dffpos_0/a_35_65# 2 10 96 65
-n dffpos_0/clk_b dffpos_0/a_35_65# dffpos_0/clk 2 10 101 65
-n dffpos_0/D fa_0/gnd dffpos_0/a_56_65# 2 10 117 65
-n dffpos_0/clk_b dffpos_0/a_56_65# dffpos_0/a_61_9# 2 10 122 65
-n dffpos_0/clk dffpos_0/a_61_9# dffpos_0/a_69_65# 2 10 130 65
-n dffpos_0/a_72_7# dffpos_0/a_69_65# fa_0/gnd 2 10 135 65
-n dffpos_0/a_61_9# fa_0/gnd dffpos_0/a_72_7# 2 10 144 65
-n dffpos_0/a_72_7# fa_0/gnd dffpos_0/a_99_65# 2 10 160 65
-n dffpos_0/clk dffpos_0/a_99_65# dffpos_0/a_104_9# 2 10 165 65
-n dffpos_0/clk_b dffpos_0/a_104_9# dffpos_0/a_112_65# 2 10 173 65
-n Out dffpos_0/a_112_65# fa_0/gnd 2 10 178 65
-n dffpos_0/a_104_9# fa_0/gnd dffpos_0/a_126_65# 2 10 187 65
-n dffpos_0/a_104_9# dffpos_0/a_126_65# Out 2 10 192 65
-p dffpos_0/clk_b Cin dffpos_0/a_35_9# 2 20 96 9
-p dffpos_0/clk_b dffpos_0/a_35_9# dffpos_0/clk 2 20 101 9
-p dffpos_0/D Cin dffpos_0/a_56_9# 2 20 117 9
-p dffpos_0/clk dffpos_0/a_56_9# dffpos_0/a_61_9# 2 20 122 9
-p dffpos_0/clk_b dffpos_0/a_61_9# dffpos_0/a_69_9# 2 20 130 9
-p dffpos_0/a_72_7# dffpos_0/a_69_9# Cin 2 20 135 9
-p dffpos_0/a_61_9# Cin dffpos_0/a_72_7# 2 20 144 9
-p dffpos_0/a_72_7# Cin dffpos_0/a_99_9# 2 20 160 9
-p dffpos_0/clk_b dffpos_0/a_99_9# dffpos_0/a_104_9# 2 20 165 9
-p dffpos_0/clk dffpos_0/a_104_9# dffpos_0/a_112_9# 2 20 173 9
-p Out dffpos_0/a_112_9# Cin 2 20 178 9
-p dffpos_0/a_104_9# Cin dffpos_0/a_126_9# 2 20 187 9
-p dffpos_0/a_104_9# dffpos_0/a_126_9# Out 2 20 192 9
-p en Cin dffpos_0/clk_b 2 20 72 28
-p clk dffpos_0/clk_b Cin 2 20 80 28
-n en fa_0/gnd nand_0/a_9_6# 2 20 72 74
-n clk nand_0/a_9_6# dffpos_0/clk_b 2 20 77 74
-p bc1a_0/gnd Cin bc1a_0/inverter_1/Y 2 20 20 28
-n bc1a_0/gnd fa_0/gnd bc1a_0/inverter_1/Y 2 10 20 74
-p bc1a_0/gnd bc1a_0/reg_in bc1a_0/mux21_0/Out 2 10 42 151
-p bc1a_0/inverter_0/Y bc1a_0/mux21_0/Out fa_0/gnd 2 10 50 151
-n bc1a_0/inverter_0/Y bc1a_0/reg_in bc1a_0/mux21_0/Out 2 10 42 109
-n bc1a_0/gnd bc1a_0/mux21_0/Out fa_0/gnd 2 10 50 109
-p bc1a_0/gnd Cin bc1a_0/inverter_0/Y 2 20 20 145
-n bc1a_0/gnd fa_0/gnd bc1a_0/inverter_0/Y 2 10 20 99
-n bc1a_0/inverter_1/Y bc1a_0/a_in dffpos_0/D 2 10 42 55
-n bc1a_0/gnd dffpos_0/D bc1a_0/b_in 2 10 50 55
-p bc1a_0/gnd bc1a_0/a_in dffpos_0/D 2 10 42 13
-p bc1a_0/inverter_1/Y dffpos_0/D bc1a_0/b_in 2 10 50 13
-p bc1a_0/mux21_0/Out Cin fa_0/a_13_55# 2 20 72 145
-p fa_in fa_0/a_13_55# Cin 2 20 80 145
-p fa_0/c_in fa_0/a_13_55# fa_0/a_37_9# 2 20 96 145
-p fa_in Cin fa_0/a_53_55# 2 20 112 145
-p bc1a_0/mux21_0/Out fa_0/a_53_55# fa_0/a_37_9# 2 20 117 145
-p fa_0/c_in Cin fa_0/a_74_55# 2 20 133 145
-p fa_in fa_0/a_74_55# Cin 2 20 141 145
-p bc1a_0/mux21_0/Out Cin fa_0/a_74_55# 2 20 149 145
-p fa_0/a_37_9# fa_0/a_74_55# fa_0/a_106_9# 2 20 165 145
-p fa_0/c_in Cin fa_0/a_122_55# 2 20 181 145
-p fa_in fa_0/a_122_55# fa_0/a_127_55# 2 20 186 145
-p bc1a_0/mux21_0/Out fa_0/a_127_55# fa_0/a_106_9# 2 20 191 145
-p fa_0/a_106_9# Cin fa_0/sum 2 20 207 145
-p fa_0/a_37_9# Cin Cout 2 20 223 145
-n bc1a_0/mux21_0/Out fa_0/gnd fa_0/a_13_9# 2 10 72 99
-n fa_in fa_0/a_13_9# fa_0/gnd 2 10 80 99
-n fa_0/c_in fa_0/a_13_9# fa_0/a_37_9# 2 10 96 99
-n fa_in fa_0/gnd fa_0/a_53_9# 2 10 112 99
-n bc1a_0/mux21_0/Out fa_0/a_53_9# fa_0/a_37_9# 2 10 117 99
-n fa_0/c_in fa_0/gnd fa_0/a_74_9# 2 10 133 99
-n fa_in fa_0/a_74_9# fa_0/gnd 2 10 141 99
-n bc1a_0/mux21_0/Out fa_0/gnd fa_0/a_74_9# 2 10 149 99
-n fa_0/a_37_9# fa_0/a_74_9# fa_0/a_106_9# 2 10 165 99
-n fa_0/c_in fa_0/gnd fa_0/a_122_9# 2 10 181 99
-n fa_in fa_0/a_122_9# fa_0/a_127_9# 2 10 186 99
-n bc1a_0/mux21_0/Out fa_0/a_127_9# fa_0/a_106_9# 2 10 191 99
-n fa_0/a_106_9# fa_0/gnd fa_0/sum 2 10 207 99
-n fa_0/a_37_9# fa_0/gnd Cout 2 10 223 99
+n dffpos_0/clk_b gnd dffpos_0/a_35_65# 2 10 90 65
+n dffpos_0/clk_b dffpos_0/a_35_65# dffpos_0/clk 2 10 95 65
+n dffpos_0/D gnd dffpos_0/a_56_65# 2 10 111 65
+n dffpos_0/clk_b dffpos_0/a_56_65# dffpos_0/a_61_9# 2 10 116 65
+n dffpos_0/clk dffpos_0/a_61_9# dffpos_0/a_69_65# 2 10 124 65
+n dffpos_0/a_72_7# dffpos_0/a_69_65# gnd 2 10 129 65
+n dffpos_0/a_61_9# gnd dffpos_0/a_72_7# 2 10 138 65
+n dffpos_0/a_72_7# gnd dffpos_0/a_99_65# 2 10 154 65
+n dffpos_0/clk dffpos_0/a_99_65# dffpos_0/a_104_9# 2 10 159 65
+n dffpos_0/clk_b dffpos_0/a_104_9# dffpos_0/a_112_65# 2 10 167 65
+n dffpos_0/Q dffpos_0/a_112_65# gnd 2 10 172 65
+n dffpos_0/a_104_9# gnd dffpos_0/a_126_65# 2 10 181 65
+n dffpos_0/a_104_9# dffpos_0/a_126_65# dffpos_0/Q 2 10 186 65
+p dffpos_0/clk_b vdd dffpos_0/a_35_9# 2 20 90 9
+p dffpos_0/clk_b dffpos_0/a_35_9# dffpos_0/clk 2 20 95 9
+p dffpos_0/D vdd dffpos_0/a_56_9# 2 20 111 9
+p dffpos_0/clk dffpos_0/a_56_9# dffpos_0/a_61_9# 2 20 116 9
+p dffpos_0/clk_b dffpos_0/a_61_9# dffpos_0/a_69_9# 2 20 124 9
+p dffpos_0/a_72_7# dffpos_0/a_69_9# vdd 2 20 129 9
+p dffpos_0/a_61_9# vdd dffpos_0/a_72_7# 2 20 138 9
+p dffpos_0/a_72_7# vdd dffpos_0/a_99_9# 2 20 154 9
+p dffpos_0/clk_b dffpos_0/a_99_9# dffpos_0/a_104_9# 2 20 159 9
+p dffpos_0/clk dffpos_0/a_104_9# dffpos_0/a_112_9# 2 20 167 9
+p dffpos_0/Q dffpos_0/a_112_9# vdd 2 20 172 9
+p dffpos_0/a_104_9# vdd dffpos_0/a_126_9# 2 20 181 9
+p dffpos_0/a_104_9# dffpos_0/a_126_9# dffpos_0/Q 2 20 186 9
+p en vdd dffpos_0/clk_b 2 20 66 28
+p clk dffpos_0/clk_b vdd 2 20 74 28
+n en gnd nand_0/a_9_6# 2 20 66 74
+n clk nand_0/a_9_6# dffpos_0/clk_b 2 20 71 74
+p Init vdd bc1a_0/inverter_1/Y 2 20 20 28
+n Init gnd bc1a_0/inverter_1/Y 2 10 20 74
+p Init reg_in fa_0/a 2 10 20 145
+p bc1a_0/inverter_1/Y fa_0/a gnd 2 10 28 145
+n bc1a_0/inverter_1/Y reg_in fa_0/a 2 10 20 109
+n Init fa_0/a gnd 2 10 28 109
+n bc1a_0/inverter_1/Y muxA_in dffpos_0/D 2 10 36 55
+n Init dffpos_0/D muxB_in 2 10 44 55
+p Init muxA_in dffpos_0/D 2 10 36 19
+p bc1a_0/inverter_1/Y dffpos_0/D muxB_in 2 10 44 19
+p fa_0/a vdd fa_0/a_13_55# 2 20 50 145
+p fa_in fa_0/a_13_55# vdd 2 20 58 145
+p Cin fa_0/a_13_55# fa_0/a_37_9# 2 20 74 145
+p fa_in vdd fa_0/a_53_55# 2 20 90 145
+p fa_0/a fa_0/a_53_55# fa_0/a_37_9# 2 20 95 145
+p Cin vdd fa_0/a_74_55# 2 20 111 145
+p fa_in fa_0/a_74_55# vdd 2 20 119 145
+p fa_0/a vdd fa_0/a_74_55# 2 20 127 145
+p fa_0/a_37_9# fa_0/a_74_55# fa_0/a_106_9# 2 20 143 145
+p Cin vdd fa_0/a_122_55# 2 20 159 145
+p fa_in fa_0/a_122_55# fa_0/a_127_55# 2 20 164 145
+p fa_0/a fa_0/a_127_55# fa_0/a_106_9# 2 20 169 145
+p fa_0/a_106_9# vdd add_out 2 20 185 145
+p fa_0/a_37_9# vdd Cout 2 20 201 145
+n fa_0/a gnd fa_0/a_13_9# 2 10 50 99
+n fa_in fa_0/a_13_9# gnd 2 10 58 99
+n Cin fa_0/a_13_9# fa_0/a_37_9# 2 10 74 99
+n fa_in gnd fa_0/a_53_9# 2 10 90 99
+n fa_0/a fa_0/a_53_9# fa_0/a_37_9# 2 10 95 99
+n Cin gnd fa_0/a_74_9# 2 10 111 99
+n fa_in fa_0/a_74_9# gnd 2 10 119 99
+n fa_0/a gnd fa_0/a_74_9# 2 10 127 99
+n fa_0/a_37_9# fa_0/a_74_9# fa_0/a_106_9# 2 10 143 99
+n Cin gnd fa_0/a_122_9# 2 10 159 99
+n fa_in fa_0/a_122_9# fa_0/a_127_9# 2 10 164 99
+n fa_0/a fa_0/a_127_9# fa_0/a_106_9# 2 10 169 99
+n fa_0/a_106_9# gnd add_out 2 10 185 99
+n fa_0/a_37_9# gnd Cout 2 10 201 99
 C dffpos_0/D dffpos_0/clk 2.254440
-C fa_0/a_37_9# bc1a_0/mux21_0/Out 2.034300
+C fa_0/a_37_9# fa_0/a 2.034300
 C fa_in fa_0/a_37_9# 2.021040
 R fa_0/a_127_9# 274
 R fa_0/a_122_9# 274
@@ -78,44 +76,44 @@ C fa_0/a_74_9# GND 2.554200
 R fa_0/a_74_9# 916
 R fa_0/a_53_9# 274
 R fa_0/a_13_9# 542
-R Cout 580
-C fa_0/sum GND 4.320240
-R fa_0/sum 576
+R Cout 577
+C add_out GND 4.320240
+R add_out 576
 R fa_0/a_127_55# 683
 R fa_0/a_122_55# 683
-C fa_0/a_74_55# GND 2.973600
+C fa_0/a_74_55# GND 4.457040
 R fa_0/a_74_55# 1641
 R fa_0/a_53_55# 683
-C fa_0/a_13_55# GND 2.124000
+C fa_0/a_13_55# GND 2.378400
 R fa_0/a_13_55# 998
-C fa_0/a_106_9# GND 7.911000
+C fa_0/a_106_9# GND 8.443080
 R fa_0/a_106_9# 2544
-C fa_0/a_37_9# GND 12.970800
+C fa_0/a_37_9# GND 14.655600
 R fa_0/a_37_9# 3510
-C fa_0/c_in GND 7.948140
-R fa_0/c_in 2871
-C fa_in GND 14.148181
-R fa_in 4082
-C bc1a_0/mux21_0/Out GND 12.043439
-R bc1a_0/mux21_0/Out 4244
-R Cin 22653
-C bc1a_0/b_in GND 5.068800
-R bc1a_0/b_in 372
-C bc1a_0/a_in GND 5.722200
-R bc1a_0/a_in 372
-C bc1a_0/reg_in GND 5.716080
-R bc1a_0/reg_in 372
-C bc1a_0/inverter_0/Y GND 8.925479
-R bc1a_0/inverter_0/Y 1487
-C bc1a_0/gnd GND 15.653479
-R bc1a_0/gnd 3986
-C bc1a_0/inverter_1/Y GND 8.212680
-R bc1a_0/inverter_1/Y 1487
+R Cin 2871
+C fa_in GND 15.257791
+R fa_in 4081
+C fa_0/a GND 12.371250
+R fa_0/a 4243
+C vdd GND 56.606758
+R vdd 21354
+C muxB_in GND 5.209919
+R muxB_in 372
+C muxA_in GND 5.092919
+R muxA_in 372
+C gnd GND 38.504879
+R gnd 20597
+C reg_in GND 4.633200
+R reg_in 371
+C Init GND 13.479880
+R Init 2710
+C bc1a_0/inverter_1/Y GND 11.778479
+R bc1a_0/inverter_1/Y 2128
 R nand_0/a_9_6# 547
-C clk GND 5.889600
+C clk GND 6.251400
 R clk 951
-C en GND 6.419250
-R en 912
+C en GND 7.547130
+R en 913
 R dffpos_0/a_126_9# 683
 R dffpos_0/a_112_9# 683
 R dffpos_0/a_99_9# 683
@@ -130,17 +128,15 @@ R dffpos_0/a_56_65# 274
 R dffpos_0/a_35_65# 274
 C dffpos_0/a_104_9# GND 4.015080
 R dffpos_0/a_104_9# 1989
-C Out GND 6.873840
-R Out 1486
+C dffpos_0/Q GND 7.667160
+R dffpos_0/Q 1487
 C dffpos_0/a_61_9# GND 3.452040
 R dffpos_0/a_61_9# 1390
 C dffpos_0/a_72_7# GND 4.794840
 R dffpos_0/a_72_7# 2786
 C dffpos_0/clk GND 7.541550
 R dffpos_0/clk 2607
-C dffpos_0/D GND 7.319070
+C dffpos_0/D GND 6.951870
 R dffpos_0/D 1483
 C dffpos_0/clk_b GND 9.353609
 R dffpos_0/clk_b 4263
-C fa_0/gnd GND 38.759578
-R fa_0/gnd 21786

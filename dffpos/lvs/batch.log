@@ -11,7 +11,7 @@
 //  Running on Linux shire.ecen.okstate.edu 2.6.32-696.30.1.el6.x86_64 #1 SMP Fri May 18 11:50:44 EDT 2018 x86_64
 //  64 bit virtual addressing enabled
 //
-//  Starting time: Mon Nov 26 16:16:50 2018
+//  Starting time: Wed Nov 28 16:09:23 2018
 //
 //  calinteractive license acquired.
 //  Calibre Interactive authorized.
@@ -56,40 +56,40 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/dffpos/lvs/./extracted.sp
 //  Entries in /proc/meminfo:
 //
 //  MemTotal:       132118976 kB
-//  MemFree:        110274112 kB
-//  Buffers:          314668 kB
-//  Cached:         12058680 kB
+//  MemFree:        109156652 kB
+//  Buffers:          314680 kB
+//  Cached:         12690876 kB
 //  SwapCached:            0 kB
-//  Active:         14954348 kB
-//  Inactive:        4571108 kB
-//  Active(anon):    7184252 kB
-//  Inactive(anon):   108092 kB
-//  Active(file):    7770096 kB
-//  Inactive(file):  4463016 kB
+//  Active:         15524424 kB
+//  Inactive:        5099288 kB
+//  Active(anon):    7648760 kB
+//  Inactive(anon):   109468 kB
+//  Active(file):    7875664 kB
+//  Inactive(file):  4989820 kB
 //  Unevictable:           0 kB
 //  Mlocked:               0 kB
 //  SwapTotal:       4194300 kB
 //  SwapFree:        4194300 kB
-//  Dirty:              1516 kB
+//  Dirty:              1704 kB
 //  Writeback:             0 kB
-//  AnonPages:       7149064 kB
-//  Mapped:           323888 kB
-//  Shmem:            140240 kB
-//  Slab:            1094996 kB
-//  SReclaimable:     819544 kB
-//  SUnreclaim:       275452 kB
-//  KernelStack:       27360 kB
-//  PageTables:       359996 kB
+//  AnonPages:       7615340 kB
+//  Mapped:           323732 kB
+//  Shmem:            140080 kB
+//  Slab:            1116564 kB
+//  SReclaimable:     841428 kB
+//  SUnreclaim:       275136 kB
+//  KernelStack:       27312 kB
+//  PageTables:       360928 kB
 //  NFS_Unstable:          0 kB
 //  Bounce:                0 kB
 //  WritebackTmp:          0 kB
 //  CommitLimit:    70253788 kB
-//  Committed_AS:   15606560 kB
+//  Committed_AS:   16022648 kB
 //  VmallocTotal:   34359738367 kB
 //  VmallocUsed:      512756 kB
 //  VmallocChunk:   34291676724 kB
 //  HardwareCorrupted:     0 kB
-//  AnonHugePages:   4925440 kB
+//  AnonHugePages:   5345280 kB
 //  HugePages_Total:       0
 //  HugePages_Free:        0
 //  HugePages_Rsvd:        0
@@ -112,9 +112,9 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/dffpos/lvs/./extracted.sp
 //  Max file descriptors: 1024
 //  64 bit virtual addressing enabled
 //  Running aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre -spice /home/dshadoa/Desktop/BPM/dffpos/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/dffpos/lvs/./_calibreLVS_scn3me_subm.rul_
-//  Process ID: 84885
+//  Process ID: 127756
 //
-//  Starting time: Mon Nov 26 16:16:53 2018
+//  Starting time: Wed Nov 28 16:09:26 2018
 //
 //  Running on 1 CPU (pending licensing) 
 //
@@ -129,7 +129,7 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/dffpos/lvs/./extracted.sp
 --- RULE FILE = /home/dshadoa/Desktop/BPM/dffpos/lvs/./_calibreLVS_scn3me_subm.rul_
 
 //
-//  Rule file generated on Mon Nov 26 16:16:52 CST 2018
+//  Rule file generated on Wed Nov 28 16:09:25 CST 2018
 //     by Calibre Interactive - LVS (v2016.4_38.25)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
@@ -200,7 +200,7 @@ CALIBRE_READDB_LD_LIBRARY_PATH=/programs/mentor/aoi_cal_2016.4_38.25/shared/pkgs
 CALIBRE_SKIP_OS_CHECKS=
 CALIBRE_SSE3_SUPPORTED=1
 
---- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - Mon Nov 26 16:16:53 2018
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - Wed Nov 28 16:09:26 2018
 
 //  Applying licensing policy...
 //  calibrehlvs license acquired.
@@ -775,7 +775,7 @@ Layer pwell DELETED -- LVHEAP = 2/5/67
 WRITING PHDB to directory svdb
 PHDB WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38/38/38  ELAPSED TIME = 0
 
---- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR COMPLETED - Mon Nov 26 16:16:53 2018
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR COMPLETED - Wed Nov 28 16:09:26 2018
 --- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38/38/38  ELAPSED TIME = 0
 --- PROCESSOR COUNT = 1
 
@@ -801,7 +801,7 @@ PHDB WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38
 
 
 
---- CALIBRE::LVS-H - Mon Nov 26 16:16:53 2018
+--- CALIBRE::LVS-H - Wed Nov 28 16:09:26 2018
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -829,16 +829,16 @@ LVS started ...
 //  - LVS (Hierarchical)
 
 READING layout ...
-Layout READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 43/43/43
+Layout READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 41/41/41
 
 READING source ...
-Source READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69  MALLOC = 43/43/43
+Source READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69  MALLOC = 41/41/41
 
 Identifying CORRESPONDING cells ...
 CORRESPONDING Cells Identified.  CPU TIME = 0  REAL TIME = 0
 
 Reallocating Instance Pins...
-Instance Pins Reallocated.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 43/43/43
+Instance Pins Reallocated.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 41/41/41
 
 Writing XDB Placement Hierarchy ...
 XDB Placement Hierarchy Written.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 45/45/45
@@ -973,13 +973,13 @@ Cumulative REPORT Time:                                  CPU =       0,     REAL
 
 LVS completed. CORRECT. See report file: dffpos.lvs.report
 
-LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 52/52/52  ELAPSED TIME = 0
+LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 50/50/50  ELAPSED TIME = 0
 
 --- LVS REPORT FILE = dffpos.lvs.report
---- CALIBRE::LVS/xRC EXECUTIVE MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 42/42/52  ELAPSED TIME = 0
+--- CALIBRE::LVS/xRC EXECUTIVE MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 42/42/50  ELAPSED TIME = 0
 
---- CALIBRE::LVS/xRC COMPLETED - Mon Nov 26 16:16:53 2018
---- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 42/42/52  ELAPSED TIME = 0
+--- CALIBRE::LVS/xRC COMPLETED - Wed Nov 28 16:09:26 2018
+--- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 42/42/50  ELAPSED TIME = 0
 --- XDB CROSS REFERENCE DATABASE = svdb/dffpos.xdb
 
 --- SPICE NETLIST FILE = /home/dshadoa/Desktop/BPM/dffpos/lvs/./extracted.sp
@@ -987,5 +987,5 @@ LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 52/52/5
 --- PERSISTENT HIERARCHICAL DATABASE(PHDB) = svdb/dffpos.phdb
 --- QUERY DATABASE = svdb  TOP CELL = dffpos
 
---- GRAND TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 1/5/69  MALLOC = 42/42/52  ELAPSED TIME = 0
+--- GRAND TOTAL CPU TIME = 0  REAL TIME = 1  LVHEAP = 1/5/69  MALLOC = 42/42/50  ELAPSED TIME = 0
 

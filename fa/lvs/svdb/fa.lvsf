@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT fa.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/fa/lvs/./../sue/fa.sp
 lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/fa/lvs/./_calibreLVS_scn3me_subm.rul_
-lvs_LvsRunTimes 1542182805 1542182805
+lvs_LvsRunTimes 1543442931 1543442931
