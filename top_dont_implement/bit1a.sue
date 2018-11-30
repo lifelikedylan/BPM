@@ -29,7 +29,6 @@ proc SCHEMATIC_bit1a {} {
   make_wire 90 250 190 250
   make_wire 190 270 -50 270
   make_wire -50 270 -50 240
-  make_wire 150 690 200 690
   make_wire 400 680 490 680
   make_wire 400 550 430 550
   make_wire 430 550 430 640
@@ -44,8 +43,6 @@ proc SCHEMATIC_bit1a {} {
   make_wire 100 550 200 550
   make_wire 150 640 150 690
   make_wire 150 640 430 640
-  make_wire 200 690 200 710
-  make_wire 200 710 180 710
   make_wire -20 590 200 590
   make_wire 160 310 160 610
   make_wire 160 610 200 610
@@ -53,9 +50,11 @@ proc SCHEMATIC_bit1a {} {
   make_wire 160 310 190 310
   make_wire 200 670 120 670
   make_wire 120 750 180 750
-  make_wire 180 710 180 750
   make_wire -70 710 -40 710
   make_wire -70 670 -40 670
+  make_wire 180 710 180 750
+  make_wire 200 710 180 710
+  make_wire 200 690 150 690
 }
 
 proc ICON_bit1a args {

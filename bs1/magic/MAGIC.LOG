@@ -29,6 +29,12 @@ set VDD "vdd!"
 : vdd!
 catch {source /usr/local/lib/magic/sys/site.def}
 : 1
+File <../../fa/magic/fa.mag> is already locked by pid 104473.  Opening read-only.
+File <../../bc1a/magic/bc1a.mag> is already locked by pid 104473.  Opening read-only.
+File <../../mux21/magic/mux21.mag> is already locked by pid 104473.  Opening read-only.
+File <../../inv/magic/inverter.mag> is already locked by pid 104473.  Opening read-only.
+File <../../nand/magic/nand.mag> is already locked by pid 104473.  Opening read-only.
+File <../../dffpos/magic/dffpos.mag> is already locked by pid 104473.  Opening read-only.
 Extracting ../../dffpos/magic/dffpos into ../../dffpos/magic/dffpos.ext:
 Extracting ../../nand/magic/nand into ../../nand/magic/nand.ext:
 Extracting ../../inv/magic/inverter into ../../inv/magic/inverter.ext:

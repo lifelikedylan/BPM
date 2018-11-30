@@ -11,21 +11,10 @@
 
 REPORT FILE NAME:         bs1.lvs.report.ext
 LAYOUT NAME:              /home/dshadoa/Desktop/BPM/bs1/lvs/./../magic/bs1.gds ('bs1')
-CREATION TIME:            Wed Nov 28 16:14:50 2018
+CREATION TIME:            Fri Nov 30 16:57:27 2018
 CURRENT DIRECTORY:        /home/dshadoa/Desktop/BPM/bs1/lvs
 USER NAME:                dshadoa
 CALIBRE VERSION:          v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
 
-
-
-Extraction Errors and Warnings for cell "bs1"
----------------------------------------------
-
-WARNING:  Short circuit - Different names on one net:
-          Net Id:  26
-          (1)  name  "Out"  at location  (63.6,-0.3)  on layer  49 "metal1"
-          (2)  name  "vdd"  at location  (-8.7,0.3)  on layer  49 "metal1"
-          (3)  name  "vdd"  at location  (-8.7,51.9)  on layer  49 "metal1"
-          The name "vdd" was assigned to the net.
 
 

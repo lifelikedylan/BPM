@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1543348343
+timestamp 1543618541
 << ntransistor >>
 rect 66 109 68 119
 rect 74 109 76 119
@@ -165,7 +165,6 @@ rect 61 24 65 38
 rect 68 21 72 48
 rect 12 17 56 21
 rect 62 17 72 21
-rect -43 -3 214 1
 use ../../bc1a/magic/bc1a  bc1a_0 ../../bc1a/magic
 timestamp 1543295583
 transform 1 0 0 0 1 12

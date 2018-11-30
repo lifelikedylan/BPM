@@ -1,0 +1,121 @@
+| units: 30.0  tech: scmos  format: MIT
+A Init input
+A clk input
+A en input
+A mcand input
+A mplier input
+A muxA_in input
+A muxB_in input
+A q0 input
+A reg_in input
+A Out output
+A muxA_out output
+A muxB_out output
+| begin mux21 290 350
+| device mux21.nmos 210 150
+n q0 mcand muxA_out 2 10
+| device mux21.pmos 210 150
+p net_2 mcand muxA_out 2 10
+| device mux21.nmos_1 210 340
+n net_2 gnd muxA_out 2 10
+| device mux21.pmos_1 210 340
+p q0 gnd muxA_out 2 10
+| end mux21
+| begin inv 10 470
+| device inv.p0 400 220
+p Init Vdd net_4 2 20
+| device inv.n0 400 380
+n Init Gnd net_4 2 10
+| end inv
+| begin mux21_1 300 630
+| device mux21_1.nmos 210 150
+n Init muxB_in net_1 2 10
+| device mux21_1.pmos 210 150
+p net_4 muxB_in net_1 2 10
+| device mux21_1.nmos_1 210 340
+n net_4 muxA_in net_1 2 10
+| device mux21_1.pmos_1 210 340
+p Init muxA_in net_1 2 10
+| end mux21_1
+| begin mux21_2 300 490
+| device mux21_2.nmos 210 150
+n Init mplier muxB_out 2 10
+| device mux21_2.pmos 210 150
+p net_4 mplier muxB_out 2 10
+| device mux21_2.nmos_1 210 340
+n net_4 reg_in muxB_out 2 10
+| device mux21_2.pmos_1 210 340
+p Init reg_in muxB_out 2 10
+| end mux21_2
+| begin inv_1 10 330
+| device inv_1.p0 400 220
+p q0 Vdd net_2 2 20
+| device inv_1.n0 400 380
+n q0 Gnd net_2 2 10
+| end inv_1
+| begin andZ 30 710
+| begin andZ.nand 380 300
+| device andZ.nand.nmos 410 570
+n clk gnd andZ.nand.net_1 2 20
+| device andZ.nand.nmos_1 410 490
+n en andZ.nand.net_1 net_3 2 20
+| device andZ.nand.pmos 410 380
+p clk vdd net_3 2 20
+| device andZ.nand.pmos_1 590 380
+p en vdd net_3 2 20
+| end andZ.nand
+| device andZ.nmos 600 340
+n net_3 andZ.net_1 net_5 2 10
+| device andZ.nmos_1 600 420
+n net_3 gnd andZ.net_1 2 10
+| device andZ.pmos 600 160
+p net_3 vdd andZ.net_2 2 20
+| device andZ.pmos_1 600 240
+p net_3 andZ.net_2 net_5 2 20
+| end andZ
+| begin dffposZ 300 760
+| device dffposZ.nmos 420 160
+n dffposZ.net_1 gnd dffposZ.net_13 2 10
+| device dffposZ.nmos_1 420 80
+n net_5 dffposZ.net_13 dffposZ.net_4 2 10
+| device dffposZ.nmos_2 890 530
+n dffposZ.net_1 gnd dffposZ.net_6 2 10
+| device dffposZ.nmos_3 890 450
+n net_5 dffposZ.net_6 dffposZ.net_3 2 10
+| device dffposZ.pmos 890 350
+p net_3 dffposZ.net_12 dffposZ.net_3 2 20
+| device dffposZ.pmos_1 890 270
+p dffposZ.net_1 vdd dffposZ.net_12 2 20
+| device dffposZ.nmos_4 250 530
+n net_1 gnd dffposZ.net_2 2 10
+| device dffposZ.nmos_5 250 450
+n net_3 dffposZ.net_2 dffposZ.net_4 2 10
+| device dffposZ.pmos_2 250 350
+p net_5 dffposZ.net_10 dffposZ.net_4 2 20
+| device dffposZ.pmos_3 250 270
+p net_1 vdd dffposZ.net_10 2 20
+| device dffposZ.nmos_6 1100 70
+n Out gnd dffposZ.net_11 2 10
+| device dffposZ.nmos_7 1100 -10
+n net_3 dffposZ.net_11 dffposZ.net_3 2 10
+| device dffposZ.pmos_4 1100 -110
+p net_5 dffposZ.net_5 dffposZ.net_3 2 20
+| device dffposZ.pmos_5 1100 -190
+p Out vdd dffposZ.net_5 2 20
+| device dffposZ.pmos_6 420 -100
+p dffposZ.net_1 vdd dffposZ.net_9 2 20
+| device dffposZ.pmos_7 420 -20
+p net_3 dffposZ.net_9 dffposZ.net_4 2 20
+| device dffposZ.nmos_8 510 440
+n dffposZ.net_4 gnd dffposZ.net_1 2 10
+| device dffposZ.pmos_8 510 360
+p dffposZ.net_4 vdd dffposZ.net_1 2 20
+| device dffposZ.pmos_9 1190 280
+p dffposZ.net_3 vdd dffposZ.net_7 2 20
+| device dffposZ.pmos_10 1190 360
+p dffposZ.net_3 dffposZ.net_7 Out 2 20
+| device dffposZ.nmos_9 1190 440
+n dffposZ.net_3 dffposZ.net_8 Out 2 10
+| device dffposZ.nmos_10 1190 520
+n dffposZ.net_3 gnd dffposZ.net_8 2 10
+| end dffposZ

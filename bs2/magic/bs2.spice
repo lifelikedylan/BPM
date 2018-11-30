@@ -1,0 +1,121 @@
+* SPICE3 file created from bs2.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 dffpos_0/a_35_65# dffpos_0/clk_b gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=540 ps=298
+M1001 dffpos_0/clk dffpos_0/clk_b dffpos_0/a_35_65# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1002 dffpos_0/a_56_65# dffpos_0/D gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1003 dffpos_0/a_61_9# dffpos_0/clk_b dffpos_0/a_56_65# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1004 dffpos_0/a_69_65# dffpos_0/clk dffpos_0/a_61_9# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1005 gnd dffpos_0/a_72_7# dffpos_0/a_69_65# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 dffpos_0/a_72_7# dffpos_0/a_61_9# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1007 dffpos_0/a_99_65# dffpos_0/a_72_7# gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1008 dffpos_0/a_104_9# dffpos_0/clk dffpos_0/a_99_65# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1009 dffpos_0/a_112_65# dffpos_0/clk_b dffpos_0/a_104_9# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1010 gnd Out dffpos_0/a_112_65# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 dffpos_0/a_126_65# dffpos_0/a_104_9# gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1012 Out dffpos_0/a_104_9# dffpos_0/a_126_65# Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1013 dffpos_0/a_35_9# dffpos_0/clk_b vdd Vdd pfet w=20 l=2
++  ad=60 pd=46 as=980 ps=458
+M1014 dffpos_0/clk dffpos_0/clk_b dffpos_0/a_35_9# Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1015 dffpos_0/a_56_9# dffpos_0/D vdd Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1016 dffpos_0/a_61_9# dffpos_0/clk dffpos_0/a_56_9# Vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1017 dffpos_0/a_69_9# dffpos_0/clk_b dffpos_0/a_61_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1018 vdd dffpos_0/a_72_7# dffpos_0/a_69_9# Vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 dffpos_0/a_72_7# dffpos_0/a_61_9# vdd Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1020 dffpos_0/a_99_9# dffpos_0/a_72_7# vdd Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1021 dffpos_0/a_104_9# dffpos_0/clk_b dffpos_0/a_99_9# Vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1022 dffpos_0/a_112_9# dffpos_0/clk dffpos_0/a_104_9# Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1023 vdd Out dffpos_0/a_112_9# Vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 dffpos_0/a_126_9# dffpos_0/a_104_9# vdd Vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1025 Out dffpos_0/a_104_9# dffpos_0/a_126_9# Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1026 dffpos_0/clk_b en vdd Vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1027 vdd clk dffpos_0/clk_b Vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 nand_0/a_9_6# en gnd Gnd nfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1029 dffpos_0/clk_b clk nand_0/a_9_6# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1030 bc1a_0/inverter_1/Y Init vdd Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1031 bc1a_0/inverter_1/Y Init gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1032 muxB_out Init reg_in Vdd pfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1033 mplier bc1a_0/inverter_1/Y muxB_out Vdd pfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1034 muxB_out bc1a_0/inverter_1/Y reg_in Gnd nfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1035 mplier Init muxB_out Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1036 dffpos_0/D bc1a_0/inverter_1/Y muxA_in Gnd nfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1037 muxB_in Init dffpos_0/D Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1038 dffpos_0/D Init muxA_in Vdd pfet w=10 l=2
++  ad=60 pd=32 as=50 ps=30
+M1039 muxB_in bc1a_0/inverter_1/Y dffpos_0/D Vdd pfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1040 a_52_99# q0 vdd Vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1041 muxA_out q0 gnd Vdd pfet w=10 l=2
++  ad=60 pd=32 as=466 ps=446
+M1042 mcand a_52_99# muxA_out Vdd pfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1043 muxA_out a_52_99# gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1044 mcand q0 muxA_out Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1045 a_52_99# q0 gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+C0 muxB_out gnd 7.783980fF
+C1 muxA_out gnd 6.411240fF
+C2 dffpos_0/D dffpos_0/clk 2.254440fF
+C3 mcand gnd! 6.304320fF
+C4 muxA_out gnd! 6.518700fF
+C5 a_52_99# gnd! 7.399800fF
+C6 q0 gnd! 6.610680fF
+C7 vdd gnd! 45.010797fF
+C8 muxB_in gnd! 5.148720fF
+C9 muxA_in gnd! 5.031720fF
+C10 mplier gnd! 5.055840fF
+C11 muxB_out gnd! 8.253270fF
+C12 reg_in gnd! 4.572000fF
+C13 Init gnd! 13.352440fF
+C14 bc1a_0/inverter_1/Y gnd! 11.778479fF
+C15 clk gnd! 7.643160fF
+C16 en gnd! 7.477650fF
+C17 dffpos_0/a_104_9# gnd! 4.015080fF
+C18 Out gnd! 5.723640fF
+C19 dffpos_0/a_61_9# gnd! 3.452040fF
+C20 dffpos_0/a_72_7# gnd! 4.794840fF
+C21 dffpos_0/clk gnd! 7.541550fF
+C22 dffpos_0/D gnd! 6.960150fF
+C23 dffpos_0/clk_b gnd! 9.353609fF
+C24 gnd gnd! 36.622801fF

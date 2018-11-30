@@ -37,4 +37,4 @@ set auto_index(SCHEMATIC_andZ) [list source [file join $dir andZ.sue]]
 set auto_index(ICON_andZ) [list source [file join $dir andZ.sue]]
 set auto_index(SCHEMATIC_reg8) [list source [file join $dir reg8.sue]]
 set auto_index(ICON_reg8) [list source [file join $dir reg8.sue]]
-set mtimes {{top.sue 1542162682} {and.sue 1542162682} {dffpos.sue 1542162682} {mux21.sue 1542162682} {dffposZ.sue 1543441761} {mux21x8.sue 1542162682} {inv.sue 1542162682} {mux21x4.sue 1542162682} {bit1a.sue 1543442766} {rca4.sue 1542162682} {FA.sue 1542162682} {bit1b.sue 1542162682} {nand.sue 1542162682} {andZ.sue 1543441993} {reg8.sue 1542162682}}
+set mtimes {{top.sue 1542162682} {and.sue 1542162682} {dffpos.sue 1542162682} {mux21.sue 1542162682} {dffposZ.sue 1543441761} {mux21x8.sue 1542162682} {inv.sue 1542162682} {mux21x4.sue 1542162682} {bit1a.sue 1543617157} {rca4.sue 1542162682} {FA.sue 1542162682} {bit1b.sue 1542162682} {nand.sue 1542162682} {andZ.sue 1543441993} {reg8.sue 1542162682}}

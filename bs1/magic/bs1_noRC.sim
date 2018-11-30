@@ -9,9 +9,9 @@ n dffpos_0/a_61_9# gnd dffpos_0/a_72_7# 2 10 138 65
 n dffpos_0/a_72_7# gnd dffpos_0/a_99_65# 2 10 154 65
 n dffpos_0/clk dffpos_0/a_99_65# dffpos_0/a_104_9# 2 10 159 65
 n dffpos_0/clk_b dffpos_0/a_104_9# dffpos_0/a_112_65# 2 10 167 65
-n dffpos_0/Q dffpos_0/a_112_65# gnd 2 10 172 65
+n Out dffpos_0/a_112_65# gnd 2 10 172 65
 n dffpos_0/a_104_9# gnd dffpos_0/a_126_65# 2 10 181 65
-n dffpos_0/a_104_9# dffpos_0/a_126_65# dffpos_0/Q 2 10 186 65
+n dffpos_0/a_104_9# dffpos_0/a_126_65# Out 2 10 186 65
 p dffpos_0/clk_b vdd dffpos_0/a_35_9# 2 20 90 9
 p dffpos_0/clk_b dffpos_0/a_35_9# dffpos_0/clk 2 20 95 9
 p dffpos_0/D vdd dffpos_0/a_56_9# 2 20 111 9
@@ -22,9 +22,9 @@ p dffpos_0/a_61_9# vdd dffpos_0/a_72_7# 2 20 138 9
 p dffpos_0/a_72_7# vdd dffpos_0/a_99_9# 2 20 154 9
 p dffpos_0/clk_b dffpos_0/a_99_9# dffpos_0/a_104_9# 2 20 159 9
 p dffpos_0/clk dffpos_0/a_104_9# dffpos_0/a_112_9# 2 20 167 9
-p dffpos_0/Q dffpos_0/a_112_9# vdd 2 20 172 9
+p Out dffpos_0/a_112_9# vdd 2 20 172 9
 p dffpos_0/a_104_9# vdd dffpos_0/a_126_9# 2 20 181 9
-p dffpos_0/a_104_9# dffpos_0/a_126_9# dffpos_0/Q 2 20 186 9
+p dffpos_0/a_104_9# dffpos_0/a_126_9# Out 2 20 186 9
 p en vdd dffpos_0/clk_b 2 20 66 28
 p clk dffpos_0/clk_b vdd 2 20 74 28
 n en gnd nand_0/a_9_6# 2 20 66 74

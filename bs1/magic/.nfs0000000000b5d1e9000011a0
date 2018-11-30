@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1543616260
+timestamp 1543348710
 << metal1 >>
 rect -31 174 214 177
 rect -31 168 -1 174
@@ -82,7 +82,7 @@ rlabel metal1 -12 147 -12 147 3 fa_in
 rlabel metal1 -12 101 -12 101 3 reg_in
 rlabel metal1 -12 51 -12 51 3 muxB_in
 rlabel metal1 -12 44 -12 44 3 muxA_in
+rlabel metal1 212 -1 212 -1 7 Out
 rlabel metal2 154 175 154 175 0 Cin
 rlabel metal2 154 -2 154 -2 0 Cout
-rlabel metal2 212 -1 212 -1 0 Out
 << end >>

@@ -1,4 +1,4 @@
-timestamp 1543348343
+timestamp 1543618541
 version 8.0
 tech scmos
 style AMI0.5um(amic5)from:T01X
@@ -7,7 +7,6 @@ resistclasses 82100 102500 827000 827000 1 26000 26500 26500 90 90 50
 use ../../bc1a/magic/bc1a bc1a_0 1 0 0 0 1 12
 use ../../nand/magic/nand nand_0 1 0 59 0 -1 81
 use ../../dffpos/magic/dffpos dffpos_0 1 0 57 0 1 0
-node "m2_n43_n3#" 6 5365.8 -43 -3 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1028 522 0 0
 node "m2_58_71#" 1 1546.92 58 71 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116 66 0 0
 node "vdd" 3 20901.6 -43 -3 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2283 542 0 0 0 0
 node "en" 2 5155.92 -27 17 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 86 208 120 0 0
@@ -31,20 +30,19 @@ node "a_45_91#" 2340 22132.8 45 91 poc 100 60 114 94 0 0 0 0 0 0 0 0 0 0 0 0 308
 node "a_52_99#" 1487 7399.8 52 99 ndif 50 30 100 50 0 0 0 0 0 0 148 148 0 0 0 0 440 236 140 78 0 0
 node "q0" 1810 6610.68 46 131 pc 0 0 0 0 0 0 0 0 0 0 294 290 0 0 0 0 164 106 332 174 0 0
 node "vdd" 1557 20570.4 45 145 pdc 64 64 100 50 0 0 0 0 0 0 0 0 0 0 0 0 2153 590 16 16 0 0
-cap "a_45_91#" "muxB_out" 7575.9
-cap "mcand" "m1_23_128#" 176.16
-cap "muxA_out" "mcand" 303.36
-cap "a_45_91#" "mcand" 303.36
 cap "a_45_91#" "muxA_out" 6411.24
-cap "a_52_99#" "mcand" 876
-cap "a_52_99#" "muxA_out" 484.8
-cap "q0" "mcand" 589.32
-cap "a_52_99#" "a_45_91#" 303.36
 cap "q0" "muxA_out" 269.28
-cap "q0" "a_52_99#" 534.12
+cap "a_45_91#" "a_52_99#" 303.36
 cap "vdd" "q0" 939.99
-cap "vdd" "m2_n43_n3#" 7136.58
-cap "m1_66_48#" "m1_67_38#" 259.32
+cap "q0" "a_52_99#" 534.12
+cap "a_45_91#" "muxB_out" 7575.9
+cap "a_45_91#" "mcand" 303.36
+cap "mcand" "q0" 589.32
+cap "m1_23_128#" "mcand" 176.16
+cap "m1_67_38#" "m1_66_48#" 259.32
+cap "a_52_99#" "muxA_out" 484.8
+cap "mcand" "muxA_out" 303.36
+cap "mcand" "a_52_99#" 876
 fet nfet 50 99 51 100 20 24 "Gnd!" "q0" 4 0 "a_45_91#" 10 0 "a_52_99#" 10 0
 fet nfet 74 109 75 110 20 24 "Gnd!" "q0" 4 0 "muxA_out" 10 0 "mcand" 10 0
 fet nfet 66 109 67 110 20 24 "Gnd!" "a_52_99#" 4 0 "a_45_91#" 10 0 "muxA_out" 10 0
@@ -55,33 +53,33 @@ cap "vdd" "en" 58.68
 cap "vdd" "clk" 58.68
 cap "bc1a_0/inverter_1/A" "en" 64.8
 cap "bc1a_0/inverter_1/A" "clk" 64.8
+cap "gnd" "muxB_out" 143.82
 cap "bc1a_0/inverter_1/Y" "en" 58.68
 cap "bc1a_0/inverter_1/Y" "clk" 58.68
-cap "gnd" "muxB_out" 143.82
 cap "bc1a_0/inverter_1/Y" "gnd" -5.68434e-14
-cap "nand_0/a_9_52#" "bc1a_0/a_38_7#" 58.68
-cap "bc1a_0/m2_30_5#" "bc1a_0/a_31_n11#" 58.68
-cap "bc1a_0/m2_30_12#" "bc1a_0/a_31_n11#" 61.2
 cap "bc1a_0/gnd" "muxB_out" 64.26
-cap "bc1a_0/m2_30_5#" "bc1a_0/m2_30_12#" 49.5
-cap "nand_0/a_9_52#" "bc1a_0/m2_30_5#" 176.04
-cap "bc1a_0/a_38_7#" "bc1a_0/m2_30_12#" 15.84
 cap "bc1a_0/a_38_7#" "nand_0/a_9_6#" 29.16
-cap "bc1a_0/a_38_7#" "bc1a_0/m2_30_5#" 15.84
-cap "bc1a_0/a_38_7#" "bc1a_0/gnd" 58.68
-cap "dffpos_0/a_28_65#" "muxA_out" 2.84217e-14
-cap "dffpos_0/a_28_65#" "muxB_out" 1.13687e-13
-cap "mcand" "bc1a_0/mux21_0/Sel_bar" 48.96
-cap "mcand" "mplier" 48.96
-cap "mcand" "reg_in" 48.96
-cap "mcand" "Init" 64.8
+cap "nand_0/a_9_52#" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/gnd" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/m2_30_5#" "bc1a_0/m2_30_12#" 49.5
+cap "bc1a_0/m2_30_12#" "bc1a_0/a_31_n11#" 61.2
+cap "bc1a_0/m2_30_5#" "bc1a_0/a_31_n11#" 58.68
+cap "bc1a_0/m2_30_5#" "nand_0/a_9_52#" 176.04
+cap "bc1a_0/m2_30_12#" "bc1a_0/a_38_7#" 15.84
+cap "bc1a_0/m2_30_5#" "bc1a_0/a_38_7#" 15.84
+cap "muxA_out" "dffpos_0/a_28_65#" 2.84217e-14
+cap "muxB_out" "dffpos_0/a_28_65#" 1.13687e-13
+cap "mplier" "mcand" 48.96
 cap "bc1a_0/mux21_0/Out" "mplier" 48.96
-cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/mux21_0/Out" 40.68
-cap "reg_in" "mplier" 48.96
-cap "q0" "mplier" 48.96
-cap "q0" "bc1a_0/mux21_0/Out" 48.96
-cap "Init" "mplier" 72.72
-cap "Init" "bc1a_0/mux21_0/Out" 7.92
+cap "mcand" "bc1a_0/mux21_0/Sel_bar" 48.96
+cap "mcand" "reg_in" 48.96
+cap "bc1a_0/mux21_0/Out" "bc1a_0/mux21_0/Sel_bar" 40.68
+cap "mplier" "reg_in" 48.96
+cap "mplier" "q0" 48.96
+cap "mplier" "Init" 72.72
+cap "mcand" "Init" 64.8
+cap "bc1a_0/mux21_0/Out" "Init" 7.92
+cap "bc1a_0/mux21_0/Out" "q0" 48.96
 cap "q0" "bc1a_0/mux21_0/Sel_bar" 48.96
 cap "q0" "reg_in" 48.96
 cap "q0" "Init" 64.8

@@ -2,8 +2,8 @@
 lvs_LvsOutFile RUNDIR /home/dshadoa/Desktop/BPM/bs1/lvs
 lvs_LvsfVersion 2
 lvs_LvsInputSummary {0 0 0}
-lvs_LvsComparisonSummary {5 0 3 0}
+lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT bs1.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/bs1/lvs/./../../top_dont_implement/bit1a.sp
 lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/bs1/lvs/./_calibreLVS_scn3me_subm.rul_
-lvs_LvsRunTimes 1543443291 1543443291
+lvs_LvsRunTimes 1543618648 1543618648
