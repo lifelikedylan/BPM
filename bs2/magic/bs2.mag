@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1543618541
+timestamp 1543628271
 << ntransistor >>
 rect 66 109 68 119
 rect 74 109 76 119
@@ -66,11 +66,11 @@ rect 46 131 50 135
 rect 84 141 88 145
 rect 84 101 88 105
 << metal1 >>
-rect -43 174 214 177
-rect -43 173 -1 174
-rect -43 169 -41 173
+rect -46 174 214 177
+rect -46 173 -1 174
+rect -46 169 -41 173
 rect -37 169 -1 173
-rect -43 168 -1 169
+rect -46 168 -1 169
 rect 41 173 214 174
 rect 41 169 45 173
 rect 49 169 53 173
@@ -95,7 +95,7 @@ rect 77 132 81 145
 rect 77 119 81 128
 rect 84 139 88 141
 rect 84 105 88 135
-rect -43 89 -1 96
+rect -46 89 -1 96
 rect 44 95 214 96
 rect 44 91 45 95
 rect 49 91 53 95
@@ -103,9 +103,9 @@ rect 57 91 64 95
 rect 68 91 77 95
 rect 81 91 214 95
 rect 52 89 214 91
-rect -43 85 -34 89
+rect -46 85 -34 89
 rect -30 85 -1 89
-rect -43 78 -1 85
+rect -46 78 -1 85
 rect 64 83 214 89
 rect 64 78 87 83
 rect 93 78 214 83
@@ -119,9 +119,9 @@ rect 193 42 214 47
 rect 67 38 71 42
 rect -16 24 8 28
 rect -23 17 8 21
-rect -43 1 87 6
+rect -45 1 87 6
 rect 93 1 214 6
-rect -43 -3 214 1
+rect -45 -3 214 1
 << m2contact >>
 rect -41 169 -37 173
 rect 62 160 66 164
@@ -169,11 +169,11 @@ use ../../bc1a/magic/bc1a  bc1a_0 ../../bc1a/magic
 timestamp 1543295583
 transform 1 0 0 0 1 12
 box -1 -12 64 162
-use ../../nand/magic/nand  nand_0 ../../nand/magic
+use ../../nand/magic/nand  nand_0
 timestamp 1543290081
 transform 1 0 59 0 -1 81
 box -4 -3 28 81
-use ../../dffpos/magic/dffpos  dffpos_0 ../../dffpos/magic
+use ../../dffpos/magic/dffpos  dffpos_0
 timestamp 1543271063
 transform 1 0 57 0 1 0
 box 18 0 139 84

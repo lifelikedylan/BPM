@@ -3,7 +3,6 @@
 proc SCHEMATIC_bit1a {} {
   make mux21 -origin {290 330}
   make FA -origin {300 430}
-  make dffpos -origin {300 760}
   make inv -origin {20 310}
   make output -name Cout -origin {480 450}
   make output -name Out -origin {490 680}
@@ -13,13 +12,13 @@ proc SCHEMATIC_bit1a {} {
   make input -name reg_in -origin {90 250}
   make mux21 -origin {300 630}
   make input -name fa_in -origin {140 430}
-  make inv -origin {50 610}
   make output -name add_out -origin {480 420}
   make input -name muxB_in -origin {100 570}
   make input -name muxA_in -origin {100 550}
-  make input -name en -origin {-50 720}
-  make and -origin {40 720}
-  make input -name clk -origin {-50 680}
+  make input -name en -origin {-70 710}
+  make input -name clk -origin {-70 670}
+  make andZ -origin {40 710}
+  make dffposZ -origin {300 760}
   make_wire 150 410 200 410
   make_wire 150 360 150 410
   make_wire 140 430 200 430
@@ -27,20 +26,12 @@ proc SCHEMATIC_bit1a {} {
   make_wire 400 450 480 450
   make_wire 60 450 200 450
   make_wire 390 250 430 250
-  make_wire 120 310 190 310
   make_wire 90 250 190 250
   make_wire 190 270 -50 270
   make_wire -50 270 -50 240
-  make_wire 150 710 200 710
   make_wire 400 680 490 680
   make_wire 400 550 430 550
   make_wire 430 550 430 640
-  make_wire 430 640 150 640
-  make_wire 150 640 150 710
-  make_wire 200 610 150 610
-  make_wire -20 610 30 610
-  make_wire -20 590 200 590
-  make_wire -20 590 -20 610
   make_wire -20 310 -20 590
   make_wire 430 250 430 360
   make_wire 150 360 430 360
@@ -50,11 +41,20 @@ proc SCHEMATIC_bit1a {} {
   make_wire 400 420 480 420
   make_wire 100 570 200 570
   make_wire 100 550 200 550
-  make_wire -50 680 -20 680
-  make_wire -50 720 -20 720
-  make_wire 100 720 130 720
-  make_wire 130 720 130 680
-  make_wire 130 680 200 680
+  make_wire 150 640 150 690
+  make_wire 150 640 430 640
+  make_wire -20 590 200 590
+  make_wire 160 310 160 610
+  make_wire 160 610 200 610
+  make_wire 160 310 120 310
+  make_wire 160 310 190 310
+  make_wire 200 670 120 670
+  make_wire 120 750 180 750
+  make_wire -70 710 -40 710
+  make_wire -70 670 -40 670
+  make_wire 180 710 180 750
+  make_wire 200 710 180 710
+  make_wire 200 690 150 690
 }
 
 proc ICON_bit1a args {

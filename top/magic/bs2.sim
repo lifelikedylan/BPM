@@ -1,0 +1,102 @@
+| units: 30 tech: scmos format: MIT
+n dffpos_0/clk_b gnd dffpos_0/a_35_65# 2 10 90 65
+n dffpos_0/clk_b dffpos_0/a_35_65# dffpos_0/clk 2 10 95 65
+n dffpos_0/D gnd dffpos_0/a_56_65# 2 10 111 65
+n dffpos_0/clk_b dffpos_0/a_56_65# dffpos_0/a_61_9# 2 10 116 65
+n dffpos_0/clk dffpos_0/a_61_9# dffpos_0/a_69_65# 2 10 124 65
+n dffpos_0/a_72_7# dffpos_0/a_69_65# gnd 2 10 129 65
+n dffpos_0/a_61_9# gnd dffpos_0/a_72_7# 2 10 138 65
+n dffpos_0/a_72_7# gnd dffpos_0/a_99_65# 2 10 154 65
+n dffpos_0/clk dffpos_0/a_99_65# dffpos_0/a_104_9# 2 10 159 65
+n dffpos_0/clk_b dffpos_0/a_104_9# dffpos_0/a_112_65# 2 10 167 65
+n Out dffpos_0/a_112_65# gnd 2 10 172 65
+n dffpos_0/a_104_9# gnd dffpos_0/a_126_65# 2 10 181 65
+n dffpos_0/a_104_9# dffpos_0/a_126_65# Out 2 10 186 65
+p dffpos_0/clk_b vdd dffpos_0/a_35_9# 2 20 90 9
+p dffpos_0/clk_b dffpos_0/a_35_9# dffpos_0/clk 2 20 95 9
+p dffpos_0/D vdd dffpos_0/a_56_9# 2 20 111 9
+p dffpos_0/clk dffpos_0/a_56_9# dffpos_0/a_61_9# 2 20 116 9
+p dffpos_0/clk_b dffpos_0/a_61_9# dffpos_0/a_69_9# 2 20 124 9
+p dffpos_0/a_72_7# dffpos_0/a_69_9# vdd 2 20 129 9
+p dffpos_0/a_61_9# vdd dffpos_0/a_72_7# 2 20 138 9
+p dffpos_0/a_72_7# vdd dffpos_0/a_99_9# 2 20 154 9
+p dffpos_0/clk_b dffpos_0/a_99_9# dffpos_0/a_104_9# 2 20 159 9
+p dffpos_0/clk dffpos_0/a_104_9# dffpos_0/a_112_9# 2 20 167 9
+p Out dffpos_0/a_112_9# vdd 2 20 172 9
+p dffpos_0/a_104_9# vdd dffpos_0/a_126_9# 2 20 181 9
+p dffpos_0/a_104_9# dffpos_0/a_126_9# Out 2 20 186 9
+p en vdd dffpos_0/clk_b 2 20 66 28
+p clk dffpos_0/clk_b vdd 2 20 74 28
+n en gnd nand_0/a_9_6# 2 20 66 74
+n clk nand_0/a_9_6# dffpos_0/clk_b 2 20 71 74
+p Init vdd bc1a_0/inverter_1/Y 2 20 20 28
+n Init gnd bc1a_0/inverter_1/Y 2 10 20 74
+p Init Out muxB_in 2 10 20 145
+p bc1a_0/inverter_1/Y muxB_in mplier 2 10 28 145
+n bc1a_0/inverter_1/Y Out muxB_in 2 10 20 109
+n Init muxB_in mplier 2 10 28 109
+n bc1a_0/inverter_1/Y muxA_in dffpos_0/D 2 10 36 55
+n Init dffpos_0/D muxB_in 2 10 44 55
+p Init muxA_in dffpos_0/D 2 10 36 19
+p bc1a_0/inverter_1/Y dffpos_0/D muxB_in 2 10 44 19
+p q0 vdd a_52_99# 2 20 50 145
+p q0 gnd muxA_out 2 10 66 145
+p a_52_99# muxA_out mcand 2 10 74 145
+n a_52_99# gnd muxA_out 2 10 66 109
+n q0 muxA_out mcand 2 10 74 109
+n q0 gnd a_52_99# 2 10 50 99
+C dffpos_0/D dffpos_0/clk 2.254440
+C gnd muxA_out 2.296470
+C mcand GND 8.794080
+R mcand 373
+C muxA_out GND 4.703610
+R muxA_out 310
+C a_52_99# GND 7.399800
+R a_52_99# 1487
+C q0 GND 12.861000
+R q0 1814
+C clk GND 10.136520
+R clk 954
+C vdd GND 53.604695
+R vdd 13664
+C muxA_in GND 9.437399
+R muxA_in 375
+C mplier GND 2.239920
+R mplier 371
+C muxB_in GND 12.985920
+R muxB_in 1223
+C Init GND 13.238681
+R Init 2711
+C bc1a_0/inverter_1/Y GND 11.778479
+R bc1a_0/inverter_1/Y 2128
+R nand_0/a_9_6# 547
+C en GND 10.362309
+R en 915
+R dffpos_0/a_126_9# 683
+R dffpos_0/a_112_9# 683
+R dffpos_0/a_99_9# 683
+R dffpos_0/a_69_9# 683
+R dffpos_0/a_56_9# 683
+R dffpos_0/a_35_9# 683
+R dffpos_0/a_126_65# 274
+R dffpos_0/a_112_65# 274
+R dffpos_0/a_99_65# 274
+R dffpos_0/a_69_65# 274
+R dffpos_0/a_56_65# 274
+R dffpos_0/a_35_65# 274
+C dffpos_0/a_104_9# GND 4.015080
+R dffpos_0/a_104_9# 1989
+C Out GND 12.704761
+R Out 2355
+C dffpos_0/a_61_9# GND 3.452040
+R dffpos_0/a_61_9# 1390
+C dffpos_0/a_72_7# GND 4.794840
+R dffpos_0/a_72_7# 2786
+C dffpos_0/clk GND 7.541550
+R dffpos_0/clk 2607
+C dffpos_0/D GND 6.984990
+R dffpos_0/D 1483
+C dffpos_0/clk_b GND 9.353609
+R dffpos_0/clk_b 4263
+C gnd GND 43.963902
+R gnd 13948

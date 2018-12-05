@@ -1,0 +1,30 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         top.lvs.report.ext
+LAYOUT NAME:              /home/dshadoa/Desktop/BPM/top/lvs/./../magic/top.gds ('top')
+CREATION TIME:            Tue Dec  4 19:37:24 2018
+CURRENT DIRECTORY:        /home/dshadoa/Desktop/BPM/top/lvs
+USER NAME:                dshadoa
+CALIBRE VERSION:          v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
+
+
+
+Extraction Errors and Warnings for cell "bs2"
+---------------------------------------------
+
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  7
+          (1)  name  "muxB_in"  at location  (5.1,16.2)  on layer  51 "metal2"
+          (2)  name  "muxB_out"  at location  (-1.2,51.6)  on layer  51 "metal2"
+          The name "muxB_in" was assigned to the net.
+
+

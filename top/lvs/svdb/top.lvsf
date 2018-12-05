@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/dshadoa/Desktop/BPM/top/lvs
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT top.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/top/lvs/./../../datapath8/sue/top.sp
+lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/top/lvs/./_calibreLVS_scn3me_subm.rul_
+lvs_LvsRunTimes 1543973844 1543973845

@@ -1,0 +1,151 @@
+timestamp 1543950581
+version 8.0
+tech scmos
+style AMI0.5um(amic5)from:T01X
+scale 1000 1 30
+resistclasses 82100 102500 827000 827000 1 26000 26500 26500 90 90 50
+use ../../fa/magic/fa fa_0 1 0 39 0 1 90
+use ../../bc1a/magic/bc1a bc1a_0 1 0 0 0 1 12
+use ../../nand/magic/nand nand_0 1 0 59 0 -1 81
+use ../../dffpos/magic/dffpos dffpos_0 1 0 57 0 1 0
+node "Cout" 3 3335.04 152 -3 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 580 298 0 0
+node "Init" 0 349.92 1 -3 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0
+node "m2_58_71#" 1 1546.92 58 71 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116 66 0 0
+node "m2_65_119#" 0 349.92 65 119 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "fa_in" 2 4446.39 160 130 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 237 126 280 94
+node "add_out" 1 1897.92 203 171 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141 78 49 28
+node "Cin" 0 206.28 152 173 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_1_164#" 0 637.2 1 164 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0
+node "vdd" 3 19792.8 -24 -3 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2157 514 0 0 0 0
+node "en" 6 11491.9 -21 17 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132 74 912 472 0 0
+node "clk" 6 10872 -14 24 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104 60 912 472 0 0
+node "m1_67_38#" 0 432 67 38 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "m1_61_38#" 0 1419.12 61 38 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 72 44 0 0
+node "muxA_in" 3 6614.52 -6 42 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 169 92 1568 462
+node "m1_66_48#" 1 2459.52 66 48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 164 90 0 0
+node "m1_86_54#" 0 248.4 86 54 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0
+node "m1_1_53#" 1 1717.2 1 53 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 58 0 0 0 0
+node "m1_64_78#" 1 18266.4 64 78 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2760 356 0 0 0 0
+node "gnd" 0 3409.2 -24 78 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 414 82 0 0 0 0
+node "m1_31_96#" 0 982.8 31 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0 0 0
+node "Out" 6 6636.06 15 105 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 84 890 460 0 0
+node "m1_23_128#" 1 2376.72 23 128 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 152 84 0 0
+node "vdd" 7 15714 -24 168 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 933 528 0 0 0 0
+cap "Cout" "m1_64_78#" 479.52
+cap "muxA_in" "clk" 303.36
+cap "clk" "vdd" 459.96
+cap "clk" "vdd" 459.96
+cap "clk" "en" 303.36
+cap "muxA_in" "vdd" 5146.56
+cap "muxA_in" "en" 303.36
+cap "add_out" "vdd" 364.62
+cap "Cin" "vdd" 195.72
+cap "m1_67_38#" "m1_66_48#" 259.32
+cap "m2_1_164#" "vdd" 195.72
+cap "en" "vdd" 459.96
+cap "clk" "gnd" 919.92
+cap "en" "vdd" 459.96
+cap "gnd" "en" 919.92
+cap "Out" "m1_31_96#" 223.86
+cap "muxA_in" "Cout" 2228.7
+cap "muxA_in" "Init" 385.44
+cap "fa_in" "m1_64_78#" 186.84
+cap "Out" "m1_64_78#" 6116.64
+cap "vdd" "Cout" 2926.2
+cap "vdd" "Init" 459.96
+cap "Out" "Cout" 303.36
+cap "bc1a_0/a_in" "nand_0/a_9_52#" 19.8
+cap "en" "nand_0/a_9_52#" 176.04
+cap "bc1a_0/a_in" "vdd" 63.45
+cap "clk" "vdd" 119.88
+cap "bc1a_0/a_38_7#" "nand_0/a_9_52#" 34.2
+cap "bc1a_0/a_38_7#" "nand_0/a_9_6#" 29.16
+cap "en" "vdd" 117.36
+cap "Init" "bc1a_0/a_in" 121.14
+cap "en" "bc1a_0/a_in" 10.08
+cap "clk" "bc1a_0/a_in" 10.08
+cap "clk" "bc1a_0/a_38_7#" 15.84
+cap "en" "bc1a_0/a_38_7#" 15.84
+cap "en" "clk" 49.5
+cap "Init" "en" 64.8
+cap "Init" "clk" 64.8
+cap "gnd" "Out" 330.48
+cap "bc1a_0/inverter_1/Y" "clk" 58.68
+cap "gnd" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/inverter_1/Y" "bc1a_0/a_in" 8.19
+cap "gnd" "en" 2.84217e-14
+cap "bc1a_0/inverter_1/Y" "en" 58.68
+cap "gnd" "Init" 306
+cap "bc1a_0/inverter_1/Y" "gnd" -5.68434e-14
+cap "nand_0/a_9_52#" "dffpos_0/D" 24.48
+cap "dffpos_0/a_69_9#" "muxA_in" 10.26
+cap "dffpos_0/a_56_9#" "muxA_in" 10.26
+cap "muxA_in" "dffpos_0/a_112_9#" 10.26
+cap "muxA_in" "dffpos_0/a_99_9#" 10.26
+cap "muxA_in" "nand_0/vdd" 221.58
+cap "muxA_in" "dffpos_0/Q" 10.08
+cap "muxA_in" "dffpos_0/a_104_9#" 19.8
+cap "muxA_in" "dffpos_0/a_61_9#" 29.88
+cap "muxA_in" "dffpos_0/a_72_7#" 36.54
+cap "muxA_in" "dffpos_0/D" 10.08
+cap "muxA_in" "dffpos_0/clk" 36.54
+cap "muxA_in" "nand_0/a_9_52#" 40.32
+cap "dffpos_0/a_35_9#" "muxA_in" 10.26
+cap "muxA_in" "dffpos_0/a_126_9#" 10.26
+cap "muxA_in" "dffpos_0/a_28_9#" 35.82
+cap "muxA_in" "Out" 16.38
+cap "muxA_in" "dffpos_0/a_104_9#" 20.16
+cap "fa_0/gnd" "Cout" 48.96
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/mux21_0/Out" 48.96
+cap "bc1a_0/mux21_0/in_1" "bc1a_0/mux21_0/Out" 48.96
+cap "bc1a_0/reg_in" "bc1a_0/mux21_0/sel" 7.92
+cap "vdd" "bc1a_0/mux21_0/sel" 73.44
+cap "bc1a_0/reg_in" "bc1a_0/mux21_0/in_1" 146.88
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/reg_in" 56.52
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/mux21_0/in_1" 38.88
+cap "fa_0/b" "fa_0/a" 15.84
+cap "fa_0/b" "fa_0/a_106_9#" 36.72
+cap "fa_in" "fa_0/a_37_9#" 15.84
+cap "fa_in" "fa_0/a_106_9#" 15.84
+cap "add_out" "fa_0/c_out" 281.52
+cap "add_out" "fa_0/vdd" 97.2
+cap "fa_in" "fa_0/c_out" 48.96
+cap "fa_in" "add_out" 48.96
+merge "fa_0/b" "m2_65_119#" -886.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -36 0 0
+merge "m2_65_119#" "fa_in"
+merge "nand_0/A" "bc1a_0/m2_30_5#" -5519.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 -10 -284 -232 0 0
+merge "bc1a_0/m2_30_5#" "en"
+merge "en" "m1_66_48#"
+merge "dffpos_0/Q" "bc1a_0/reg_in" -4940.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 380 -278 0 0
+merge "bc1a_0/reg_in" "Out"
+merge "fa_0/a" "bc1a_0/mux21_0/Out" -689.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 -8 0 0
+merge "bc1a_0/mux21_0/Out" "m1_23_128#"
+merge "fa_0/vdd" "bc1a_0/m1_46_156#" -28512 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1368 -1008 0 0 0 0
+merge "bc1a_0/m1_46_156#" "bc1a_0/mux21_0/Vdd"
+merge "bc1a_0/mux21_0/Vdd" "dffpos_0/a_28_9#"
+merge "dffpos_0/a_28_9#" "nand_0/vdd"
+merge "nand_0/vdd" "bc1a_0/inverter_1/vdd"
+merge "bc1a_0/inverter_1/vdd" "vdd"
+merge "bc1a_0/mux21_0/sel" "m2_1_164#" -208.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "bc1a_0/mux21_0/in_1" "dffpos_0/a_28_65#" -24602.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1587 -806 0 0 0 0
+merge "dffpos_0/a_28_65#" "nand_0/gnd"
+merge "nand_0/gnd" "bc1a_0/b_in"
+merge "bc1a_0/b_in" "bc1a_0/gnd"
+merge "bc1a_0/gnd" "fa_0/gnd"
+merge "fa_0/gnd" "m1_64_78#"
+merge "m1_64_78#" "m1_31_96#"
+merge "m1_31_96#" "gnd"
+merge "gnd" "m1_1_53#"
+merge "fa_0/sum" "add_out" -466.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "fa_0/c_in" "Cin" -349.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0
+merge "dffpos_0/clk_b" "nand_0/a_9_52#" -1886.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82 -68 0 0 0 0
+merge "nand_0/a_9_52#" "m1_86_54#"
+merge "bc1a_0/inverter_1/A" "Init" -431.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "fa_0/c_out" "Cout" -5871.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -516 -266 0 0
+merge "bc1a_0/a_in" "muxA_in" -3913.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 -700 -200
+merge "nand_0/B" "bc1a_0/m2_30_12#" -6377.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -32 -428 -234 0 0
+merge "bc1a_0/m2_30_12#" "clk"
+merge "clk" "m1_61_38#"
+merge "m1_61_38#" "m1_67_38#"
+merge "dffpos_0/D" "bc1a_0/a_38_7#" -815.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -32 0 0
+merge "bc1a_0/a_38_7#" "m2_58_71#"

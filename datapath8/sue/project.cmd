@@ -47,7 +47,7 @@ l init
 l en
 c
 c
-assert Out 1011110110100101
+assert Out 1011110110100100
 
 
 

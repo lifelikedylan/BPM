@@ -1,0 +1,149 @@
+timestamp 1543950283
+version 8.0
+tech scmos
+style AMI0.5um(amic5)from:T01X
+scale 1000 1 30
+resistclasses 82100 102500 827000 827000 1 26000 26500 26500 90 90 50
+use ../../bc1a/magic/bc1a bc1a_0 1 0 0 0 1 12
+use ../../nand/magic/nand nand_0 1 0 59 0 -1 81
+use ../../dffpos/magic/dffpos dffpos_0 1 0 57 0 1 0
+node "Init" 0 349.92 1 -3 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0
+node "m2_58_71#" 1 1546.92 58 71 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116 66 0 0
+node "m2_1_164#" 0 637.2 1 164 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0
+node "en" 6 11859.1 -27 17 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 86 912 472 0 0
+node "clk" 6 11239.2 -20 24 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 72 912 472 0 0
+node "m1_67_38#" 0 432 67 38 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "m1_61_38#" 0 1419.12 61 38 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 72 44 0 0
+node "muxA_in" 1 2071.44 -6 42 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 196 106 0 0
+node "m1_66_48#" 1 2459.52 66 48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 164 90 0 0
+node "muxB_out" 3 5183.64 -6 49 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 512 264 0 0
+node "m1_86_54#" 0 248.4 86 54 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0
+node "gnd" 4 12917.5 -46 78 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 810 126 720 368 0 0
+node "Out" 7 13570.2 15 99 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 82 1128 572 0 0
+node "muxB_in" 2 3669.48 23 105 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 260 138 0 0
+node "mplier" 5 10376.3 31 121 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 536 284 256 136 0 0
+node "m1_23_128#" 0 432 23 128 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "mcand" 374 10792.1 76 109 ndif 50 30 50 30 0 0 0 0 0 0 0 0 0 0 0 0 704 368 72 44 0 0
+node "muxA_out" 310 4703.61 68 109 ndif 60 32 60 32 0 0 0 0 0 0 0 0 0 0 0 0 200 108 57 36 847 256
+node "a_45_91#" 2340 22914 45 91 poc 100 60 114 94 0 0 0 0 0 0 0 0 0 0 0 0 3208 544 0 0 0 0
+node "a_52_99#" 1487 7399.8 52 99 ndif 50 30 100 50 0 0 0 0 0 0 148 148 0 0 0 0 440 236 140 78 0 0
+node "q0" 1814 13168.4 46 131 pc 0 0 0 0 0 0 0 0 0 0 294 290 0 0 0 0 164 106 1052 542 0 0
+node "vdd" 1564 50109.1 45 145 pdc 64 64 100 50 0 0 0 0 0 0 0 0 0 0 0 0 4616 1172 720 368 0 0
+cap "clk" "en" 303.36
+cap "muxA_in" "en" 303.36
+cap "muxA_in" "clk" 303.36
+cap "m1_66_48#" "m1_67_38#" 259.32
+cap "gnd" "en" 919.92
+cap "gnd" "clk" 919.92
+cap "muxA_out" "en" 428.88
+cap "gnd" "muxB_out" 919.92
+cap "muxA_out" "clk" 428.88
+cap "vdd" "Init" 459.96
+cap "q0" "en" 303.36
+cap "vdd" "m2_1_164#" 195.72
+cap "q0" "clk" 303.36
+cap "vdd" "en" 919.92
+cap "vdd" "clk" 919.92
+cap "muxA_out" "muxB_out" 428.88
+cap "vdd" "muxA_in" 459.96
+cap "muxA_out" "gnd" 966
+cap "mcand" "Out" 352.68
+cap "muxA_out" "Out" 774.12
+cap "q0" "muxB_out" 303.36
+cap "muxA_out" "muxB_in" 428.88
+cap "mcand" "mplier" 303.36
+cap "a_45_91#" "Out" 1272.6
+cap "vdd" "muxB_out" 459.96
+cap "q0" "gnd" 919.92
+cap "muxA_out" "mplier" 303.36
+cap "a_52_99#" "Out" 788.16
+cap "a_45_91#" "mplier" 303.36
+cap "vdd" "gnd" 1839.84
+cap "q0" "Out" 362.88
+cap "a_52_99#" "mplier" 661.92
+cap "q0" "mplier" 481.2
+cap "a_45_91#" "muxA_out" 1277.01
+cap "a_52_99#" "mcand" 876
+cap "a_52_99#" "muxA_out" 794.97
+cap "a_52_99#" "a_45_91#" 303.36
+cap "q0" "muxA_out" 861.96
+cap "vdd" "muxA_out" 428.88
+cap "q0" "a_52_99#" 534.12
+cap "vdd" "q0" 1859.91
+fet nfet 50 99 51 100 20 24 "Gnd!" "q0" 4 0 "a_45_91#" 10 0 "a_52_99#" 10 0
+fet nfet 74 109 75 110 20 24 "Gnd!" "q0" 4 0 "muxA_out" 10 0 "mcand" 10 0
+fet nfet 66 109 67 110 20 24 "Gnd!" "a_52_99#" 4 0 "a_45_91#" 10 0 "muxA_out" 10 0
+fet pfet 74 145 75 146 20 24 "Vdd!" "a_52_99#" 4 0 "muxA_out" 10 0 "mcand" 10 0
+fet pfet 66 145 67 146 20 24 "Vdd!" "q0" 4 0 "a_45_91#" 10 0 "muxA_out" 10 0
+fet pfet 50 145 51 146 40 44 "Vdd!" "q0" 4 0 "vdd" 20 0 "a_52_99#" 20 0
+cap "Init" "muxA_out" 24.48
+cap "muxA_in" "en" -7.10543e-15
+cap "vdd" "clk" 58.68
+cap "vdd" "en" 58.68
+cap "bc1a_0/inverter_1/Y" "muxA_out" 24.48
+cap "gnd" "muxA_out" 53.46
+cap "Init" "vdd" -1.42109e-14
+cap "Init" "en" 64.8
+cap "Init" "clk" 64.8
+cap "bc1a_0/inverter_1/Y" "en" 58.68
+cap "bc1a_0/inverter_1/Y" "clk" 58.68
+cap "Init" "muxB_in" 48.96
+cap "gnd" "muxB_in" 477.36
+cap "gnd" "vdd" -2.84217e-14
+cap "bc1a_0/inverter_1/Y" "gnd" -5.68434e-14
+cap "bc1a_0/a_38_7#" "nand_0/a_9_6#" 29.16
+cap "nand_0/a_9_52#" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/gnd" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/m2_30_5#" "bc1a_0/a_31_n11#" 58.68
+cap "bc1a_0/m2_30_12#" "bc1a_0/a_31_n11#" 61.2
+cap "bc1a_0/m2_30_12#" "bc1a_0/a_38_7#" 15.84
+cap "bc1a_0/m2_30_5#" "bc1a_0/a_38_7#" 15.84
+cap "bc1a_0/m2_30_5#" "nand_0/a_9_52#" 176.04
+cap "bc1a_0/m2_30_5#" "bc1a_0/m2_30_12#" 49.5
+cap "Out" "dffpos_0/a_28_65#" 2.84217e-14
+cap "muxA_out" "bc1a_0/mux21_0/Sel_bar" 61.2
+cap "muxA_out" "bc1a_0/mux21_0/sel" 61.2
+cap "muxA_out" "bc1a_0/reg_in" 58.32
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/mux21_0/Out" 15.84
+cap "bc1a_0/reg_in" "bc1a_0/mux21_0/in_1" 58.68
+cap "bc1a_0/reg_in" "bc1a_0/mux21_0/Out" 68.4
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/reg_in" 64.8
+cap "q0" "bc1a_0/mux21_0/in_1" 48.96
+cap "bc1a_0/mux21_0/Sel_bar" "bc1a_0/mux21_0/in_1" 48.96
+cap "q0" "bc1a_0/mux21_0/Sel_bar" 48.96
+cap "q0" "bc1a_0/mux21_0/Out" 48.96
+cap "q0" "bc1a_0/reg_in" 48.96
+cap "bc1a_0/mux21_0/sel" "bc1a_0/reg_in" 15.84
+cap "q0" "bc1a_0/mux21_0/sel" 64.8
+cap "bc1a_0/mux21_0/Vdd" "bc1a_0/mux21_0/sel" 73.44
+merge "nand_0/A" "bc1a_0/m2_30_5#" -5916.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 -392 -232 0 0
+merge "bc1a_0/m2_30_5#" "en"
+merge "en" "m1_66_48#"
+merge "dffpos_0/Q" "bc1a_0/reg_in" -9065.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -26 -700 -350 0 0
+merge "bc1a_0/reg_in" "Out"
+merge "bc1a_0/mux21_0/sel" "m2_1_164#" -241.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "dffpos_0/a_28_65#" "bc1a_0/gnd" -13298.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -756 -452 0 0 0 0
+merge "bc1a_0/gnd" "a_45_91#"
+merge "a_45_91#" "gnd"
+merge "gnd" "nand_0/gnd"
+merge "bc1a_0/mux21_0/Out" "bc1a_0/b_in" -635.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -24 0 0 0 0
+merge "bc1a_0/b_in" "muxB_out"
+merge "muxB_out" "muxB_in"
+merge "muxB_in" "m1_23_128#"
+merge "dffpos_0/clk_b" "nand_0/a_9_52#" -1886.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82 -68 0 0 0 0
+merge "nand_0/a_9_52#" "m1_86_54#"
+merge "bc1a_0/m1_46_156#" "bc1a_0/mux21_0/Vdd" -19695.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1350 -634 0 0 0 0
+merge "bc1a_0/mux21_0/Vdd" "dffpos_0/a_28_9#"
+merge "dffpos_0/a_28_9#" "bc1a_0/a_31_n11#"
+merge "bc1a_0/a_31_n11#" "bc1a_0/inverter_1/vdd"
+merge "bc1a_0/inverter_1/vdd" "nand_0/vdd"
+merge "nand_0/vdd" "vdd"
+merge "bc1a_0/inverter_1/A" "Init" -224.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "bc1a_0/mux21_0/in_1" "mplier" -10251.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -524 -278 -164 -86 0 0
+merge "bc1a_0/a_in" "muxA_in" -187.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "bc1a_0/m2_30_12#" "clk" -5121.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 -332 -182 0 0
+merge "clk" "nand_0/B"
+merge "nand_0/B" "m1_61_38#"
+merge "m1_61_38#" "m1_67_38#"
+merge "dffpos_0/D" "bc1a_0/a_38_7#" -807.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -32 0 0
+merge "bc1a_0/a_38_7#" "m2_58_71#"
