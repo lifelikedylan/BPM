@@ -1,0 +1,221 @@
+module bpm_pad (q, cout, mplier, mcand, reset, clk);
+
+   output [15:0] q;
+   output 	 cout;   
+   
+   input  [7:0] mplier;
+   input  [7:0] mcand;
+   input  reset;
+   input  clk;
+
+   wire [7:0]  mplier_i, mcand_i;
+   wire [15:0] q_i;
+   wire        reset_i, clk_i, cout_i;
+
+   fsm f (done, reset, init, en, clk);
+
+   // Custom cell block:
+   bpm_custom custom (.cout(cout_i), 
+		.mplier_7(mplier[7]), .mplier_6(mplier[6]), 
+		.mplier_5(mplier[5]), .mplier_4(mplier[4]), 
+		.mplier_3(mplier[3]), .mplier_2(mplier[2]),
+		.mplier_1(mplier[1]), .mplier_0(mplier[0]),
+		.mcand_7(mcand[7]),   .mcand_6(mcand[6]), 
+		.mcand_5(mcand[5]),   .mcand_4(mcand[4]), 
+		.mcand_3(mcand[3]),   .mcand_2(mcand[2]),
+		.mcand_1(mcand[1]),   .mcand_0(mcand[0]),
+		.q_7(q_i[15]),        .q_6(q_i[14]), 
+		.q_5(q_i[13]),        .q_4(q_i[12]), 
+		.q_3(q_i[11]),        .q_2(q_i[10]),
+		.q_1(q_i[9]),         .q_0(q_i[8]),
+		.q_7(q_i[7]),         .q_6(q_i[6]), 
+		.q_5(q_i[5]),         .q_4(q_i[4]), 
+		.q_3(q_i[3]),         .q_2(q_i[2]),
+		.q_1(q_i[1]),         .q_0(q_i[0]));
+   
+   // Output register is 17-bits long to include Carry out in the result.
+   // flopr #(8) reg1 (clk_i, reset_i, q_i);
+
+   // Must have 40 pads
+   PADNC  p39 ();
+   PADOUT p38 (.DI(cout_i),  .YPAD(cout));
+   PADOUT p37 (.DI(q_i[15]), .YPAD(q[15]));
+   PADOUT p36 (.DI(q_i[14]), .YPAD(q[14]));
+   PADOUT p35 (.DI(q_i[13]), .YPAD(q[13]));
+   PADOUT p34 (.DI(q_i[12]), .YPAD(q[12]));
+   PADOUT p33 (.DI(q_i[11]), .YPAD(q[11]));
+   PADOUT p32 (.DI(q_i[10]), .YPAD(q[10]));
+   PADOUT p31 (.DI(q_i[9]),  .YPAD(q[9]));
+   PADOUT p30 (.DI(q_i[8]),  .YPAD(q[8]));
+   PADOUT p29 (.DI(q_i[7]),  .YPAD(q[7]));
+   PADOUT p28 (.DI(q_i[6]),  .YPAD(q[6]));
+   PADOUT p27 (.DI(q_i[5]),  .YPAD(q[5]));
+   PADOUT p26 (.DI(q_i[4]),  .YPAD(q[4]));
+   PADOUT p25 (.DI(q_i[3]),  .YPAD(q[3]));
+   PADOUT p24 (.DI(q_i[2]),  .YPAD(q[2]));
+   PADOUT p23 (.DI(q_i[1]),  .YPAD(q[1]));
+   PADOUT p22 (.DI(q_i[0]),  .YPAD(q[0]));
+   
+   // Power - must have at least VDD/GND
+   PADVDD p21 ();
+   PADGND p20 ();
+   
+   PADNC  p19 ();
+   PADNC  p18 ();
+   PADINC p17 (.DI(reset_i),     .YPAD(reset));
+   PADINC p16 (.DI(clk_i),       .YPAD(clk));
+   PADINC p15 (.DO(mcand_i[7]),  .YPAD(mcand[7]));
+   PADINC p14 (.DO(mcand_i[6]),  .YPAD(mcand[6]));
+   PADINC p13 (.DO(mcand_i[5]),  .YPAD(mcand[5]));
+   PADINC p12 (.DO(mcand_i[4]),  .YPAD(mcand[4]));
+   PADINC p11 (.DO(mcand_i[3]),  .YPAD(mcand[3]));
+   PADINC p10 (.DO(mcand_i[2]),  .YPAD(mcand[2]));
+   PADINC p09 (.DO(mcand_i[1]),  .YPAD(mcand[1]));
+   PADINC p08 (.DO(mcand_i[0]),  .YPAD(mcand[0]));
+   PADINC p07 (.DI(mplier_i[7]), .YPAD(mplier[7])); 
+   PADINC p06 (.DI(mplier_i[6]), .YPAD(mplier[6])); 
+   PADINC p05 (.DI(mplier_i[5]), .YPAD(mplier[5])); 
+   PADINC p04 (.DI(mplier_i[4]), .YPAD(mplier[4])); 
+   PADINC p03 (.DI(mplier_i[3]), .YPAD(mplier[3]));
+   PADINC p02 (.DI(mplier_i[2]), .YPAD(mplier[2])); 
+   PADINC p01 (.DI(mplier_i[1]), .YPAD(mplier[1])); 
+   PADINC p00 (.DI(mplier_i[0]), .YPAD(mplier[0]));   
+
+   // Corner Pads
+   PADFC c04 ();
+   PADFC c03 ();
+   PADFC c02 ();
+   PADFC c01 ();
+
+endmodule // bpm_pad
+
+module fsm (done, reset, init, en, clk);
+   
+   
+   output  init;
+   output  en;
+   output  done;   
+   input   clk;
+   input   reset;
+
+   reg     done;
+   reg     init;
+   reg     en;		
+
+   parameter [3:0] S0 = 4'd0,
+     S1 = 4'd1,
+     S2 = 4'd2,
+     S3 = 4'd3,
+     S4 = 4'd4,
+     S5 = 4'd5,
+     S6 = 4'd6,
+     S7 = 4'd7,
+     S8 = 4'd8;
+
+   logic [3:0] CURRENT_STATE;
+   logic [3:0] NEXT_STATE;
+
+   always @(posedge clk)
+     begin
+	if (reset == 1'b1)	
+	  CURRENT_STATE <=  S0;
+	else
+	  CURRENT_STATE <=  NEXT_STATE;
+     end
+
+   always @(CURRENT_STATE)
+     begin
+ 	case(CURRENT_STATE)	  
+	  S0:	
+	      begin
+		 init = 1'b1;		 
+	         en = 1'b1;		 
+		 done = 1'b0;
+		 NEXT_STATE <=  S1;
+	      end 		  
+	  S1:	
+	      begin
+		 init = 1'b0;		 
+	         en = 1'b1;
+		 done = 1'b0;
+		 NEXT_STATE <=  S2;
+	      end 	
+	  S2:	
+	      begin
+		 init = 1'b0;
+                  en = 1'b1;
+		 done = 1'b0;
+		 NEXT_STATE <=  S3;
+	      end 	
+
+	  S3:	
+	      begin
+		 init = 1'b0;		 
+	         en = 1'b1;		 
+		 done = 1'b0;
+		 NEXT_STATE <=  S4;
+	      end	
+
+	  S4:	
+	      begin
+		 init = 1'b0;		 
+	         en = 1'b1;		 
+		 done = 1'b0;
+		 NEXT_STATE <=  S5;
+	      end	
+
+	  S5:	
+	      begin
+		 init = 1'b0;
+                 en = 1'b1;
+		 done = 1'b0;
+		 NEXT_STATE <=  S6;
+	      end	
+
+	  S6:	
+	      begin
+		 init = 1'b0;
+                 en = 1'b1;
+		 done = 1'b0;
+		 NEXT_STATE <=  S7;
+	      end
+	  S7:	
+	      begin
+		 init = 1'b0;
+                 en = 1'b1; 
+		 done = 1'b0;
+		 NEXT_STATE <=  S8;
+	      end	
+
+	  S8:	
+	      begin
+		 init = 1'b0;		 
+	         en = 1'b1;		 
+		 done = 1'b1;//done
+		 NEXT_STATE <=  S8;//loops s8
+	      end
+	  
+	  default: 
+	    begin
+	       NEXT_STATE <=  S0;
+	       init = 1'b1;	       
+	       en = 1'b1;	       
+	       done = 1'b0;	     
+	    end
+	  
+	endcase // case (CURRENT_STATE)	
+     end // always @ (CURRENT_STATE or X)   
+
+endmodule // fsm
+
+
+module flopr #(parameter WIDTH = 8)
+   (input              clk, reset,
+    input   [WIDTH-1:0] d, 
+    output reg [WIDTH-1:0] q);
+
+   always @(posedge clk, posedge reset)
+     if (reset) q <= 0;
+     else       q <= d;
+   
+endmodule // flopr

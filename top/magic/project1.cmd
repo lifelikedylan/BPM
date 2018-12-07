@@ -1,0 +1,56 @@
+stepsize 1500.0
+vector A {mcand_7} {mcand_6} {mcand_5} {mcand_4} {mcand_3} {mcand_2} {mcand_1} {mcand_0}
+vector B {mplier_7} {mplier_6} {mplier_5} {mplier_4} {mplier_3} {mplier_2} {mplier_1} {mplier_0}
+vector Out {q_15} {q_14} {q_13} {q_12} {q_11} {q_10} {q_9} {q_8} {q_7} {q_6} {q_5} {q_4} {q_3} {q_2} {q_1} {q_0}
+
+ana -h A B {q_15} {q_14} {q_13} {q_12} {q_11} {q_10} {q_9} {q_8} {q_7} {q_6} {q_5} {q_4} {q_3} {q_2} {q_1} {q_0} clk init en 
+analyzer
+clock clk 0 1
+
+set a {0x45 0x76 0x28 0x5D 0x6F 0x18 0x0E 0x4B 0x52 0x7A 0x00 0x01}
+set b {0x74 0x94 0x19 0x96 0x0A 0x94 0x8C 0x5B 0x2C 0x7A 0x55 0x01}
+set c {0001111101000100 0100010000111000 0000001111101000 0011011001111110 0000010001010110 0000110111100000 0000011110101000 0001101010101001 0000111000011000 0011101000100100 0000000000000000 0000000000000001}
+
+for {set i 0} {$i < 1} {incr i} {
+	setvector A 11111111
+	setvector B 00000011
+	h en
+	h init
+	c
+	c
+	c
+	h en
+	h init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	l en
+	c
+	c
+	assert Out 0000001011111101
+	path Out
+}

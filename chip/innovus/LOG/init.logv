@@ -1,0 +1,727 @@
+[12/07 09:32:55      0s] 
+[12/07 09:32:55      0s] Cadence Innovus(TM) Implementation System.
+[12/07 09:32:55      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/07 09:32:55      0s] 
+[12/07 09:32:55      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[12/07 09:32:55      0s] Options:	-init FF/INNOVUS/run_init.tcl -log LOG/init.log -overwrite -nowin 
+[12/07 09:32:55      0s] Date:		Fri Dec  7 09:32:55 2018
+[12/07 09:32:55      0s] Host:		shire.ecen.okstate.edu (x86_64 w/Linux 2.6.32-696.30.1.el6.x86_64) (6cores*12cpus*Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz 15360KB)
+[12/07 09:32:55      0s] OS:		Red Hat Enterprise Linux Server release 6.9 (Santiago)
+[12/07 09:32:55      0s] 
+[12/07 09:32:55      0s] License:
+[12/07 09:32:55      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[12/07 09:32:55      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/07 09:33:07     11s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[12/07 09:33:07     11s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[12/07 09:33:07     11s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[12/07 09:33:07     11s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[12/07 09:33:07     11s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[12/07 09:33:07     11s] @(#)CDS: CPE v17.11-s095
+[12/07 09:33:07     11s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[12/07 09:33:07     11s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[12/07 09:33:07     11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/07 09:33:07     11s] @(#)CDS: RCDB 11.10
+[12/07 09:33:07     11s] --- Running on shire.ecen.okstate.edu (x86_64 w/Linux 2.6.32-696.30.1.el6.x86_64) (6cores*12cpus*Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz 15360KB) ---
+[12/07 09:33:07     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_120763_shire.ecen.okstate.edu_dshadoa_b75naz.
+
+[12/07 09:33:07     11s] Change the soft stacksize limit to 0.2%RAM (258 mbytes). Set global soft_stack_size_limit to change the value.
+[12/07 09:33:07     11s] 
+[12/07 09:33:07     11s] **INFO:  MMMC transition support version v31-84 
+[12/07 09:33:07     11s] 
+[12/07 09:33:07     11s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/07 09:33:07     11s] <CMD> suppressMessage ENCEXT-2799
+[12/07 09:33:07     11s] <CMD> getVersion
+[12/07 09:33:07     11s] Sourcing file "FF/INNOVUS/run_init.tcl" ...
+[12/07 09:33:07     11s] <CMD> set init_io_file encounter.io
+[12/07 09:33:07     11s] <FF> Finished loading setup.tcl
+[12/07 09:33:07     12s] <CMD> setDistributeHost -local
+[12/07 09:33:07     12s] The timeout for a remote job to respond is 30 seconds.
+[12/07 09:33:07     12s] Submit command for task runs will be: local
+[12/07 09:33:07     12s] <CMD> setMultiCpuUsage -localCpu 1
+[12/07 09:33:07     12s] <FF> LOADING 'pre_init_tcl' PLUG-IN FILE(s) 
+[12/07 09:33:07     12s] <FF> -> PLUG/INNOVUS/pre_init.tcl
+[12/07 09:33:07     12s] <CMD> set init_layout_view {}
+[12/07 09:33:07     12s] <CMD> set init_verilog /home/dshadoa/Desktop/BPM/chip/synth/mapped/bpm_pad.vh
+[12/07 09:33:07     12s] <CMD> set init_mmmc_file /home/dshadoa/Desktop/BPM/chip/innovus/FF/view_definition.tcl
+[12/07 09:33:07     12s] <CMD> set init_lef_file {/classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lef ../abstract/bpm_custom.lef}
+[12/07 09:33:07     12s] <CMD> set init_top_cell bpm_pad
+[12/07 09:33:07     12s] <CMD> set init_gnd_net VSS
+[12/07 09:33:07     12s] <CMD> set init_pwr_net VDD
+[12/07 09:33:07     12s] <CMD> init_design
+[12/07 09:33:07     12s] #% Begin Load MMMC data ... (date=12/07 09:33:07, mem=403.2M)
+[12/07 09:33:07     12s] #% End Load MMMC data ... (date=12/07 09:33:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=403.3M, current mem=403.3M)
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] Loading LEF file /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lef ...
+[12/07 09:33:07     12s] **WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+[12/07 09:33:07     12s] so you are unable to create rectilinear partition in a hierarchical flow.
+[12/07 09:33:07     12s] Set DBUPerIGU to M2 pitch 2400.
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] Loading LEF file ../abstract/bpm_custom.lef ...
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] viaInitial starts at Fri Dec  7 09:33:07 2018
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+[12/07 09:33:07     12s] **WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+[12/07 09:33:07     12s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+[12/07 09:33:07     12s] Type 'man IMPPP-557' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+[12/07 09:33:07     12s] Type 'man IMPPP-557' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+[12/07 09:33:07     12s] Type 'man IMPPP-557' for more detail.
+[12/07 09:33:07     12s] viaInitial ends at Fri Dec  7 09:33:07 2018
+Loading view definition file from /home/dshadoa/Desktop/BPM/chip/innovus/FF/view_definition.tcl
+[12/07 09:33:07     12s] Reading libs_tt timing library '/classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib' ...
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+[12/07 09:33:07     12s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/07 09:33:07     12s] Read 39 cells in library 'osu05_stdcells' 
+[12/07 09:33:07     12s] *** End library_loading (cpu=0.00min, real=0.00min, mem=21.9M, fe_cpu=0.20min, fe_real=0.20min, fe_mem=475.5M) ***
+[12/07 09:33:07     12s] #% Begin Load netlist data ... (date=12/07 09:33:07, mem=440.7M)
+[12/07 09:33:07     12s] *** Begin netlist parsing (mem=475.5M) ***
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+[12/07 09:33:07     12s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/07 09:33:07     12s] To increase the message display limit, refer to the product command reference manual.
+[12/07 09:33:07     12s] Created 39 new cells from 1 timing libraries.
+[12/07 09:33:07     12s] Reading netlist ...
+[12/07 09:33:07     12s] Backslashed names will retain backslash and a trailing blank character.
+[12/07 09:33:07     12s] Reading verilog netlist '/home/dshadoa/Desktop/BPM/chip/synth/mapped/bpm_pad.vh'
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] *** Memory Usage v#1 (Current mem = 475.488M, initial mem = 184.402M) ***
+[12/07 09:33:07     12s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=475.5M) ***
+[12/07 09:33:07     12s] #% End Load netlist data ... (date=12/07 09:33:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=440.7M, current mem=417.3M)
+[12/07 09:33:07     12s] Set top cell to bpm_pad.
+[12/07 09:33:07     12s] **WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+[12/07 09:33:07     12s] **WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+[12/07 09:33:07     12s] Hooked 39 DB cells to tlib cells.
+[12/07 09:33:07     12s] Starting recursive module instantiation check.
+[12/07 09:33:07     12s] No recursion found.
+[12/07 09:33:07     12s] Building hierarchical netlist for Cell bpm_pad ...
+[12/07 09:33:07     12s] *** Netlist is unique.
+[12/07 09:33:07     12s] ** info: there are 42 modules.
+[12/07 09:33:07     12s] ** info: there are 22 stdCell insts.
+[12/07 09:33:07     12s] ** info: there are 28 Pad insts.
+[12/07 09:33:07     12s] ** info: there are 1 macros.
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] *** Memory Usage v#1 (Current mem = 510.910M, initial mem = 184.402M) ***
+[12/07 09:33:07     12s] Reading IO assignment file "encounter.io" ...
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 74: Pad: p15 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 76: Pad: p14 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 78: Pad: p13 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 80: Pad: p12 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 82: Pad: p11 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 84: Pad: p10 S
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 89: Pad: p09 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 91: Pad: p08 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 93: Pad: p07 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 95: Pad: p06 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 97: Pad: p05 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 99: Pad: p04 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 101: Pad: p03 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 103: Pad: p02 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 105: Pad: p01 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **Warn: ignored IO file "encounter.io" line 107: Pad: p00 E
+  Reason: unable to determine object from name.
+[12/07 09:33:07     12s] **WARN: (IMPFP-710):	File version 0 is too old.
+[12/07 09:33:07     12s] IO file version '0' is too old, will try to place io cell any way.
+[12/07 09:33:07     12s] **WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/07 09:33:07     12s] Type 'man IMPFP-3961' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/07 09:33:07     12s] Type 'man IMPFP-3961' for more detail.
+[12/07 09:33:07     12s] Horizontal Layer M1 offset = 1500 (derived)
+[12/07 09:33:07     12s] Vertical Layer M2 offset = 1200 (derived)
+[12/07 09:33:07     12s] Set Default Net Delay as 1000 ps.
+[12/07 09:33:07     12s] Set Default Net Load as 0.5 pF. 
+[12/07 09:33:07     12s] Set Default Input Pin Transition as 0.1 ps.
+[12/07 09:33:07     12s] Extraction setup Delayed 
+[12/07 09:33:07     12s] *Info: initialize multi-corner CTS.
+[12/07 09:33:07     12s] Reading timing constraints file '/home/dshadoa/Desktop/BPM/chip/synth/mapped/bpm_pad.sdc' ...
+[12/07 09:33:07     12s] Current (total cpu=0:00:12.4, real=0:00:12.0, peak res=548.8M, current mem=548.8M)
+[12/07 09:33:07     12s] INFO (CTE): Constraints read successfully.
+[12/07 09:33:07     12s] WARNING (CTE-25): Line: 8 of File /home/dshadoa/Desktop/BPM/chip/synth/mapped/bpm_pad.sdc : Skipped unsupported command: set_units
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=566.0M, current mem=566.0M)
+[12/07 09:33:07     12s] Current (total cpu=0:00:12.5, real=0:00:12.0, peak res=566.0M, current mem=566.0M)
+[12/07 09:33:07     12s] Creating Cell Server ...(0, 1, 1, 1)
+[12/07 09:33:07     12s] Summary for sequential cells identification: 
+[12/07 09:33:07     12s]   Identified SBFF number: 3
+[12/07 09:33:07     12s]   Identified MBFF number: 0
+[12/07 09:33:07     12s]   Identified SB Latch number: 0
+[12/07 09:33:07     12s]   Identified MB Latch number: 0
+[12/07 09:33:07     12s]   Not identified SBFF number: 0
+[12/07 09:33:07     12s]   Not identified MBFF number: 0
+[12/07 09:33:07     12s]   Not identified SB Latch number: 0
+[12/07 09:33:07     12s]   Not identified MB Latch number: 0
+[12/07 09:33:07     12s]   Number of sequential cells which are not FFs: 1
+[12/07 09:33:07     12s] Total number of combinational cells: 26
+[12/07 09:33:07     12s] Total number of sequential cells: 4
+[12/07 09:33:07     12s] Total number of tristate cells: 2
+[12/07 09:33:07     12s] Total number of level shifter cells: 0
+[12/07 09:33:07     12s] Total number of power gating cells: 0
+[12/07 09:33:07     12s] Total number of isolation cells: 0
+[12/07 09:33:07     12s] Total number of power switch cells: 0
+[12/07 09:33:07     12s] Total number of pulse generator cells: 0
+[12/07 09:33:07     12s] Total number of always on buffers: 0
+[12/07 09:33:07     12s] Total number of retention cells: 0
+[12/07 09:33:07     12s] List of usable buffers: BUFX2 BUFX4 CLKBUF1
+[12/07 09:33:07     12s] Total number of usable buffers: 3
+[12/07 09:33:07     12s] List of unusable buffers:
+[12/07 09:33:07     12s] Total number of unusable buffers: 0
+[12/07 09:33:07     12s] List of usable inverters: INVX2 INVX1 INVX4 INVX8
+[12/07 09:33:07     12s] Total number of usable inverters: 4
+[12/07 09:33:07     12s] List of unusable inverters:
+[12/07 09:33:07     12s] Total number of unusable inverters: 0
+[12/07 09:33:07     12s] List of identified usable delay cells: CLKBUF2 CLKBUF3
+[12/07 09:33:07     12s] Total number of identified usable delay cells: 2
+[12/07 09:33:07     12s] List of identified unusable delay cells:
+[12/07 09:33:07     12s] Total number of identified unusable delay cells: 0
+[12/07 09:33:07     12s] Creating Cell Server, finished. 
+[12/07 09:33:07     12s] 
+[12/07 09:33:07     12s] Deleting Cell Server ...
+[12/07 09:33:07     12s] **WARN: (IMPSYC-2):	Timing information is not defined for cell bpm_custom; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/07 09:33:07     12s] Type 'man IMPSYC-2' for more detail.
+[12/07 09:33:07     12s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[12/07 09:33:07     12s] Extraction setup Started 
+[12/07 09:33:07     12s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/07 09:33:07     12s] Type 'man IMPEXT-2773' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/07 09:33:07     12s] Type 'man IMPEXT-2773' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/07 09:33:07     12s] Type 'man IMPEXT-2773' for more detail.
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/07 09:33:07     12s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/07 09:33:07     12s] Summary of Active RC-Corners : 
+[12/07 09:33:07     12s]  
+[12/07 09:33:07     12s]  Analysis View: setup_func
+[12/07 09:33:07     12s]     RC-Corner Name        : rc_typ
+[12/07 09:33:07     12s]     RC-Corner Index       : 0
+[12/07 09:33:07     12s]     RC-Corner Temperature : 25 Celsius
+[12/07 09:33:07     12s]     RC-Corner Cap Table   : ''
+[12/07 09:33:07     12s]     RC-Corner PreRoute Res Factor         : 1
+[12/07 09:33:07     12s]     RC-Corner PreRoute Cap Factor         : 1
+[12/07 09:33:07     12s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/07 09:33:07     12s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/07 09:33:07     12s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/07 09:33:07     12s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/07 09:33:07     12s]  
+[12/07 09:33:07     12s]  Analysis View: hold_func
+[12/07 09:33:07     12s]     RC-Corner Name        : rc_typ
+[12/07 09:33:07     12s]     RC-Corner Index       : 0
+[12/07 09:33:07     12s]     RC-Corner Temperature : 25 Celsius
+[12/07 09:33:07     12s]     RC-Corner Cap Table   : ''
+[12/07 09:33:07     12s]     RC-Corner PreRoute Res Factor         : 1
+[12/07 09:33:07     12s]     RC-Corner PreRoute Cap Factor         : 1
+[12/07 09:33:07     12s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/07 09:33:07     12s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/07 09:33:07     12s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/07 09:33:07     12s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/07 09:33:07     12s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] *** Summary of all messages that are not suppressed in this session:
+[12/07 09:33:08     12s] Severity  ID               Count  Summary                                  
+[12/07 09:33:08     12s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[12/07 09:33:08     12s] WARNING   IMPFP-710            1  File version %s is too old.              
+[12/07 09:33:08     12s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/07 09:33:08     12s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[12/07 09:33:08     12s] WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+[12/07 09:33:08     12s] WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+[12/07 09:33:08     12s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[12/07 09:33:08     12s] WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+[12/07 09:33:08     12s] WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+[12/07 09:33:08     12s] WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+[12/07 09:33:08     12s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/07 09:33:08     12s] *** Message Summary: 106 warning(s), 0 error(s)
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] <CMD> um::enable_metric -on
+[12/07 09:33:08     12s] <CMD> um::push_snapshot_stack
+[12/07 09:33:08     12s] <CMD> add_tracks
+[12/07 09:33:08     12s] <FF> DERATING DELAY CORNERS ...
+[12/07 09:33:08     12s] <CMD> setMaxRouteLayer 3
+[12/07 09:33:08     12s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[12/07 09:33:08     12s] **WARN: (IMPCK-61):	TopPreferredLayer metal3 is smaller than BottomPreferredLayer metal3. The top/bottom preferred layer for CTS should be changed using the 'setCTSMode' command.
+[12/07 09:33:08     12s] <CMD> setDesignMode -process 250
+[12/07 09:33:08     12s] Applying the recommended capacitance filtering threshold values for 250nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+[12/07 09:33:08     12s] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[12/07 09:33:08     12s] 	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+[12/07 09:33:08     12s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[12/07 09:33:08     12s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[12/07 09:33:08     12s] Updating process node dependent CCOpt properties for the 250nm process node.
+[12/07 09:33:08     12s] <FF> LOADING 'post_init_tcl' PLUG-IN FILE(s) 
+[12/07 09:33:08     12s] <FF> -> PLUG/INNOVUS/post_init.tcl
+[12/07 09:33:08     12s] <CMD> floorPlan -r 1.0 0.6 40.05 40.8 40.05 42
+[12/07 09:33:08     12s] Horizontal Layer M1 offset = 1500 (derived)
+[12/07 09:33:08     12s] Vertical Layer M2 offset = 1200 (derived)
+[12/07 09:33:08     12s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/07 09:33:08     12s] <CMD> globalNetConnect VSS -type pgpin -pin gnd -inst *
+[12/07 09:33:08     12s] <CMD> globalNetConnect VDD -type pgpin -pin vdd -inst *
+[12/07 09:33:08     12s] <CMD> globalNetConnect VDD -type tiehi
+[12/07 09:33:08     12s] <CMD> globalNetConnect VSS -type tielo
+[12/07 09:33:08     12s] <CMD> placeInstance custom 700 700 R0 -fixed
+[12/07 09:33:08     12s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/07 09:33:08     12s] The ring targets are set to core/block ring wires.
+[12/07 09:33:08     12s] addRing command will consider rows while creating rings.
+[12/07 09:33:08     12s] addRing command will disallow rings to go over rows.
+[12/07 09:33:08     12s] addRing command will ignore shorts while creating rings.
+[12/07 09:33:08     12s] <CMD> addRing -nets {VDD VSS} -type block_rings -around each_block -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/07 09:33:08     12s] #% Begin addRing (date=12/07 09:33:08, mem=569.3M)
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] Ring generation is complete.
+[12/07 09:33:08     12s] vias are now being generated.
+[12/07 09:33:08     12s] addRing created 8 wires.
+[12/07 09:33:08     12s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] |  Layer |     Created    |     Deleted    |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] | metal1 |        4       |       NA       |
+[12/07 09:33:08     12s] |   via  |        8       |        0       |
+[12/07 09:33:08     12s] | metal2 |        4       |       NA       |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] #% End addRing (date=12/07 09:33:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=571.6M, current mem=571.6M)
+[12/07 09:33:08     12s] <CMD> addHaloToBlock 8 8 8 8 custom
+[12/07 09:33:08     12s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/07 09:33:08     12s] The ring targets are set to core/block ring wires.
+[12/07 09:33:08     12s] addRing command will consider rows while creating rings.
+[12/07 09:33:08     12s] addRing command will disallow rings to go over rows.
+[12/07 09:33:08     12s] addRing command will ignore shorts while creating rings.
+[12/07 09:33:08     12s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 14.4 bottom 14.4 left 14.4 right 14.4} -spacing {top 3.6 bottom 3.6 left 3.6 right 3.6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/07 09:33:08     12s] #% Begin addRing (date=12/07 09:33:08, mem=571.7M)
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] Ring generation is complete.
+[12/07 09:33:08     12s] vias are now being generated.
+[12/07 09:33:08     12s] addRing created 9 wires.
+[12/07 09:33:08     12s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] |  Layer |     Created    |     Deleted    |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] | metal1 |        5       |       NA       |
+[12/07 09:33:08     12s] |   via  |        8       |        0       |
+[12/07 09:33:08     12s] | metal2 |        4       |       NA       |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] #% End addRing (date=12/07 09:33:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=572.2M, current mem=572.2M)
+[12/07 09:33:08     12s] <CMD> setSrouteMode -allowWrongWayRoute false -viaThruToClosestRing false -extendNearestTarget false -viaConnectToShape { padring ring stripe blockring blockpin coverpin noshape blockwire corewire followpin iowire} -blockPinConnectRingPinCorners true -blockPinRouteWithPinWidth true -padRingLefConvention true -signalPinAsPG false -corePinLengthAsInstance false -treatEndcapAsCore false
+[12/07 09:33:08     12s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[12/07 09:33:08     12s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal3(3) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal3(3) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal3(3) }
+[12/07 09:33:08     12s] #% Begin sroute (date=12/07 09:33:08, mem=572.3M)
+[12/07 09:33:08     12s] *** Begin SPECIAL ROUTE on Fri Dec  7 09:33:08 2018 ***
+[12/07 09:33:08     12s] SPECIAL ROUTE ran on directory: /home/dshadoa/Desktop/BPM/chip/innovus
+[12/07 09:33:08     12s] SPECIAL ROUTE ran on machine: shire.ecen.okstate.edu (Linux 2.6.32-696.30.1.el6.x86_64 Xeon 1.20Ghz)
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] Begin option processing ...
+[12/07 09:33:08     12s] srouteConnectPowerBump set to false
+[12/07 09:33:08     12s] routeSelectNet set to "VDD VSS"
+[12/07 09:33:08     12s] routeSpecial set to true
+[12/07 09:33:08     12s] srouteBlockPin set to "useLef"
+[12/07 09:33:08     12s] srouteBlockPinConnectRingPinCorners set to true
+[12/07 09:33:08     12s] srouteBottomLayerLimit set to 1
+[12/07 09:33:08     12s] srouteBottomTargetLayerLimit set to 1
+[12/07 09:33:08     12s] srouteConnectConverterPin set to false
+[12/07 09:33:08     12s] srouteCrossoverViaBottomLayer set to 1
+[12/07 09:33:08     12s] srouteCrossoverViaTopLayer set to 3
+[12/07 09:33:08     12s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[12/07 09:33:08     12s] srouteFollowCorePinEnd set to 3
+[12/07 09:33:08     12s] srouteFullWidthBlockpinRoute set to true
+[12/07 09:33:08     12s] srouteJogControl set to "preferWithChanges differentLayer"
+[12/07 09:33:08     12s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[12/07 09:33:08     12s] sroutePadPinAllPorts set to true
+[12/07 09:33:08     12s] sroutePreserveExistingRoutes set to true
+[12/07 09:33:08     12s] srouteRoutePowerBarPortOnBothDir set to true
+[12/07 09:33:08     12s] srouteStopBlockPin set to "nearestTarget"
+[12/07 09:33:08     12s] srouteTopLayerLimit set to 3
+[12/07 09:33:08     12s] srouteTopTargetLayerLimit set to 3
+[12/07 09:33:08     12s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1399.00 megs.
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] Reading DB technology information...
+[12/07 09:33:08     12s] Finished reading DB technology information.
+[12/07 09:33:08     12s] Reading floorplan and netlist information...
+[12/07 09:33:08     12s] Finished reading floorplan and netlist information.
+[12/07 09:33:08     12s] Read in 6 layers, 3 routing layers, 0 overlap layer
+[12/07 09:33:08     12s] Read in 40 macros, 15 used
+[12/07 09:33:08     12s] Read in 37 components
+[12/07 09:33:08     12s]   8 core components: 8 unplaced, 0 placed, 0 fixed
+[12/07 09:33:08     12s]   24 pad components: 0 unplaced, 0 placed, 24 fixed
+[12/07 09:33:08     12s]   1 block/ring components: 0 unplaced, 0 placed, 1 fixed
+[12/07 09:33:08     12s]   4 other components: 0 unplaced, 0 placed, 4 fixed
+[12/07 09:33:08     12s] Read in 36 logical pins
+[12/07 09:33:08     12s] Read in 2 blockages
+[12/07 09:33:08     12s] Read in 36 nets
+[12/07 09:33:08     12s] Read in 2 special nets, 2 routed
+[12/07 09:33:08     12s] Read in 20 terminals
+[12/07 09:33:08     12s] 2 nets selected.
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] Begin power routing ...
+[12/07 09:33:08     12s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[12/07 09:33:08     12s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[12/07 09:33:08     12s] **WARN: (IMPSR-1255):	Cannot find any non 'CLASS CORE' pad pin of net VDD. Use 'CLASS CORE' pad pins of net VDD to create pad ring.
+[12/07 09:33:08     12s] CPU time for FollowPin 0 seconds
+[12/07 09:33:08     12s] **WARN: (IMPSR-1255):	Cannot find any non 'CLASS CORE' pad pin of net VSS. Use 'CLASS CORE' pad pins of net VSS to create pad ring.
+[12/07 09:33:08     12s] CPU time for FollowPin 0 seconds
+[12/07 09:33:08     12s]   Number of IO ports routed: 2
+[12/07 09:33:08     12s]   Number of Block ports routed: 21  open: 8
+[12/07 09:33:08     12s]   Number of Stripe ports routed: 0
+[12/07 09:33:08     12s]   Number of Core ports routed: 88
+[12/07 09:33:08     12s]   Number of Pad ports routed: 0
+[12/07 09:33:08     12s]   Number of Power Bump ports routed: 0
+[12/07 09:33:08     12s]   Number of Followpin connections: 44
+[12/07 09:33:08     12s]   8 ports open due to poor power planning
+[12/07 09:33:08     12s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1410.00 megs.
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s]  Begin updating DB with routing results ...
+[12/07 09:33:08     12s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[12/07 09:33:08     12s] Pin and blockage extraction finished
+[12/07 09:33:08     12s] 
+[12/07 09:33:08     12s] sroute created 162 wires.
+[12/07 09:33:08     12s] ViaGen created 119 vias, deleted 0 via to avoid violation.
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] |  Layer |     Created    |     Deleted    |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] | metal1 |       146      |       NA       |
+[12/07 09:33:08     12s] |   via  |       105      |        0       |
+[12/07 09:33:08     12s] | metal2 |        9       |       NA       |
+[12/07 09:33:08     12s] |  via2  |       14       |        0       |
+[12/07 09:33:08     12s] | metal3 |        7       |       NA       |
+[12/07 09:33:08     12s] +--------+----------------+----------------+
+[12/07 09:33:08     12s] #% End sroute (date=12/07 09:33:08, total cpu=0:00:00.2, real=0:00:00.0, peak res=586.3M, current mem=586.3M)
+[12/07 09:33:08     12s] <CMD> timeDesign -preplace -prefix preplace -outDir RPT
+[12/07 09:33:08     12s] Setting timing_disable_library_data_to_data_checks to 'true'.
+[12/07 09:33:08     12s] Setting timing_disable_user_data_to_data_checks to 'true'.
+[12/07 09:33:08     12s] Set Using Default Delay Limit as 101.
+[12/07 09:33:08     12s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[12/07 09:33:08     12s] Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+[12/07 09:33:08     12s] Set Default Net Delay as 0 ps.
+[12/07 09:33:08     12s] Set Default Net Load as 0 pF. 
+[12/07 09:33:08     12s] Effort level <high> specified for reg2reg path_group
+[12/07 09:33:08     12s] #################################################################################
+[12/07 09:33:08     12s] # Design Stage: PreRoute
+[12/07 09:33:08     12s] # Design Name: bpm_pad
+[12/07 09:33:08     12s] # Design Mode: 250nm
+[12/07 09:33:08     12s] # Analysis Mode: MMMC Non-OCV 
+[12/07 09:33:08     12s] # Parasitics Mode: No SPEF/RCDB
+[12/07 09:33:08     12s] # Signoff Settings: SI Off 
+[12/07 09:33:08     12s] #################################################################################
+[12/07 09:33:08     12s] Calculate delays in Single mode...
+[12/07 09:33:08     12s] Topological Sorting (REAL = 0:00:00.0, MEM = 676.2M, InitMEM = 676.2M)
+[12/07 09:33:08     12s] Start delay calculation (fullDC) (1 T). (MEM=676.16)
+[12/07 09:33:08     13s] AAE DB initialization (MEM=720.91 CPU=0:00:00.1 REAL=0:00:00.0) 
+[12/07 09:33:08     13s] siFlow : Timing analysis mode is single, using late cdB files
+[12/07 09:33:08     13s] Start AAE Lib Loading. (MEM=720.91)
+[12/07 09:33:08     13s] End AAE Lib Loading. (MEM=921.191 CPU=0:00:00.0 Real=0:00:00.0)
+[12/07 09:33:08     13s] End AAE Lib Interpolated Model. (MEM=921.191 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/07 09:33:08     13s] First Iteration Infinite Tw... 
+[12/07 09:33:08     13s] Total number of fetched objects 78
+[12/07 09:33:08     13s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/07 09:33:08     13s] End delay calculation. (MEM=931.355 CPU=0:00:00.0 REAL=0:00:00.0)
+[12/07 09:33:08     13s] End delay calculation (fullDC). (MEM=833.984 CPU=0:00:00.4 REAL=0:00:00.0)
+[12/07 09:33:08     13s] *** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 834.0M) ***
+[12/07 09:33:08     13s] *** Done Building Timing Graph (cpu=0:00:00.4 real=0:00:00.0 totSessionCpu=0:00:13.4 mem=834.0M)
+[12/07 09:33:08     13s] 
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ setup_func 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 16.901  | 16.901  | 16.973  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    5    |    4    |    5    |
++--------------------+---------+---------+---------+
+
+Density: 0.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+[12/07 09:33:08     13s] Resetting back High Fanout Nets as non-ideal
+[12/07 09:33:08     13s] Set Default Net Delay as 1000 ps.
+[12/07 09:33:08     13s] Set Default Net Load as 0.5 pF. 
+[12/07 09:33:08     13s] Reported timing to dir RPT
+[12/07 09:33:08     13s] Total CPU time: 0.57 sec
+[12/07 09:33:08     13s] Total Real time: 0.0 sec
+[12/07 09:33:08     13s] Total Memory Usage: 744.773438 Mbytes
+[12/07 09:33:08     13s] <CMD> checkDesign -all
+[12/07 09:33:08     13s] Creating directory checkDesign.
+[12/07 09:33:09     13s] **WARN: (IMPREPO-205):	There are 5 Cells with missing PG PIN.
+[12/07 09:33:09     13s] **WARN: (IMPREPO-211):	There are 1 Cells with missing Timing data.
+[12/07 09:33:09     13s] #spOpts: N=250 
+[12/07 09:33:09     13s] Core basic site is core
+[12/07 09:33:09     13s] Estimated cell power/ground rail width = 2.343 um
+[12/07 09:33:09     13s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[12/07 09:33:09     13s] Begin checking placement ... (start mem=766.6M, init mem=766.6M)
+[12/07 09:33:09     13s] Out of Core Area:	1
+[12/07 09:33:09     13s] *info: Recommended don't use cell = 0           
+[12/07 09:33:09     13s] *info: Placed = 1              (Fixed = 1)
+[12/07 09:33:09     13s] *info: Unplaced = 22          
+[12/07 09:33:09     13s] Placement Density:1.29%(7416/576504)
+[12/07 09:33:09     13s] Placement Density (including fixed std cells):1.29%(7416/576504)
+[12/07 09:33:09     13s] Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=766.6M)
+[12/07 09:33:09     13s] ############################################################################
+[12/07 09:33:09     13s] # Innovus Netlist Design Rule Check
+[12/07 09:33:09     13s] # Fri Dec  7 09:33:09 2018
+
+[12/07 09:33:09     13s] ############################################################################
+[12/07 09:33:09     13s] Design: bpm_pad
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] ------ Design Summary:
+[12/07 09:33:09     13s] Total Standard Cell Number   (cells) : 22
+[12/07 09:33:09     13s] Total Block Cell Number      (cells) : 1
+[12/07 09:33:09     13s] Total I/O Pad Cell Number    (cells) : 28
+[12/07 09:33:09     13s] Total Standard Cell Area     ( um^2) : 7416.00
+[12/07 09:33:09     13s] Total Block Cell Area        ( um^2) : 74340.72
+[12/07 09:33:09     13s] Total I/O Pad Cell Area      ( um^2) : 1008000.00
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] ------ Design Statistics:
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] Number of Instances            : 51
+[12/07 09:33:09     13s] Number of Non-uniquified Insts : 44
+[12/07 09:33:09     13s] Number of Nets                 : 79
+[12/07 09:33:09     13s] Average number of Pins per Net : 2.27
+[12/07 09:33:09     13s] Maximum number of Pins in Net  : 6
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] ------ I/O Port summary
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] Number of Primary I/O Ports    : 36
+[12/07 09:33:09     13s] Number of Input Ports          : 18
+[12/07 09:33:09     13s] Number of Output Ports         : 18
+[12/07 09:33:09     13s] Number of Bidirectional Ports  : 0
+[12/07 09:33:09     13s] Number of Power/Ground Ports   : 0
+[12/07 09:33:09     13s] Number of Floating Ports                     *: 0
+[12/07 09:33:09     13s] Number of Ports Connected to Multiple Pads   *: 0
+[12/07 09:33:09     13s] Number of Ports Connected to Core Instances   : 16
+[12/07 09:33:09     13s] **WARN: (IMPREPO-202):	There are 16 Ports connected to core instances.
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] ------ Design Rule Checking:
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] Number of Output Pins connect to Power/Ground *: 0
+[12/07 09:33:09     13s] Number of Insts with Input Pins tied together ?: 0
+[12/07 09:33:09     13s] Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+[12/07 09:33:09     13s] **WARN: (IMPDB-2137):	Floating Output term YPAD of Io inst p20.
+[12/07 09:33:09     13s] **WARN: (IMPDB-2137):	Floating Output term YPAD of Io inst p21.
+[12/07 09:33:09     13s] Number of Input/InOut Floating Pins            : 0
+[12/07 09:33:09     13s] Number of Output Floating Pins                 : 2
+[12/07 09:33:09     13s] Number of Output Term Marked TieHi/Lo         *: 0
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] **WARN: (IMPREPO-219):	There are 2 Floating IO terms.
+[12/07 09:33:09     13s] Number of nets with tri-state drivers          : 0
+[12/07 09:33:09     13s] Number of nets with parallel drivers           : 0
+[12/07 09:33:09     13s] Number of nets with multiple drivers           : 0
+[12/07 09:33:09     13s] Number of nets with no driver (No FanIn)       : 1
+[12/07 09:33:09     13s] Number of Output Floating nets (No FanOut)     : 0
+[12/07 09:33:09     13s] Number of High Fanout nets (>50)               : 0
+[12/07 09:33:09     13s] Checking for any assigns in the netlist...
+[12/07 09:33:09     13s]   No assigns found.
+[12/07 09:33:09     13s] Checking routing tracks.....
+[12/07 09:33:09     13s] Checking other grids.....
+[12/07 09:33:09     13s] Checking routing blockage.....
+[12/07 09:33:09     13s] Checking components.....
+[12/07 09:33:09     13s] Checking IO Pins.....
+[12/07 09:33:09     13s] Unplaced Io Pins = 16 
+[12/07 09:33:09     13s] Checking constraints (guide/region/fence).....
+[12/07 09:33:09     13s] Checking groups.....
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] Checking Ptn Pins .....
+[12/07 09:33:09     13s] Checking Ptn Core Box.....
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] Checking Preroutes.....
+[12/07 09:33:09     13s] No. of regular pre-routes not on tracks : 0 
+[12/07 09:33:09     13s]  Design check done.
+[12/07 09:33:09     13s] Report saved in file checkDesign/bpm_pad.main.htm.ascii.
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] *** Summary of all messages that are not suppressed in this session:
+[12/07 09:33:09     13s] Severity  ID               Count  Summary                                  
+[12/07 09:33:09     13s] WARNING   IMPDB-2137           2  Floating %s term %s of %sinst %s.        
+[12/07 09:33:09     13s] WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+[12/07 09:33:09     13s] WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+[12/07 09:33:09     13s] WARNING   IMPREPO-211          1  There are %d Cells with missing Timing d...
+[12/07 09:33:09     13s] WARNING   IMPREPO-219          1  There are %d Floating IO terms.          
+[12/07 09:33:09     13s] *** Message Summary: 6 warning(s), 0 error(s)
+[12/07 09:33:09     13s] 
+[12/07 09:33:09     13s] <CMD> check_timing
+[12/07 09:33:09     13s] #################################################################################
+[12/07 09:33:09     13s] # Design Stage: PreRoute
+[12/07 09:33:09     13s] # Design Name: bpm_pad
+[12/07 09:33:09     13s] # Design Mode: 250nm
+[12/07 09:33:09     13s] # Analysis Mode: MMMC Non-OCV 
+[12/07 09:33:09     13s] # Parasitics Mode: No SPEF/RCDB
+[12/07 09:33:09     13s] # Signoff Settings: SI Off 
+[12/07 09:33:09     13s] #################################################################################
+[12/07 09:33:09     13s] AAE_INFO: 1 threads acquired from CTE.
+[12/07 09:33:09     13s] Calculate delays in Single mode...
+[12/07 09:33:09     13s] Topological Sorting (REAL = 0:00:00.0, MEM = 769.7M, InitMEM = 769.7M)
+[12/07 09:33:09     13s] Start delay calculation (fullDC) (1 T). (MEM=769.656)
+[12/07 09:33:09     13s] End AAE Lib Interpolated Model. (MEM=785.789 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/07 09:33:09     13s] Total number of fetched objects 78
+[12/07 09:33:09     13s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/07 09:33:09     13s] End delay calculation. (MEM=846.031 CPU=0:00:00.0 REAL=0:00:00.0)
+[12/07 09:33:09     13s] End delay calculation (fullDC). (MEM=846.031 CPU=0:00:00.1 REAL=0:00:00.0)
+[12/07 09:33:09     13s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 846.0M) ***
+[12/07 09:33:09     13s] <CMD> um::pop_snapshot_stack
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.power_domains -value {}
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.instances.icg -value 0
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.area.icg -value {0 um^2}
+[12/07 09:33:09     13s] <CMD> um::get_metric -pending design.instances.register
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.instances.register -value 4
+[12/07 09:33:09     13s] <CMD> um::get_metric -pending design.area.register
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.area.register -value 3456
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.instances.power_switch -value 0
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.area.power_switch -value {0 um^2}
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.instances.iso_ls -value 0
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.area.iso_ls -value {0 um^2}
+[12/07 09:33:09     13s] UM: Capturing floorplan image ...
+[12/07 09:33:09     13s] <CMD> um::set_metric -name design.floorplan.image -value {boundary { data { G0.0,0.0,0.0,1500.0,1500.0,1500.0,1500.0,0.0,} fill_color {#FFFFFF} stroke_color {#002794} } macros { fixed { data { B700.05,700.05,862.65,1157.25,} fill_color {#E4F0D7} stroke_color {#000000} } } ports { data { C522.6,1460.4,2, C612.6,1460.4,2, C702.6,1460.4,2, C792.6,1460.4,2, C882.6,1460.4,2, C972.6,1460.4,2, C1062.6,1460.4,2, C1152.6,1460.4,2, C39.6,342.6,2, C39.6,432.6,2, C39.6,522.6,2, C39.6,612.6,2, C39.6,702.6,2, C39.6,792.6,2, C39.6,882.6,2, C39.6,972.6,2, C432.6,1460.4,2, C342.6,1460.4,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C0.0,0.0,2, C850.2,35.7,2, C1048.2,35.7,2, } fill_color {#CA354D} stroke_color {#CA354D} } pads { data { B300.0,1200.0,390.0,1500.0,B390.0,1200.0,480.0,1500.0,B480.0,1200.0,570.0,1500.0,B570.0,1200.0,660.0,1500.0,B660.0,1200.0,750.0,1500.0,B750.0,1200.0,840.0,1500.0,B840.0,1200.0,930.0,1500.0,B930.0,1200.0,1020.0,1500.0,B1020.0,1200.0,1110.0,1500.0,B1110.0,1200.0,1200.0,1500.0,B0.0,300.0,300.0,390.0,B0.0,390.0,300.0,480.0,B0.0,480.0,300.0,570.0,B0.0,570.0,300.0,660.0,B0.0,660.0,300.0,750.0,B0.0,750.0,300.0,840.0,B0.0,840.0,300.0,930.0,B0.0,930.0,300.0,1020.0,B804.0,0.0,894.0,300.0,B1002.0,0.0,1092.0,300.0,} fill_color {#FFFF0066} stroke_color {#FFFF00} } }
+[12/07 09:33:09     13s] <CMD> report_message -errors
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 alerts
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory.resident.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory.resident.peak.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.tool.name.short
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.tool.version
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 metric.version.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 name
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 flow.memory.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 flow.memory.resident.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory.resident
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 flow.memory.resident.peak.instant
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e00 flow.memory.resident.peak
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 flow.tool.name.short
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 flow.tool.version
+[12/07 09:33:09     13s] <CMD> get_metric -id current -uuid 26730e01 metric.version.instant
+[12/07 09:33:09     13s] UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[12/07 09:33:09     13s] UM:         13.68             14          0.000 ns         16.901 ns  init
+[12/07 09:33:09     13s] <CMD> um::enable_metric
+[12/07 09:33:09     13s] <FF> MAILING RESULTS TO false
+[12/07 09:33:09     13s] <CMD> saveDesign DBS/init.enc -compress
+[12/07 09:33:09     13s] #% Begin save design ... (date=12/07 09:33:09, mem=631.7M)
+[12/07 09:33:09     13s] % Begin Save netlist data ... (date=12/07 09:33:09, mem=632.2M)
+[12/07 09:33:09     13s] Writing Binary DB to DBS/init.enc.dat/bpm_pad.v.bin in single-threaded mode...
+[12/07 09:33:09     13s] % End Save netlist data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=634.3M, current mem=634.3M)
+[12/07 09:33:09     13s] % Begin Save AAE data ... (date=12/07 09:33:09, mem=634.3M)
+[12/07 09:33:09     13s] Saving AAE Data ...
+[12/07 09:33:09     13s] % End Save AAE data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=634.3M, current mem=634.3M)
+[12/07 09:33:09     13s] % Begin Save clock tree data ... (date=12/07 09:33:09, mem=634.8M)
+[12/07 09:33:09     13s] % End Save clock tree data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=634.8M, current mem=634.8M)
+[12/07 09:33:09     13s] Saving preference file DBS/init.enc.dat/gui.pref.tcl ...
+[12/07 09:33:09     13s] Saving mode setting ...
+[12/07 09:33:09     13s] Saving global file ...
+[12/07 09:33:09     13s] % Begin Save floorplan data ... (date=12/07 09:33:09, mem=637.8M)
+[12/07 09:33:09     13s] Saving floorplan file ...
+[12/07 09:33:09     13s] % End Save floorplan data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=637.8M, current mem=637.8M)
+[12/07 09:33:09     13s] Saving Drc markers ...
+[12/07 09:33:09     13s] ... 10 markers are saved ...
+[12/07 09:33:09     13s] ... 0 geometry drc markers are saved ...
+[12/07 09:33:09     13s] ... 0 antenna drc markers are saved ...
+[12/07 09:33:09     13s] % Begin Save placement data ... (date=12/07 09:33:09, mem=637.8M)
+[12/07 09:33:09     13s] ** Saving stdCellPlacement_binary (version# 1) ...
+[12/07 09:33:09     13s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=848.0M) ***
+[12/07 09:33:09     13s] % End Save placement data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=639.8M, current mem=639.8M)
+[12/07 09:33:09     13s] % Begin Save routing data ... (date=12/07 09:33:09, mem=639.8M)
+[12/07 09:33:09     13s] Saving route file ...
+[12/07 09:33:09     13s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=848.0M) ***
+[12/07 09:33:09     13s] % End Save routing data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=639.9M, current mem=639.9M)
+[12/07 09:33:09     13s] Saving property file DBS/init.enc.dat/bpm_pad.prop
+[12/07 09:33:09     13s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=848.0M) ***
+[12/07 09:33:09     13s] % Begin Save power constraints data ... (date=12/07 09:33:09, mem=642.2M)
+[12/07 09:33:09     14s] % End Save power constraints data ... (date=12/07 09:33:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=642.2M, current mem=642.2M)
+[12/07 09:33:10     14s] Generated self-contained design init.enc.dat
+[12/07 09:33:10     14s] #% End save design ... (date=12/07 09:33:10, total cpu=0:00:00.4, real=0:00:01.0, peak res=642.2M, current mem=637.9M)
+[12/07 09:33:10     14s] *** Message Summary: 0 warning(s), 0 error(s)
+[12/07 09:33:10     14s] 
+[12/07 09:33:10     14s] <CMD> saveNetlist DBS/LEC/init.v.gz
+[12/07 09:33:10     14s] ** NOTE: Created directory path 'DBS/LEC' for file 'DBS/LEC/init.v.gz'.
+[12/07 09:33:10     14s] Writing Netlist "DBS/LEC/init.v.gz" ...
+[12/07 09:33:10     14s] <FF> ==============================================
+[12/07 09:33:10     14s] <FF>          COMPLETED STEP : init
+[12/07 09:33:10     14s] <FF>         ELAPSED RUNTIME : 0 days, 00:00:03
+[12/07 09:33:10     14s] <FF> ==============================================
+[12/07 09:33:10     14s] 
+[12/07 09:33:10     14s] *** Memory Usage v#1 (Current mem = 815.555M, initial mem = 184.402M) ***
+[12/07 09:33:10     14s] 
+[12/07 09:33:10     14s] *** Summary of all messages that are not suppressed in this session:
+[12/07 09:33:10     14s] Severity  ID               Count  Summary                                  
+[12/07 09:33:10     14s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[12/07 09:33:10     14s] WARNING   IMPFP-710            1  File version %s is too old.              
+[12/07 09:33:10     14s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[12/07 09:33:10     14s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/07 09:33:10     14s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[12/07 09:33:10     14s] WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+[12/07 09:33:10     14s] WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+[12/07 09:33:10     14s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[12/07 09:33:10     14s] WARNING   IMPCK-61             1  TopPreferredLayer %s is smaller than Bot...
+[12/07 09:33:10     14s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[12/07 09:33:10     14s] WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+[12/07 09:33:10     14s] WARNING   IMPDB-2137           2  Floating %s term %s of %sinst %s.        
+[12/07 09:33:10     14s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[12/07 09:33:10     14s] WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+[12/07 09:33:10     14s] WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+[12/07 09:33:10     14s] WARNING   IMPSR-1255           2  Cannot find any non 'CLASS CORE' pad pin...
+[12/07 09:33:10     14s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[12/07 09:33:10     14s] WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+[12/07 09:33:10     14s] WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+[12/07 09:33:10     14s] WARNING   IMPREPO-211          1  There are %d Cells with missing Timing d...
+[12/07 09:33:10     14s] WARNING   IMPREPO-219          1  There are %d Floating IO terms.          
+[12/07 09:33:10     14s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/07 09:33:10     14s] *** Message Summary: 120 warning(s), 0 error(s)
+[12/07 09:33:10     14s] 
+[12/07 09:33:10     14s] --- Ending "Innovus" (totcpu=0:00:14.2, real=0:00:15.0, mem=815.6M) ---

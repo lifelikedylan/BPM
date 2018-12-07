@@ -7,7 +7,7 @@
 ( @@version : 2000d );
 ( @@techdesc : SCMOS: Submit as technology.lambda: SCN3ME_SUBM.30 [to process: AMIc5] );
 ( @@style : lambda=0.30(p) );
-( @@date : Tue Dec  4 19:20:15 2018 );
+( @@date : Thu Dec  6 22:41:32 2018 );
 DS 1 15 2;
 9 top;
 L CWN;

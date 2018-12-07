@@ -1,0 +1,27 @@
+Warning: Design 'bpm_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : hierarchy
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+Warning: 1 unresolved references are not included in this report. (RPT-2)
+
+bpm_pad
+    AOI22X1            osu05_stdcells
+    DFFPOSX1           osu05_stdcells
+    INVX1              osu05_stdcells
+    NAND2X1            osu05_stdcells
+    NAND3X1            osu05_stdcells
+    NOR2X1             osu05_stdcells
+    OAI21X1            osu05_stdcells
+    OAI22X1            osu05_stdcells
+    PADFC              osu05_stdcells
+    PADGND             osu05_stdcells
+    PADINC             osu05_stdcells
+    PADNC              osu05_stdcells
+    PADOUT             osu05_stdcells
+    PADVDD             osu05_stdcells
+1

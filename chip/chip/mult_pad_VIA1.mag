@@ -1,0 +1,16 @@
+magic
+tech scmos
+timestamp 1542725905
+<< metal1 >>
+rect -24 2 24 3
+rect -24 -2 -22 2
+rect 22 -2 24 2
+rect -24 -3 24 -2
+<< m2contact >>
+rect -22 -2 22 2
+<< metal2 >>
+rect -24 2 24 3
+rect -24 -2 -22 2
+rect 22 -2 24 2
+rect -24 -3 24 -2
+<< end >>

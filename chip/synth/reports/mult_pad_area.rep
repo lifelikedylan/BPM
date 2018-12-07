@@ -1,0 +1,55 @@
+Warning: Design 'mult_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : mult_pad
+Version: M-2016.12-SP1
+Date   : Wed Nov  7 14:25:59 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.db)
+
+Number of ports:                           19
+Number of nets:                           116
+Number of cells:                          120
+Number of combinational cells:             65
+Number of sequential cells:                11
+Number of macros/black boxes:              44
+Number of buf/inv:                         15
+Number of references:                      19
+
+Combinational area:              17856.000000
+Buf/Inv area:                     2160.000000
+Noncombinational area:           12672.000000
+Macro/Black Box area:          1188000.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               1218528.000000
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                 Local cell area
+                                  ---------------------  ------------------------------------ 
+Hierarchical cell                 Absolute      Percent  Combi-      Noncombi-   Black-
+                                  Total         Total    national    national    boxes         Design
+--------------------------------  ------------  -------  ----------  ----------  ------------  ---------
+mult_pad                          1218528.0000    100.0  17856.0000  12672.0000  1188000.0000  mult_pad
+--------------------------------  ------------  -------  ----------  ----------  ------------  ---------
+Total                                                    17856.0000  12672.0000  1188000.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1

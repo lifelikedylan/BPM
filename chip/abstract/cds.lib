@@ -1,0 +1,3 @@
+SOFTINCLUDE /programs/cadence/IC617/share/cdssetup/cds.lib
+DEFINE rca8 ./rca8
+DEFINE bpm_custom ./bpm_custom

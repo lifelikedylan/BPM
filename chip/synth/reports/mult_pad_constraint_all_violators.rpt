@@ -1,0 +1,26 @@
+Information: Building the design 'rca8'. (HDL-193)
+Warning: Cannot find the design 'rca8' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'rca8' in 'mult_pad'. (LINK-5)
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mult_pad
+Version: M-2016.12-SP1
+Date   : Wed Nov  7 14:25:59 2018
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   mult_pad                 0.000000       38.533039      -38.533039
+                                                                    (VIOLATED)
+
+
+1

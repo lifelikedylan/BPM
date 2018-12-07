@@ -1,0 +1,71 @@
+****** HSPICE -- K-2015.06 linux64 (May 25 2015) ******
+ Input File: bpm2.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   dshadoa              HOSTNAME: shire.ecen.okstate.edu
+ lic: HOSTID: "2c44fd80a220"       PID:      106962
+ lic: Using FLEXlm license file:
+ lic: 27020@avatar.ecen.okstate.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 27-jan-2019/2017.12
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@avatar.ecen.okstate.edu
+ lic:
+ init: begin read circuit files,  cpu clock=  3.10E-01
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/ad
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/ad
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/behave
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/bjt
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/burr_brn
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/comlinear
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/dio
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/fet
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/lin_tech
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/pci
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/signet
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/ti
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/tline
+       option search = /import/rivendell1/programs/synopsys/hspice_vK-2
+                         015.06/hspice/parts/xilinx
+       option runlvl
+       option scale =    3.000E-07
+       option probe
+       option post
+       option measout
+       option captab
+ init: end read circuit files,  cpu clock=  3.50E-01 peak memory=       207 mb
+ init: begin check errors,  cpu clock=  3.50E-01
+ init: end check errors,  cpu clock=  3.70E-01 peak memory=       208 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.70E-01
+       establish matrix -- done,  cpu clock=  3.80E-01 peak memory=       208 mb
+       re-order matrix -- done,  cpu clock=  3.80E-01 peak memory=       208 mb
+ init: end setup matrix,  cpu clock=  3.90E-01 peak memory=       208 mb
+ dcop: begin dcop,  cpu clock=  4.00E-01
+ dcop: end dcop,  cpu clock=  5.70E-01 peak memory=       208 mb  tot_iter=      45
+ output: bpm2.mt0
+ sweep: tran tran0    begin, stop_t=  2.00E-07 #sweeps=4001 cpu clock=  5.70E-01
+ tran: time= 2.0200E-08 tot_iter=     313 conv_iter=     106 cpu clock= 1.22E+00
+ tran: time= 4.0090E-08 tot_iter=     666 conv_iter=     221 cpu clock= 1.66E+00
+ tran: time= 6.0190E-08 tot_iter=    1217 conv_iter=     387 cpu clock= 2.26E+00
+ tran: time= 8.0080E-08 tot_iter=    1545 conv_iter=     494 cpu clock= 2.65E+00
+ tran: time= 1.0018E-07 tot_iter=    1930 conv_iter=     614 cpu clock= 3.11E+00
+ tran: time= 1.2007E-07 tot_iter=    2277 conv_iter=     726 cpu clock= 3.55E+00
+ tran: time= 1.4017E-07 tot_iter=    2909 conv_iter=     910 cpu clock= 4.26E+00
+ tran: time= 1.6006E-07 tot_iter=    3339 conv_iter=    1048 cpu clock= 4.80E+00
+ tran: time= 1.8016E-07 tot_iter=    3830 conv_iter=    1197 cpu clock= 5.36E+00
+ tran: time= 2.0000E-07 tot_iter=    4179 conv_iter=    1311 cpu clock= 5.76E+00
+ sweep: tran tran0    end,  cpu clock=  5.76E+00 peak memory=       203 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

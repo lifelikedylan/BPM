@@ -1,0 +1,8 @@
+set init_layout_view ""
+set init_abstract_name ""
+set init_verilog "/home/dshadoa/Desktop/BPM/chip/synth/mapped/bpm_pad.vh"
+set init_mmmc_file "/home/dshadoa/Desktop/BPM/chip/innovus/FF/view_definition.tcl"
+set init_lef_file "/classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lef ../abstract/bpm_custom.lef"
+set init_top_cell "bpm_pad"
+set init_gnd_net "VSS"
+set init_pwr_net "VDD"

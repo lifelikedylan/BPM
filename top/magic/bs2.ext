@@ -77,7 +77,6 @@ fet pfet 74 145 75 146 20 24 "Vdd!" "a_52_99#" 4 0 "muxA_out" 10 0 "mcand" 10 0
 fet pfet 66 145 67 146 20 24 "Vdd!" "q0" 4 0 "a_45_91#" 10 0 "muxA_out" 10 0
 fet pfet 50 145 51 146 40 44 "Vdd!" "q0" 4 0 "vdd" 20 0 "a_52_99#" 20 0
 cap "Init" "muxA_out" 24.48
-cap "muxA_in" "en" -7.10543e-15
 cap "vdd" "clk" 58.68
 cap "vdd" "en" 58.68
 cap "bc1a_0/inverter_1/Y" "muxA_out" 24.48
@@ -85,21 +84,22 @@ cap "gnd" "muxA_out" 53.46
 cap "Init" "vdd" -1.42109e-14
 cap "Init" "en" 64.8
 cap "Init" "clk" 64.8
+cap "muxA_in" "en" -7.10543e-15
 cap "bc1a_0/inverter_1/Y" "en" 58.68
 cap "bc1a_0/inverter_1/Y" "clk" 58.68
 cap "Init" "muxB_in" 48.96
 cap "gnd" "muxB_in" 477.36
 cap "gnd" "vdd" -2.84217e-14
 cap "bc1a_0/inverter_1/Y" "gnd" -5.68434e-14
-cap "bc1a_0/a_38_7#" "nand_0/a_9_6#" 29.16
-cap "nand_0/a_9_52#" "bc1a_0/a_38_7#" 58.68
-cap "bc1a_0/gnd" "bc1a_0/a_38_7#" 58.68
 cap "bc1a_0/m2_30_5#" "bc1a_0/a_31_n11#" 58.68
 cap "bc1a_0/m2_30_12#" "bc1a_0/a_31_n11#" 61.2
 cap "bc1a_0/m2_30_12#" "bc1a_0/a_38_7#" 15.84
 cap "bc1a_0/m2_30_5#" "bc1a_0/a_38_7#" 15.84
 cap "bc1a_0/m2_30_5#" "nand_0/a_9_52#" 176.04
 cap "bc1a_0/m2_30_5#" "bc1a_0/m2_30_12#" 49.5
+cap "bc1a_0/a_38_7#" "nand_0/a_9_6#" 29.16
+cap "nand_0/a_9_52#" "bc1a_0/a_38_7#" 58.68
+cap "bc1a_0/gnd" "bc1a_0/a_38_7#" 58.68
 cap "Out" "dffpos_0/a_28_65#" 2.84217e-14
 cap "muxA_out" "bc1a_0/mux21_0/Sel_bar" 61.2
 cap "muxA_out" "bc1a_0/mux21_0/sel" 61.2

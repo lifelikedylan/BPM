@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06 linux64'
+.TITLE '*********************************************************'
+ critical_path_delay temper           alter#          
+  2.342e-09         70.0000        1               

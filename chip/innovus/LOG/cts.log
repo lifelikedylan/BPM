@@ -1,0 +1,533 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	-init FF/INNOVUS/run_cts.tcl -log LOG/cts.log -overwrite -nowin 
+Date:		Fri Dec  7 09:33:34 2018
+Host:		shire.ecen.okstate.edu (x86_64 w/Linux 2.6.32-696.30.1.el6.x86_64) (6cores*12cpus*Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz 15360KB)
+OS:		Red Hat Enterprise Linux Server release 6.9 (Santiago)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (258 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+Sourcing file "FF/INNOVUS/run_cts.tcl" ...
+<CMD> set init_io_file encounter.io
+<FF> Finished loading setup.tcl
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for task runs will be: local
+<CMD> setMultiCpuUsage -localCpu 1
+<CMD> restoreDesign DBS/place.enc.dat bpm_pad
+#% Begin load design ... (date=12/07 09:33:46, mem=399.9M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+% Begin Load MMMC data ... (date=12/07 09:33:46, mem=401.4M)
+% End Load MMMC data ... (date=12/07 09:33:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=401.5M, current mem=401.5M)
+rc_typ
+
+Loading LEF file /home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/lef/osu05_stdcells.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 2400.
+
+Loading LEF file /home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/lef/bpm_custom.lef ...
+
+viaInitial starts at Fri Dec  7 09:33:46 2018
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Fri Dec  7 09:33:46 2018
+Loading view definition file from DBS/place.enc.dat/viewDefinition.tcl
+Reading libs_tt timing library '/classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. (File /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 39 cells in library 'osu05_stdcells' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=19.7M, fe_cpu=0.20min, fe_real=0.20min, fe_mem=476.8M) ***
+% Begin Load netlist data ... (date=12/07 09:33:46, mem=437.0M)
+*** Begin netlist parsing (mem=476.8M) ***
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 39 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/bpm_pad.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 483.809M, initial mem = 184.402M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=483.8M) ***
+% End Load netlist data ... (date=12/07 09:33:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=437.0M, current mem=415.1M)
+Set top cell to bpm_pad.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+Hooked 39 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell bpm_pad ...
+*** Netlist is unique.
+** info: there are 42 modules.
+** info: there are 23 stdCell insts.
+** info: there are 28 Pad insts.
+** info: there are 1 macros.
+
+*** Memory Usage v#1 (Current mem = 514.230M, initial mem = 184.402M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" ...
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 74: Pad: p15 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 76: Pad: p14 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 78: Pad: p13 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 80: Pad: p12 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 82: Pad: p11 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 84: Pad: p10 S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 89: Pad: p09 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 91: Pad: p08 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 93: Pad: p07 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 95: Pad: p06 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 97: Pad: p05 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 99: Pad: p04 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 101: Pad: p03 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 103: Pad: p02 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 105: Pad: p01 E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/libs/iofile/encounter.io" line 107: Pad: p00 E
+  Reason: unable to determine object from name.
+**WARN: (IMPFP-710):	File version 0 is too old.
+IO file version '0' is too old, will try to place io cell any way.
+**WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file DBS/place.enc.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 250nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 250nm process node.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: setup_func
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: hold_func
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/dshadoa/Desktop/BPM/chip/innovus/DBS/place.enc.dat/mmmc/modes/setup_func_mode/setup_func_mode.sdc' ...
+Current (total cpu=0:00:12.4, real=0:00:12.0, peak res=550.9M, current mem=550.9M)
+bpm_pad
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=568.1M, current mem=568.1M)
+Current (total cpu=0:00:12.4, real=0:00:12.0, peak res=568.1M, current mem=568.1M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell bpm_custom; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+% Begin Load floorplan data ... (date=12/07 09:33:47, mem=569.6M)
+Reading floorplan file - DBS/place.enc.dat/bpm_pad.fp.gz (mem = 660.8M).
+% Begin Load floorplan data ... (date=12/07 09:33:47, mem=569.7M)
+*info: reset 80 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file DBS/place.enc.dat/bpm_pad.fp.spr.gz (Created by Innovus v17.11-s080_1 on Fri Dec  7 09:33:33 2018, version: 1)
+There are 28 io inst loaded
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=570.4M, current mem=570.4M)
+% End Load floorplan data ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=570.5M, current mem=570.5M)
+% Begin Load SymbolTable ... (date=12/07 09:33:47, mem=570.4M)
+% End Load SymbolTable ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=570.5M, current mem=570.5M)
+% Begin Load placement data ... (date=12/07 09:33:47, mem=570.5M)
+Reading placement file - DBS/place.enc.dat/bpm_pad.place.gz.
+*** Checked 4 GNC rules.
+*** applyConnectGlobalNets disabled.
+** Reading stdCellPlacement_binary (Created by Innovus v17.11-s080_1 on Fri Dec  7 09:33:33 2018, version# 1) ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=660.8M) ***
+Total net length = 1.543e+04 (7.876e+03 7.554e+03) (ext = 0.000e+00)
+% End Load placement data ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=570.8M, current mem=570.8M)
+*** Checked 4 GNC rules.
+*** Applying global-net connections...
+*** Applied 4 GNC rules (cpu = 0:00:00.0)
+% Begin Load routing data ... (date=12/07 09:33:47, mem=570.8M)
+Reading routing file - DBS/place.enc.dat/bpm_pad.route.gz.
+Reading Innovus routing data (Created by Innovus v17.11-s080_1 on Fri Dec  7 09:33:33 2018 Format: 16.2) ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+*** Total 80 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=660.8M) ***
+% End Load routing data ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=572.2M, current mem=572.2M)
+Loading Drc markers ...
+... 10 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
+Reading property file DBS/place.enc.dat/bpm_pad.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=660.8M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+% Begin Load power constraints ... (date=12/07 09:33:47, mem=573.0M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=12/07 09:33:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=573.1M, current mem=573.1M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=12/07 09:33:47, mem=577.2M)
+AAE DB initialization (MEM=683.988 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=12/07 09:33:47, total cpu=0:00:00.1, real=0:00:00.0, peak res=577.2M, current mem=576.3M)
+Restoring CCOpt config...
+Restoring CCOpt config done.
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=12/07 09:33:47, total cpu=0:00:01.3, real=0:00:01.0, peak res=577.2M, current mem=576.6M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-710            1  File version %s is too old.              
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+WARNING   IMPCK-8086           2  The command %s is obsolete and will be r...
+WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+*** Message Summary: 110 warning(s), 0 error(s)
+
+<CMD> um::enable_metric -on
+<CMD> um::push_snapshot_stack
+<CMD> setDesignMode -process 250
+Applying the recommended capacitance filtering threshold values for 250nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 250nm process node.
+<CMD> setAnalysisMode -cppr none
+<CMD> set_ccopt_mode -integration native -ccopt_modify_clock_latency true
+<CMD> setNanoRouteMode -routeWithLithoDriven false
+<FF> RUNNING CLOCK TREE SYNTHESIS ...
+<FF> DERATING DELAY CORNERS ...
+<FF> LOADING 'pre_cts_tcl' PLUG-IN FILE(s) 
+<FF> -> PLUG/INNOVUS/pre_cts.tcl
+<CMD> create_route_type -bottom_preferred_layer 1 -name METAL1
+<CMD> create_route_type -top_preferred_layer 3 -name METAL3
+<CMD> set_ccopt_property route_type METAL1
+<CMD> set_ccopt_property route_type METAL3
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+<CMD> create_ccopt_clock_tree_spec
+Creating clock tree spec for modes (timing configs): setup_func_mode
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Extracting original clock gating for clk...
+  clock_tree clk contains 5 sinks and 0 clock gates.
+    Found 1 implicit ignore or stop or exclude pin - run report_ccopt_clock_trees -list_special_pins for more details.
+  Extraction for clk complete.
+Extracting original clock gating for clk done.
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> ccopt_design -outDir RPT -prefix cts
+#% Begin ccopt_design (date=12/07 09:33:47, mem=603.2M)
+Runtime...
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+Using CCOpt effort standard.
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Estimated cell power/ground rail width = 2.343 um
+Begin checking placement ... (start mem=707.6M, init mem=707.6M)
+*info: Placed = 24             (Fixed = 1)
+*info: Unplaced = 0           
+Placement Density:1.32%(7632/576504)
+Placement Density (including fixed std cells):1.32%(7632/576504)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=707.6M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.0 real=0:00:00.0)
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   Leaving CCOpt scope - CheckPlace
+Validating CTS configuration...
+Non-default CCOpt properties:
+route_type is set for at least one key
+useful_skew_ideal_mode_max_allowed_delay: 1 (default: auto)
+Using cell based legalization.
+Route type trimming info:
+  No route type modifications were made.
+Clock tree balancer configuration for clock_tree clk:
+Non-default CCOpt properties for clock tree clk:
+  route_type (leaf): METAL3 (default: default)
+  route_type (trunk): METAL3 (default: default)
+  route_type (top): METAL3 (default: default)
+**ERROR: (IMPCCOPT-1146):	Clock tree clk cannot use the following cells.
+  CTS will not be able to run on this clock tree.
+bpm_custom is cant_use for the following reasons: missing time lib data.  This affects the following instances: custom/clk
+Please load time libs for those cells missing time lib data. If you have set this to be a stop pin using 'set_ccopt_property -pin pin sink_type stop', but have omitted to specify caps using 'set_ccopt_property -pin pin  -delay_corner DC capacitance_override <value>' for ALL delay corners, you will also see this error.
+
+Library Trimming...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 3
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=105 numPGBlocks=173 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] Read numTotalNets=0  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 0 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1800  L2=2400  L3=3000
+[NR-eGR] ========================================
+[NR-eGR] 
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M3_M2' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+  Library trimming buffers in power domain auto-default and half-corner corner_tt:setup.late removed 1 of 3 cells
+  Library trimming inverters in power domain auto-default and half-corner corner_tt:setup.late removed 0 of 4 cells
+**WARN: (IMPCCOPT-1182):	The clock_gating_cells property has no usable full-cycle clock gates for power domain auto-default. Gating limited for clock tree clk. You may be able to solve this problem by specifying a list of lib_cells to use with the clock_gating_cells property.
+  For power domain auto-default:
+    Buffers:     {BUFX4 BUFX2}
+    Inverters:   INVX8 INVX4 INVX2 INVX1 
+    Clock gates: 
+    Unblocked area available for placement of any clock cells in power_domain auto-default: 810000.000um^2
+  Top/Trunk/Leaf Routing info:
+    Route-type name: METAL3; Top/bottom preferred layer name: metal3/metal2; 
+    Unshielded; Mask Constraint: 0; Source: route_type.
+  For timing_corner corner_tt:setup, late:
+    Slew time target (leaf):    0.537ns
+    Slew time target (trunk):   0.537ns
+    Slew time target (top):     0.537ns (Note: no nets are considered top nets in this clock tree)
+    Buffer unit delay for power domain auto-default:   0.278ns
+    Buffer max distance for power domain auto-default: 3029.042um
+  Fastest wire driving cells and distances for power domain auto-default:
+    Buffer    : {lib_cell:BUFX4, fastest_considered_half_corner=corner_tt:setup.late, optimalDrivingDistance=3029.042um, saturatedSlew=0.457ns, speed=5108.858um per ns, cellArea=95.080um^2 per 1000um}
+    Inverter  : {lib_cell:INVX8, fastest_considered_half_corner=corner_tt:setup.late, optimalDrivingDistance=3885.384um, saturatedSlew=0.461ns, speed=9235.522um per ns, cellArea=92.655um^2 per 1000um}
+Library Trimming done.
+Primary reporting skew group is skew_group clk/setup_func_mode with 5 clock sinks.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2_M1' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+
+Via Selection for Estimated Routes (rule default):
+
+------------------------------------------------------------
+Layer    Via Cell    Res.     Cap.     RC       Top of Stack
+Range                (Ohm)    (fF)     (fs)     Only
+------------------------------------------------------------
+M1-M2    M2_M1       4.000    0.000    0.000    false
+M2-M3    M3_M2       4.000    0.000    0.000    false
+------------------------------------------------------------
+
+No ideal or dont_touch nets found in the clock tree
+Validating CTS configuration done. (took cpu=0:00:00.8 real=0:00:00.8)
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   Validating CTS configuration
+Check Prerequisites done. (took cpu=0:00:00.9 real=0:00:00.9)
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   Check Prerequisites
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.9 real=0:00:00.9)
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   CCOpt::Phase::Initialization
+**ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+Set place::cacheFPlanSiteMark to 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-2882          2  Unable to find the resistance for via '%...
+ERROR     IMPCCOPT-1146        1  Clock tree %s cannot use the following c...
+ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+WARNING   IMPCCOPT-1182        1  The clock_gating_cells property has no u...
+*** Message Summary: 3 warning(s), 2 error(s)
+
+#% End ccopt_design (date=12/07 09:33:48, total cpu=0:00:01.0, real=0:00:01.0, peak res=703.5M, current mem=617.6M)
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'FF/INNOVUS/run_cts.tcl' was returned and script processing was stopped. Review the following error in 'FF/INNOVUS/run_cts.tcl' then restart.
+Error info: FF/INNOVUS/run_cts.tcl: 
+    while executing
+"ccopt_design -monolithicflow_only -outDir RPT -prefix cts"
+    ("eval" body line 1)
+    invoked from within
+"eval ccopt_design $step $args"
+    (procedure "ccopt_design" line 30)
+    invoked from within
+"ccopt_design -outDir RPT -prefix cts"
+    (file "FF/INNOVUS/run_cts.tcl" line 83)
+    invoked from within
+"::se_source_orig FF/INNOVUS/run_cts.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 156)
+    invoked from within
+"source FF/INNOVUS/run_cts.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source FF/INNOVUS/run_cts.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source FF/INNOVUS/run_cts.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+
+*** Memory Usage v#1 (Current mem = 866.676M, initial mem = 184.402M) ***
+*** Message Summary: 114 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:14.1, real=0:00:56.0, mem=866.7M) ---

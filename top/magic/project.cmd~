@@ -1,7 +1,7 @@
 stepsize 1500.0
-vector A {mcand[7]} {mcand[6]} {mcand[5]} {mcand[4]} {mcand[3]} {mcand[2]} {mcand[1]} {mcand[0]}
-vector B {mplier[7]} {mplier[6]} {mplier[5]} {mplier[4]} {mplier[3]} {mplier[2]} {mplier[1]} {mplier[0]}
-vector Out {q[15]} {q[14]} {q[13]} {q[12]} {q[11]} {q[10]} {q[9]} {q[8]} {q[7]} {q[6]} {q[5]} {q[4]} {q[3]} {q[2]} {q[1]} {q[0]}
+vector A {mcand_7} {mcand_6} {mcand_5} {mcand_4} {mcand_3} {mcand_2} {mcand_1} {mcand_0}
+vector B {mplier_7} {mplier_6} {mplier_5} {mplier_4} {mplier_3} {mplier_2} {mplier_1} {mplier_0}
+vector Out {q_15} {q_14} {q_13} {q_12} {q_11} {q_10} {q_9} {q_8} {q_7} {q_6} {q_5} {q_4} {q_3} {q_2} {q_1} {q_0}
 
 ana -h A B out clk init en 
 analyzer

@@ -1,0 +1,91 @@
+magic
+tech scmos
+timestamp 1541105710
+<< metal1 >>
+rect 0 127 10 129
+rect 40 127 44 129
+rect 50 127 54 129
+rect 60 106 64 129
+rect 104 127 120 129
+rect 170 127 174 129
+rect 180 127 184 129
+rect 214 126 234 129
+rect 264 127 268 129
+rect 274 127 278 129
+rect 328 126 344 129
+rect 394 127 398 129
+rect 404 127 408 129
+rect 438 126 458 129
+rect 488 127 492 129
+rect 498 127 502 129
+rect 552 126 568 129
+rect 618 127 622 129
+rect 628 127 632 129
+rect 662 126 682 129
+rect 712 127 716 129
+rect 722 127 726 129
+rect 776 126 792 129
+rect 842 127 846 129
+rect 852 127 856 129
+rect 886 126 896 129
+rect 50 0 54 2
+rect 170 0 174 2
+rect 274 0 278 2
+rect 394 0 398 2
+rect 498 0 502 2
+rect 618 0 622 2
+rect 722 0 726 2
+rect 842 0 846 2
+rect 852 0 856 6
+<< metal2 >>
+rect 208 103 284 106
+rect 208 9 211 103
+rect 432 102 508 105
+rect 655 103 732 106
+rect 432 9 435 102
+rect 655 9 659 103
+rect 201 6 211 9
+rect 425 6 435 9
+rect 649 6 659 9
+use rca2  rca2_0
+array 0 3 224 0 0 129
+timestamp 1541103856
+transform 1 0 4 0 1 0
+box -4 0 220 129
+<< labels >>
+rlabel metal1 42 128 42 128 5 a_0
+rlabel metal1 52 128 52 128 5 b_0
+rlabel metal1 62 128 62 128 5 c_0
+rlabel metal1 172 128 172 128 5 b_1
+rlabel metal1 182 128 182 128 5 a_1
+rlabel metal1 266 128 266 128 5 a_2
+rlabel metal1 276 128 276 128 5 b_2
+rlabel metal1 396 128 396 128 5 b_3
+rlabel metal1 406 128 406 128 5 a_3
+rlabel metal1 490 128 490 128 5 a_4
+rlabel metal1 500 128 500 128 5 b_4
+rlabel metal1 620 128 620 128 5 b_5
+rlabel metal1 630 128 630 128 5 a_5
+rlabel metal1 714 128 714 128 5 a_6
+rlabel metal1 724 128 724 128 5 b_6
+rlabel metal1 844 128 844 128 5 b_7
+rlabel metal1 854 128 854 128 5 a_7
+rlabel metal1 52 1 52 1 1 sum_0
+rlabel metal1 172 1 172 1 1 sum_1
+rlabel metal1 276 1 276 1 1 sum_2
+rlabel metal1 396 1 396 1 1 sum_3
+rlabel metal1 500 1 500 1 1 sum_4
+rlabel metal1 620 1 620 1 1 sum_5
+rlabel metal1 724 1 724 1 1 sum_6
+rlabel metal1 844 1 844 1 1 sum_7
+rlabel metal1 112 128 112 128 5 vdd
+rlabel metal1 5 128 5 128 4 gnd
+rlabel metal1 225 128 225 128 5 gnd
+rlabel metal1 336 127 336 127 5 vdd
+rlabel metal1 448 128 448 128 5 gnd
+rlabel metal1 560 128 560 128 5 vdd
+rlabel metal1 672 128 672 128 5 gnd
+rlabel metal1 784 128 784 128 5 vdd
+rlabel metal1 891 128 891 128 6 gnd
+rlabel metal1 854 2 854 2 1 cout
+<< end >>

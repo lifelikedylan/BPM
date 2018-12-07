@@ -1,0 +1,131 @@
+Starting magic under Tcl interpreter
+
+Magic 8.0 revision 209 - Compiled on Fri Sep 11 02:08:49 CDT 2015.
+Using the terminal as the console.
+Using NULL graphics device.
+Input style lambda=0.30(p): scaleFactor=30, multiplier=1
+/usr/local/lib/magic/sys/scmos.tech: line 6070: section drc:
+	OK types "space" in more than one plane.
+	Assuming same plane (active) as edge.
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Using technology "scmos", version 2000d.
+SCMOS: Submit as technology.lambda: SCN3ME_SUBM.30 [to process: AMIc5]
+Extended macros are unavailable with this device type.
+Processing system .magicrc file
+{}
+FreeSans
+FreeSerif
+FreeMono
+if {![catch {set Opts(tools)}]} { magic::enable_tools }
+: after#0
+set GND "gnd!"
+: gnd!
+set VDD "vdd!"
+: vdd!
+catch {source /usr/local/lib/magic/sys/site.def}
+: 1
+Input cell mult_pad scales magic internal geometry by factor of 2
+Scaled magic input cell PADFC geometry by factor of 2
+Scaled magic input cell PADNC geometry by factor of 2
+Scaled magic input cell PADINC geometry by factor of 2
+Scaled magic input cell mult_pad_VIA0 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA6 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA1 geometry by factor of 2
+Scaled magic input cell PADGND geometry by factor of 2
+Scaled magic input cell FILL geometry by factor of 2
+Scaled magic input cell M2_M1 geometry by factor of 2
+Scaled magic input cell M3_M2 geometry by factor of 2
+Scaled magic input cell NAND2X1 geometry by factor of 2
+Scaled magic input cell INVX1 geometry by factor of 2
+Scaled magic input cell PADVDD geometry by factor of 2
+Scaled magic input cell OAI21X1 geometry by factor of 2
+Scaled magic input cell XOR2X1 geometry by factor of 2
+Scaled magic input cell NOR2X1 geometry by factor of 2
+Scaled magic input cell FAX1 geometry by factor of 2
+Scaled magic input cell AOI21X1 geometry by factor of 2
+Scaled magic input cell NAND3X1 geometry by factor of 2
+Scaled magic input cell AOI22X1 geometry by factor of 2
+Scaled magic input cell AND2X2 geometry by factor of 2
+Scaled magic input cell OR2X1 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA2 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA12 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA9 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA8 geometry by factor of 2
+Scaled magic input cell mult_pad_VIA11 geometry by factor of 2
+Scaled magic input cell INVX2 geometry by factor of 2
+Scaled magic input cell BUFX2 geometry by factor of 2
+Scaled magic input cell PADOUT geometry by factor of 2
+Scaled magic input cell rca8 geometry by factor of 2
+Scaled magic input cell rca2 geometry by factor of 2
+Scaled magic input cell fa geometry by factor of 2
+Scaled magic input cell mult_pad_VIA10 geometry by factor of 2
+Scaled magic input cell DFFSR geometry by factor of 2
+Extracting DFFSR into DFFSR.ext:
+Extracting mult_pad_VIA10 into mult_pad_VIA10.ext:
+Extracting fa into fa.ext:
+Extracting rca2 into rca2.ext:
+Extracting rca8 into rca8.ext:
+rca8: 9 warnings
+Extracting PADOUT into PADOUT.ext:
+Extracting BUFX2 into BUFX2.ext:
+Extracting INVX2 into INVX2.ext:
+Extracting mult_pad_VIA11 into mult_pad_VIA11.ext:
+Extracting mult_pad_VIA5 into mult_pad_VIA5.ext:
+Extracting mult_pad_VIA8 into mult_pad_VIA8.ext:
+Extracting mult_pad_VIA9 into mult_pad_VIA9.ext:
+Extracting mult_pad_VIA4 into mult_pad_VIA4.ext:
+Extracting mult_pad_VIA12 into mult_pad_VIA12.ext:
+Extracting mult_pad_VIA7 into mult_pad_VIA7.ext:
+Extracting mult_pad_VIA3 into mult_pad_VIA3.ext:
+Extracting mult_pad_VIA2 into mult_pad_VIA2.ext:
+Extracting OR2X1 into OR2X1.ext:
+Extracting AND2X2 into AND2X2.ext:
+Extracting AOI22X1 into AOI22X1.ext:
+Extracting NAND3X1 into NAND3X1.ext:
+Extracting AOI21X1 into AOI21X1.ext:
+Extracting FAX1 into FAX1.ext:
+Extracting NOR2X1 into NOR2X1.ext:
+Extracting XOR2X1 into XOR2X1.ext:
+Extracting OAI21X1 into OAI21X1.ext:
+Extracting PADVDD into PADVDD.ext:
+Extracting INVX1 into INVX1.ext:
+Extracting NAND2X1 into NAND2X1.ext:
+Extracting M3_M2 into M3_M2.ext:
+Extracting M2_M1 into M2_M1.ext:
+Extracting FILL into FILL.ext:
+Extracting PADGND into PADGND.ext:
+Extracting mult_pad_VIA1 into mult_pad_VIA1.ext:
+Extracting mult_pad_VIA6 into mult_pad_VIA6.ext:
+Extracting mult_pad_VIA0 into mult_pad_VIA0.ext:
+Extracting PADINC into PADINC.ext:
+Extracting PADNC into PADNC.ext:
+Extracting PADFC into PADFC.ext:
+Extracting mult_pad into mult_pad.ext:
+mult_pad: 6 warnings
+Total of 15 warnings.
+exttosim finished.
+Devices merged: 1262
+exttosim finished.
+Devs merged: 1262
+exttospice finished.
+Warning: characters changed in string 'result[7]'; modified string is 'result_7_'
+Warning: characters changed in string 'result[6]'; modified string is 'result_6_'
+Warning: characters changed in string 'result[5]'; modified string is 'result_5_'
+Warning: characters changed in string 'result[4]'; modified string is 'result_4_'
+Warning: characters changed in string 'result[3]'; modified string is 'result_3_'
+Warning: characters changed in string 'result[2]'; modified string is 'result_2_'
+Warning: characters changed in string 'result[1]'; modified string is 'result_1_'
+Warning: characters changed in string 'result[0]'; modified string is 'result_0_'
+Warning: characters changed in string 'a[3]'; modified string is 'a_3_'
+Warning: characters changed in string 'a[2]'; modified string is 'a_2_'
+Warning: characters changed in string 'a[1]'; modified string is 'a_1_'
+Warning: characters changed in string 'a[0]'; modified string is 'a_0_'
+Warning: characters changed in string 'b[3]'; modified string is 'b_3_'
+Warning: characters changed in string 'b[2]'; modified string is 'b_2_'
+Warning: characters changed in string 'b[1]'; modified string is 'b_1_'
+Warning: characters changed in string 'b[0]'; modified string is 'b_0_'

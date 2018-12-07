@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06 linux64'
+.TITLE '*********************************************************'
+ vmax             vmin             temper           alter#          
+    5.1048        -1.992e-02         70.0000        1               

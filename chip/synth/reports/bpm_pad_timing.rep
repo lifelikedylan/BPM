@@ -1,0 +1,55 @@
+Warning: Design 'bpm_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: CURRENT_STATE_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                    0.000000   0.000000
+  clock network delay (propagated)                         0.111490   0.111490
+  CURRENT_STATE_reg[0]/CLK (DFFPOSX1)            0.052791  0.000000   0.111490 r
+  CURRENT_STATE_reg[0]/Q (DFFPOSX1)              0.186910  0.292457   0.403946 r
+  CURRENT_STATE[0] (net)         4     0.101855            0.000000   0.403946 r
+  U25/Y (NOR2X1)                                 0.211974  0.231814   0.635760 f
+  n21 (net)                      2     0.048419            0.000000   0.635760 f
+  U26/Y (NAND2X1)                                0.176000  0.189690   0.825450 r
+  n23 (net)                      2     0.043731            0.000000   0.825450 r
+  U27/Y (NOR2X1)                                 0.867331  0.703289   1.528739 f
+  done_i (net)                   3     0.276270            0.000000   1.528739 f
+  p39/YPAD (PADOUT)                              0.125991  0.603538   2.132278 f
+  done (net)                     1     0.015685            0.000000   2.132278 f
+  done (out)                                     0.125991  0.000000   2.132278 f
+  data arrival time                                                   2.132278
+
+  clock clk (rise edge)                                    20.000000  20.000000
+  clock network delay (propagated)                         0.000000   20.000000
+  clock uncertainty                                        -1.000000  19.000000
+  output external delay                                    0.000000   19.000000
+  data required time                                                  19.000000
+  -------------------------------------------------------------------------------
+  data required time                                                  19.000000
+  data arrival time                                                   -2.132278
+  -------------------------------------------------------------------------------
+  slack (MET)                                                         16.867722
+
+
+1

@@ -1,0 +1,2164 @@
+| units: 30.0  tech: scmos  format: MIT
+A clk input
+A en input
+A init input
+A mcand[0] input
+A mcand[1] input
+A mcand[2] input
+A mcand[3] input
+A mcand[4] input
+A mcand[5] input
+A mcand[6] input
+A mcand[7] input
+A mplier[0] input
+A mplier[1] input
+A mplier[2] input
+A mplier[3] input
+A mplier[4] input
+A mplier[5] input
+A mplier[6] input
+A mplier[7] input
+A q[0] output
+A q[1] output
+A q[2] output
+A q[3] output
+A q[4] output
+A q[5] output
+A q[6] output
+A q[7] output
+A q[8] output
+A q[9] output
+A q[10] output
+A q[11] output
+A q[12] output
+A q[13] output
+A q[14] output
+A q[15] output
+| begin bit1a 280 390
+| begin bit1a.mux21 290 330
+| device bit1a.mux21.nmos 210 150
+n init gnd bit1a.net_3 2 10
+| device bit1a.mux21.pmos 210 150
+p bit1a.net_4 gnd bit1a.net_3 2 10
+| device bit1a.mux21.nmos_1 210 340
+n bit1a.net_4 q[15] bit1a.net_3 2 10
+| device bit1a.mux21.pmos_1 210 340
+p init q[15] bit1a.net_3 2 10
+| end bit1a.mux21
+| begin bit1a.FA 300 430
+| device bit1a.FA.nmos 430 370
+n bit1a.FA.net_2 bit1a.FA.net_9 bit1a.FA.net_10 2 10
+| device bit1a.FA.nmos_1 250 450
+n bit1a.net_3 gnd bit1a.FA.net_9 2 10
+| device bit1a.FA.nmos_2 430 450
+n ai[7] gnd bit1a.FA.net_9 2 10
+| device bit1a.FA.nmos_3 610 450
+n net_1 gnd bit1a.FA.net_9 2 10
+| device bit1a.FA.nmos_4 810 370
+n net_1 bit1a.FA.net_12 bit1a.FA.net_10 2 10
+| device bit1a.FA.nmos_5 810 450
+n ai[7] bit1a.FA.net_8 bit1a.FA.net_12 2 10
+| device bit1a.FA.nmos_6 810 530
+n bit1a.net_3 gnd bit1a.FA.net_8 2 10
+| device bit1a.FA.nmos_7 -250 370
+n net_1 bit1a.FA.net_5 bit1a.FA.net_2 2 10
+| device bit1a.FA.nmos_8 -320 450
+n bit1a.net_3 gnd bit1a.FA.net_5 2 10
+| device bit1a.FA.nmos_9 -150 450
+n ai[7] gnd bit1a.FA.net_5 2 10
+| device bit1a.FA.nmos_10 40 370
+n ai[7] bit1a.FA.net_4 bit1a.FA.net_2 2 10
+| device bit1a.FA.nmos_11 40 450
+n bit1a.net_3 gnd bit1a.FA.net_4 2 10
+| device bit1a.FA.pmos 250 210
+p bit1a.net_3 vdd bit1a.FA.net_11 2 20
+| device bit1a.FA.pmos_1 430 210
+p ai[7] vdd bit1a.FA.net_11 2 20
+| device bit1a.FA.pmos_2 610 210
+p net_1 vdd bit1a.FA.net_11 2 20
+| device bit1a.FA.pmos_3 430 290
+p bit1a.FA.net_2 bit1a.FA.net_11 bit1a.FA.net_10 2 20
+| device bit1a.FA.pmos_4 810 210
+p ai[7] bit1a.FA.net_3 bit1a.FA.net_1 2 20
+| device bit1a.FA.pmos_5 810 290
+p net_1 bit1a.FA.net_1 bit1a.FA.net_10 2 20
+| device bit1a.FA.pmos_6 810 130
+p bit1a.net_3 vdd bit1a.FA.net_3 2 20
+| device bit1a.FA.pmos_7 -320 210
+p bit1a.net_3 vdd bit1a.FA.net_6 2 20
+| device bit1a.FA.pmos_8 -150 210
+p ai[7] vdd bit1a.FA.net_6 2 20
+| device bit1a.FA.pmos_9 -250 290
+p net_1 bit1a.FA.net_6 bit1a.FA.net_2 2 20
+| device bit1a.FA.pmos_10 40 290
+p ai[7] bit1a.FA.net_7 bit1a.FA.net_2 2 20
+| device bit1a.FA.pmos_11 40 210
+p bit1a.net_3 vdd bit1a.FA.net_7 2 20
+| begin bit1a.FA.inv 850 680
+| device bit1a.FA.inv.p0 400 220
+p bit1a.FA.net_2 Vdd cout 2 20
+| device bit1a.FA.inv.n0 400 380
+n bit1a.FA.net_2 Gnd cout 2 10
+| end bit1a.FA.inv
+| begin bit1a.FA.inv_1 860 330
+| device bit1a.FA.inv_1.p0 400 220
+p bit1a.FA.net_10 Vdd fa[7] 2 20
+| device bit1a.FA.inv_1.n0 400 380
+n bit1a.FA.net_10 Gnd fa[7] 2 10
+| end bit1a.FA.inv_1
+| end bit1a.FA
+| begin bit1a.inv 20 310
+| device bit1a.inv.p0 400 220
+p init Vdd bit1a.net_4 2 20
+| device bit1a.inv.n0 400 380
+n init Gnd bit1a.net_4 2 10
+| end bit1a.inv
+| begin bit1a.mux21_1 300 630
+| device bit1a.mux21_1.nmos 210 150
+n init gnd bit1a.net_1 2 10
+| device bit1a.mux21_1.pmos 210 150
+p bit1a.net_4 gnd bit1a.net_1 2 10
+| device bit1a.mux21_1.nmos_1 210 340
+n bit1a.net_4 cout bit1a.net_1 2 10
+| device bit1a.mux21_1.pmos_1 210 340
+p init cout bit1a.net_1 2 10
+| end bit1a.mux21_1
+| begin bit1a.andZ 40 710
+| begin bit1a.andZ.nand 380 300
+| device bit1a.andZ.nand.nmos 410 570
+n clk gnd bit1a.andZ.nand.net_1 2 20
+| device bit1a.andZ.nand.nmos_1 410 490
+n en bit1a.andZ.nand.net_1 bit1a.net_5 2 20
+| device bit1a.andZ.nand.pmos 410 380
+p clk vdd bit1a.net_5 2 20
+| device bit1a.andZ.nand.pmos_1 590 380
+p en vdd bit1a.net_5 2 20
+| end bit1a.andZ.nand
+| device bit1a.andZ.nmos 600 340
+n bit1a.net_5 bit1a.andZ.net_1 bit1a.net_2 2 10
+| device bit1a.andZ.nmos_1 600 420
+n bit1a.net_5 gnd bit1a.andZ.net_1 2 10
+| device bit1a.andZ.pmos 600 160
+p bit1a.net_5 vdd bit1a.andZ.net_2 2 20
+| device bit1a.andZ.pmos_1 600 240
+p bit1a.net_5 bit1a.andZ.net_2 bit1a.net_2 2 20
+| end bit1a.andZ
+| begin bit1a.dffposZ 300 760
+| device bit1a.dffposZ.nmos 420 160
+n bit1a.dffposZ.net_1 gnd bit1a.dffposZ.net_13 2 10
+| device bit1a.dffposZ.nmos_1 420 80
+n bit1a.net_2 bit1a.dffposZ.net_13 bit1a.dffposZ.net_4 2 10
+| device bit1a.dffposZ.nmos_2 890 530
+n bit1a.dffposZ.net_1 gnd bit1a.dffposZ.net_6 2 10
+| device bit1a.dffposZ.nmos_3 890 450
+n bit1a.net_2 bit1a.dffposZ.net_6 bit1a.dffposZ.net_3 2 10
+| device bit1a.dffposZ.pmos 890 350
+p bit1a.net_5 bit1a.dffposZ.net_12 bit1a.dffposZ.net_3 2 20
+| device bit1a.dffposZ.pmos_1 890 270
+p bit1a.dffposZ.net_1 vdd bit1a.dffposZ.net_12 2 20
+| device bit1a.dffposZ.nmos_4 250 530
+n bit1a.net_1 gnd bit1a.dffposZ.net_2 2 10
+| device bit1a.dffposZ.nmos_5 250 450
+n bit1a.net_5 bit1a.dffposZ.net_2 bit1a.dffposZ.net_4 2 10
+| device bit1a.dffposZ.pmos_2 250 350
+p bit1a.net_2 bit1a.dffposZ.net_10 bit1a.dffposZ.net_4 2 20
+| device bit1a.dffposZ.pmos_3 250 270
+p bit1a.net_1 vdd bit1a.dffposZ.net_10 2 20
+| device bit1a.dffposZ.nmos_6 1100 70
+n q[15] gnd bit1a.dffposZ.net_11 2 10
+| device bit1a.dffposZ.nmos_7 1100 -10
+n bit1a.net_5 bit1a.dffposZ.net_11 bit1a.dffposZ.net_3 2 10
+| device bit1a.dffposZ.pmos_4 1100 -110
+p bit1a.net_2 bit1a.dffposZ.net_5 bit1a.dffposZ.net_3 2 20
+| device bit1a.dffposZ.pmos_5 1100 -190
+p q[15] vdd bit1a.dffposZ.net_5 2 20
+| device bit1a.dffposZ.pmos_6 420 -100
+p bit1a.dffposZ.net_1 vdd bit1a.dffposZ.net_9 2 20
+| device bit1a.dffposZ.pmos_7 420 -20
+p bit1a.net_5 bit1a.dffposZ.net_9 bit1a.dffposZ.net_4 2 20
+| device bit1a.dffposZ.nmos_8 510 440
+n bit1a.dffposZ.net_4 gnd bit1a.dffposZ.net_1 2 10
+| device bit1a.dffposZ.pmos_8 510 360
+p bit1a.dffposZ.net_4 vdd bit1a.dffposZ.net_1 2 20
+| device bit1a.dffposZ.pmos_9 1190 280
+p bit1a.dffposZ.net_3 vdd bit1a.dffposZ.net_7 2 20
+| device bit1a.dffposZ.pmos_10 1190 360
+p bit1a.dffposZ.net_3 bit1a.dffposZ.net_7 q[15] 2 20
+| device bit1a.dffposZ.nmos_9 1190 440
+n bit1a.dffposZ.net_3 bit1a.dffposZ.net_8 q[15] 2 10
+| device bit1a.dffposZ.nmos_10 1190 520
+n bit1a.dffposZ.net_3 gnd bit1a.dffposZ.net_8 2 10
+| end bit1a.dffposZ
+| end bit1a
+| begin bit1a_1 280 780
+| begin bit1a_1.mux21 290 330
+| device bit1a_1.mux21.nmos 210 150
+n init gnd bit1a_1.net_3 2 10
+| device bit1a_1.mux21.pmos 210 150
+p bit1a_1.net_4 gnd bit1a_1.net_3 2 10
+| device bit1a_1.mux21.nmos_1 210 340
+n bit1a_1.net_4 q[14] bit1a_1.net_3 2 10
+| device bit1a_1.mux21.pmos_1 210 340
+p init q[14] bit1a_1.net_3 2 10
+| end bit1a_1.mux21
+| begin bit1a_1.FA 300 430
+| device bit1a_1.FA.nmos 430 370
+n bit1a_1.FA.net_2 bit1a_1.FA.net_9 bit1a_1.FA.net_10 2 10
+| device bit1a_1.FA.nmos_1 250 450
+n bit1a_1.net_3 gnd bit1a_1.FA.net_9 2 10
+| device bit1a_1.FA.nmos_2 430 450
+n ai[6] gnd bit1a_1.FA.net_9 2 10
+| device bit1a_1.FA.nmos_3 610 450
+n net_6 gnd bit1a_1.FA.net_9 2 10
+| device bit1a_1.FA.nmos_4 810 370
+n net_6 bit1a_1.FA.net_12 bit1a_1.FA.net_10 2 10
+| device bit1a_1.FA.nmos_5 810 450
+n ai[6] bit1a_1.FA.net_8 bit1a_1.FA.net_12 2 10
+| device bit1a_1.FA.nmos_6 810 530
+n bit1a_1.net_3 gnd bit1a_1.FA.net_8 2 10
+| device bit1a_1.FA.nmos_7 -250 370
+n net_6 bit1a_1.FA.net_5 bit1a_1.FA.net_2 2 10
+| device bit1a_1.FA.nmos_8 -320 450
+n bit1a_1.net_3 gnd bit1a_1.FA.net_5 2 10
+| device bit1a_1.FA.nmos_9 -150 450
+n ai[6] gnd bit1a_1.FA.net_5 2 10
+| device bit1a_1.FA.nmos_10 40 370
+n ai[6] bit1a_1.FA.net_4 bit1a_1.FA.net_2 2 10
+| device bit1a_1.FA.nmos_11 40 450
+n bit1a_1.net_3 gnd bit1a_1.FA.net_4 2 10
+| device bit1a_1.FA.pmos 250 210
+p bit1a_1.net_3 vdd bit1a_1.FA.net_11 2 20
+| device bit1a_1.FA.pmos_1 430 210
+p ai[6] vdd bit1a_1.FA.net_11 2 20
+| device bit1a_1.FA.pmos_2 610 210
+p net_6 vdd bit1a_1.FA.net_11 2 20
+| device bit1a_1.FA.pmos_3 430 290
+p bit1a_1.FA.net_2 bit1a_1.FA.net_11 bit1a_1.FA.net_10 2 20
+| device bit1a_1.FA.pmos_4 810 210
+p ai[6] bit1a_1.FA.net_3 bit1a_1.FA.net_1 2 20
+| device bit1a_1.FA.pmos_5 810 290
+p net_6 bit1a_1.FA.net_1 bit1a_1.FA.net_10 2 20
+| device bit1a_1.FA.pmos_6 810 130
+p bit1a_1.net_3 vdd bit1a_1.FA.net_3 2 20
+| device bit1a_1.FA.pmos_7 -320 210
+p bit1a_1.net_3 vdd bit1a_1.FA.net_6 2 20
+| device bit1a_1.FA.pmos_8 -150 210
+p ai[6] vdd bit1a_1.FA.net_6 2 20
+| device bit1a_1.FA.pmos_9 -250 290
+p net_6 bit1a_1.FA.net_6 bit1a_1.FA.net_2 2 20
+| device bit1a_1.FA.pmos_10 40 290
+p ai[6] bit1a_1.FA.net_7 bit1a_1.FA.net_2 2 20
+| device bit1a_1.FA.pmos_11 40 210
+p bit1a_1.net_3 vdd bit1a_1.FA.net_7 2 20
+| begin bit1a_1.FA.inv 850 680
+| device bit1a_1.FA.inv.p0 400 220
+p bit1a_1.FA.net_2 Vdd net_1 2 20
+| device bit1a_1.FA.inv.n0 400 380
+n bit1a_1.FA.net_2 Gnd net_1 2 10
+| end bit1a_1.FA.inv
+| begin bit1a_1.FA.inv_1 860 330
+| device bit1a_1.FA.inv_1.p0 400 220
+p bit1a_1.FA.net_10 Vdd fa[6] 2 20
+| device bit1a_1.FA.inv_1.n0 400 380
+n bit1a_1.FA.net_10 Gnd fa[6] 2 10
+| end bit1a_1.FA.inv_1
+| end bit1a_1.FA
+| begin bit1a_1.inv 20 310
+| device bit1a_1.inv.p0 400 220
+p init Vdd bit1a_1.net_4 2 20
+| device bit1a_1.inv.n0 400 380
+n init Gnd bit1a_1.net_4 2 10
+| end bit1a_1.inv
+| begin bit1a_1.mux21_1 300 630
+| device bit1a_1.mux21_1.nmos 210 150
+n init gnd bit1a_1.net_1 2 10
+| device bit1a_1.mux21_1.pmos 210 150
+p bit1a_1.net_4 gnd bit1a_1.net_1 2 10
+| device bit1a_1.mux21_1.nmos_1 210 340
+n bit1a_1.net_4 fa[7] bit1a_1.net_1 2 10
+| device bit1a_1.mux21_1.pmos_1 210 340
+p init fa[7] bit1a_1.net_1 2 10
+| end bit1a_1.mux21_1
+| begin bit1a_1.andZ 40 710
+| begin bit1a_1.andZ.nand 380 300
+| device bit1a_1.andZ.nand.nmos 410 570
+n clk gnd bit1a_1.andZ.nand.net_1 2 20
+| device bit1a_1.andZ.nand.nmos_1 410 490
+n en bit1a_1.andZ.nand.net_1 bit1a_1.net_5 2 20
+| device bit1a_1.andZ.nand.pmos 410 380
+p clk vdd bit1a_1.net_5 2 20
+| device bit1a_1.andZ.nand.pmos_1 590 380
+p en vdd bit1a_1.net_5 2 20
+| end bit1a_1.andZ.nand
+| device bit1a_1.andZ.nmos 600 340
+n bit1a_1.net_5 bit1a_1.andZ.net_1 bit1a_1.net_2 2 10
+| device bit1a_1.andZ.nmos_1 600 420
+n bit1a_1.net_5 gnd bit1a_1.andZ.net_1 2 10
+| device bit1a_1.andZ.pmos 600 160
+p bit1a_1.net_5 vdd bit1a_1.andZ.net_2 2 20
+| device bit1a_1.andZ.pmos_1 600 240
+p bit1a_1.net_5 bit1a_1.andZ.net_2 bit1a_1.net_2 2 20
+| end bit1a_1.andZ
+| begin bit1a_1.dffposZ 300 760
+| device bit1a_1.dffposZ.nmos 420 160
+n bit1a_1.dffposZ.net_1 gnd bit1a_1.dffposZ.net_13 2 10
+| device bit1a_1.dffposZ.nmos_1 420 80
+n bit1a_1.net_2 bit1a_1.dffposZ.net_13 bit1a_1.dffposZ.net_4 2 10
+| device bit1a_1.dffposZ.nmos_2 890 530
+n bit1a_1.dffposZ.net_1 gnd bit1a_1.dffposZ.net_6 2 10
+| device bit1a_1.dffposZ.nmos_3 890 450
+n bit1a_1.net_2 bit1a_1.dffposZ.net_6 bit1a_1.dffposZ.net_3 2 10
+| device bit1a_1.dffposZ.pmos 890 350
+p bit1a_1.net_5 bit1a_1.dffposZ.net_12 bit1a_1.dffposZ.net_3 2 20
+| device bit1a_1.dffposZ.pmos_1 890 270
+p bit1a_1.dffposZ.net_1 vdd bit1a_1.dffposZ.net_12 2 20
+| device bit1a_1.dffposZ.nmos_4 250 530
+n bit1a_1.net_1 gnd bit1a_1.dffposZ.net_2 2 10
+| device bit1a_1.dffposZ.nmos_5 250 450
+n bit1a_1.net_5 bit1a_1.dffposZ.net_2 bit1a_1.dffposZ.net_4 2 10
+| device bit1a_1.dffposZ.pmos_2 250 350
+p bit1a_1.net_2 bit1a_1.dffposZ.net_10 bit1a_1.dffposZ.net_4 2 20
+| device bit1a_1.dffposZ.pmos_3 250 270
+p bit1a_1.net_1 vdd bit1a_1.dffposZ.net_10 2 20
+| device bit1a_1.dffposZ.nmos_6 1100 70
+n q[14] gnd bit1a_1.dffposZ.net_11 2 10
+| device bit1a_1.dffposZ.nmos_7 1100 -10
+n bit1a_1.net_5 bit1a_1.dffposZ.net_11 bit1a_1.dffposZ.net_3 2 10
+| device bit1a_1.dffposZ.pmos_4 1100 -110
+p bit1a_1.net_2 bit1a_1.dffposZ.net_5 bit1a_1.dffposZ.net_3 2 20
+| device bit1a_1.dffposZ.pmos_5 1100 -190
+p q[14] vdd bit1a_1.dffposZ.net_5 2 20
+| device bit1a_1.dffposZ.pmos_6 420 -100
+p bit1a_1.dffposZ.net_1 vdd bit1a_1.dffposZ.net_9 2 20
+| device bit1a_1.dffposZ.pmos_7 420 -20
+p bit1a_1.net_5 bit1a_1.dffposZ.net_9 bit1a_1.dffposZ.net_4 2 20
+| device bit1a_1.dffposZ.nmos_8 510 440
+n bit1a_1.dffposZ.net_4 gnd bit1a_1.dffposZ.net_1 2 10
+| device bit1a_1.dffposZ.pmos_8 510 360
+p bit1a_1.dffposZ.net_4 vdd bit1a_1.dffposZ.net_1 2 20
+| device bit1a_1.dffposZ.pmos_9 1190 280
+p bit1a_1.dffposZ.net_3 vdd bit1a_1.dffposZ.net_7 2 20
+| device bit1a_1.dffposZ.pmos_10 1190 360
+p bit1a_1.dffposZ.net_3 bit1a_1.dffposZ.net_7 q[14] 2 20
+| device bit1a_1.dffposZ.nmos_9 1190 440
+n bit1a_1.dffposZ.net_3 bit1a_1.dffposZ.net_8 q[14] 2 10
+| device bit1a_1.dffposZ.nmos_10 1190 520
+n bit1a_1.dffposZ.net_3 gnd bit1a_1.dffposZ.net_8 2 10
+| end bit1a_1.dffposZ
+| end bit1a_1
+| begin bit1a_2 280 1160
+| begin bit1a_2.mux21 290 330
+| device bit1a_2.mux21.nmos 210 150
+n init gnd bit1a_2.net_3 2 10
+| device bit1a_2.mux21.pmos 210 150
+p bit1a_2.net_4 gnd bit1a_2.net_3 2 10
+| device bit1a_2.mux21.nmos_1 210 340
+n bit1a_2.net_4 q[13] bit1a_2.net_3 2 10
+| device bit1a_2.mux21.pmos_1 210 340
+p init q[13] bit1a_2.net_3 2 10
+| end bit1a_2.mux21
+| begin bit1a_2.FA 300 430
+| device bit1a_2.FA.nmos 430 370
+n bit1a_2.FA.net_2 bit1a_2.FA.net_9 bit1a_2.FA.net_10 2 10
+| device bit1a_2.FA.nmos_1 250 450
+n bit1a_2.net_3 gnd bit1a_2.FA.net_9 2 10
+| device bit1a_2.FA.nmos_2 430 450
+n ai[5] gnd bit1a_2.FA.net_9 2 10
+| device bit1a_2.FA.nmos_3 610 450
+n net_2 gnd bit1a_2.FA.net_9 2 10
+| device bit1a_2.FA.nmos_4 810 370
+n net_2 bit1a_2.FA.net_12 bit1a_2.FA.net_10 2 10
+| device bit1a_2.FA.nmos_5 810 450
+n ai[5] bit1a_2.FA.net_8 bit1a_2.FA.net_12 2 10
+| device bit1a_2.FA.nmos_6 810 530
+n bit1a_2.net_3 gnd bit1a_2.FA.net_8 2 10
+| device bit1a_2.FA.nmos_7 -250 370
+n net_2 bit1a_2.FA.net_5 bit1a_2.FA.net_2 2 10
+| device bit1a_2.FA.nmos_8 -320 450
+n bit1a_2.net_3 gnd bit1a_2.FA.net_5 2 10
+| device bit1a_2.FA.nmos_9 -150 450
+n ai[5] gnd bit1a_2.FA.net_5 2 10
+| device bit1a_2.FA.nmos_10 40 370
+n ai[5] bit1a_2.FA.net_4 bit1a_2.FA.net_2 2 10
+| device bit1a_2.FA.nmos_11 40 450
+n bit1a_2.net_3 gnd bit1a_2.FA.net_4 2 10
+| device bit1a_2.FA.pmos 250 210
+p bit1a_2.net_3 vdd bit1a_2.FA.net_11 2 20
+| device bit1a_2.FA.pmos_1 430 210
+p ai[5] vdd bit1a_2.FA.net_11 2 20
+| device bit1a_2.FA.pmos_2 610 210
+p net_2 vdd bit1a_2.FA.net_11 2 20
+| device bit1a_2.FA.pmos_3 430 290
+p bit1a_2.FA.net_2 bit1a_2.FA.net_11 bit1a_2.FA.net_10 2 20
+| device bit1a_2.FA.pmos_4 810 210
+p ai[5] bit1a_2.FA.net_3 bit1a_2.FA.net_1 2 20
+| device bit1a_2.FA.pmos_5 810 290
+p net_2 bit1a_2.FA.net_1 bit1a_2.FA.net_10 2 20
+| device bit1a_2.FA.pmos_6 810 130
+p bit1a_2.net_3 vdd bit1a_2.FA.net_3 2 20
+| device bit1a_2.FA.pmos_7 -320 210
+p bit1a_2.net_3 vdd bit1a_2.FA.net_6 2 20
+| device bit1a_2.FA.pmos_8 -150 210
+p ai[5] vdd bit1a_2.FA.net_6 2 20
+| device bit1a_2.FA.pmos_9 -250 290
+p net_2 bit1a_2.FA.net_6 bit1a_2.FA.net_2 2 20
+| device bit1a_2.FA.pmos_10 40 290
+p ai[5] bit1a_2.FA.net_7 bit1a_2.FA.net_2 2 20
+| device bit1a_2.FA.pmos_11 40 210
+p bit1a_2.net_3 vdd bit1a_2.FA.net_7 2 20
+| begin bit1a_2.FA.inv 850 680
+| device bit1a_2.FA.inv.p0 400 220
+p bit1a_2.FA.net_2 Vdd net_6 2 20
+| device bit1a_2.FA.inv.n0 400 380
+n bit1a_2.FA.net_2 Gnd net_6 2 10
+| end bit1a_2.FA.inv
+| begin bit1a_2.FA.inv_1 860 330
+| device bit1a_2.FA.inv_1.p0 400 220
+p bit1a_2.FA.net_10 Vdd fa[5] 2 20
+| device bit1a_2.FA.inv_1.n0 400 380
+n bit1a_2.FA.net_10 Gnd fa[5] 2 10
+| end bit1a_2.FA.inv_1
+| end bit1a_2.FA
+| begin bit1a_2.inv 20 310
+| device bit1a_2.inv.p0 400 220
+p init Vdd bit1a_2.net_4 2 20
+| device bit1a_2.inv.n0 400 380
+n init Gnd bit1a_2.net_4 2 10
+| end bit1a_2.inv
+| begin bit1a_2.mux21_1 300 630
+| device bit1a_2.mux21_1.nmos 210 150
+n init gnd bit1a_2.net_1 2 10
+| device bit1a_2.mux21_1.pmos 210 150
+p bit1a_2.net_4 gnd bit1a_2.net_1 2 10
+| device bit1a_2.mux21_1.nmos_1 210 340
+n bit1a_2.net_4 fa[6] bit1a_2.net_1 2 10
+| device bit1a_2.mux21_1.pmos_1 210 340
+p init fa[6] bit1a_2.net_1 2 10
+| end bit1a_2.mux21_1
+| begin bit1a_2.andZ 40 710
+| begin bit1a_2.andZ.nand 380 300
+| device bit1a_2.andZ.nand.nmos 410 570
+n clk gnd bit1a_2.andZ.nand.net_1 2 20
+| device bit1a_2.andZ.nand.nmos_1 410 490
+n en bit1a_2.andZ.nand.net_1 bit1a_2.net_5 2 20
+| device bit1a_2.andZ.nand.pmos 410 380
+p clk vdd bit1a_2.net_5 2 20
+| device bit1a_2.andZ.nand.pmos_1 590 380
+p en vdd bit1a_2.net_5 2 20
+| end bit1a_2.andZ.nand
+| device bit1a_2.andZ.nmos 600 340
+n bit1a_2.net_5 bit1a_2.andZ.net_1 bit1a_2.net_2 2 10
+| device bit1a_2.andZ.nmos_1 600 420
+n bit1a_2.net_5 gnd bit1a_2.andZ.net_1 2 10
+| device bit1a_2.andZ.pmos 600 160
+p bit1a_2.net_5 vdd bit1a_2.andZ.net_2 2 20
+| device bit1a_2.andZ.pmos_1 600 240
+p bit1a_2.net_5 bit1a_2.andZ.net_2 bit1a_2.net_2 2 20
+| end bit1a_2.andZ
+| begin bit1a_2.dffposZ 300 760
+| device bit1a_2.dffposZ.nmos 420 160
+n bit1a_2.dffposZ.net_1 gnd bit1a_2.dffposZ.net_13 2 10
+| device bit1a_2.dffposZ.nmos_1 420 80
+n bit1a_2.net_2 bit1a_2.dffposZ.net_13 bit1a_2.dffposZ.net_4 2 10
+| device bit1a_2.dffposZ.nmos_2 890 530
+n bit1a_2.dffposZ.net_1 gnd bit1a_2.dffposZ.net_6 2 10
+| device bit1a_2.dffposZ.nmos_3 890 450
+n bit1a_2.net_2 bit1a_2.dffposZ.net_6 bit1a_2.dffposZ.net_3 2 10
+| device bit1a_2.dffposZ.pmos 890 350
+p bit1a_2.net_5 bit1a_2.dffposZ.net_12 bit1a_2.dffposZ.net_3 2 20
+| device bit1a_2.dffposZ.pmos_1 890 270
+p bit1a_2.dffposZ.net_1 vdd bit1a_2.dffposZ.net_12 2 20
+| device bit1a_2.dffposZ.nmos_4 250 530
+n bit1a_2.net_1 gnd bit1a_2.dffposZ.net_2 2 10
+| device bit1a_2.dffposZ.nmos_5 250 450
+n bit1a_2.net_5 bit1a_2.dffposZ.net_2 bit1a_2.dffposZ.net_4 2 10
+| device bit1a_2.dffposZ.pmos_2 250 350
+p bit1a_2.net_2 bit1a_2.dffposZ.net_10 bit1a_2.dffposZ.net_4 2 20
+| device bit1a_2.dffposZ.pmos_3 250 270
+p bit1a_2.net_1 vdd bit1a_2.dffposZ.net_10 2 20
+| device bit1a_2.dffposZ.nmos_6 1100 70
+n q[13] gnd bit1a_2.dffposZ.net_11 2 10
+| device bit1a_2.dffposZ.nmos_7 1100 -10
+n bit1a_2.net_5 bit1a_2.dffposZ.net_11 bit1a_2.dffposZ.net_3 2 10
+| device bit1a_2.dffposZ.pmos_4 1100 -110
+p bit1a_2.net_2 bit1a_2.dffposZ.net_5 bit1a_2.dffposZ.net_3 2 20
+| device bit1a_2.dffposZ.pmos_5 1100 -190
+p q[13] vdd bit1a_2.dffposZ.net_5 2 20
+| device bit1a_2.dffposZ.pmos_6 420 -100
+p bit1a_2.dffposZ.net_1 vdd bit1a_2.dffposZ.net_9 2 20
+| device bit1a_2.dffposZ.pmos_7 420 -20
+p bit1a_2.net_5 bit1a_2.dffposZ.net_9 bit1a_2.dffposZ.net_4 2 20
+| device bit1a_2.dffposZ.nmos_8 510 440
+n bit1a_2.dffposZ.net_4 gnd bit1a_2.dffposZ.net_1 2 10
+| device bit1a_2.dffposZ.pmos_8 510 360
+p bit1a_2.dffposZ.net_4 vdd bit1a_2.dffposZ.net_1 2 20
+| device bit1a_2.dffposZ.pmos_9 1190 280
+p bit1a_2.dffposZ.net_3 vdd bit1a_2.dffposZ.net_7 2 20
+| device bit1a_2.dffposZ.pmos_10 1190 360
+p bit1a_2.dffposZ.net_3 bit1a_2.dffposZ.net_7 q[13] 2 20
+| device bit1a_2.dffposZ.nmos_9 1190 440
+n bit1a_2.dffposZ.net_3 bit1a_2.dffposZ.net_8 q[13] 2 10
+| device bit1a_2.dffposZ.nmos_10 1190 520
+n bit1a_2.dffposZ.net_3 gnd bit1a_2.dffposZ.net_8 2 10
+| end bit1a_2.dffposZ
+| end bit1a_2
+| begin bit1a_3 280 1550
+| begin bit1a_3.mux21 290 330
+| device bit1a_3.mux21.nmos 210 150
+n init gnd bit1a_3.net_3 2 10
+| device bit1a_3.mux21.pmos 210 150
+p bit1a_3.net_4 gnd bit1a_3.net_3 2 10
+| device bit1a_3.mux21.nmos_1 210 340
+n bit1a_3.net_4 q[12] bit1a_3.net_3 2 10
+| device bit1a_3.mux21.pmos_1 210 340
+p init q[12] bit1a_3.net_3 2 10
+| end bit1a_3.mux21
+| begin bit1a_3.FA 300 430
+| device bit1a_3.FA.nmos 430 370
+n bit1a_3.FA.net_2 bit1a_3.FA.net_9 bit1a_3.FA.net_10 2 10
+| device bit1a_3.FA.nmos_1 250 450
+n bit1a_3.net_3 gnd bit1a_3.FA.net_9 2 10
+| device bit1a_3.FA.nmos_2 430 450
+n ai[4] gnd bit1a_3.FA.net_9 2 10
+| device bit1a_3.FA.nmos_3 610 450
+n net_5 gnd bit1a_3.FA.net_9 2 10
+| device bit1a_3.FA.nmos_4 810 370
+n net_5 bit1a_3.FA.net_12 bit1a_3.FA.net_10 2 10
+| device bit1a_3.FA.nmos_5 810 450
+n ai[4] bit1a_3.FA.net_8 bit1a_3.FA.net_12 2 10
+| device bit1a_3.FA.nmos_6 810 530
+n bit1a_3.net_3 gnd bit1a_3.FA.net_8 2 10
+| device bit1a_3.FA.nmos_7 -250 370
+n net_5 bit1a_3.FA.net_5 bit1a_3.FA.net_2 2 10
+| device bit1a_3.FA.nmos_8 -320 450
+n bit1a_3.net_3 gnd bit1a_3.FA.net_5 2 10
+| device bit1a_3.FA.nmos_9 -150 450
+n ai[4] gnd bit1a_3.FA.net_5 2 10
+| device bit1a_3.FA.nmos_10 40 370
+n ai[4] bit1a_3.FA.net_4 bit1a_3.FA.net_2 2 10
+| device bit1a_3.FA.nmos_11 40 450
+n bit1a_3.net_3 gnd bit1a_3.FA.net_4 2 10
+| device bit1a_3.FA.pmos 250 210
+p bit1a_3.net_3 vdd bit1a_3.FA.net_11 2 20
+| device bit1a_3.FA.pmos_1 430 210
+p ai[4] vdd bit1a_3.FA.net_11 2 20
+| device bit1a_3.FA.pmos_2 610 210
+p net_5 vdd bit1a_3.FA.net_11 2 20
+| device bit1a_3.FA.pmos_3 430 290
+p bit1a_3.FA.net_2 bit1a_3.FA.net_11 bit1a_3.FA.net_10 2 20
+| device bit1a_3.FA.pmos_4 810 210
+p ai[4] bit1a_3.FA.net_3 bit1a_3.FA.net_1 2 20
+| device bit1a_3.FA.pmos_5 810 290
+p net_5 bit1a_3.FA.net_1 bit1a_3.FA.net_10 2 20
+| device bit1a_3.FA.pmos_6 810 130
+p bit1a_3.net_3 vdd bit1a_3.FA.net_3 2 20
+| device bit1a_3.FA.pmos_7 -320 210
+p bit1a_3.net_3 vdd bit1a_3.FA.net_6 2 20
+| device bit1a_3.FA.pmos_8 -150 210
+p ai[4] vdd bit1a_3.FA.net_6 2 20
+| device bit1a_3.FA.pmos_9 -250 290
+p net_5 bit1a_3.FA.net_6 bit1a_3.FA.net_2 2 20
+| device bit1a_3.FA.pmos_10 40 290
+p ai[4] bit1a_3.FA.net_7 bit1a_3.FA.net_2 2 20
+| device bit1a_3.FA.pmos_11 40 210
+p bit1a_3.net_3 vdd bit1a_3.FA.net_7 2 20
+| begin bit1a_3.FA.inv 850 680
+| device bit1a_3.FA.inv.p0 400 220
+p bit1a_3.FA.net_2 Vdd net_2 2 20
+| device bit1a_3.FA.inv.n0 400 380
+n bit1a_3.FA.net_2 Gnd net_2 2 10
+| end bit1a_3.FA.inv
+| begin bit1a_3.FA.inv_1 860 330
+| device bit1a_3.FA.inv_1.p0 400 220
+p bit1a_3.FA.net_10 Vdd fa[4] 2 20
+| device bit1a_3.FA.inv_1.n0 400 380
+n bit1a_3.FA.net_10 Gnd fa[4] 2 10
+| end bit1a_3.FA.inv_1
+| end bit1a_3.FA
+| begin bit1a_3.inv 20 310
+| device bit1a_3.inv.p0 400 220
+p init Vdd bit1a_3.net_4 2 20
+| device bit1a_3.inv.n0 400 380
+n init Gnd bit1a_3.net_4 2 10
+| end bit1a_3.inv
+| begin bit1a_3.mux21_1 300 630
+| device bit1a_3.mux21_1.nmos 210 150
+n init gnd bit1a_3.net_1 2 10
+| device bit1a_3.mux21_1.pmos 210 150
+p bit1a_3.net_4 gnd bit1a_3.net_1 2 10
+| device bit1a_3.mux21_1.nmos_1 210 340
+n bit1a_3.net_4 fa[5] bit1a_3.net_1 2 10
+| device bit1a_3.mux21_1.pmos_1 210 340
+p init fa[5] bit1a_3.net_1 2 10
+| end bit1a_3.mux21_1
+| begin bit1a_3.andZ 40 710
+| begin bit1a_3.andZ.nand 380 300
+| device bit1a_3.andZ.nand.nmos 410 570
+n clk gnd bit1a_3.andZ.nand.net_1 2 20
+| device bit1a_3.andZ.nand.nmos_1 410 490
+n en bit1a_3.andZ.nand.net_1 bit1a_3.net_5 2 20
+| device bit1a_3.andZ.nand.pmos 410 380
+p clk vdd bit1a_3.net_5 2 20
+| device bit1a_3.andZ.nand.pmos_1 590 380
+p en vdd bit1a_3.net_5 2 20
+| end bit1a_3.andZ.nand
+| device bit1a_3.andZ.nmos 600 340
+n bit1a_3.net_5 bit1a_3.andZ.net_1 bit1a_3.net_2 2 10
+| device bit1a_3.andZ.nmos_1 600 420
+n bit1a_3.net_5 gnd bit1a_3.andZ.net_1 2 10
+| device bit1a_3.andZ.pmos 600 160
+p bit1a_3.net_5 vdd bit1a_3.andZ.net_2 2 20
+| device bit1a_3.andZ.pmos_1 600 240
+p bit1a_3.net_5 bit1a_3.andZ.net_2 bit1a_3.net_2 2 20
+| end bit1a_3.andZ
+| begin bit1a_3.dffposZ 300 760
+| device bit1a_3.dffposZ.nmos 420 160
+n bit1a_3.dffposZ.net_1 gnd bit1a_3.dffposZ.net_13 2 10
+| device bit1a_3.dffposZ.nmos_1 420 80
+n bit1a_3.net_2 bit1a_3.dffposZ.net_13 bit1a_3.dffposZ.net_4 2 10
+| device bit1a_3.dffposZ.nmos_2 890 530
+n bit1a_3.dffposZ.net_1 gnd bit1a_3.dffposZ.net_6 2 10
+| device bit1a_3.dffposZ.nmos_3 890 450
+n bit1a_3.net_2 bit1a_3.dffposZ.net_6 bit1a_3.dffposZ.net_3 2 10
+| device bit1a_3.dffposZ.pmos 890 350
+p bit1a_3.net_5 bit1a_3.dffposZ.net_12 bit1a_3.dffposZ.net_3 2 20
+| device bit1a_3.dffposZ.pmos_1 890 270
+p bit1a_3.dffposZ.net_1 vdd bit1a_3.dffposZ.net_12 2 20
+| device bit1a_3.dffposZ.nmos_4 250 530
+n bit1a_3.net_1 gnd bit1a_3.dffposZ.net_2 2 10
+| device bit1a_3.dffposZ.nmos_5 250 450
+n bit1a_3.net_5 bit1a_3.dffposZ.net_2 bit1a_3.dffposZ.net_4 2 10
+| device bit1a_3.dffposZ.pmos_2 250 350
+p bit1a_3.net_2 bit1a_3.dffposZ.net_10 bit1a_3.dffposZ.net_4 2 20
+| device bit1a_3.dffposZ.pmos_3 250 270
+p bit1a_3.net_1 vdd bit1a_3.dffposZ.net_10 2 20
+| device bit1a_3.dffposZ.nmos_6 1100 70
+n q[12] gnd bit1a_3.dffposZ.net_11 2 10
+| device bit1a_3.dffposZ.nmos_7 1100 -10
+n bit1a_3.net_5 bit1a_3.dffposZ.net_11 bit1a_3.dffposZ.net_3 2 10
+| device bit1a_3.dffposZ.pmos_4 1100 -110
+p bit1a_3.net_2 bit1a_3.dffposZ.net_5 bit1a_3.dffposZ.net_3 2 20
+| device bit1a_3.dffposZ.pmos_5 1100 -190
+p q[12] vdd bit1a_3.dffposZ.net_5 2 20
+| device bit1a_3.dffposZ.pmos_6 420 -100
+p bit1a_3.dffposZ.net_1 vdd bit1a_3.dffposZ.net_9 2 20
+| device bit1a_3.dffposZ.pmos_7 420 -20
+p bit1a_3.net_5 bit1a_3.dffposZ.net_9 bit1a_3.dffposZ.net_4 2 20
+| device bit1a_3.dffposZ.nmos_8 510 440
+n bit1a_3.dffposZ.net_4 gnd bit1a_3.dffposZ.net_1 2 10
+| device bit1a_3.dffposZ.pmos_8 510 360
+p bit1a_3.dffposZ.net_4 vdd bit1a_3.dffposZ.net_1 2 20
+| device bit1a_3.dffposZ.pmos_9 1190 280
+p bit1a_3.dffposZ.net_3 vdd bit1a_3.dffposZ.net_7 2 20
+| device bit1a_3.dffposZ.pmos_10 1190 360
+p bit1a_3.dffposZ.net_3 bit1a_3.dffposZ.net_7 q[12] 2 20
+| device bit1a_3.dffposZ.nmos_9 1190 440
+n bit1a_3.dffposZ.net_3 bit1a_3.dffposZ.net_8 q[12] 2 10
+| device bit1a_3.dffposZ.nmos_10 1190 520
+n bit1a_3.dffposZ.net_3 gnd bit1a_3.dffposZ.net_8 2 10
+| end bit1a_3.dffposZ
+| end bit1a_3
+| begin bit1b 810 400
+| begin bit1b.mux21 290 350
+| device bit1b.mux21.nmos 210 150
+n q[0] mcand[7] ai[7] 2 10
+| device bit1b.mux21.pmos 210 150
+p bit1b.net_5 mcand[7] ai[7] 2 10
+| device bit1b.mux21.nmos_1 210 340
+n bit1b.net_5 gnd ai[7] 2 10
+| device bit1b.mux21.pmos_1 210 340
+p q[0] gnd ai[7] 2 10
+| end bit1b.mux21
+| begin bit1b.inv 10 470
+| device bit1b.inv.p0 400 220
+p init Vdd bit1b.net_2 2 20
+| device bit1b.inv.n0 400 380
+n init Gnd bit1b.net_2 2 10
+| end bit1b.inv
+| begin bit1b.mux21_1 300 630
+| device bit1b.mux21_1.nmos 210 150
+n init ao[7] bit1b.net_1 2 10
+| device bit1b.mux21_1.pmos 210 150
+p bit1b.net_2 ao[7] bit1b.net_1 2 10
+| device bit1b.mux21_1.nmos_1 210 340
+n bit1b.net_2 fa[0] bit1b.net_1 2 10
+| device bit1b.mux21_1.pmos_1 210 340
+p init fa[0] bit1b.net_1 2 10
+| end bit1b.mux21_1
+| begin bit1b.mux21_2 300 490
+| device bit1b.mux21_2.nmos 210 150
+n init mplier[7] ao[7] 2 10
+| device bit1b.mux21_2.pmos 210 150
+p bit1b.net_2 mplier[7] ao[7] 2 10
+| device bit1b.mux21_2.nmos_1 210 340
+n bit1b.net_2 q[7] ao[7] 2 10
+| device bit1b.mux21_2.pmos_1 210 340
+p init q[7] ao[7] 2 10
+| end bit1b.mux21_2
+| begin bit1b.inv_1 10 330
+| device bit1b.inv_1.p0 400 220
+p q[0] Vdd bit1b.net_5 2 20
+| device bit1b.inv_1.n0 400 380
+n q[0] Gnd bit1b.net_5 2 10
+| end bit1b.inv_1
+| begin bit1b.andZ 30 710
+| begin bit1b.andZ.nand 380 300
+| device bit1b.andZ.nand.nmos 410 570
+n clk gnd bit1b.andZ.nand.net_1 2 20
+| device bit1b.andZ.nand.nmos_1 410 490
+n en bit1b.andZ.nand.net_1 bit1b.net_4 2 20
+| device bit1b.andZ.nand.pmos 410 380
+p clk vdd bit1b.net_4 2 20
+| device bit1b.andZ.nand.pmos_1 590 380
+p en vdd bit1b.net_4 2 20
+| end bit1b.andZ.nand
+| device bit1b.andZ.nmos 600 340
+n bit1b.net_4 bit1b.andZ.net_1 bit1b.net_3 2 10
+| device bit1b.andZ.nmos_1 600 420
+n bit1b.net_4 gnd bit1b.andZ.net_1 2 10
+| device bit1b.andZ.pmos 600 160
+p bit1b.net_4 vdd bit1b.andZ.net_2 2 20
+| device bit1b.andZ.pmos_1 600 240
+p bit1b.net_4 bit1b.andZ.net_2 bit1b.net_3 2 20
+| end bit1b.andZ
+| begin bit1b.dffposZ 300 760
+| device bit1b.dffposZ.nmos 420 160
+n bit1b.dffposZ.net_1 gnd bit1b.dffposZ.net_13 2 10
+| device bit1b.dffposZ.nmos_1 420 80
+n bit1b.net_3 bit1b.dffposZ.net_13 bit1b.dffposZ.net_4 2 10
+| device bit1b.dffposZ.nmos_2 890 530
+n bit1b.dffposZ.net_1 gnd bit1b.dffposZ.net_6 2 10
+| device bit1b.dffposZ.nmos_3 890 450
+n bit1b.net_3 bit1b.dffposZ.net_6 bit1b.dffposZ.net_3 2 10
+| device bit1b.dffposZ.pmos 890 350
+p bit1b.net_4 bit1b.dffposZ.net_12 bit1b.dffposZ.net_3 2 20
+| device bit1b.dffposZ.pmos_1 890 270
+p bit1b.dffposZ.net_1 vdd bit1b.dffposZ.net_12 2 20
+| device bit1b.dffposZ.nmos_4 250 530
+n bit1b.net_1 gnd bit1b.dffposZ.net_2 2 10
+| device bit1b.dffposZ.nmos_5 250 450
+n bit1b.net_4 bit1b.dffposZ.net_2 bit1b.dffposZ.net_4 2 10
+| device bit1b.dffposZ.pmos_2 250 350
+p bit1b.net_3 bit1b.dffposZ.net_10 bit1b.dffposZ.net_4 2 20
+| device bit1b.dffposZ.pmos_3 250 270
+p bit1b.net_1 vdd bit1b.dffposZ.net_10 2 20
+| device bit1b.dffposZ.nmos_6 1100 70
+n q[7] gnd bit1b.dffposZ.net_11 2 10
+| device bit1b.dffposZ.nmos_7 1100 -10
+n bit1b.net_4 bit1b.dffposZ.net_11 bit1b.dffposZ.net_3 2 10
+| device bit1b.dffposZ.pmos_4 1100 -110
+p bit1b.net_3 bit1b.dffposZ.net_5 bit1b.dffposZ.net_3 2 20
+| device bit1b.dffposZ.pmos_5 1100 -190
+p q[7] vdd bit1b.dffposZ.net_5 2 20
+| device bit1b.dffposZ.pmos_6 420 -100
+p bit1b.dffposZ.net_1 vdd bit1b.dffposZ.net_9 2 20
+| device bit1b.dffposZ.pmos_7 420 -20
+p bit1b.net_4 bit1b.dffposZ.net_9 bit1b.dffposZ.net_4 2 20
+| device bit1b.dffposZ.nmos_8 510 440
+n bit1b.dffposZ.net_4 gnd bit1b.dffposZ.net_1 2 10
+| device bit1b.dffposZ.pmos_8 510 360
+p bit1b.dffposZ.net_4 vdd bit1b.dffposZ.net_1 2 20
+| device bit1b.dffposZ.pmos_9 1190 280
+p bit1b.dffposZ.net_3 vdd bit1b.dffposZ.net_7 2 20
+| device bit1b.dffposZ.pmos_10 1190 360
+p bit1b.dffposZ.net_3 bit1b.dffposZ.net_7 q[7] 2 20
+| device bit1b.dffposZ.nmos_9 1190 440
+n bit1b.dffposZ.net_3 bit1b.dffposZ.net_8 q[7] 2 10
+| device bit1b.dffposZ.nmos_10 1190 520
+n bit1b.dffposZ.net_3 gnd bit1b.dffposZ.net_8 2 10
+| end bit1b.dffposZ
+| end bit1b
+| begin bit1b_1 810 790
+| begin bit1b_1.mux21 290 350
+| device bit1b_1.mux21.nmos 210 150
+n q[0] mcand[6] ai[6] 2 10
+| device bit1b_1.mux21.pmos 210 150
+p bit1b_1.net_5 mcand[6] ai[6] 2 10
+| device bit1b_1.mux21.nmos_1 210 340
+n bit1b_1.net_5 gnd ai[6] 2 10
+| device bit1b_1.mux21.pmos_1 210 340
+p q[0] gnd ai[6] 2 10
+| end bit1b_1.mux21
+| begin bit1b_1.inv 10 470
+| device bit1b_1.inv.p0 400 220
+p init Vdd bit1b_1.net_2 2 20
+| device bit1b_1.inv.n0 400 380
+n init Gnd bit1b_1.net_2 2 10
+| end bit1b_1.inv
+| begin bit1b_1.mux21_1 300 630
+| device bit1b_1.mux21_1.nmos 210 150
+n init ao[6] bit1b_1.net_1 2 10
+| device bit1b_1.mux21_1.pmos 210 150
+p bit1b_1.net_2 ao[6] bit1b_1.net_1 2 10
+| device bit1b_1.mux21_1.nmos_1 210 340
+n bit1b_1.net_2 ao[7] bit1b_1.net_1 2 10
+| device bit1b_1.mux21_1.pmos_1 210 340
+p init ao[7] bit1b_1.net_1 2 10
+| end bit1b_1.mux21_1
+| begin bit1b_1.mux21_2 300 490
+| device bit1b_1.mux21_2.nmos 210 150
+n init mplier[6] ao[6] 2 10
+| device bit1b_1.mux21_2.pmos 210 150
+p bit1b_1.net_2 mplier[6] ao[6] 2 10
+| device bit1b_1.mux21_2.nmos_1 210 340
+n bit1b_1.net_2 q[6] ao[6] 2 10
+| device bit1b_1.mux21_2.pmos_1 210 340
+p init q[6] ao[6] 2 10
+| end bit1b_1.mux21_2
+| begin bit1b_1.inv_1 10 330
+| device bit1b_1.inv_1.p0 400 220
+p q[0] Vdd bit1b_1.net_5 2 20
+| device bit1b_1.inv_1.n0 400 380
+n q[0] Gnd bit1b_1.net_5 2 10
+| end bit1b_1.inv_1
+| begin bit1b_1.andZ 30 710
+| begin bit1b_1.andZ.nand 380 300
+| device bit1b_1.andZ.nand.nmos 410 570
+n clk gnd bit1b_1.andZ.nand.net_1 2 20
+| device bit1b_1.andZ.nand.nmos_1 410 490
+n en bit1b_1.andZ.nand.net_1 bit1b_1.net_4 2 20
+| device bit1b_1.andZ.nand.pmos 410 380
+p clk vdd bit1b_1.net_4 2 20
+| device bit1b_1.andZ.nand.pmos_1 590 380
+p en vdd bit1b_1.net_4 2 20
+| end bit1b_1.andZ.nand
+| device bit1b_1.andZ.nmos 600 340
+n bit1b_1.net_4 bit1b_1.andZ.net_1 bit1b_1.net_3 2 10
+| device bit1b_1.andZ.nmos_1 600 420
+n bit1b_1.net_4 gnd bit1b_1.andZ.net_1 2 10
+| device bit1b_1.andZ.pmos 600 160
+p bit1b_1.net_4 vdd bit1b_1.andZ.net_2 2 20
+| device bit1b_1.andZ.pmos_1 600 240
+p bit1b_1.net_4 bit1b_1.andZ.net_2 bit1b_1.net_3 2 20
+| end bit1b_1.andZ
+| begin bit1b_1.dffposZ 300 760
+| device bit1b_1.dffposZ.nmos 420 160
+n bit1b_1.dffposZ.net_1 gnd bit1b_1.dffposZ.net_13 2 10
+| device bit1b_1.dffposZ.nmos_1 420 80
+n bit1b_1.net_3 bit1b_1.dffposZ.net_13 bit1b_1.dffposZ.net_4 2 10
+| device bit1b_1.dffposZ.nmos_2 890 530
+n bit1b_1.dffposZ.net_1 gnd bit1b_1.dffposZ.net_6 2 10
+| device bit1b_1.dffposZ.nmos_3 890 450
+n bit1b_1.net_3 bit1b_1.dffposZ.net_6 bit1b_1.dffposZ.net_3 2 10
+| device bit1b_1.dffposZ.pmos 890 350
+p bit1b_1.net_4 bit1b_1.dffposZ.net_12 bit1b_1.dffposZ.net_3 2 20
+| device bit1b_1.dffposZ.pmos_1 890 270
+p bit1b_1.dffposZ.net_1 vdd bit1b_1.dffposZ.net_12 2 20
+| device bit1b_1.dffposZ.nmos_4 250 530
+n bit1b_1.net_1 gnd bit1b_1.dffposZ.net_2 2 10
+| device bit1b_1.dffposZ.nmos_5 250 450
+n bit1b_1.net_4 bit1b_1.dffposZ.net_2 bit1b_1.dffposZ.net_4 2 10
+| device bit1b_1.dffposZ.pmos_2 250 350
+p bit1b_1.net_3 bit1b_1.dffposZ.net_10 bit1b_1.dffposZ.net_4 2 20
+| device bit1b_1.dffposZ.pmos_3 250 270
+p bit1b_1.net_1 vdd bit1b_1.dffposZ.net_10 2 20
+| device bit1b_1.dffposZ.nmos_6 1100 70
+n q[6] gnd bit1b_1.dffposZ.net_11 2 10
+| device bit1b_1.dffposZ.nmos_7 1100 -10
+n bit1b_1.net_4 bit1b_1.dffposZ.net_11 bit1b_1.dffposZ.net_3 2 10
+| device bit1b_1.dffposZ.pmos_4 1100 -110
+p bit1b_1.net_3 bit1b_1.dffposZ.net_5 bit1b_1.dffposZ.net_3 2 20
+| device bit1b_1.dffposZ.pmos_5 1100 -190
+p q[6] vdd bit1b_1.dffposZ.net_5 2 20
+| device bit1b_1.dffposZ.pmos_6 420 -100
+p bit1b_1.dffposZ.net_1 vdd bit1b_1.dffposZ.net_9 2 20
+| device bit1b_1.dffposZ.pmos_7 420 -20
+p bit1b_1.net_4 bit1b_1.dffposZ.net_9 bit1b_1.dffposZ.net_4 2 20
+| device bit1b_1.dffposZ.nmos_8 510 440
+n bit1b_1.dffposZ.net_4 gnd bit1b_1.dffposZ.net_1 2 10
+| device bit1b_1.dffposZ.pmos_8 510 360
+p bit1b_1.dffposZ.net_4 vdd bit1b_1.dffposZ.net_1 2 20
+| device bit1b_1.dffposZ.pmos_9 1190 280
+p bit1b_1.dffposZ.net_3 vdd bit1b_1.dffposZ.net_7 2 20
+| device bit1b_1.dffposZ.pmos_10 1190 360
+p bit1b_1.dffposZ.net_3 bit1b_1.dffposZ.net_7 q[6] 2 20
+| device bit1b_1.dffposZ.nmos_9 1190 440
+n bit1b_1.dffposZ.net_3 bit1b_1.dffposZ.net_8 q[6] 2 10
+| device bit1b_1.dffposZ.nmos_10 1190 520
+n bit1b_1.dffposZ.net_3 gnd bit1b_1.dffposZ.net_8 2 10
+| end bit1b_1.dffposZ
+| end bit1b_1
+| begin bit1b_2 810 1170
+| begin bit1b_2.mux21 290 350
+| device bit1b_2.mux21.nmos 210 150
+n q[0] mcand[5] ai[5] 2 10
+| device bit1b_2.mux21.pmos 210 150
+p bit1b_2.net_5 mcand[5] ai[5] 2 10
+| device bit1b_2.mux21.nmos_1 210 340
+n bit1b_2.net_5 gnd ai[5] 2 10
+| device bit1b_2.mux21.pmos_1 210 340
+p q[0] gnd ai[5] 2 10
+| end bit1b_2.mux21
+| begin bit1b_2.inv 10 470
+| device bit1b_2.inv.p0 400 220
+p init Vdd bit1b_2.net_2 2 20
+| device bit1b_2.inv.n0 400 380
+n init Gnd bit1b_2.net_2 2 10
+| end bit1b_2.inv
+| begin bit1b_2.mux21_1 300 630
+| device bit1b_2.mux21_1.nmos 210 150
+n init ao[5] bit1b_2.net_1 2 10
+| device bit1b_2.mux21_1.pmos 210 150
+p bit1b_2.net_2 ao[5] bit1b_2.net_1 2 10
+| device bit1b_2.mux21_1.nmos_1 210 340
+n bit1b_2.net_2 ao[6] bit1b_2.net_1 2 10
+| device bit1b_2.mux21_1.pmos_1 210 340
+p init ao[6] bit1b_2.net_1 2 10
+| end bit1b_2.mux21_1
+| begin bit1b_2.mux21_2 300 490
+| device bit1b_2.mux21_2.nmos 210 150
+n init mplier[5] ao[5] 2 10
+| device bit1b_2.mux21_2.pmos 210 150
+p bit1b_2.net_2 mplier[5] ao[5] 2 10
+| device bit1b_2.mux21_2.nmos_1 210 340
+n bit1b_2.net_2 q[5] ao[5] 2 10
+| device bit1b_2.mux21_2.pmos_1 210 340
+p init q[5] ao[5] 2 10
+| end bit1b_2.mux21_2
+| begin bit1b_2.inv_1 10 330
+| device bit1b_2.inv_1.p0 400 220
+p q[0] Vdd bit1b_2.net_5 2 20
+| device bit1b_2.inv_1.n0 400 380
+n q[0] Gnd bit1b_2.net_5 2 10
+| end bit1b_2.inv_1
+| begin bit1b_2.andZ 30 710
+| begin bit1b_2.andZ.nand 380 300
+| device bit1b_2.andZ.nand.nmos 410 570
+n clk gnd bit1b_2.andZ.nand.net_1 2 20
+| device bit1b_2.andZ.nand.nmos_1 410 490
+n en bit1b_2.andZ.nand.net_1 bit1b_2.net_4 2 20
+| device bit1b_2.andZ.nand.pmos 410 380
+p clk vdd bit1b_2.net_4 2 20
+| device bit1b_2.andZ.nand.pmos_1 590 380
+p en vdd bit1b_2.net_4 2 20
+| end bit1b_2.andZ.nand
+| device bit1b_2.andZ.nmos 600 340
+n bit1b_2.net_4 bit1b_2.andZ.net_1 bit1b_2.net_3 2 10
+| device bit1b_2.andZ.nmos_1 600 420
+n bit1b_2.net_4 gnd bit1b_2.andZ.net_1 2 10
+| device bit1b_2.andZ.pmos 600 160
+p bit1b_2.net_4 vdd bit1b_2.andZ.net_2 2 20
+| device bit1b_2.andZ.pmos_1 600 240
+p bit1b_2.net_4 bit1b_2.andZ.net_2 bit1b_2.net_3 2 20
+| end bit1b_2.andZ
+| begin bit1b_2.dffposZ 300 760
+| device bit1b_2.dffposZ.nmos 420 160
+n bit1b_2.dffposZ.net_1 gnd bit1b_2.dffposZ.net_13 2 10
+| device bit1b_2.dffposZ.nmos_1 420 80
+n bit1b_2.net_3 bit1b_2.dffposZ.net_13 bit1b_2.dffposZ.net_4 2 10
+| device bit1b_2.dffposZ.nmos_2 890 530
+n bit1b_2.dffposZ.net_1 gnd bit1b_2.dffposZ.net_6 2 10
+| device bit1b_2.dffposZ.nmos_3 890 450
+n bit1b_2.net_3 bit1b_2.dffposZ.net_6 bit1b_2.dffposZ.net_3 2 10
+| device bit1b_2.dffposZ.pmos 890 350
+p bit1b_2.net_4 bit1b_2.dffposZ.net_12 bit1b_2.dffposZ.net_3 2 20
+| device bit1b_2.dffposZ.pmos_1 890 270
+p bit1b_2.dffposZ.net_1 vdd bit1b_2.dffposZ.net_12 2 20
+| device bit1b_2.dffposZ.nmos_4 250 530
+n bit1b_2.net_1 gnd bit1b_2.dffposZ.net_2 2 10
+| device bit1b_2.dffposZ.nmos_5 250 450
+n bit1b_2.net_4 bit1b_2.dffposZ.net_2 bit1b_2.dffposZ.net_4 2 10
+| device bit1b_2.dffposZ.pmos_2 250 350
+p bit1b_2.net_3 bit1b_2.dffposZ.net_10 bit1b_2.dffposZ.net_4 2 20
+| device bit1b_2.dffposZ.pmos_3 250 270
+p bit1b_2.net_1 vdd bit1b_2.dffposZ.net_10 2 20
+| device bit1b_2.dffposZ.nmos_6 1100 70
+n q[5] gnd bit1b_2.dffposZ.net_11 2 10
+| device bit1b_2.dffposZ.nmos_7 1100 -10
+n bit1b_2.net_4 bit1b_2.dffposZ.net_11 bit1b_2.dffposZ.net_3 2 10
+| device bit1b_2.dffposZ.pmos_4 1100 -110
+p bit1b_2.net_3 bit1b_2.dffposZ.net_5 bit1b_2.dffposZ.net_3 2 20
+| device bit1b_2.dffposZ.pmos_5 1100 -190
+p q[5] vdd bit1b_2.dffposZ.net_5 2 20
+| device bit1b_2.dffposZ.pmos_6 420 -100
+p bit1b_2.dffposZ.net_1 vdd bit1b_2.dffposZ.net_9 2 20
+| device bit1b_2.dffposZ.pmos_7 420 -20
+p bit1b_2.net_4 bit1b_2.dffposZ.net_9 bit1b_2.dffposZ.net_4 2 20
+| device bit1b_2.dffposZ.nmos_8 510 440
+n bit1b_2.dffposZ.net_4 gnd bit1b_2.dffposZ.net_1 2 10
+| device bit1b_2.dffposZ.pmos_8 510 360
+p bit1b_2.dffposZ.net_4 vdd bit1b_2.dffposZ.net_1 2 20
+| device bit1b_2.dffposZ.pmos_9 1190 280
+p bit1b_2.dffposZ.net_3 vdd bit1b_2.dffposZ.net_7 2 20
+| device bit1b_2.dffposZ.pmos_10 1190 360
+p bit1b_2.dffposZ.net_3 bit1b_2.dffposZ.net_7 q[5] 2 20
+| device bit1b_2.dffposZ.nmos_9 1190 440
+n bit1b_2.dffposZ.net_3 bit1b_2.dffposZ.net_8 q[5] 2 10
+| device bit1b_2.dffposZ.nmos_10 1190 520
+n bit1b_2.dffposZ.net_3 gnd bit1b_2.dffposZ.net_8 2 10
+| end bit1b_2.dffposZ
+| end bit1b_2
+| begin bit1b_3 810 1560
+| begin bit1b_3.mux21 290 350
+| device bit1b_3.mux21.nmos 210 150
+n q[0] mcand[4] ai[4] 2 10
+| device bit1b_3.mux21.pmos 210 150
+p bit1b_3.net_5 mcand[4] ai[4] 2 10
+| device bit1b_3.mux21.nmos_1 210 340
+n bit1b_3.net_5 gnd ai[4] 2 10
+| device bit1b_3.mux21.pmos_1 210 340
+p q[0] gnd ai[4] 2 10
+| end bit1b_3.mux21
+| begin bit1b_3.inv 10 470
+| device bit1b_3.inv.p0 400 220
+p init Vdd bit1b_3.net_2 2 20
+| device bit1b_3.inv.n0 400 380
+n init Gnd bit1b_3.net_2 2 10
+| end bit1b_3.inv
+| begin bit1b_3.mux21_1 300 630
+| device bit1b_3.mux21_1.nmos 210 150
+n init ao[4] bit1b_3.net_1 2 10
+| device bit1b_3.mux21_1.pmos 210 150
+p bit1b_3.net_2 ao[4] bit1b_3.net_1 2 10
+| device bit1b_3.mux21_1.nmos_1 210 340
+n bit1b_3.net_2 ao[5] bit1b_3.net_1 2 10
+| device bit1b_3.mux21_1.pmos_1 210 340
+p init ao[5] bit1b_3.net_1 2 10
+| end bit1b_3.mux21_1
+| begin bit1b_3.mux21_2 300 490
+| device bit1b_3.mux21_2.nmos 210 150
+n init mplier[4] ao[4] 2 10
+| device bit1b_3.mux21_2.pmos 210 150
+p bit1b_3.net_2 mplier[4] ao[4] 2 10
+| device bit1b_3.mux21_2.nmos_1 210 340
+n bit1b_3.net_2 q[4] ao[4] 2 10
+| device bit1b_3.mux21_2.pmos_1 210 340
+p init q[4] ao[4] 2 10
+| end bit1b_3.mux21_2
+| begin bit1b_3.inv_1 10 330
+| device bit1b_3.inv_1.p0 400 220
+p q[0] Vdd bit1b_3.net_5 2 20
+| device bit1b_3.inv_1.n0 400 380
+n q[0] Gnd bit1b_3.net_5 2 10
+| end bit1b_3.inv_1
+| begin bit1b_3.andZ 30 710
+| begin bit1b_3.andZ.nand 380 300
+| device bit1b_3.andZ.nand.nmos 410 570
+n clk gnd bit1b_3.andZ.nand.net_1 2 20
+| device bit1b_3.andZ.nand.nmos_1 410 490
+n en bit1b_3.andZ.nand.net_1 bit1b_3.net_4 2 20
+| device bit1b_3.andZ.nand.pmos 410 380
+p clk vdd bit1b_3.net_4 2 20
+| device bit1b_3.andZ.nand.pmos_1 590 380
+p en vdd bit1b_3.net_4 2 20
+| end bit1b_3.andZ.nand
+| device bit1b_3.andZ.nmos 600 340
+n bit1b_3.net_4 bit1b_3.andZ.net_1 bit1b_3.net_3 2 10
+| device bit1b_3.andZ.nmos_1 600 420
+n bit1b_3.net_4 gnd bit1b_3.andZ.net_1 2 10
+| device bit1b_3.andZ.pmos 600 160
+p bit1b_3.net_4 vdd bit1b_3.andZ.net_2 2 20
+| device bit1b_3.andZ.pmos_1 600 240
+p bit1b_3.net_4 bit1b_3.andZ.net_2 bit1b_3.net_3 2 20
+| end bit1b_3.andZ
+| begin bit1b_3.dffposZ 300 760
+| device bit1b_3.dffposZ.nmos 420 160
+n bit1b_3.dffposZ.net_1 gnd bit1b_3.dffposZ.net_13 2 10
+| device bit1b_3.dffposZ.nmos_1 420 80
+n bit1b_3.net_3 bit1b_3.dffposZ.net_13 bit1b_3.dffposZ.net_4 2 10
+| device bit1b_3.dffposZ.nmos_2 890 530
+n bit1b_3.dffposZ.net_1 gnd bit1b_3.dffposZ.net_6 2 10
+| device bit1b_3.dffposZ.nmos_3 890 450
+n bit1b_3.net_3 bit1b_3.dffposZ.net_6 bit1b_3.dffposZ.net_3 2 10
+| device bit1b_3.dffposZ.pmos 890 350
+p bit1b_3.net_4 bit1b_3.dffposZ.net_12 bit1b_3.dffposZ.net_3 2 20
+| device bit1b_3.dffposZ.pmos_1 890 270
+p bit1b_3.dffposZ.net_1 vdd bit1b_3.dffposZ.net_12 2 20
+| device bit1b_3.dffposZ.nmos_4 250 530
+n bit1b_3.net_1 gnd bit1b_3.dffposZ.net_2 2 10
+| device bit1b_3.dffposZ.nmos_5 250 450
+n bit1b_3.net_4 bit1b_3.dffposZ.net_2 bit1b_3.dffposZ.net_4 2 10
+| device bit1b_3.dffposZ.pmos_2 250 350
+p bit1b_3.net_3 bit1b_3.dffposZ.net_10 bit1b_3.dffposZ.net_4 2 20
+| device bit1b_3.dffposZ.pmos_3 250 270
+p bit1b_3.net_1 vdd bit1b_3.dffposZ.net_10 2 20
+| device bit1b_3.dffposZ.nmos_6 1100 70
+n q[4] gnd bit1b_3.dffposZ.net_11 2 10
+| device bit1b_3.dffposZ.nmos_7 1100 -10
+n bit1b_3.net_4 bit1b_3.dffposZ.net_11 bit1b_3.dffposZ.net_3 2 10
+| device bit1b_3.dffposZ.pmos_4 1100 -110
+p bit1b_3.net_3 bit1b_3.dffposZ.net_5 bit1b_3.dffposZ.net_3 2 20
+| device bit1b_3.dffposZ.pmos_5 1100 -190
+p q[4] vdd bit1b_3.dffposZ.net_5 2 20
+| device bit1b_3.dffposZ.pmos_6 420 -100
+p bit1b_3.dffposZ.net_1 vdd bit1b_3.dffposZ.net_9 2 20
+| device bit1b_3.dffposZ.pmos_7 420 -20
+p bit1b_3.net_4 bit1b_3.dffposZ.net_9 bit1b_3.dffposZ.net_4 2 20
+| device bit1b_3.dffposZ.nmos_8 510 440
+n bit1b_3.dffposZ.net_4 gnd bit1b_3.dffposZ.net_1 2 10
+| device bit1b_3.dffposZ.pmos_8 510 360
+p bit1b_3.dffposZ.net_4 vdd bit1b_3.dffposZ.net_1 2 20
+| device bit1b_3.dffposZ.pmos_9 1190 280
+p bit1b_3.dffposZ.net_3 vdd bit1b_3.dffposZ.net_7 2 20
+| device bit1b_3.dffposZ.pmos_10 1190 360
+p bit1b_3.dffposZ.net_3 bit1b_3.dffposZ.net_7 q[4] 2 20
+| device bit1b_3.dffposZ.nmos_9 1190 440
+n bit1b_3.dffposZ.net_3 bit1b_3.dffposZ.net_8 q[4] 2 10
+| device bit1b_3.dffposZ.nmos_10 1190 520
+n bit1b_3.dffposZ.net_3 gnd bit1b_3.dffposZ.net_8 2 10
+| end bit1b_3.dffposZ
+| end bit1b_3
+| begin bit1a_4 280 1950
+| begin bit1a_4.mux21 290 330
+| device bit1a_4.mux21.nmos 210 150
+n init gnd bit1a_4.net_3 2 10
+| device bit1a_4.mux21.pmos 210 150
+p bit1a_4.net_4 gnd bit1a_4.net_3 2 10
+| device bit1a_4.mux21.nmos_1 210 340
+n bit1a_4.net_4 q[11] bit1a_4.net_3 2 10
+| device bit1a_4.mux21.pmos_1 210 340
+p init q[11] bit1a_4.net_3 2 10
+| end bit1a_4.mux21
+| begin bit1a_4.FA 300 430
+| device bit1a_4.FA.nmos 430 370
+n bit1a_4.FA.net_2 bit1a_4.FA.net_9 bit1a_4.FA.net_10 2 10
+| device bit1a_4.FA.nmos_1 250 450
+n bit1a_4.net_3 gnd bit1a_4.FA.net_9 2 10
+| device bit1a_4.FA.nmos_2 430 450
+n ai[3] gnd bit1a_4.FA.net_9 2 10
+| device bit1a_4.FA.nmos_3 610 450
+n net_7 gnd bit1a_4.FA.net_9 2 10
+| device bit1a_4.FA.nmos_4 810 370
+n net_7 bit1a_4.FA.net_12 bit1a_4.FA.net_10 2 10
+| device bit1a_4.FA.nmos_5 810 450
+n ai[3] bit1a_4.FA.net_8 bit1a_4.FA.net_12 2 10
+| device bit1a_4.FA.nmos_6 810 530
+n bit1a_4.net_3 gnd bit1a_4.FA.net_8 2 10
+| device bit1a_4.FA.nmos_7 -250 370
+n net_7 bit1a_4.FA.net_5 bit1a_4.FA.net_2 2 10
+| device bit1a_4.FA.nmos_8 -320 450
+n bit1a_4.net_3 gnd bit1a_4.FA.net_5 2 10
+| device bit1a_4.FA.nmos_9 -150 450
+n ai[3] gnd bit1a_4.FA.net_5 2 10
+| device bit1a_4.FA.nmos_10 40 370
+n ai[3] bit1a_4.FA.net_4 bit1a_4.FA.net_2 2 10
+| device bit1a_4.FA.nmos_11 40 450
+n bit1a_4.net_3 gnd bit1a_4.FA.net_4 2 10
+| device bit1a_4.FA.pmos 250 210
+p bit1a_4.net_3 vdd bit1a_4.FA.net_11 2 20
+| device bit1a_4.FA.pmos_1 430 210
+p ai[3] vdd bit1a_4.FA.net_11 2 20
+| device bit1a_4.FA.pmos_2 610 210
+p net_7 vdd bit1a_4.FA.net_11 2 20
+| device bit1a_4.FA.pmos_3 430 290
+p bit1a_4.FA.net_2 bit1a_4.FA.net_11 bit1a_4.FA.net_10 2 20
+| device bit1a_4.FA.pmos_4 810 210
+p ai[3] bit1a_4.FA.net_3 bit1a_4.FA.net_1 2 20
+| device bit1a_4.FA.pmos_5 810 290
+p net_7 bit1a_4.FA.net_1 bit1a_4.FA.net_10 2 20
+| device bit1a_4.FA.pmos_6 810 130
+p bit1a_4.net_3 vdd bit1a_4.FA.net_3 2 20
+| device bit1a_4.FA.pmos_7 -320 210
+p bit1a_4.net_3 vdd bit1a_4.FA.net_6 2 20
+| device bit1a_4.FA.pmos_8 -150 210
+p ai[3] vdd bit1a_4.FA.net_6 2 20
+| device bit1a_4.FA.pmos_9 -250 290
+p net_7 bit1a_4.FA.net_6 bit1a_4.FA.net_2 2 20
+| device bit1a_4.FA.pmos_10 40 290
+p ai[3] bit1a_4.FA.net_7 bit1a_4.FA.net_2 2 20
+| device bit1a_4.FA.pmos_11 40 210
+p bit1a_4.net_3 vdd bit1a_4.FA.net_7 2 20
+| begin bit1a_4.FA.inv 850 680
+| device bit1a_4.FA.inv.p0 400 220
+p bit1a_4.FA.net_2 Vdd net_5 2 20
+| device bit1a_4.FA.inv.n0 400 380
+n bit1a_4.FA.net_2 Gnd net_5 2 10
+| end bit1a_4.FA.inv
+| begin bit1a_4.FA.inv_1 860 330
+| device bit1a_4.FA.inv_1.p0 400 220
+p bit1a_4.FA.net_10 Vdd fa[3] 2 20
+| device bit1a_4.FA.inv_1.n0 400 380
+n bit1a_4.FA.net_10 Gnd fa[3] 2 10
+| end bit1a_4.FA.inv_1
+| end bit1a_4.FA
+| begin bit1a_4.inv 20 310
+| device bit1a_4.inv.p0 400 220
+p init Vdd bit1a_4.net_4 2 20
+| device bit1a_4.inv.n0 400 380
+n init Gnd bit1a_4.net_4 2 10
+| end bit1a_4.inv
+| begin bit1a_4.mux21_1 300 630
+| device bit1a_4.mux21_1.nmos 210 150
+n init gnd bit1a_4.net_1 2 10
+| device bit1a_4.mux21_1.pmos 210 150
+p bit1a_4.net_4 gnd bit1a_4.net_1 2 10
+| device bit1a_4.mux21_1.nmos_1 210 340
+n bit1a_4.net_4 fa[4] bit1a_4.net_1 2 10
+| device bit1a_4.mux21_1.pmos_1 210 340
+p init fa[4] bit1a_4.net_1 2 10
+| end bit1a_4.mux21_1
+| begin bit1a_4.andZ 40 710
+| begin bit1a_4.andZ.nand 380 300
+| device bit1a_4.andZ.nand.nmos 410 570
+n clk gnd bit1a_4.andZ.nand.net_1 2 20
+| device bit1a_4.andZ.nand.nmos_1 410 490
+n en bit1a_4.andZ.nand.net_1 bit1a_4.net_5 2 20
+| device bit1a_4.andZ.nand.pmos 410 380
+p clk vdd bit1a_4.net_5 2 20
+| device bit1a_4.andZ.nand.pmos_1 590 380
+p en vdd bit1a_4.net_5 2 20
+| end bit1a_4.andZ.nand
+| device bit1a_4.andZ.nmos 600 340
+n bit1a_4.net_5 bit1a_4.andZ.net_1 bit1a_4.net_2 2 10
+| device bit1a_4.andZ.nmos_1 600 420
+n bit1a_4.net_5 gnd bit1a_4.andZ.net_1 2 10
+| device bit1a_4.andZ.pmos 600 160
+p bit1a_4.net_5 vdd bit1a_4.andZ.net_2 2 20
+| device bit1a_4.andZ.pmos_1 600 240
+p bit1a_4.net_5 bit1a_4.andZ.net_2 bit1a_4.net_2 2 20
+| end bit1a_4.andZ
+| begin bit1a_4.dffposZ 300 760
+| device bit1a_4.dffposZ.nmos 420 160
+n bit1a_4.dffposZ.net_1 gnd bit1a_4.dffposZ.net_13 2 10
+| device bit1a_4.dffposZ.nmos_1 420 80
+n bit1a_4.net_2 bit1a_4.dffposZ.net_13 bit1a_4.dffposZ.net_4 2 10
+| device bit1a_4.dffposZ.nmos_2 890 530
+n bit1a_4.dffposZ.net_1 gnd bit1a_4.dffposZ.net_6 2 10
+| device bit1a_4.dffposZ.nmos_3 890 450
+n bit1a_4.net_2 bit1a_4.dffposZ.net_6 bit1a_4.dffposZ.net_3 2 10
+| device bit1a_4.dffposZ.pmos 890 350
+p bit1a_4.net_5 bit1a_4.dffposZ.net_12 bit1a_4.dffposZ.net_3 2 20
+| device bit1a_4.dffposZ.pmos_1 890 270
+p bit1a_4.dffposZ.net_1 vdd bit1a_4.dffposZ.net_12 2 20
+| device bit1a_4.dffposZ.nmos_4 250 530
+n bit1a_4.net_1 gnd bit1a_4.dffposZ.net_2 2 10
+| device bit1a_4.dffposZ.nmos_5 250 450
+n bit1a_4.net_5 bit1a_4.dffposZ.net_2 bit1a_4.dffposZ.net_4 2 10
+| device bit1a_4.dffposZ.pmos_2 250 350
+p bit1a_4.net_2 bit1a_4.dffposZ.net_10 bit1a_4.dffposZ.net_4 2 20
+| device bit1a_4.dffposZ.pmos_3 250 270
+p bit1a_4.net_1 vdd bit1a_4.dffposZ.net_10 2 20
+| device bit1a_4.dffposZ.nmos_6 1100 70
+n q[11] gnd bit1a_4.dffposZ.net_11 2 10
+| device bit1a_4.dffposZ.nmos_7 1100 -10
+n bit1a_4.net_5 bit1a_4.dffposZ.net_11 bit1a_4.dffposZ.net_3 2 10
+| device bit1a_4.dffposZ.pmos_4 1100 -110
+p bit1a_4.net_2 bit1a_4.dffposZ.net_5 bit1a_4.dffposZ.net_3 2 20
+| device bit1a_4.dffposZ.pmos_5 1100 -190
+p q[11] vdd bit1a_4.dffposZ.net_5 2 20
+| device bit1a_4.dffposZ.pmos_6 420 -100
+p bit1a_4.dffposZ.net_1 vdd bit1a_4.dffposZ.net_9 2 20
+| device bit1a_4.dffposZ.pmos_7 420 -20
+p bit1a_4.net_5 bit1a_4.dffposZ.net_9 bit1a_4.dffposZ.net_4 2 20
+| device bit1a_4.dffposZ.nmos_8 510 440
+n bit1a_4.dffposZ.net_4 gnd bit1a_4.dffposZ.net_1 2 10
+| device bit1a_4.dffposZ.pmos_8 510 360
+p bit1a_4.dffposZ.net_4 vdd bit1a_4.dffposZ.net_1 2 20
+| device bit1a_4.dffposZ.pmos_9 1190 280
+p bit1a_4.dffposZ.net_3 vdd bit1a_4.dffposZ.net_7 2 20
+| device bit1a_4.dffposZ.pmos_10 1190 360
+p bit1a_4.dffposZ.net_3 bit1a_4.dffposZ.net_7 q[11] 2 20
+| device bit1a_4.dffposZ.nmos_9 1190 440
+n bit1a_4.dffposZ.net_3 bit1a_4.dffposZ.net_8 q[11] 2 10
+| device bit1a_4.dffposZ.nmos_10 1190 520
+n bit1a_4.dffposZ.net_3 gnd bit1a_4.dffposZ.net_8 2 10
+| end bit1a_4.dffposZ
+| end bit1a_4
+| begin bit1a_5 280 2340
+| begin bit1a_5.mux21 290 330
+| device bit1a_5.mux21.nmos 210 150
+n init gnd bit1a_5.net_3 2 10
+| device bit1a_5.mux21.pmos 210 150
+p bit1a_5.net_4 gnd bit1a_5.net_3 2 10
+| device bit1a_5.mux21.nmos_1 210 340
+n bit1a_5.net_4 q[10] bit1a_5.net_3 2 10
+| device bit1a_5.mux21.pmos_1 210 340
+p init q[10] bit1a_5.net_3 2 10
+| end bit1a_5.mux21
+| begin bit1a_5.FA 300 430
+| device bit1a_5.FA.nmos 430 370
+n bit1a_5.FA.net_2 bit1a_5.FA.net_9 bit1a_5.FA.net_10 2 10
+| device bit1a_5.FA.nmos_1 250 450
+n bit1a_5.net_3 gnd bit1a_5.FA.net_9 2 10
+| device bit1a_5.FA.nmos_2 430 450
+n ai[2] gnd bit1a_5.FA.net_9 2 10
+| device bit1a_5.FA.nmos_3 610 450
+n net_3 gnd bit1a_5.FA.net_9 2 10
+| device bit1a_5.FA.nmos_4 810 370
+n net_3 bit1a_5.FA.net_12 bit1a_5.FA.net_10 2 10
+| device bit1a_5.FA.nmos_5 810 450
+n ai[2] bit1a_5.FA.net_8 bit1a_5.FA.net_12 2 10
+| device bit1a_5.FA.nmos_6 810 530
+n bit1a_5.net_3 gnd bit1a_5.FA.net_8 2 10
+| device bit1a_5.FA.nmos_7 -250 370
+n net_3 bit1a_5.FA.net_5 bit1a_5.FA.net_2 2 10
+| device bit1a_5.FA.nmos_8 -320 450
+n bit1a_5.net_3 gnd bit1a_5.FA.net_5 2 10
+| device bit1a_5.FA.nmos_9 -150 450
+n ai[2] gnd bit1a_5.FA.net_5 2 10
+| device bit1a_5.FA.nmos_10 40 370
+n ai[2] bit1a_5.FA.net_4 bit1a_5.FA.net_2 2 10
+| device bit1a_5.FA.nmos_11 40 450
+n bit1a_5.net_3 gnd bit1a_5.FA.net_4 2 10
+| device bit1a_5.FA.pmos 250 210
+p bit1a_5.net_3 vdd bit1a_5.FA.net_11 2 20
+| device bit1a_5.FA.pmos_1 430 210
+p ai[2] vdd bit1a_5.FA.net_11 2 20
+| device bit1a_5.FA.pmos_2 610 210
+p net_3 vdd bit1a_5.FA.net_11 2 20
+| device bit1a_5.FA.pmos_3 430 290
+p bit1a_5.FA.net_2 bit1a_5.FA.net_11 bit1a_5.FA.net_10 2 20
+| device bit1a_5.FA.pmos_4 810 210
+p ai[2] bit1a_5.FA.net_3 bit1a_5.FA.net_1 2 20
+| device bit1a_5.FA.pmos_5 810 290
+p net_3 bit1a_5.FA.net_1 bit1a_5.FA.net_10 2 20
+| device bit1a_5.FA.pmos_6 810 130
+p bit1a_5.net_3 vdd bit1a_5.FA.net_3 2 20
+| device bit1a_5.FA.pmos_7 -320 210
+p bit1a_5.net_3 vdd bit1a_5.FA.net_6 2 20
+| device bit1a_5.FA.pmos_8 -150 210
+p ai[2] vdd bit1a_5.FA.net_6 2 20
+| device bit1a_5.FA.pmos_9 -250 290
+p net_3 bit1a_5.FA.net_6 bit1a_5.FA.net_2 2 20
+| device bit1a_5.FA.pmos_10 40 290
+p ai[2] bit1a_5.FA.net_7 bit1a_5.FA.net_2 2 20
+| device bit1a_5.FA.pmos_11 40 210
+p bit1a_5.net_3 vdd bit1a_5.FA.net_7 2 20
+| begin bit1a_5.FA.inv 850 680
+| device bit1a_5.FA.inv.p0 400 220
+p bit1a_5.FA.net_2 Vdd net_7 2 20
+| device bit1a_5.FA.inv.n0 400 380
+n bit1a_5.FA.net_2 Gnd net_7 2 10
+| end bit1a_5.FA.inv
+| begin bit1a_5.FA.inv_1 860 330
+| device bit1a_5.FA.inv_1.p0 400 220
+p bit1a_5.FA.net_10 Vdd fa[2] 2 20
+| device bit1a_5.FA.inv_1.n0 400 380
+n bit1a_5.FA.net_10 Gnd fa[2] 2 10
+| end bit1a_5.FA.inv_1
+| end bit1a_5.FA
+| begin bit1a_5.inv 20 310
+| device bit1a_5.inv.p0 400 220
+p init Vdd bit1a_5.net_4 2 20
+| device bit1a_5.inv.n0 400 380
+n init Gnd bit1a_5.net_4 2 10
+| end bit1a_5.inv
+| begin bit1a_5.mux21_1 300 630
+| device bit1a_5.mux21_1.nmos 210 150
+n init gnd bit1a_5.net_1 2 10
+| device bit1a_5.mux21_1.pmos 210 150
+p bit1a_5.net_4 gnd bit1a_5.net_1 2 10
+| device bit1a_5.mux21_1.nmos_1 210 340
+n bit1a_5.net_4 fa[3] bit1a_5.net_1 2 10
+| device bit1a_5.mux21_1.pmos_1 210 340
+p init fa[3] bit1a_5.net_1 2 10
+| end bit1a_5.mux21_1
+| begin bit1a_5.andZ 40 710
+| begin bit1a_5.andZ.nand 380 300
+| device bit1a_5.andZ.nand.nmos 410 570
+n clk gnd bit1a_5.andZ.nand.net_1 2 20
+| device bit1a_5.andZ.nand.nmos_1 410 490
+n en bit1a_5.andZ.nand.net_1 bit1a_5.net_5 2 20
+| device bit1a_5.andZ.nand.pmos 410 380
+p clk vdd bit1a_5.net_5 2 20
+| device bit1a_5.andZ.nand.pmos_1 590 380
+p en vdd bit1a_5.net_5 2 20
+| end bit1a_5.andZ.nand
+| device bit1a_5.andZ.nmos 600 340
+n bit1a_5.net_5 bit1a_5.andZ.net_1 bit1a_5.net_2 2 10
+| device bit1a_5.andZ.nmos_1 600 420
+n bit1a_5.net_5 gnd bit1a_5.andZ.net_1 2 10
+| device bit1a_5.andZ.pmos 600 160
+p bit1a_5.net_5 vdd bit1a_5.andZ.net_2 2 20
+| device bit1a_5.andZ.pmos_1 600 240
+p bit1a_5.net_5 bit1a_5.andZ.net_2 bit1a_5.net_2 2 20
+| end bit1a_5.andZ
+| begin bit1a_5.dffposZ 300 760
+| device bit1a_5.dffposZ.nmos 420 160
+n bit1a_5.dffposZ.net_1 gnd bit1a_5.dffposZ.net_13 2 10
+| device bit1a_5.dffposZ.nmos_1 420 80
+n bit1a_5.net_2 bit1a_5.dffposZ.net_13 bit1a_5.dffposZ.net_4 2 10
+| device bit1a_5.dffposZ.nmos_2 890 530
+n bit1a_5.dffposZ.net_1 gnd bit1a_5.dffposZ.net_6 2 10
+| device bit1a_5.dffposZ.nmos_3 890 450
+n bit1a_5.net_2 bit1a_5.dffposZ.net_6 bit1a_5.dffposZ.net_3 2 10
+| device bit1a_5.dffposZ.pmos 890 350
+p bit1a_5.net_5 bit1a_5.dffposZ.net_12 bit1a_5.dffposZ.net_3 2 20
+| device bit1a_5.dffposZ.pmos_1 890 270
+p bit1a_5.dffposZ.net_1 vdd bit1a_5.dffposZ.net_12 2 20
+| device bit1a_5.dffposZ.nmos_4 250 530
+n bit1a_5.net_1 gnd bit1a_5.dffposZ.net_2 2 10
+| device bit1a_5.dffposZ.nmos_5 250 450
+n bit1a_5.net_5 bit1a_5.dffposZ.net_2 bit1a_5.dffposZ.net_4 2 10
+| device bit1a_5.dffposZ.pmos_2 250 350
+p bit1a_5.net_2 bit1a_5.dffposZ.net_10 bit1a_5.dffposZ.net_4 2 20
+| device bit1a_5.dffposZ.pmos_3 250 270
+p bit1a_5.net_1 vdd bit1a_5.dffposZ.net_10 2 20
+| device bit1a_5.dffposZ.nmos_6 1100 70
+n q[10] gnd bit1a_5.dffposZ.net_11 2 10
+| device bit1a_5.dffposZ.nmos_7 1100 -10
+n bit1a_5.net_5 bit1a_5.dffposZ.net_11 bit1a_5.dffposZ.net_3 2 10
+| device bit1a_5.dffposZ.pmos_4 1100 -110
+p bit1a_5.net_2 bit1a_5.dffposZ.net_5 bit1a_5.dffposZ.net_3 2 20
+| device bit1a_5.dffposZ.pmos_5 1100 -190
+p q[10] vdd bit1a_5.dffposZ.net_5 2 20
+| device bit1a_5.dffposZ.pmos_6 420 -100
+p bit1a_5.dffposZ.net_1 vdd bit1a_5.dffposZ.net_9 2 20
+| device bit1a_5.dffposZ.pmos_7 420 -20
+p bit1a_5.net_5 bit1a_5.dffposZ.net_9 bit1a_5.dffposZ.net_4 2 20
+| device bit1a_5.dffposZ.nmos_8 510 440
+n bit1a_5.dffposZ.net_4 gnd bit1a_5.dffposZ.net_1 2 10
+| device bit1a_5.dffposZ.pmos_8 510 360
+p bit1a_5.dffposZ.net_4 vdd bit1a_5.dffposZ.net_1 2 20
+| device bit1a_5.dffposZ.pmos_9 1190 280
+p bit1a_5.dffposZ.net_3 vdd bit1a_5.dffposZ.net_7 2 20
+| device bit1a_5.dffposZ.pmos_10 1190 360
+p bit1a_5.dffposZ.net_3 bit1a_5.dffposZ.net_7 q[10] 2 20
+| device bit1a_5.dffposZ.nmos_9 1190 440
+n bit1a_5.dffposZ.net_3 bit1a_5.dffposZ.net_8 q[10] 2 10
+| device bit1a_5.dffposZ.nmos_10 1190 520
+n bit1a_5.dffposZ.net_3 gnd bit1a_5.dffposZ.net_8 2 10
+| end bit1a_5.dffposZ
+| end bit1a_5
+| begin bit1a_6 280 2720
+| begin bit1a_6.mux21 290 330
+| device bit1a_6.mux21.nmos 210 150
+n init gnd bit1a_6.net_3 2 10
+| device bit1a_6.mux21.pmos 210 150
+p bit1a_6.net_4 gnd bit1a_6.net_3 2 10
+| device bit1a_6.mux21.nmos_1 210 340
+n bit1a_6.net_4 q[9] bit1a_6.net_3 2 10
+| device bit1a_6.mux21.pmos_1 210 340
+p init q[9] bit1a_6.net_3 2 10
+| end bit1a_6.mux21
+| begin bit1a_6.FA 300 430
+| device bit1a_6.FA.nmos 430 370
+n bit1a_6.FA.net_2 bit1a_6.FA.net_9 bit1a_6.FA.net_10 2 10
+| device bit1a_6.FA.nmos_1 250 450
+n bit1a_6.net_3 gnd bit1a_6.FA.net_9 2 10
+| device bit1a_6.FA.nmos_2 430 450
+n ai[1] gnd bit1a_6.FA.net_9 2 10
+| device bit1a_6.FA.nmos_3 610 450
+n net_4 gnd bit1a_6.FA.net_9 2 10
+| device bit1a_6.FA.nmos_4 810 370
+n net_4 bit1a_6.FA.net_12 bit1a_6.FA.net_10 2 10
+| device bit1a_6.FA.nmos_5 810 450
+n ai[1] bit1a_6.FA.net_8 bit1a_6.FA.net_12 2 10
+| device bit1a_6.FA.nmos_6 810 530
+n bit1a_6.net_3 gnd bit1a_6.FA.net_8 2 10
+| device bit1a_6.FA.nmos_7 -250 370
+n net_4 bit1a_6.FA.net_5 bit1a_6.FA.net_2 2 10
+| device bit1a_6.FA.nmos_8 -320 450
+n bit1a_6.net_3 gnd bit1a_6.FA.net_5 2 10
+| device bit1a_6.FA.nmos_9 -150 450
+n ai[1] gnd bit1a_6.FA.net_5 2 10
+| device bit1a_6.FA.nmos_10 40 370
+n ai[1] bit1a_6.FA.net_4 bit1a_6.FA.net_2 2 10
+| device bit1a_6.FA.nmos_11 40 450
+n bit1a_6.net_3 gnd bit1a_6.FA.net_4 2 10
+| device bit1a_6.FA.pmos 250 210
+p bit1a_6.net_3 vdd bit1a_6.FA.net_11 2 20
+| device bit1a_6.FA.pmos_1 430 210
+p ai[1] vdd bit1a_6.FA.net_11 2 20
+| device bit1a_6.FA.pmos_2 610 210
+p net_4 vdd bit1a_6.FA.net_11 2 20
+| device bit1a_6.FA.pmos_3 430 290
+p bit1a_6.FA.net_2 bit1a_6.FA.net_11 bit1a_6.FA.net_10 2 20
+| device bit1a_6.FA.pmos_4 810 210
+p ai[1] bit1a_6.FA.net_3 bit1a_6.FA.net_1 2 20
+| device bit1a_6.FA.pmos_5 810 290
+p net_4 bit1a_6.FA.net_1 bit1a_6.FA.net_10 2 20
+| device bit1a_6.FA.pmos_6 810 130
+p bit1a_6.net_3 vdd bit1a_6.FA.net_3 2 20
+| device bit1a_6.FA.pmos_7 -320 210
+p bit1a_6.net_3 vdd bit1a_6.FA.net_6 2 20
+| device bit1a_6.FA.pmos_8 -150 210
+p ai[1] vdd bit1a_6.FA.net_6 2 20
+| device bit1a_6.FA.pmos_9 -250 290
+p net_4 bit1a_6.FA.net_6 bit1a_6.FA.net_2 2 20
+| device bit1a_6.FA.pmos_10 40 290
+p ai[1] bit1a_6.FA.net_7 bit1a_6.FA.net_2 2 20
+| device bit1a_6.FA.pmos_11 40 210
+p bit1a_6.net_3 vdd bit1a_6.FA.net_7 2 20
+| begin bit1a_6.FA.inv 850 680
+| device bit1a_6.FA.inv.p0 400 220
+p bit1a_6.FA.net_2 Vdd net_3 2 20
+| device bit1a_6.FA.inv.n0 400 380
+n bit1a_6.FA.net_2 Gnd net_3 2 10
+| end bit1a_6.FA.inv
+| begin bit1a_6.FA.inv_1 860 330
+| device bit1a_6.FA.inv_1.p0 400 220
+p bit1a_6.FA.net_10 Vdd fa[1] 2 20
+| device bit1a_6.FA.inv_1.n0 400 380
+n bit1a_6.FA.net_10 Gnd fa[1] 2 10
+| end bit1a_6.FA.inv_1
+| end bit1a_6.FA
+| begin bit1a_6.inv 20 310
+| device bit1a_6.inv.p0 400 220
+p init Vdd bit1a_6.net_4 2 20
+| device bit1a_6.inv.n0 400 380
+n init Gnd bit1a_6.net_4 2 10
+| end bit1a_6.inv
+| begin bit1a_6.mux21_1 300 630
+| device bit1a_6.mux21_1.nmos 210 150
+n init gnd bit1a_6.net_1 2 10
+| device bit1a_6.mux21_1.pmos 210 150
+p bit1a_6.net_4 gnd bit1a_6.net_1 2 10
+| device bit1a_6.mux21_1.nmos_1 210 340
+n bit1a_6.net_4 fa[2] bit1a_6.net_1 2 10
+| device bit1a_6.mux21_1.pmos_1 210 340
+p init fa[2] bit1a_6.net_1 2 10
+| end bit1a_6.mux21_1
+| begin bit1a_6.andZ 40 710
+| begin bit1a_6.andZ.nand 380 300
+| device bit1a_6.andZ.nand.nmos 410 570
+n clk gnd bit1a_6.andZ.nand.net_1 2 20
+| device bit1a_6.andZ.nand.nmos_1 410 490
+n en bit1a_6.andZ.nand.net_1 bit1a_6.net_5 2 20
+| device bit1a_6.andZ.nand.pmos 410 380
+p clk vdd bit1a_6.net_5 2 20
+| device bit1a_6.andZ.nand.pmos_1 590 380
+p en vdd bit1a_6.net_5 2 20
+| end bit1a_6.andZ.nand
+| device bit1a_6.andZ.nmos 600 340
+n bit1a_6.net_5 bit1a_6.andZ.net_1 bit1a_6.net_2 2 10
+| device bit1a_6.andZ.nmos_1 600 420
+n bit1a_6.net_5 gnd bit1a_6.andZ.net_1 2 10
+| device bit1a_6.andZ.pmos 600 160
+p bit1a_6.net_5 vdd bit1a_6.andZ.net_2 2 20
+| device bit1a_6.andZ.pmos_1 600 240
+p bit1a_6.net_5 bit1a_6.andZ.net_2 bit1a_6.net_2 2 20
+| end bit1a_6.andZ
+| begin bit1a_6.dffposZ 300 760
+| device bit1a_6.dffposZ.nmos 420 160
+n bit1a_6.dffposZ.net_1 gnd bit1a_6.dffposZ.net_13 2 10
+| device bit1a_6.dffposZ.nmos_1 420 80
+n bit1a_6.net_2 bit1a_6.dffposZ.net_13 bit1a_6.dffposZ.net_4 2 10
+| device bit1a_6.dffposZ.nmos_2 890 530
+n bit1a_6.dffposZ.net_1 gnd bit1a_6.dffposZ.net_6 2 10
+| device bit1a_6.dffposZ.nmos_3 890 450
+n bit1a_6.net_2 bit1a_6.dffposZ.net_6 bit1a_6.dffposZ.net_3 2 10
+| device bit1a_6.dffposZ.pmos 890 350
+p bit1a_6.net_5 bit1a_6.dffposZ.net_12 bit1a_6.dffposZ.net_3 2 20
+| device bit1a_6.dffposZ.pmos_1 890 270
+p bit1a_6.dffposZ.net_1 vdd bit1a_6.dffposZ.net_12 2 20
+| device bit1a_6.dffposZ.nmos_4 250 530
+n bit1a_6.net_1 gnd bit1a_6.dffposZ.net_2 2 10
+| device bit1a_6.dffposZ.nmos_5 250 450
+n bit1a_6.net_5 bit1a_6.dffposZ.net_2 bit1a_6.dffposZ.net_4 2 10
+| device bit1a_6.dffposZ.pmos_2 250 350
+p bit1a_6.net_2 bit1a_6.dffposZ.net_10 bit1a_6.dffposZ.net_4 2 20
+| device bit1a_6.dffposZ.pmos_3 250 270
+p bit1a_6.net_1 vdd bit1a_6.dffposZ.net_10 2 20
+| device bit1a_6.dffposZ.nmos_6 1100 70
+n q[9] gnd bit1a_6.dffposZ.net_11 2 10
+| device bit1a_6.dffposZ.nmos_7 1100 -10
+n bit1a_6.net_5 bit1a_6.dffposZ.net_11 bit1a_6.dffposZ.net_3 2 10
+| device bit1a_6.dffposZ.pmos_4 1100 -110
+p bit1a_6.net_2 bit1a_6.dffposZ.net_5 bit1a_6.dffposZ.net_3 2 20
+| device bit1a_6.dffposZ.pmos_5 1100 -190
+p q[9] vdd bit1a_6.dffposZ.net_5 2 20
+| device bit1a_6.dffposZ.pmos_6 420 -100
+p bit1a_6.dffposZ.net_1 vdd bit1a_6.dffposZ.net_9 2 20
+| device bit1a_6.dffposZ.pmos_7 420 -20
+p bit1a_6.net_5 bit1a_6.dffposZ.net_9 bit1a_6.dffposZ.net_4 2 20
+| device bit1a_6.dffposZ.nmos_8 510 440
+n bit1a_6.dffposZ.net_4 gnd bit1a_6.dffposZ.net_1 2 10
+| device bit1a_6.dffposZ.pmos_8 510 360
+p bit1a_6.dffposZ.net_4 vdd bit1a_6.dffposZ.net_1 2 20
+| device bit1a_6.dffposZ.pmos_9 1190 280
+p bit1a_6.dffposZ.net_3 vdd bit1a_6.dffposZ.net_7 2 20
+| device bit1a_6.dffposZ.pmos_10 1190 360
+p bit1a_6.dffposZ.net_3 bit1a_6.dffposZ.net_7 q[9] 2 20
+| device bit1a_6.dffposZ.nmos_9 1190 440
+n bit1a_6.dffposZ.net_3 bit1a_6.dffposZ.net_8 q[9] 2 10
+| device bit1a_6.dffposZ.nmos_10 1190 520
+n bit1a_6.dffposZ.net_3 gnd bit1a_6.dffposZ.net_8 2 10
+| end bit1a_6.dffposZ
+| end bit1a_6
+| begin bit1a_7 280 3110
+| begin bit1a_7.mux21 290 330
+| device bit1a_7.mux21.nmos 210 150
+n init gnd bit1a_7.net_3 2 10
+| device bit1a_7.mux21.pmos 210 150
+p bit1a_7.net_4 gnd bit1a_7.net_3 2 10
+| device bit1a_7.mux21.nmos_1 210 340
+n bit1a_7.net_4 q[8] bit1a_7.net_3 2 10
+| device bit1a_7.mux21.pmos_1 210 340
+p init q[8] bit1a_7.net_3 2 10
+| end bit1a_7.mux21
+| begin bit1a_7.FA 300 430
+| device bit1a_7.FA.nmos 430 370
+n bit1a_7.FA.net_2 bit1a_7.FA.net_9 bit1a_7.FA.net_10 2 10
+| device bit1a_7.FA.nmos_1 250 450
+n bit1a_7.net_3 gnd bit1a_7.FA.net_9 2 10
+| device bit1a_7.FA.nmos_2 430 450
+n ai[0] gnd bit1a_7.FA.net_9 2 10
+| device bit1a_7.FA.nmos_3 610 450
+n gnd gnd bit1a_7.FA.net_9 2 10
+| device bit1a_7.FA.nmos_4 810 370
+n gnd bit1a_7.FA.net_12 bit1a_7.FA.net_10 2 10
+| device bit1a_7.FA.nmos_5 810 450
+n ai[0] bit1a_7.FA.net_8 bit1a_7.FA.net_12 2 10
+| device bit1a_7.FA.nmos_6 810 530
+n bit1a_7.net_3 gnd bit1a_7.FA.net_8 2 10
+| device bit1a_7.FA.nmos_7 -250 370
+n gnd bit1a_7.FA.net_5 bit1a_7.FA.net_2 2 10
+| device bit1a_7.FA.nmos_8 -320 450
+n bit1a_7.net_3 gnd bit1a_7.FA.net_5 2 10
+| device bit1a_7.FA.nmos_9 -150 450
+n ai[0] gnd bit1a_7.FA.net_5 2 10
+| device bit1a_7.FA.nmos_10 40 370
+n ai[0] bit1a_7.FA.net_4 bit1a_7.FA.net_2 2 10
+| device bit1a_7.FA.nmos_11 40 450
+n bit1a_7.net_3 gnd bit1a_7.FA.net_4 2 10
+| device bit1a_7.FA.pmos 250 210
+p bit1a_7.net_3 vdd bit1a_7.FA.net_11 2 20
+| device bit1a_7.FA.pmos_1 430 210
+p ai[0] vdd bit1a_7.FA.net_11 2 20
+| device bit1a_7.FA.pmos_2 610 210
+p gnd vdd bit1a_7.FA.net_11 2 20
+| device bit1a_7.FA.pmos_3 430 290
+p bit1a_7.FA.net_2 bit1a_7.FA.net_11 bit1a_7.FA.net_10 2 20
+| device bit1a_7.FA.pmos_4 810 210
+p ai[0] bit1a_7.FA.net_3 bit1a_7.FA.net_1 2 20
+| device bit1a_7.FA.pmos_5 810 290
+p gnd bit1a_7.FA.net_1 bit1a_7.FA.net_10 2 20
+| device bit1a_7.FA.pmos_6 810 130
+p bit1a_7.net_3 vdd bit1a_7.FA.net_3 2 20
+| device bit1a_7.FA.pmos_7 -320 210
+p bit1a_7.net_3 vdd bit1a_7.FA.net_6 2 20
+| device bit1a_7.FA.pmos_8 -150 210
+p ai[0] vdd bit1a_7.FA.net_6 2 20
+| device bit1a_7.FA.pmos_9 -250 290
+p gnd bit1a_7.FA.net_6 bit1a_7.FA.net_2 2 20
+| device bit1a_7.FA.pmos_10 40 290
+p ai[0] bit1a_7.FA.net_7 bit1a_7.FA.net_2 2 20
+| device bit1a_7.FA.pmos_11 40 210
+p bit1a_7.net_3 vdd bit1a_7.FA.net_7 2 20
+| begin bit1a_7.FA.inv 850 680
+| device bit1a_7.FA.inv.p0 400 220
+p bit1a_7.FA.net_2 Vdd net_4 2 20
+| device bit1a_7.FA.inv.n0 400 380
+n bit1a_7.FA.net_2 Gnd net_4 2 10
+| end bit1a_7.FA.inv
+| begin bit1a_7.FA.inv_1 860 330
+| device bit1a_7.FA.inv_1.p0 400 220
+p bit1a_7.FA.net_10 Vdd fa[0] 2 20
+| device bit1a_7.FA.inv_1.n0 400 380
+n bit1a_7.FA.net_10 Gnd fa[0] 2 10
+| end bit1a_7.FA.inv_1
+| end bit1a_7.FA
+| begin bit1a_7.inv 20 310
+| device bit1a_7.inv.p0 400 220
+p init Vdd bit1a_7.net_4 2 20
+| device bit1a_7.inv.n0 400 380
+n init Gnd bit1a_7.net_4 2 10
+| end bit1a_7.inv
+| begin bit1a_7.mux21_1 300 630
+| device bit1a_7.mux21_1.nmos 210 150
+n init gnd bit1a_7.net_1 2 10
+| device bit1a_7.mux21_1.pmos 210 150
+p bit1a_7.net_4 gnd bit1a_7.net_1 2 10
+| device bit1a_7.mux21_1.nmos_1 210 340
+n bit1a_7.net_4 fa[1] bit1a_7.net_1 2 10
+| device bit1a_7.mux21_1.pmos_1 210 340
+p init fa[1] bit1a_7.net_1 2 10
+| end bit1a_7.mux21_1
+| begin bit1a_7.andZ 40 710
+| begin bit1a_7.andZ.nand 380 300
+| device bit1a_7.andZ.nand.nmos 410 570
+n clk gnd bit1a_7.andZ.nand.net_1 2 20
+| device bit1a_7.andZ.nand.nmos_1 410 490
+n en bit1a_7.andZ.nand.net_1 bit1a_7.net_5 2 20
+| device bit1a_7.andZ.nand.pmos 410 380
+p clk vdd bit1a_7.net_5 2 20
+| device bit1a_7.andZ.nand.pmos_1 590 380
+p en vdd bit1a_7.net_5 2 20
+| end bit1a_7.andZ.nand
+| device bit1a_7.andZ.nmos 600 340
+n bit1a_7.net_5 bit1a_7.andZ.net_1 bit1a_7.net_2 2 10
+| device bit1a_7.andZ.nmos_1 600 420
+n bit1a_7.net_5 gnd bit1a_7.andZ.net_1 2 10
+| device bit1a_7.andZ.pmos 600 160
+p bit1a_7.net_5 vdd bit1a_7.andZ.net_2 2 20
+| device bit1a_7.andZ.pmos_1 600 240
+p bit1a_7.net_5 bit1a_7.andZ.net_2 bit1a_7.net_2 2 20
+| end bit1a_7.andZ
+| begin bit1a_7.dffposZ 300 760
+| device bit1a_7.dffposZ.nmos 420 160
+n bit1a_7.dffposZ.net_1 gnd bit1a_7.dffposZ.net_13 2 10
+| device bit1a_7.dffposZ.nmos_1 420 80
+n bit1a_7.net_2 bit1a_7.dffposZ.net_13 bit1a_7.dffposZ.net_4 2 10
+| device bit1a_7.dffposZ.nmos_2 890 530
+n bit1a_7.dffposZ.net_1 gnd bit1a_7.dffposZ.net_6 2 10
+| device bit1a_7.dffposZ.nmos_3 890 450
+n bit1a_7.net_2 bit1a_7.dffposZ.net_6 bit1a_7.dffposZ.net_3 2 10
+| device bit1a_7.dffposZ.pmos 890 350
+p bit1a_7.net_5 bit1a_7.dffposZ.net_12 bit1a_7.dffposZ.net_3 2 20
+| device bit1a_7.dffposZ.pmos_1 890 270
+p bit1a_7.dffposZ.net_1 vdd bit1a_7.dffposZ.net_12 2 20
+| device bit1a_7.dffposZ.nmos_4 250 530
+n bit1a_7.net_1 gnd bit1a_7.dffposZ.net_2 2 10
+| device bit1a_7.dffposZ.nmos_5 250 450
+n bit1a_7.net_5 bit1a_7.dffposZ.net_2 bit1a_7.dffposZ.net_4 2 10
+| device bit1a_7.dffposZ.pmos_2 250 350
+p bit1a_7.net_2 bit1a_7.dffposZ.net_10 bit1a_7.dffposZ.net_4 2 20
+| device bit1a_7.dffposZ.pmos_3 250 270
+p bit1a_7.net_1 vdd bit1a_7.dffposZ.net_10 2 20
+| device bit1a_7.dffposZ.nmos_6 1100 70
+n q[8] gnd bit1a_7.dffposZ.net_11 2 10
+| device bit1a_7.dffposZ.nmos_7 1100 -10
+n bit1a_7.net_5 bit1a_7.dffposZ.net_11 bit1a_7.dffposZ.net_3 2 10
+| device bit1a_7.dffposZ.pmos_4 1100 -110
+p bit1a_7.net_2 bit1a_7.dffposZ.net_5 bit1a_7.dffposZ.net_3 2 20
+| device bit1a_7.dffposZ.pmos_5 1100 -190
+p q[8] vdd bit1a_7.dffposZ.net_5 2 20
+| device bit1a_7.dffposZ.pmos_6 420 -100
+p bit1a_7.dffposZ.net_1 vdd bit1a_7.dffposZ.net_9 2 20
+| device bit1a_7.dffposZ.pmos_7 420 -20
+p bit1a_7.net_5 bit1a_7.dffposZ.net_9 bit1a_7.dffposZ.net_4 2 20
+| device bit1a_7.dffposZ.nmos_8 510 440
+n bit1a_7.dffposZ.net_4 gnd bit1a_7.dffposZ.net_1 2 10
+| device bit1a_7.dffposZ.pmos_8 510 360
+p bit1a_7.dffposZ.net_4 vdd bit1a_7.dffposZ.net_1 2 20
+| device bit1a_7.dffposZ.pmos_9 1190 280
+p bit1a_7.dffposZ.net_3 vdd bit1a_7.dffposZ.net_7 2 20
+| device bit1a_7.dffposZ.pmos_10 1190 360
+p bit1a_7.dffposZ.net_3 bit1a_7.dffposZ.net_7 q[8] 2 20
+| device bit1a_7.dffposZ.nmos_9 1190 440
+n bit1a_7.dffposZ.net_3 bit1a_7.dffposZ.net_8 q[8] 2 10
+| device bit1a_7.dffposZ.nmos_10 1190 520
+n bit1a_7.dffposZ.net_3 gnd bit1a_7.dffposZ.net_8 2 10
+| end bit1a_7.dffposZ
+| end bit1a_7
+| begin bit1b_4 810 1950
+| begin bit1b_4.mux21 290 350
+| device bit1b_4.mux21.nmos 210 150
+n q[0] mcand[3] ai[3] 2 10
+| device bit1b_4.mux21.pmos 210 150
+p bit1b_4.net_5 mcand[3] ai[3] 2 10
+| device bit1b_4.mux21.nmos_1 210 340
+n bit1b_4.net_5 gnd ai[3] 2 10
+| device bit1b_4.mux21.pmos_1 210 340
+p q[0] gnd ai[3] 2 10
+| end bit1b_4.mux21
+| begin bit1b_4.inv 10 470
+| device bit1b_4.inv.p0 400 220
+p init Vdd bit1b_4.net_2 2 20
+| device bit1b_4.inv.n0 400 380
+n init Gnd bit1b_4.net_2 2 10
+| end bit1b_4.inv
+| begin bit1b_4.mux21_1 300 630
+| device bit1b_4.mux21_1.nmos 210 150
+n init ao[3] bit1b_4.net_1 2 10
+| device bit1b_4.mux21_1.pmos 210 150
+p bit1b_4.net_2 ao[3] bit1b_4.net_1 2 10
+| device bit1b_4.mux21_1.nmos_1 210 340
+n bit1b_4.net_2 ao[4] bit1b_4.net_1 2 10
+| device bit1b_4.mux21_1.pmos_1 210 340
+p init ao[4] bit1b_4.net_1 2 10
+| end bit1b_4.mux21_1
+| begin bit1b_4.mux21_2 300 490
+| device bit1b_4.mux21_2.nmos 210 150
+n init mplier[3] ao[3] 2 10
+| device bit1b_4.mux21_2.pmos 210 150
+p bit1b_4.net_2 mplier[3] ao[3] 2 10
+| device bit1b_4.mux21_2.nmos_1 210 340
+n bit1b_4.net_2 q[3] ao[3] 2 10
+| device bit1b_4.mux21_2.pmos_1 210 340
+p init q[3] ao[3] 2 10
+| end bit1b_4.mux21_2
+| begin bit1b_4.inv_1 10 330
+| device bit1b_4.inv_1.p0 400 220
+p q[0] Vdd bit1b_4.net_5 2 20
+| device bit1b_4.inv_1.n0 400 380
+n q[0] Gnd bit1b_4.net_5 2 10
+| end bit1b_4.inv_1
+| begin bit1b_4.andZ 30 710
+| begin bit1b_4.andZ.nand 380 300
+| device bit1b_4.andZ.nand.nmos 410 570
+n clk gnd bit1b_4.andZ.nand.net_1 2 20
+| device bit1b_4.andZ.nand.nmos_1 410 490
+n en bit1b_4.andZ.nand.net_1 bit1b_4.net_4 2 20
+| device bit1b_4.andZ.nand.pmos 410 380
+p clk vdd bit1b_4.net_4 2 20
+| device bit1b_4.andZ.nand.pmos_1 590 380
+p en vdd bit1b_4.net_4 2 20
+| end bit1b_4.andZ.nand
+| device bit1b_4.andZ.nmos 600 340
+n bit1b_4.net_4 bit1b_4.andZ.net_1 bit1b_4.net_3 2 10
+| device bit1b_4.andZ.nmos_1 600 420
+n bit1b_4.net_4 gnd bit1b_4.andZ.net_1 2 10
+| device bit1b_4.andZ.pmos 600 160
+p bit1b_4.net_4 vdd bit1b_4.andZ.net_2 2 20
+| device bit1b_4.andZ.pmos_1 600 240
+p bit1b_4.net_4 bit1b_4.andZ.net_2 bit1b_4.net_3 2 20
+| end bit1b_4.andZ
+| begin bit1b_4.dffposZ 300 760
+| device bit1b_4.dffposZ.nmos 420 160
+n bit1b_4.dffposZ.net_1 gnd bit1b_4.dffposZ.net_13 2 10
+| device bit1b_4.dffposZ.nmos_1 420 80
+n bit1b_4.net_3 bit1b_4.dffposZ.net_13 bit1b_4.dffposZ.net_4 2 10
+| device bit1b_4.dffposZ.nmos_2 890 530
+n bit1b_4.dffposZ.net_1 gnd bit1b_4.dffposZ.net_6 2 10
+| device bit1b_4.dffposZ.nmos_3 890 450
+n bit1b_4.net_3 bit1b_4.dffposZ.net_6 bit1b_4.dffposZ.net_3 2 10
+| device bit1b_4.dffposZ.pmos 890 350
+p bit1b_4.net_4 bit1b_4.dffposZ.net_12 bit1b_4.dffposZ.net_3 2 20
+| device bit1b_4.dffposZ.pmos_1 890 270
+p bit1b_4.dffposZ.net_1 vdd bit1b_4.dffposZ.net_12 2 20
+| device bit1b_4.dffposZ.nmos_4 250 530
+n bit1b_4.net_1 gnd bit1b_4.dffposZ.net_2 2 10
+| device bit1b_4.dffposZ.nmos_5 250 450
+n bit1b_4.net_4 bit1b_4.dffposZ.net_2 bit1b_4.dffposZ.net_4 2 10
+| device bit1b_4.dffposZ.pmos_2 250 350
+p bit1b_4.net_3 bit1b_4.dffposZ.net_10 bit1b_4.dffposZ.net_4 2 20
+| device bit1b_4.dffposZ.pmos_3 250 270
+p bit1b_4.net_1 vdd bit1b_4.dffposZ.net_10 2 20
+| device bit1b_4.dffposZ.nmos_6 1100 70
+n q[3] gnd bit1b_4.dffposZ.net_11 2 10
+| device bit1b_4.dffposZ.nmos_7 1100 -10
+n bit1b_4.net_4 bit1b_4.dffposZ.net_11 bit1b_4.dffposZ.net_3 2 10
+| device bit1b_4.dffposZ.pmos_4 1100 -110
+p bit1b_4.net_3 bit1b_4.dffposZ.net_5 bit1b_4.dffposZ.net_3 2 20
+| device bit1b_4.dffposZ.pmos_5 1100 -190
+p q[3] vdd bit1b_4.dffposZ.net_5 2 20
+| device bit1b_4.dffposZ.pmos_6 420 -100
+p bit1b_4.dffposZ.net_1 vdd bit1b_4.dffposZ.net_9 2 20
+| device bit1b_4.dffposZ.pmos_7 420 -20
+p bit1b_4.net_4 bit1b_4.dffposZ.net_9 bit1b_4.dffposZ.net_4 2 20
+| device bit1b_4.dffposZ.nmos_8 510 440
+n bit1b_4.dffposZ.net_4 gnd bit1b_4.dffposZ.net_1 2 10
+| device bit1b_4.dffposZ.pmos_8 510 360
+p bit1b_4.dffposZ.net_4 vdd bit1b_4.dffposZ.net_1 2 20
+| device bit1b_4.dffposZ.pmos_9 1190 280
+p bit1b_4.dffposZ.net_3 vdd bit1b_4.dffposZ.net_7 2 20
+| device bit1b_4.dffposZ.pmos_10 1190 360
+p bit1b_4.dffposZ.net_3 bit1b_4.dffposZ.net_7 q[3] 2 20
+| device bit1b_4.dffposZ.nmos_9 1190 440
+n bit1b_4.dffposZ.net_3 bit1b_4.dffposZ.net_8 q[3] 2 10
+| device bit1b_4.dffposZ.nmos_10 1190 520
+n bit1b_4.dffposZ.net_3 gnd bit1b_4.dffposZ.net_8 2 10
+| end bit1b_4.dffposZ
+| end bit1b_4
+| begin bit1b_5 810 2340
+| begin bit1b_5.mux21 290 350
+| device bit1b_5.mux21.nmos 210 150
+n q[0] mcand[2] ai[2] 2 10
+| device bit1b_5.mux21.pmos 210 150
+p bit1b_5.net_5 mcand[2] ai[2] 2 10
+| device bit1b_5.mux21.nmos_1 210 340
+n bit1b_5.net_5 gnd ai[2] 2 10
+| device bit1b_5.mux21.pmos_1 210 340
+p q[0] gnd ai[2] 2 10
+| end bit1b_5.mux21
+| begin bit1b_5.inv 10 470
+| device bit1b_5.inv.p0 400 220
+p init Vdd bit1b_5.net_2 2 20
+| device bit1b_5.inv.n0 400 380
+n init Gnd bit1b_5.net_2 2 10
+| end bit1b_5.inv
+| begin bit1b_5.mux21_1 300 630
+| device bit1b_5.mux21_1.nmos 210 150
+n init ao[2] bit1b_5.net_1 2 10
+| device bit1b_5.mux21_1.pmos 210 150
+p bit1b_5.net_2 ao[2] bit1b_5.net_1 2 10
+| device bit1b_5.mux21_1.nmos_1 210 340
+n bit1b_5.net_2 ao[3] bit1b_5.net_1 2 10
+| device bit1b_5.mux21_1.pmos_1 210 340
+p init ao[3] bit1b_5.net_1 2 10
+| end bit1b_5.mux21_1
+| begin bit1b_5.mux21_2 300 490
+| device bit1b_5.mux21_2.nmos 210 150
+n init mplier[2] ao[2] 2 10
+| device bit1b_5.mux21_2.pmos 210 150
+p bit1b_5.net_2 mplier[2] ao[2] 2 10
+| device bit1b_5.mux21_2.nmos_1 210 340
+n bit1b_5.net_2 q[2] ao[2] 2 10
+| device bit1b_5.mux21_2.pmos_1 210 340
+p init q[2] ao[2] 2 10
+| end bit1b_5.mux21_2
+| begin bit1b_5.inv_1 10 330
+| device bit1b_5.inv_1.p0 400 220
+p q[0] Vdd bit1b_5.net_5 2 20
+| device bit1b_5.inv_1.n0 400 380
+n q[0] Gnd bit1b_5.net_5 2 10
+| end bit1b_5.inv_1
+| begin bit1b_5.andZ 30 710
+| begin bit1b_5.andZ.nand 380 300
+| device bit1b_5.andZ.nand.nmos 410 570
+n clk gnd bit1b_5.andZ.nand.net_1 2 20
+| device bit1b_5.andZ.nand.nmos_1 410 490
+n en bit1b_5.andZ.nand.net_1 bit1b_5.net_4 2 20
+| device bit1b_5.andZ.nand.pmos 410 380
+p clk vdd bit1b_5.net_4 2 20
+| device bit1b_5.andZ.nand.pmos_1 590 380
+p en vdd bit1b_5.net_4 2 20
+| end bit1b_5.andZ.nand
+| device bit1b_5.andZ.nmos 600 340
+n bit1b_5.net_4 bit1b_5.andZ.net_1 bit1b_5.net_3 2 10
+| device bit1b_5.andZ.nmos_1 600 420
+n bit1b_5.net_4 gnd bit1b_5.andZ.net_1 2 10
+| device bit1b_5.andZ.pmos 600 160
+p bit1b_5.net_4 vdd bit1b_5.andZ.net_2 2 20
+| device bit1b_5.andZ.pmos_1 600 240
+p bit1b_5.net_4 bit1b_5.andZ.net_2 bit1b_5.net_3 2 20
+| end bit1b_5.andZ
+| begin bit1b_5.dffposZ 300 760
+| device bit1b_5.dffposZ.nmos 420 160
+n bit1b_5.dffposZ.net_1 gnd bit1b_5.dffposZ.net_13 2 10
+| device bit1b_5.dffposZ.nmos_1 420 80
+n bit1b_5.net_3 bit1b_5.dffposZ.net_13 bit1b_5.dffposZ.net_4 2 10
+| device bit1b_5.dffposZ.nmos_2 890 530
+n bit1b_5.dffposZ.net_1 gnd bit1b_5.dffposZ.net_6 2 10
+| device bit1b_5.dffposZ.nmos_3 890 450
+n bit1b_5.net_3 bit1b_5.dffposZ.net_6 bit1b_5.dffposZ.net_3 2 10
+| device bit1b_5.dffposZ.pmos 890 350
+p bit1b_5.net_4 bit1b_5.dffposZ.net_12 bit1b_5.dffposZ.net_3 2 20
+| device bit1b_5.dffposZ.pmos_1 890 270
+p bit1b_5.dffposZ.net_1 vdd bit1b_5.dffposZ.net_12 2 20
+| device bit1b_5.dffposZ.nmos_4 250 530
+n bit1b_5.net_1 gnd bit1b_5.dffposZ.net_2 2 10
+| device bit1b_5.dffposZ.nmos_5 250 450
+n bit1b_5.net_4 bit1b_5.dffposZ.net_2 bit1b_5.dffposZ.net_4 2 10
+| device bit1b_5.dffposZ.pmos_2 250 350
+p bit1b_5.net_3 bit1b_5.dffposZ.net_10 bit1b_5.dffposZ.net_4 2 20
+| device bit1b_5.dffposZ.pmos_3 250 270
+p bit1b_5.net_1 vdd bit1b_5.dffposZ.net_10 2 20
+| device bit1b_5.dffposZ.nmos_6 1100 70
+n q[2] gnd bit1b_5.dffposZ.net_11 2 10
+| device bit1b_5.dffposZ.nmos_7 1100 -10
+n bit1b_5.net_4 bit1b_5.dffposZ.net_11 bit1b_5.dffposZ.net_3 2 10
+| device bit1b_5.dffposZ.pmos_4 1100 -110
+p bit1b_5.net_3 bit1b_5.dffposZ.net_5 bit1b_5.dffposZ.net_3 2 20
+| device bit1b_5.dffposZ.pmos_5 1100 -190
+p q[2] vdd bit1b_5.dffposZ.net_5 2 20
+| device bit1b_5.dffposZ.pmos_6 420 -100
+p bit1b_5.dffposZ.net_1 vdd bit1b_5.dffposZ.net_9 2 20
+| device bit1b_5.dffposZ.pmos_7 420 -20
+p bit1b_5.net_4 bit1b_5.dffposZ.net_9 bit1b_5.dffposZ.net_4 2 20
+| device bit1b_5.dffposZ.nmos_8 510 440
+n bit1b_5.dffposZ.net_4 gnd bit1b_5.dffposZ.net_1 2 10
+| device bit1b_5.dffposZ.pmos_8 510 360
+p bit1b_5.dffposZ.net_4 vdd bit1b_5.dffposZ.net_1 2 20
+| device bit1b_5.dffposZ.pmos_9 1190 280
+p bit1b_5.dffposZ.net_3 vdd bit1b_5.dffposZ.net_7 2 20
+| device bit1b_5.dffposZ.pmos_10 1190 360
+p bit1b_5.dffposZ.net_3 bit1b_5.dffposZ.net_7 q[2] 2 20
+| device bit1b_5.dffposZ.nmos_9 1190 440
+n bit1b_5.dffposZ.net_3 bit1b_5.dffposZ.net_8 q[2] 2 10
+| device bit1b_5.dffposZ.nmos_10 1190 520
+n bit1b_5.dffposZ.net_3 gnd bit1b_5.dffposZ.net_8 2 10
+| end bit1b_5.dffposZ
+| end bit1b_5
+| begin bit1b_6 810 2720
+| begin bit1b_6.mux21 290 350
+| device bit1b_6.mux21.nmos 210 150
+n q[0] mcand[1] ai[1] 2 10
+| device bit1b_6.mux21.pmos 210 150
+p bit1b_6.net_5 mcand[1] ai[1] 2 10
+| device bit1b_6.mux21.nmos_1 210 340
+n bit1b_6.net_5 gnd ai[1] 2 10
+| device bit1b_6.mux21.pmos_1 210 340
+p q[0] gnd ai[1] 2 10
+| end bit1b_6.mux21
+| begin bit1b_6.inv 10 470
+| device bit1b_6.inv.p0 400 220
+p init Vdd bit1b_6.net_2 2 20
+| device bit1b_6.inv.n0 400 380
+n init Gnd bit1b_6.net_2 2 10
+| end bit1b_6.inv
+| begin bit1b_6.mux21_1 300 630
+| device bit1b_6.mux21_1.nmos 210 150
+n init ao[1] bit1b_6.net_1 2 10
+| device bit1b_6.mux21_1.pmos 210 150
+p bit1b_6.net_2 ao[1] bit1b_6.net_1 2 10
+| device bit1b_6.mux21_1.nmos_1 210 340
+n bit1b_6.net_2 ao[2] bit1b_6.net_1 2 10
+| device bit1b_6.mux21_1.pmos_1 210 340
+p init ao[2] bit1b_6.net_1 2 10
+| end bit1b_6.mux21_1
+| begin bit1b_6.mux21_2 300 490
+| device bit1b_6.mux21_2.nmos 210 150
+n init mplier[1] ao[1] 2 10
+| device bit1b_6.mux21_2.pmos 210 150
+p bit1b_6.net_2 mplier[1] ao[1] 2 10
+| device bit1b_6.mux21_2.nmos_1 210 340
+n bit1b_6.net_2 q[1] ao[1] 2 10
+| device bit1b_6.mux21_2.pmos_1 210 340
+p init q[1] ao[1] 2 10
+| end bit1b_6.mux21_2
+| begin bit1b_6.inv_1 10 330
+| device bit1b_6.inv_1.p0 400 220
+p q[0] Vdd bit1b_6.net_5 2 20
+| device bit1b_6.inv_1.n0 400 380
+n q[0] Gnd bit1b_6.net_5 2 10
+| end bit1b_6.inv_1
+| begin bit1b_6.andZ 30 710
+| begin bit1b_6.andZ.nand 380 300
+| device bit1b_6.andZ.nand.nmos 410 570
+n clk gnd bit1b_6.andZ.nand.net_1 2 20
+| device bit1b_6.andZ.nand.nmos_1 410 490
+n en bit1b_6.andZ.nand.net_1 bit1b_6.net_4 2 20
+| device bit1b_6.andZ.nand.pmos 410 380
+p clk vdd bit1b_6.net_4 2 20
+| device bit1b_6.andZ.nand.pmos_1 590 380
+p en vdd bit1b_6.net_4 2 20
+| end bit1b_6.andZ.nand
+| device bit1b_6.andZ.nmos 600 340
+n bit1b_6.net_4 bit1b_6.andZ.net_1 bit1b_6.net_3 2 10
+| device bit1b_6.andZ.nmos_1 600 420
+n bit1b_6.net_4 gnd bit1b_6.andZ.net_1 2 10
+| device bit1b_6.andZ.pmos 600 160
+p bit1b_6.net_4 vdd bit1b_6.andZ.net_2 2 20
+| device bit1b_6.andZ.pmos_1 600 240
+p bit1b_6.net_4 bit1b_6.andZ.net_2 bit1b_6.net_3 2 20
+| end bit1b_6.andZ
+| begin bit1b_6.dffposZ 300 760
+| device bit1b_6.dffposZ.nmos 420 160
+n bit1b_6.dffposZ.net_1 gnd bit1b_6.dffposZ.net_13 2 10
+| device bit1b_6.dffposZ.nmos_1 420 80
+n bit1b_6.net_3 bit1b_6.dffposZ.net_13 bit1b_6.dffposZ.net_4 2 10
+| device bit1b_6.dffposZ.nmos_2 890 530
+n bit1b_6.dffposZ.net_1 gnd bit1b_6.dffposZ.net_6 2 10
+| device bit1b_6.dffposZ.nmos_3 890 450
+n bit1b_6.net_3 bit1b_6.dffposZ.net_6 bit1b_6.dffposZ.net_3 2 10
+| device bit1b_6.dffposZ.pmos 890 350
+p bit1b_6.net_4 bit1b_6.dffposZ.net_12 bit1b_6.dffposZ.net_3 2 20
+| device bit1b_6.dffposZ.pmos_1 890 270
+p bit1b_6.dffposZ.net_1 vdd bit1b_6.dffposZ.net_12 2 20
+| device bit1b_6.dffposZ.nmos_4 250 530
+n bit1b_6.net_1 gnd bit1b_6.dffposZ.net_2 2 10
+| device bit1b_6.dffposZ.nmos_5 250 450
+n bit1b_6.net_4 bit1b_6.dffposZ.net_2 bit1b_6.dffposZ.net_4 2 10
+| device bit1b_6.dffposZ.pmos_2 250 350
+p bit1b_6.net_3 bit1b_6.dffposZ.net_10 bit1b_6.dffposZ.net_4 2 20
+| device bit1b_6.dffposZ.pmos_3 250 270
+p bit1b_6.net_1 vdd bit1b_6.dffposZ.net_10 2 20
+| device bit1b_6.dffposZ.nmos_6 1100 70
+n q[1] gnd bit1b_6.dffposZ.net_11 2 10
+| device bit1b_6.dffposZ.nmos_7 1100 -10
+n bit1b_6.net_4 bit1b_6.dffposZ.net_11 bit1b_6.dffposZ.net_3 2 10
+| device bit1b_6.dffposZ.pmos_4 1100 -110
+p bit1b_6.net_3 bit1b_6.dffposZ.net_5 bit1b_6.dffposZ.net_3 2 20
+| device bit1b_6.dffposZ.pmos_5 1100 -190
+p q[1] vdd bit1b_6.dffposZ.net_5 2 20
+| device bit1b_6.dffposZ.pmos_6 420 -100
+p bit1b_6.dffposZ.net_1 vdd bit1b_6.dffposZ.net_9 2 20
+| device bit1b_6.dffposZ.pmos_7 420 -20
+p bit1b_6.net_4 bit1b_6.dffposZ.net_9 bit1b_6.dffposZ.net_4 2 20
+| device bit1b_6.dffposZ.nmos_8 510 440
+n bit1b_6.dffposZ.net_4 gnd bit1b_6.dffposZ.net_1 2 10
+| device bit1b_6.dffposZ.pmos_8 510 360
+p bit1b_6.dffposZ.net_4 vdd bit1b_6.dffposZ.net_1 2 20
+| device bit1b_6.dffposZ.pmos_9 1190 280
+p bit1b_6.dffposZ.net_3 vdd bit1b_6.dffposZ.net_7 2 20
+| device bit1b_6.dffposZ.pmos_10 1190 360
+p bit1b_6.dffposZ.net_3 bit1b_6.dffposZ.net_7 q[1] 2 20
+| device bit1b_6.dffposZ.nmos_9 1190 440
+n bit1b_6.dffposZ.net_3 bit1b_6.dffposZ.net_8 q[1] 2 10
+| device bit1b_6.dffposZ.nmos_10 1190 520
+n bit1b_6.dffposZ.net_3 gnd bit1b_6.dffposZ.net_8 2 10
+| end bit1b_6.dffposZ
+| end bit1b_6
+| begin bit1b_7 810 3110
+| begin bit1b_7.mux21 290 350
+| device bit1b_7.mux21.nmos 210 150
+n q[0] mcand[0] ai[0] 2 10
+| device bit1b_7.mux21.pmos 210 150
+p bit1b_7.net_5 mcand[0] ai[0] 2 10
+| device bit1b_7.mux21.nmos_1 210 340
+n bit1b_7.net_5 gnd ai[0] 2 10
+| device bit1b_7.mux21.pmos_1 210 340
+p q[0] gnd ai[0] 2 10
+| end bit1b_7.mux21
+| begin bit1b_7.inv 10 470
+| device bit1b_7.inv.p0 400 220
+p init Vdd bit1b_7.net_2 2 20
+| device bit1b_7.inv.n0 400 380
+n init Gnd bit1b_7.net_2 2 10
+| end bit1b_7.inv
+| begin bit1b_7.mux21_1 300 630
+| device bit1b_7.mux21_1.nmos 210 150
+n init ao[0] bit1b_7.net_1 2 10
+| device bit1b_7.mux21_1.pmos 210 150
+p bit1b_7.net_2 ao[0] bit1b_7.net_1 2 10
+| device bit1b_7.mux21_1.nmos_1 210 340
+n bit1b_7.net_2 ao[1] bit1b_7.net_1 2 10
+| device bit1b_7.mux21_1.pmos_1 210 340
+p init ao[1] bit1b_7.net_1 2 10
+| end bit1b_7.mux21_1
+| begin bit1b_7.mux21_2 300 490
+| device bit1b_7.mux21_2.nmos 210 150
+n init mplier[0] ao[0] 2 10
+| device bit1b_7.mux21_2.pmos 210 150
+p bit1b_7.net_2 mplier[0] ao[0] 2 10
+| device bit1b_7.mux21_2.nmos_1 210 340
+n bit1b_7.net_2 q[0] ao[0] 2 10
+| device bit1b_7.mux21_2.pmos_1 210 340
+p init q[0] ao[0] 2 10
+| end bit1b_7.mux21_2
+| begin bit1b_7.inv_1 10 330
+| device bit1b_7.inv_1.p0 400 220
+p q[0] Vdd bit1b_7.net_5 2 20
+| device bit1b_7.inv_1.n0 400 380
+n q[0] Gnd bit1b_7.net_5 2 10
+| end bit1b_7.inv_1
+| begin bit1b_7.andZ 30 710
+| begin bit1b_7.andZ.nand 380 300
+| device bit1b_7.andZ.nand.nmos 410 570
+n clk gnd bit1b_7.andZ.nand.net_1 2 20
+| device bit1b_7.andZ.nand.nmos_1 410 490
+n en bit1b_7.andZ.nand.net_1 bit1b_7.net_4 2 20
+| device bit1b_7.andZ.nand.pmos 410 380
+p clk vdd bit1b_7.net_4 2 20
+| device bit1b_7.andZ.nand.pmos_1 590 380
+p en vdd bit1b_7.net_4 2 20
+| end bit1b_7.andZ.nand
+| device bit1b_7.andZ.nmos 600 340
+n bit1b_7.net_4 bit1b_7.andZ.net_1 bit1b_7.net_3 2 10
+| device bit1b_7.andZ.nmos_1 600 420
+n bit1b_7.net_4 gnd bit1b_7.andZ.net_1 2 10
+| device bit1b_7.andZ.pmos 600 160
+p bit1b_7.net_4 vdd bit1b_7.andZ.net_2 2 20
+| device bit1b_7.andZ.pmos_1 600 240
+p bit1b_7.net_4 bit1b_7.andZ.net_2 bit1b_7.net_3 2 20
+| end bit1b_7.andZ
+| begin bit1b_7.dffposZ 300 760
+| device bit1b_7.dffposZ.nmos 420 160
+n bit1b_7.dffposZ.net_1 gnd bit1b_7.dffposZ.net_13 2 10
+| device bit1b_7.dffposZ.nmos_1 420 80
+n bit1b_7.net_3 bit1b_7.dffposZ.net_13 bit1b_7.dffposZ.net_4 2 10
+| device bit1b_7.dffposZ.nmos_2 890 530
+n bit1b_7.dffposZ.net_1 gnd bit1b_7.dffposZ.net_6 2 10
+| device bit1b_7.dffposZ.nmos_3 890 450
+n bit1b_7.net_3 bit1b_7.dffposZ.net_6 bit1b_7.dffposZ.net_3 2 10
+| device bit1b_7.dffposZ.pmos 890 350
+p bit1b_7.net_4 bit1b_7.dffposZ.net_12 bit1b_7.dffposZ.net_3 2 20
+| device bit1b_7.dffposZ.pmos_1 890 270
+p bit1b_7.dffposZ.net_1 vdd bit1b_7.dffposZ.net_12 2 20
+| device bit1b_7.dffposZ.nmos_4 250 530
+n bit1b_7.net_1 gnd bit1b_7.dffposZ.net_2 2 10
+| device bit1b_7.dffposZ.nmos_5 250 450
+n bit1b_7.net_4 bit1b_7.dffposZ.net_2 bit1b_7.dffposZ.net_4 2 10
+| device bit1b_7.dffposZ.pmos_2 250 350
+p bit1b_7.net_3 bit1b_7.dffposZ.net_10 bit1b_7.dffposZ.net_4 2 20
+| device bit1b_7.dffposZ.pmos_3 250 270
+p bit1b_7.net_1 vdd bit1b_7.dffposZ.net_10 2 20
+| device bit1b_7.dffposZ.nmos_6 1100 70
+n q[0] gnd bit1b_7.dffposZ.net_11 2 10
+| device bit1b_7.dffposZ.nmos_7 1100 -10
+n bit1b_7.net_4 bit1b_7.dffposZ.net_11 bit1b_7.dffposZ.net_3 2 10
+| device bit1b_7.dffposZ.pmos_4 1100 -110
+p bit1b_7.net_3 bit1b_7.dffposZ.net_5 bit1b_7.dffposZ.net_3 2 20
+| device bit1b_7.dffposZ.pmos_5 1100 -190
+p q[0] vdd bit1b_7.dffposZ.net_5 2 20
+| device bit1b_7.dffposZ.pmos_6 420 -100
+p bit1b_7.dffposZ.net_1 vdd bit1b_7.dffposZ.net_9 2 20
+| device bit1b_7.dffposZ.pmos_7 420 -20
+p bit1b_7.net_4 bit1b_7.dffposZ.net_9 bit1b_7.dffposZ.net_4 2 20
+| device bit1b_7.dffposZ.nmos_8 510 440
+n bit1b_7.dffposZ.net_4 gnd bit1b_7.dffposZ.net_1 2 10
+| device bit1b_7.dffposZ.pmos_8 510 360
+p bit1b_7.dffposZ.net_4 vdd bit1b_7.dffposZ.net_1 2 20
+| device bit1b_7.dffposZ.pmos_9 1190 280
+p bit1b_7.dffposZ.net_3 vdd bit1b_7.dffposZ.net_7 2 20
+| device bit1b_7.dffposZ.pmos_10 1190 360
+p bit1b_7.dffposZ.net_3 bit1b_7.dffposZ.net_7 q[0] 2 20
+| device bit1b_7.dffposZ.nmos_9 1190 440
+n bit1b_7.dffposZ.net_3 bit1b_7.dffposZ.net_8 q[0] 2 10
+| device bit1b_7.dffposZ.nmos_10 1190 520
+n bit1b_7.dffposZ.net_3 gnd bit1b_7.dffposZ.net_8 2 10
+| end bit1b_7.dffposZ
+| end bit1b_7

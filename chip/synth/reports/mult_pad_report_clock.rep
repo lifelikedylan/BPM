@@ -1,0 +1,21 @@
+Warning: Design 'mult_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : clocks
+Design : mult_pad
+Version: M-2016.12-SP1
+Date   : Wed Nov  7 14:25:59 2018
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk           20.000000 {0 10}              f p       {clk}
+--------------------------------------------------------------------------------
+1

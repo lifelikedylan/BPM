@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/bpm_custom.dv
+dv_start matched                                  
+dv_cell {bpm_custom} {bpm_custom} matched
+dv_obj_count -transformed_nets {205 205} -transformed_inst {379 379} -transformed_port {0 0}
+dv_end

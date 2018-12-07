@@ -1,0 +1,7 @@
+cUiSelectCellP {bpm_custom}
+cUiSetViewStatus {bpm_custom} {layout} {1}
+cUiSetViewStatus {bpm_custom} {logical} {0}
+cUiSetViewStatus {bpm_custom} {abstract.pin} {1}
+cUiSetViewStatus {bpm_custom} {abstract.ext} {1}
+cUiSetViewStatus {bpm_custom} {abstract} {3}
+cUiSetViewStatus {bpm_custom} {abstract.ver} {0}

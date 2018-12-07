@@ -1,0 +1,142 @@
+/*
+ delay model :       typ
+ check model :       typ
+ power model :       typ
+ capacitance model : typ
+ other model :       typ
+*/
+library(custom) {
+
+  delay_model : table_lookup;
+  in_place_swap_mode : match_footprint;
+
+  /* unit attributes */
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1uA";
+  pulling_resistance_unit : "1kohm";
+  leakage_power_unit : "1nW";
+  capacitive_load_unit (1,pf);
+
+  slew_upper_threshold_pct_rise : 80;
+  slew_lower_threshold_pct_rise : 20;
+  slew_upper_threshold_pct_fall : 80;
+  slew_lower_threshold_pct_fall : 20;
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  nom_process : 1;
+  nom_voltage : 5;
+  nom_temperature : 25;
+  operating_conditions ( typical ) {
+     process : 1;
+     voltage : 5;
+     temperature : 25;
+  }
+  default_operating_conditions : typical;
+
+cell (custom) {
+  area : 28896;
+  pin(a_0)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_1)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_2)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_3)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_4)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_5)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_6)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(a_7)  {
+    direction : input;
+    capacitance : 0.0597863;
+  }
+  pin(b_0)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_1)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_2)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_3)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_4)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_5)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_6)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(b_7)  {
+    direction : input;
+    capacitance : 0.0601421;
+  }
+  pin(sum_0)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_1)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_2)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_3)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_4)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_5)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_6)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(sum_7)  {
+    direction : output;
+    capacitance : 0.0177020;
+  }
+  pin(cout)  {
+    direction : output;
+    capacitance : 0.0169608;
+  }
+}
+}

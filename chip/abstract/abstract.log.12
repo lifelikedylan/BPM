@@ -1,0 +1,454 @@
+INFO (ABS-19020): Starting @(#)$CDS: ui version 6.1.7-64b 01/24/2017 19:46 (sjfhw308) $, sub-version  IC6.1.7-64b.500.9 , on  3.18.26
+INFO (ABS-19023): This is the OpenAccess variant of Abstract Generator.
+INFO (ABS-19012): Replaying abstract.il file.
+INFO (ABS-19030): 1 /************************************************/
+
+INFO (ABS-19030): 2 /* Custom cell Abstract Generation Script 	*/
+
+INFO (ABS-19030): 3 /* Author: Ivan Castellanos			*/
+
+INFO (ABS-19030): 4 /* Oklahoma State University			*/
+
+INFO (ABS-19030): 5 /************************************************/
+
+INFO (ABS-19030): 7 /* To run Abstract Generation type:             */
+
+INFO (ABS-19030): 8 /* abstract -nogui -replay abstract.il          */
+
+INFO (ABS-19030): 10 /* All that needs to be changed are the custom_cell */
+
+INFO (ABS-19030): 11 /* and output_pinnames field.			    */
+
+INFO (ABS-19030): 13 absSkillMode()
+t
+INFO (ABS-19030): 14 /**************************************/
+
+INFO (ABS-19030): 15 custom_cell = "rca8"
+rca8
+INFO (ABS-19030): 16 output_pinnames = "sum_0 sum_1 sum_2 sum_3 sum_4 sum_5 sum_6 sum_7 cout"
+sum_0 sum_1 sum_2 sum_3 sum_4 sum_5 sum_6 sum_7 cout
+INFO (ABS-19030): 17 /**************************************/
+
+INFO (ABS-19030): 19 osucells = "/classes/ecen4303F18/osu_soc_3.0/"
+/classes/ecen4303F18/osu_soc_3.0/
+INFO (ABS-19030): 20 lefin = "/lib/ami05/abstract/osu05_stdcells.lef"
+/lib/ami05/abstract/osu05_stdcells.lef
+INFO (ABS-19030): 21 gdsin = "/flow/ami05/gds2_icfb.map"
+/flow/ami05/gds2_icfb.map
+INFO (ABS-19030): 22 absSetOption("NewLibraryName" custom_cell)
+*Error* (ABS-17008): Global option NewLibraryName invalid value rca8
+
+INFO (ABS-17010): Global option NewLibraryName valid values are: 
+ Enter a valid library name.
+0
+INFO (ABS-19030): 23 absSetLibrary(custom_cell)
+INFO (ABS-10500): Library rca8 Opening /home/jstine/ecen4303/custom/abstract/rca8
+*WARNING* (ABS-20047): Release IC 6.1.0 onwards, Abstract Generator will not support the "USEMINSPACING OBS ON" property in the technology file. This 
+property will be ignored.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 4 poly layer(s), and 0 diff layer(s) found
+INFO (ABS-20023): Via summary: 2 valid via(s) found
+INFO (ABS-10503): Library rca8 Loading options from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options
+INFO (ABS-10505): Library rca8 loading messages from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.messages
+INFO (ABS-10501): Library rca8 Loading 45 cells
+INFO (ABS-19022): Loading library rca8 10 percent complete...
+INFO (ABS-19022): Loading library rca8 20 percent complete...
+INFO (ABS-19022): Loading library rca8 30 percent complete...
+INFO (ABS-19022): Loading library rca8 40 percent complete...
+INFO (ABS-19022): Loading library rca8 50 percent complete...
+INFO (ABS-19022): Loading library rca8 60 percent complete...
+INFO (ABS-19022): Loading library rca8 70 percent complete...
+INFO (ABS-19022): Loading library rca8 80 percent complete...
+INFO (ABS-19022): Loading library rca8 90 percent complete...
+INFO (ABS-19022): Loading library rca8 100 percent complete...
+INFO (ABS-10502): Library rca8 Loaded 45 cells
+INFO (ABS-10507): Library rca8 opened
+t
+INFO (ABS-19030): 24 absSetOption("ImportLefFiles" strcat( osucells lefin ) )
+1
+INFO (ABS-19030): 25 absSetOption("ImportTechLef" "true")
+1
+INFO (ABS-19030): 26 absImportLEF()
+INFO (ABS-10516): Library rca8 ImportLefFiles /classes/ecen4303F18/osu_soc_3.0//lib/ami05/abstract/osu05_stdcells.lef
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.10s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF In 
+Program   : @(#)$CDS: lefin version 6.1.7-64b 01/24/2017 19:52 (sjfhw308) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 03-Nov-2018  17:02:35
+User Name : jstine
+Host Name : rivendell.ecen.okstate.edu
+Directory : /home/jstine/ecen4303/custom/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefin -lib rca8 -overwrite -lef "/classes/ecen4303F18/osu_soc_3.0//lib/ami05/abstract/osu05_stdcells.lef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-90024): The existing display.drf is saved as display.drf.orig. The new packet display information will be appended to a copy of display.drf. 
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(2972-2973) : MACRO PADGND: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3021-3022) : MACRO PADINC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3074-3075) : MACRO PADOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3099-3100) : MACRO PADNC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3145-3146) : MACRO PADVDD: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3215-3216) : MACRO PADINOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+
+Elapsed Time: 0.2s
+
+lefin translation completed (errors: 0, warnings: 1).
+INFO (ABS-10509): The rca8 library is saving existing options file to /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options.prev
+INFO (ABS-10511): Library rca8: Saving options to the /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options file.
+*WARNING* (ABS-20047): Release IC 6.1.0 onwards, Abstract Generator will not support the "USEMINSPACING OBS ON" property in the technology file. This 
+property will be ignored.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 4 poly layer(s), and 0 diff layer(s) found
+INFO (ABS-20023): Via summary: 2 valid via(s) found
+INFO (ABS-10503): Library rca8 Loading options from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options
+INFO (ABS-19022): Refreshing library rca8 10 percent complete...
+INFO (ABS-19022): Refreshing library rca8 20 percent complete...
+INFO (ABS-19022): Refreshing library rca8 30 percent complete...
+INFO (ABS-19022): Refreshing library rca8 40 percent complete...
+INFO (ABS-19022): Refreshing library rca8 50 percent complete...
+INFO (ABS-19022): Refreshing library rca8 60 percent complete...
+INFO (ABS-19022): Refreshing library rca8 70 percent complete...
+INFO (ABS-19022): Refreshing library rca8 80 percent complete...
+INFO (ABS-19022): Refreshing library rca8 90 percent complete...
+INFO (ABS-19022): Refreshing library rca8 100 percent complete...
+1
+INFO (ABS-19030): 27 absSetOption("ImportGDSIIFiles" strcat( custom_cell "." "gds") )
+1
+INFO (ABS-19030): 28 absSetOption("ImportGDSIILayerMapFile" strcat( osucells gdsin ) )
+1
+INFO (ABS-19030): 29 absSetOption("DefaultBin" "Block")
+1
+INFO (ABS-19030): 30 absImportGDS()
+INFO (ABS-10516): Library rca8 ImportGDSIIFiles rca8.gds
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.10s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 01/24/2017 19:49 (sjfhw308) $
+          : sub-version  IC6.1.7-64b.500.9 
+Started at: 03-Nov-2018  17:02:36
+User Name : jstine
+Host Name : rivendell.ecen.okstate.edu
+Directory : /home/jstine/ecen4303/custom/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '13'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '14'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '22'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '23'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '24'. Therefore, this entry will be ignored during translation.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				rca8
+	strmFile			rca8.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+	propSeparator			,
+
+INFO (XSTRM-220): 1. Translating STRUCTURE fa as cellView rca8/fa/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE rca2 as cellView rca8/rca2/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE rca8 as cellView rca8/rca8/layout.
+
+Summary of Objects Translated:
+	Instances:                              2
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 1
+	Polygons:                               0
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             365
+	Text:                                   42
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  3
+
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 2856KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '6' warning(s) found.
+INFO (ABS-10509): The rca8 library is saving existing options file to /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options.prev
+INFO (ABS-10511): Library rca8: Saving options to the /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options file.
+*WARNING* (ABS-20047): Release IC 6.1.0 onwards, Abstract Generator will not support the "USEMINSPACING OBS ON" property in the technology file. This 
+property will be ignored.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 4 poly layer(s), and 0 diff layer(s) found
+INFO (ABS-20023): Via summary: 2 valid via(s) found
+INFO (ABS-10503): Library rca8 Loading options from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options
+INFO (ABS-19022): Refreshing library rca8 10 percent complete...
+INFO (ABS-19022): Refreshing library rca8 20 percent complete...
+INFO (ABS-19022): Refreshing library rca8 30 percent complete...
+INFO (ABS-19022): Refreshing library rca8 40 percent complete...
+INFO (ABS-19022): Refreshing library rca8 50 percent complete...
+INFO (ABS-19022): Refreshing library rca8 60 percent complete...
+INFO (ABS-19022): Refreshing library rca8 70 percent complete...
+INFO (ABS-19022): Refreshing library rca8 80 percent complete...
+INFO (ABS-19022): Refreshing library rca8 90 percent complete...
+INFO (ABS-19022): Refreshing library rca8 100 percent complete...
+1
+INFO (ABS-19030): 32 absSelectCellFrom(custom_cell custom_cell)
+0
+INFO (ABS-19030): 33 absSetBinOption("Block" "PinsTextPinMap" "(metal1 (metal1 pin)(metal1 drawing))\n(metal2 (metal2 pin)(metal2 drawing))\n(metal3 (metal3 pin)(metal3 drawing))")
+1
+INFO (ABS-19030): 34 absSetBinOption("Block" "PinsPowerNames" "vdd")
+1
+INFO (ABS-19030): 35 absSetBinOption("Block" "PinsGroundNames" "gnd")
+1
+INFO (ABS-19030): 36 absSetBinOption("Block" "PinsOutputNames" output_pinnames)
+1
+INFO (ABS-19030): 37 absSetBinOption("Block" "PinsTextManipulation" "{_([0-9]+)_} {[\\1]}")
+1
+INFO (ABS-19030): 38 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 39 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 40 absSetBinOption("Block" "PinsPreserveRoutingBlockages" "true")
+1
+INFO (ABS-19030): 41 absSetBinOption("Block" "PinsCreatePwrPinsFromRouting" "true")
+1
+INFO (ABS-19030): 42 absSetBinOption("Block" "PinsPwrRoutingLayers" "metal1 metal2 via via2 ")
+1
+INFO (ABS-19030): 43 absSetBinOption("Block" "PinsBoundarySizeTop" "4.8")
+1
+INFO (ABS-19030): 44 absSetBinOption("Block" "PinsBoundarySizeBottom" "4.8")
+1
+INFO (ABS-19030): 45 absSetBinOption("Block" "PinsBoundarySizeLeft" "4.8")
+1
+INFO (ABS-19030): 46 absSetBinOption("Block" "PinsBoundarySizeRight" "4.8")
+1
+INFO (ABS-19030): 48 absSetBinOption("Block" "AbstractAdjustRingPinsDist" "50")
+1
+INFO (ABS-19030): 49 absSetBinOption("Block" "AbstractSiteName" "Block")
+1
+INFO (ABS-19030): 50 absSetBinOption("Block" "AbstractSiteNameDefine" "Block")
+1
+INFO (ABS-19030): 51 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "")
+1
+INFO (ABS-19030): 52 absSetBinOption("Block" "AbstractBlockageShrinkWrapLayers" "")
+1
+INFO (ABS-19030): 53 absSetBinOption("Block" "ExtractSig" "false")
+1
+INFO (ABS-19030): 54 absSetBinOption("Block" "AbstractAdjustPowerRailOp" "")
+1
+INFO (ABS-19030): 55 absSetBinOption("Block" "AbstractAdjustBoundaryPinsSig" "false")
+1
+INFO (ABS-19030): 56 absSetBinOption("Block" "AbstractAdjustBoundaryPinsPwr" "false")
+1
+INFO (ABS-19030): 57 absSetBinOption("Block" "AbstractAdjustPowerGeometryGroups" "single")
+1
+INFO (ABS-19030): 58 absSetBinOption("Block" "BlockageCutVia" "false")
+1
+INFO (ABS-19030): 59 absSetBinOption("Block" "AbstractOverlapLayerSize" "0.45")
+1
+INFO (ABS-19030): 60 absSetBinOption("Block" "AbstractOverlapLayerSmoothFactor" "0")
+1
+INFO (ABS-19030): 61 absSetBinOption("Block" "AbstractGridMode" "report")
+1
+INFO (ABS-19030): 62 absSetTerminalProp(custom_cell "vdd" "shape" "ring") 
+*Error* (ABS-11910): Failed to change the value of the vdd terminal because the terminal does not exist. Ensure that the terminal name that you have specified is correct and then try again.
+
+*WARNING* (ABS-11025): Cell rca8: Failed to set the property because the cell is either invalid or does not contain any of the valid views.Abstract Generator can set properties only on valid views, such as Pins,Extract,Abstract, that it has created.
+0
+INFO (ABS-19030): 63 absSetTerminalProp(custom_cell "gnd" "shape" "ring") 
+*Error* (ABS-11910): Failed to change the value of the gnd terminal because the terminal does not exist. Ensure that the terminal name that you have specified is correct and then try again.
+
+*WARNING* (ABS-11025): Cell rca8: Failed to set the property because the cell is either invalid or does not contain any of the valid views.Abstract Generator can set properties only on valid views, such as Pins,Extract,Abstract, that it has created.
+0
+INFO (ABS-19030): 64 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "metal1 metal2")
+1
+INFO (ABS-19030): 65 absSetBinOption("Block" "AbstractBlockageCoverLayers" "")
+1
+INFO (ABS-19030): 66 absSetBinOption("Block" "ExtractPwr" "true")
+1
+INFO (ABS-19030): 67 absSetBinOption("Block" "ExtractNumLevelsPwr" "1")
+1
+INFO (ABS-19030): 68 absSetBinOption("Block" "AbstractAdjustRingPinsPwr" "true")
+1
+INFO (ABS-19030): 70 absSetOption("ExportLEFFile" strcat( "./" custom_cell "." "lef") )
+1
+INFO (ABS-19030): 72 absPins()
+INFO (ABS-10509): The rca8 library is saving existing options file to /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options.prev
+INFO (ABS-10511): Library rca8: Saving options to the /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options file.
+INFO (ABS-11900): Cell rca8: Step Pins started
+INFO (ABS-12014): Cell rca8: The prBoundary has been created successfully.
+INFO (ABS-12005): Cell rca8: The pin a_0 has been created for the label a_0 at (12600,38400).
+INFO (ABS-12005): Cell rca8: The pin a_1 has been created for the label a_1 at (54600,38400).
+INFO (ABS-12005): Cell rca8: The pin a_2 has been created for the label a_2 at (79800,38400).
+INFO (ABS-12005): Cell rca8: The pin a_3 has been created for the label a_3 at (121800,38400).
+INFO (ABS-19022): Running Pins 10 percent complete...
+INFO (ABS-12005): Cell rca8: The pin a_4 has been created for the label a_4 at (147000,38400).
+INFO (ABS-12005): Cell rca8: The pin a_5 has been created for the label a_5 at (189000,38400).
+INFO (ABS-12005): Cell rca8: The pin a_6 has been created for the label a_6 at (214200,38400).
+INFO (ABS-19022): Running Pins 20 percent complete...
+INFO (ABS-12005): Cell rca8: The pin a_7 has been created for the label a_7 at (256200,38400).
+INFO (ABS-12005): Cell rca8: The pin b_0 has been created for the label b_0 at (15600,38400).
+INFO (ABS-12005): Cell rca8: The pin b_1 has been created for the label b_1 at (51600,38400).
+INFO (ABS-12005): Cell rca8: The pin b_2 has been created for the label b_2 at (82800,38400).
+INFO (ABS-19022): Running Pins 30 percent complete...
+INFO (ABS-12005): Cell rca8: The pin b_3 has been created for the label b_3 at (118800,38400).
+INFO (ABS-12005): Cell rca8: The pin b_4 has been created for the label b_4 at (150000,38400).
+INFO (ABS-12005): Cell rca8: The pin b_5 has been created for the label b_5 at (186000,38400).
+INFO (ABS-19022): Running Pins 40 percent complete...
+INFO (ABS-12005): Cell rca8: The pin b_6 has been created for the label b_6 at (217200,38400).
+INFO (ABS-12005): Cell rca8: The pin b_7 has been created for the label b_7 at (253200,38400).
+INFO (ABS-12005): Cell rca8: The pin c_0 has been created for the label c_0 at (18600,38400).
+INFO (ABS-12005): Cell rca8: The pin cout has been created for the label cout at (256200,600).
+INFO (ABS-19022): Running Pins 50 percent complete...
+INFO (ABS-12005): Cell rca8: The pin gnd has been created for the label gnd at (1500,38400).
+INFO (ABS-12005): Cell rca8: The pin gnd has been created for the label gnd at (67500,38400).
+INFO (ABS-12005): Cell rca8: The pin gnd has been created for the label gnd at (134400,38400).
+INFO (ABS-12005): Cell rca8: The pin gnd has been created for the label gnd at (201600,38400).
+INFO (ABS-19022): Running Pins 60 percent complete...
+INFO (ABS-12005): Cell rca8: The pin gnd has been created for the label gnd at (267300,38400).
+INFO (ABS-12005): Cell rca8: The pin sum_0 has been created for the label sum_0 at (15600,300).
+INFO (ABS-12005): Cell rca8: The pin sum_1 has been created for the label sum_1 at (51600,300).
+INFO (ABS-19022): Running Pins 70 percent complete...
+INFO (ABS-12005): Cell rca8: The pin sum_2 has been created for the label sum_2 at (82800,300).
+INFO (ABS-12005): Cell rca8: The pin sum_3 has been created for the label sum_3 at (118800,300).
+INFO (ABS-12005): Cell rca8: The pin sum_4 has been created for the label sum_4 at (150000,300).
+INFO (ABS-12005): Cell rca8: The pin sum_5 has been created for the label sum_5 at (186000,300).
+INFO (ABS-19022): Running Pins 80 percent complete...
+INFO (ABS-12005): Cell rca8: The pin sum_6 has been created for the label sum_6 at (217200,300).
+INFO (ABS-12005): Cell rca8: The pin sum_7 has been created for the label sum_7 at (253200,300).
+INFO (ABS-12005): Cell rca8: The pin vdd has been created for the label vdd at (100800,38100).
+INFO (ABS-19022): Running Pins 90 percent complete...
+INFO (ABS-12005): Cell rca8: The pin vdd has been created for the label vdd at (235200,38400).
+INFO (ABS-12005): Cell rca8: The pin vdd has been created for the label vdd at (168000,38400).
+INFO (ABS-12005): Cell rca8: The pin vdd has been created for the label vdd at (33600,38400).
+INFO (ABS-12003): Cell rca8: 35 pins have been created.
+INFO (ABS-19022): Running Pins 100 percent complete...
+INFO (ABS-11901): Cell rca8: Step Pins finished
+1
+INFO (ABS-19030): 73 absExtract()
+INFO (ABS-10509): The rca8 library is saving existing options file to /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options.prev
+INFO (ABS-10511): Library rca8: Saving options to the /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options file.
+INFO (ABS-11900): Cell rca8: Step Extract started
+INFO (ABS-13002): Cell rca8: extracting 28 nets
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_0, 1 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_1, 2 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_2, 3 of 28.
+INFO (ABS-19022): Running Extract 10 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_3, 4 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_4, 5 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_5, 6 of 28.
+INFO (ABS-19022): Running Extract 20 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_6, 7 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net a_7, 8 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_0, 9 of 28.
+INFO (ABS-19022): Running Extract 30 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_1, 10 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_2, 11 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_3, 12 of 28.
+INFO (ABS-19022): Running Extract 40 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_4, 13 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_5, 14 of 28.
+INFO (ABS-19022): Running Extract 50 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_6, 15 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net b_7, 16 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net c_0, 17 of 28.
+INFO (ABS-19022): Running Extract 60 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net cout, 18 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_0, 19 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_1, 20 of 28.
+INFO (ABS-19022): Running Extract 70 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_2, 21 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_3, 22 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_4, 23 of 28.
+INFO (ABS-19022): Running Extract 80 percent complete...
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_5, 24 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_6, 25 of 28.
+INFO (ABS-13005): Cell rca8: using preset pins on the net sum_7, 26 of 28.
+INFO (ABS-19022): Running Extract 90 percent complete...
+INFO (ABS-13004): Cell rca8: extracting the net gnd, 27 of 28.
+INFO (ABS-13004): Cell rca8: extracting the net vdd, 28 of 28.
+INFO (ABS-19022): Running Extract 100 percent complete...
+INFO (ABS-11901): Cell rca8: Step Extract finished
+1
+INFO (ABS-19030): 74 absAbstract()
+INFO (ABS-10509): The rca8 library is saving existing options file to /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options.prev
+INFO (ABS-10511): Library rca8: Saving options to the /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options file.
+INFO (ABS-11900): Cell rca8: Step Abstract started
+INFO (ABS-14002): Cell rca8, power ring for net gnd contains 5 shapes (within 50.000000 microns of boundary)
+INFO (ABS-14002): Cell rca8, power ring for net vdd contains 6 shapes (within 50.000000 microns of boundary)
+INFO (ABS-19022): Running Abstract 10 percent complete...
+INFO (ABS-19026): Generating detailed blockages for layer metal2
+INFO (ABS-19026): Generating detailed blockages for layer metal1
+INFO (ABS-19022): Running Abstract 20 percent complete...
+*WARNING* (ABS-15060): Cell rca8: The Terminal cout terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_0 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_0 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_1 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_1 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_2 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_2 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_3 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_3 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_4 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_4 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_5 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_5 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_6 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_6 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15060): Cell rca8: The Terminal sum_7 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell rca8: The Terminal sum_7 pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15063): Cell rca8: The y prBoundary's 48.299999 dimension is not a multiple of Metal1 pitch 3.000000
+*WARNING* (ABS-11026): Unable to get the logical view of Cell rca8, Bus Annotation of Abstract can not be done
+INFO (ABS-19022): Running Abstract 50 percent complete...
+INFO (ABS-11901): Cell rca8: Step Abstract finished
+INFO (ABS-15058): Metal1 pitch = 3 microns, Metal1 offset = 1.5 microns
+INFO (ABS-15058): Metal2 pitch = 2.4 microns, Metal2 offset = 1.2 microns
+INFO (ABS-15058): Metal1 pitch is 1.05 microns  greater than line to via spacing
+INFO (ABS-15058): Metal2 pitch is 0.45 microns  greater than line to via spacing
+INFO (ABS-15058): Diagonal vias are legal with this metal1 and metal2 pitch
+INFO (ABS-15058): Number of cells checked = 1
+INFO (ABS-15058): Number of cells whose pr boundary is not multiple of x pitch = 0
+INFO (ABS-15058): Number of cells whose pr boundary is not multiple of y pitch = 1
+INFO (ABS-15058): Number of cells with off grid terminals or blockages = 1
+INFO (ABS-15058): Number of cells with off grid terminals = 1
+INFO (ABS-15058): Number of cells with off grid pins = 1
+INFO (ABS-15058): Number of cells with inaccessible terminals = 1
+INFO (ABS-15058): Number of terminals checked = 28
+INFO (ABS-15058): Number of terminals off grid = 9
+INFO (ABS-15058): Number of terminals inaccessible = 8
+INFO (ABS-15058): Number of pins checked = 37
+INFO (ABS-15058): Number of pins off grid = 11
+INFO (ABS-15058): Number of pins off grid in x = 2
+INFO (ABS-15058): Number of pins off grid in y = 9
+INFO (ABS-15058): Number of blockages checked = 642
+INFO (ABS-15058): Number of blockages off grid = 334
+INFO (ABS-15058): Number of blockages off grid in x = 75
+INFO (ABS-15058): Number of blockages off grid in y = 275
+INFO (ABS-19022): Running Abstract 100 percent complete...
+1
+INFO (ABS-19030): 75 absExportLEF()
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.11s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out 
+Program   : @(#)$CDS: lefout version 6.1.7-64b 01/24/2017 19:52 (sjfhw307) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 03-Nov-2018  17:02:38
+User Name : jstine
+Host Name : rivendell.ecen.okstate.edu
+Directory : /home/jstine/ecen4303/custom/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefout -lib rca8 -cells "rca8" -views "abstract" -log lefout.log -lef ./rca8.lef -ver 5.6 -noTech
+
+Elapsed Time: 0.2s
+
+lefout translation completed (errors: 0, warnings: 0).
+1
+INFO (ABS-19030): 76 exit
+

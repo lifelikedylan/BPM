@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /classes/ecen4303F18/osu_soc_3.0/lib/ami05/lib/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 4.615471 mW   (94%)
+  Net Switching Power  = 292.375000 uW    (6%)
+                         ---------
+Total Dynamic Power    = 4.907846 mW  (100%)
+
+Cell Leakage Power     =  36.0107 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad           4.572073        2.656105e-02         34.077480          4.598666
+                                                                                 (  93.70%)
+memory           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+black_box        0.000000          0.000000          0.000000          0.000000  (   0.00%)
+clock_network    0.000000          0.248913          0.000000          0.248913  (   5.07%)
+register       2.628970e-02        2.844715e-03          0.973060        2.913539e-02
+                                                                                 (   0.59%)
+sequential       0.000000          0.000000          0.000000          0.000000  (   0.00%)
+combinational  1.711017e-02        1.405639e-02          0.960153        3.116751e-02
+                                                                                 (   0.64%)
+--------------------------------------------------------------------------------------------------
+Total            4.615472 mW       0.292375 mW      36.010693 nW       4.907882 mW
+1

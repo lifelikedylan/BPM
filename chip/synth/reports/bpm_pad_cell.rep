@@ -1,0 +1,88 @@
+Warning: Design 'bpm_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+   so - sizing only
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+CURRENT_STATE_reg[0]      DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+CURRENT_STATE_reg[1]      DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+CURRENT_STATE_reg[2]      DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+CURRENT_STATE_reg[3]      DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+U22                       OAI21X1         osu05_stdcells  207.000000
+                                                                    so
+U23                       INVX1           osu05_stdcells  144.000000
+U24                       INVX1           osu05_stdcells  144.000000
+U25                       NOR2X1          osu05_stdcells  216.000000
+U26                       NAND2X1         osu05_stdcells  216.000000
+U27                       NOR2X1          osu05_stdcells  216.000000
+U28                       NOR2X1          osu05_stdcells  216.000000
+U29                       NAND2X1         osu05_stdcells  216.000000
+U30                       NAND2X1         osu05_stdcells  216.000000
+U31                       NOR2X1          osu05_stdcells  216.000000
+U32                       INVX1           osu05_stdcells  144.000000
+U33                       NOR2X1          osu05_stdcells  216.000000
+U34                       INVX1           osu05_stdcells  144.000000
+U35                       NOR2X1          osu05_stdcells  216.000000
+U37                       NAND3X1         osu05_stdcells  324.000000
+U38                       AOI22X1         osu05_stdcells  360.000000
+U39                       INVX1           osu05_stdcells  144.000000
+U40                       OAI22X1         osu05_stdcells  360.000000
+c01                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c02                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c03                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c04                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+custom                    bpm_custom                      0.000000  b
+p16                       PADINC          osu05_stdcells  27000.000000
+                                                                    so
+p17                       PADINC          osu05_stdcells  27000.000000
+p18                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p19                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p20                       PADGND          osu05_stdcells  27000.000000
+                                                                    b, d
+p21                       PADVDD          osu05_stdcells  27000.000000
+                                                                    b, d
+p22                       PADOUT          osu05_stdcells  27000.000000
+p23                       PADOUT          osu05_stdcells  27000.000000
+p24                       PADOUT          osu05_stdcells  27000.000000
+p25                       PADOUT          osu05_stdcells  27000.000000
+p26                       PADOUT          osu05_stdcells  27000.000000
+p27                       PADOUT          osu05_stdcells  27000.000000
+p28                       PADOUT          osu05_stdcells  27000.000000
+p29                       PADOUT          osu05_stdcells  27000.000000
+p30                       PADOUT          osu05_stdcells  27000.000000
+p31                       PADOUT          osu05_stdcells  27000.000000
+p32                       PADOUT          osu05_stdcells  27000.000000
+p33                       PADOUT          osu05_stdcells  27000.000000
+p34                       PADOUT          osu05_stdcells  27000.000000
+p35                       PADOUT          osu05_stdcells  27000.000000
+p36                       PADOUT          osu05_stdcells  27000.000000
+p37                       PADOUT          osu05_stdcells  27000.000000
+p38                       PADOUT          osu05_stdcells  27000.000000
+p39                       PADOUT          osu05_stdcells  27000.000000
+--------------------------------------------------------------------------------
+Total 51 cells                                            763371.000000
+1

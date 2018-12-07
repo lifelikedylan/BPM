@@ -1,0 +1,40 @@
+Warning: Design 'mult_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+Design : mult_pad
+Version: M-2016.12-SP1
+Date   : Wed Nov  7 14:25:59 2018
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                      0.000000  1.000000  0.000000
+    default                  0.000000  1.000000  0.000000
+    -----------------------------------------------------
+    max_delay/setup                              0.000000
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                      0.000000         0  0.000000
+    default                  0.000000         0  0.000000
+    -----------------------------------------------------
+    critical_range                               0.000000
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    multiport_net                                0.000000 (MET)
+    max_fanout                                   0.000000 (MET)
+    max_capacitance                              0.000000 (MET)
+    max_delay/setup                              0.000000 (MET)
+    sequential_clock_pulse_width                 0.000000 (MET)
+    critical_range                               0.000000 (MET)
+    max_leakage_power                            474116.031250
+                                                          (VIOLATED)
+
+
+1

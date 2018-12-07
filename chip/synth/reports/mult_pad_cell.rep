@@ -1,0 +1,185 @@
+Warning: Design 'mult_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : mult_pad
+Version: M-2016.12-SP1
+Date   : Wed Nov  7 14:25:59 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+   so - sizing only
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U71                       OAI21X1         osu05_stdcells  207.000000
+                                                                    so
+U72                       OR2X1           osu05_stdcells  288.000000
+                                                                    so
+U73                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U74                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U75                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U76                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U77                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U78                       XOR2X1          osu05_stdcells  504.000000
+                                                                    so
+U79                       INVX1           osu05_stdcells  144.000000
+U80                       INVX1           osu05_stdcells  144.000000
+U81                       INVX1           osu05_stdcells  144.000000
+U82                       INVX1           osu05_stdcells  144.000000
+U83                       INVX1           osu05_stdcells  144.000000
+U84                       INVX1           osu05_stdcells  144.000000
+U85                       NOR2X1          osu05_stdcells  216.000000
+U86                       INVX1           osu05_stdcells  144.000000
+U87                       INVX1           osu05_stdcells  144.000000
+U88                       NOR2X1          osu05_stdcells  216.000000
+U89                       INVX1           osu05_stdcells  144.000000
+U90                       NOR2X1          osu05_stdcells  216.000000
+U91                       INVX1           osu05_stdcells  144.000000
+U92                       INVX1           osu05_stdcells  144.000000
+U93                       NOR2X1          osu05_stdcells  216.000000
+U94                       OAI21X1         osu05_stdcells  207.000000
+U95                       NAND2X1         osu05_stdcells  216.000000
+U96                       NAND2X1         osu05_stdcells  216.000000
+U97                       NAND2X1         osu05_stdcells  216.000000
+U98                       NOR2X1          osu05_stdcells  216.000000
+U99                       AOI22X1         osu05_stdcells  360.000000
+U100                      AOI21X1         osu05_stdcells  288.000000
+U101                      NOR2X1          osu05_stdcells  216.000000
+U102                      NAND2X1         osu05_stdcells  216.000000
+U103                      INVX1           osu05_stdcells  144.000000
+U104                      OAI21X1         osu05_stdcells  207.000000
+U105                      OAI21X1         osu05_stdcells  207.000000
+U106                      NAND2X1         osu05_stdcells  216.000000
+U107                      NAND2X1         osu05_stdcells  216.000000
+U108                      OAI21X1         osu05_stdcells  207.000000
+U109                      NAND2X1         osu05_stdcells  216.000000
+U110                      OAI21X1         osu05_stdcells  207.000000
+U111                      OAI21X1         osu05_stdcells  207.000000
+U112                      NOR2X1          osu05_stdcells  216.000000
+U113                      AND2X2          osu05_stdcells  288.000000
+U114                      NAND2X1         osu05_stdcells  216.000000
+U115                      OAI21X1         osu05_stdcells  207.000000
+U116                      INVX1           osu05_stdcells  144.000000
+U117                      NAND2X1         osu05_stdcells  216.000000
+U118                      OAI21X1         osu05_stdcells  207.000000
+U119                      FAX1            osu05_stdcells  1080.000000
+                                                                    r
+U120                      NOR2X1          osu05_stdcells  216.000000
+U121                      OAI21X1         osu05_stdcells  207.000000
+U122                      NAND2X1         osu05_stdcells  216.000000
+U123                      OAI21X1         osu05_stdcells  207.000000
+U124                      FAX1            osu05_stdcells  1080.000000
+                                                                    r
+U125                      AOI21X1         osu05_stdcells  288.000000
+U126                      NAND3X1         osu05_stdcells  324.000000
+U127                      OAI21X1         osu05_stdcells  207.000000
+U128                      INVX1           osu05_stdcells  144.000000
+U129                      FAX1            osu05_stdcells  1080.000000
+                                                                    r
+U130                      NOR2X1          osu05_stdcells  216.000000
+U131                      AOI21X1         osu05_stdcells  288.000000
+U132                      NOR2X1          osu05_stdcells  216.000000
+U133                      AND2X2          osu05_stdcells  288.000000
+U134                      INVX1           osu05_stdcells  144.000000
+U135                      NOR2X1          osu05_stdcells  216.000000
+c01                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c02                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c03                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+c04                       PADFC           osu05_stdcells  27000.000000
+                                                                    b, d
+custom                    rca8                            0.000000  b
+p00                       PADGND          osu05_stdcells  27000.000000
+                                                                    b, d
+p01                       PADVDD          osu05_stdcells  27000.000000
+                                                                    b, d
+p02                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p03                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p04                       PADOUT          osu05_stdcells  27000.000000
+p05                       PADOUT          osu05_stdcells  27000.000000
+p06                       PADOUT          osu05_stdcells  27000.000000
+p07                       PADOUT          osu05_stdcells  27000.000000
+p08                       PADOUT          osu05_stdcells  27000.000000
+p09                       PADOUT          osu05_stdcells  27000.000000
+p10                       PADOUT          osu05_stdcells  27000.000000
+p11                       PADOUT          osu05_stdcells  27000.000000
+p12                       PADOUT          osu05_stdcells  27000.000000
+p13                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p14                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p15                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p16                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p17                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p18                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p19                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p20                       PADGND          osu05_stdcells  27000.000000
+                                                                    b, d
+p21                       PADVDD          osu05_stdcells  27000.000000
+                                                                    b, d
+p22                       PADINC          osu05_stdcells  27000.000000
+p23                       PADINC          osu05_stdcells  27000.000000
+p24                       PADINC          osu05_stdcells  27000.000000
+p25                       PADINC          osu05_stdcells  27000.000000
+p26                       PADINC          osu05_stdcells  27000.000000
+p27                       PADINC          osu05_stdcells  27000.000000
+p28                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p29                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p30                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p31                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p32                       PADINC          osu05_stdcells  27000.000000
+p33                       PADINC          osu05_stdcells  27000.000000
+p34                       PADINC          osu05_stdcells  27000.000000
+p35                       PADINC          osu05_stdcells  27000.000000
+p36                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p37                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p38                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+p39                       PADNC           osu05_stdcells  27000.000000
+                                                                    b, d
+q_reg[0]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[1]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[2]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[3]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[4]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[5]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[6]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+q_reg[7]                  DFFSR           osu05_stdcells  1584.000000
+                                                                    n, so
+--------------------------------------------------------------------------------
+Total 118 cells                                           1218528.000000
+1

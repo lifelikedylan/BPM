@@ -1,0 +1,455 @@
+INFO (ABS-19020): Starting @(#)$CDS: ui version 6.1.7-64b 01/24/2017 19:46 (sjfhw308) $, sub-version  IC6.1.7-64b.500.9 , on  3.18.26
+INFO (ABS-19023): This is the OpenAccess variant of Abstract Generator.
+INFO (ABS-19012): Replaying abstract.il file.
+INFO (ABS-19030): 1 /************************************************/
+
+INFO (ABS-19030): 2 /* Custom cell Abstract Generation Script 	*/
+
+INFO (ABS-19030): 3 /* Author: Ivan Castellanos			*/
+
+INFO (ABS-19030): 4 /* Oklahoma State University			*/
+
+INFO (ABS-19030): 5 /************************************************/
+
+INFO (ABS-19030): 7 /* To run Abstract Generation type:             */
+
+INFO (ABS-19030): 8 /* abstract -nogui -replay abstract.il          */
+
+INFO (ABS-19030): 10 /* All that needs to be changed are the bpm_custom */
+
+INFO (ABS-19030): 11 /* and output_pinnames field.			    */
+
+INFO (ABS-19030): 13 absSkillMode()
+t
+INFO (ABS-19030): 14 /**************************************/
+
+INFO (ABS-19030): 15 bpm_custom = "bpm_custom"
+bpm_custom
+INFO (ABS-19030): 16 output_pinnames = "q_0 q_1 q_2 q_3 q_4 q_5 q_6 q_7 q_8 q_9 q_10 q_11 q_12 q_13 q_14 q_15"
+q_0 q_1 q_2 q_3 q_4 q_5 q_6 q_7 q_8 q_9 q_10 q_11 q_12 q_13 q_14 q_15
+INFO (ABS-19030): 17 /**************************************/
+
+INFO (ABS-19030): 19 osucells = "/classes/ecen4303F18/osu_soc_3.0/"
+/classes/ecen4303F18/osu_soc_3.0/
+INFO (ABS-19030): 20 lefin = "/lib/ami05/abstract/osu05_stdcells.lef"
+/lib/ami05/abstract/osu05_stdcells.lef
+INFO (ABS-19030): 21 gdsin = "/flow/ami05/gds2_icfb.map"
+/flow/ami05/gds2_icfb.map
+INFO (ABS-19030): 22 absSetOption("NewLibraryName" bpm_custom)
+1
+INFO (ABS-19030): 23 absSetLibrary(bpm_custom)
+INFO (ABS-10500): Library bpm_custom Opening /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom
+*WARNING* (ABS-20001): The manufacturing grid value has not been specified in the technology file. Either the default value 0.001 will be used or specify the manufacturing grid value in the controls section of the technology file.
+INFO (ABS-10503): Library bpm_custom Loading options from /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options
+INFO (ABS-10505): Library bpm_custom loading messages from /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.messages
+INFO (ABS-10502): Library bpm_custom Loaded 0 cells
+INFO (ABS-10507): Library bpm_custom opened
+t
+INFO (ABS-19030): 24 absSetOption("ImportLefFiles" strcat( osucells lefin ) )
+1
+INFO (ABS-19030): 25 absSetOption("ImportTechLef" "true")
+1
+INFO (ABS-19030): 26 absImportLEF()
+INFO (ABS-10516): Library bpm_custom ImportLefFiles /classes/ecen4303F18/osu_soc_3.0//lib/ami05/abstract/osu05_stdcells.lef
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF In 
+Program   : @(#)$CDS: lefin version 6.1.7-64b 01/24/2017 19:52 (sjfhw308) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:03:55
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefin -lib bpm_custom -overwrite -lef "/classes/ecen4303F18/osu_soc_3.0//lib/ami05/abstract/osu05_stdcells.lef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-90024): The existing display.drf is saved as display.drf.orig. The new packet display information will be appended to a copy of display.drf. 
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(2972-2973) : MACRO PADGND: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3021-3022) : MACRO PADINC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3074-3075) : MACRO PADOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3099-3100) : MACRO PADNC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3145-3146) : MACRO PADVDD: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3215-3216) : MACRO PADINOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+
+Elapsed Time: 1.0s
+
+lefin translation completed (errors: 0, warnings: 1).
+*WARNING* (ABS-20047): Release IC 6.1.0 onwards, Abstract Generator will not support the "USEMINSPACING OBS ON" property in the technology file. This 
+property will be ignored.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 4 poly layer(s), and 0 diff layer(s) found
+INFO (ABS-20023): Via summary: 2 valid via(s) found
+INFO (ABS-10503): Library bpm_custom Loading options from /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options
+INFO (ABS-19022): Refreshing library bpm_custom 10 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 20 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 30 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 40 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 50 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 60 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 70 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 80 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 90 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 100 percent complete...
+1
+INFO (ABS-19030): 27 absSetOption("ImportGDSIIFiles" strcat( bpm_custom "." "gds") )
+1
+INFO (ABS-19030): 28 absSetOption("ImportGDSIILayerMapFile" strcat( osucells gdsin ) )
+1
+INFO (ABS-19030): 29 absSetOption("DefaultBin" "Block")
+1
+INFO (ABS-19030): 30 absImportGDS()
+INFO (ABS-10516): Library bpm_custom ImportGDSIIFiles bpm_custom.gds
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 01/24/2017 19:49 (sjfhw308) $
+          : sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:03:58
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '13'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '14'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '22'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '23'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '24'. Therefore, this entry will be ignored during translation.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				bpm_custom
+	strmFile			bpm_custom.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+	propSeparator			,
+
+INFO (XSTRM-61): Creating a new layer pwell in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair pwell:drawing in the technology file.
+INFO (XSTRM-220): 1. Translating STRUCTURE fa as cellView bpm_custom/fa/layout.
+INFO (XSTRM-61): Creating a new layer nselect in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nselect:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer pselect in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair pselect:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer active in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair active:drawing in the technology file.
+INFO (XSTRM-220): 2. Translating STRUCTURE mux21 as cellView bpm_custom/mux21/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE inverter as cellView bpm_custom/inverter/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE bc1a as cellView bpm_custom/bc1a/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE nand as cellView bpm_custom/nand/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE dffpos as cellView bpm_custom/dffpos/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE bs1 as cellView bpm_custom/bs1/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE bs2 as cellView bpm_custom/bs2/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE bpm_custom as cellView bpm_custom/bpm_custom/layout.
+
+Summary of Objects Translated:
+	Instances:                              9
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 2
+	Polygons:                               0
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             1293
+	Text:                                   92
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  9
+
+Elapsed Time: 0.5s   User Time: 0.2s   CPU Time: 0.2s   Peak VM: 81960KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '6' warning(s) found.
+INFO (ABS-10509): The bpm_custom library is saving existing options file to /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options.prev
+INFO (ABS-10511): Library bpm_custom: Saving options to the /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options file.
+*WARNING* (ABS-20047): Release IC 6.1.0 onwards, Abstract Generator will not support the "USEMINSPACING OBS ON" property in the technology file. This 
+property will be ignored.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 4 poly layer(s), and 0 diff layer(s) found
+INFO (ABS-20023): Via summary: 2 valid via(s) found
+INFO (ABS-10503): Library bpm_custom Loading options from /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options
+INFO (ABS-19022): Refreshing library bpm_custom 10 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 20 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 30 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 40 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 50 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 60 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 70 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 80 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 90 percent complete...
+INFO (ABS-19022): Refreshing library bpm_custom 100 percent complete...
+1
+INFO (ABS-19030): 32 absSelectCellFrom(bpm_custom bpm_custom)
+1
+INFO (ABS-19030): 33 absSetBinOption("Block" "PinsTextPinMap" "(metal1 (metal1 pin)(metal1 drawing))\n(metal2 (metal2 pin)(metal2 drawing))\n(metal3 (metal3 pin)(metal3 drawing))")
+1
+INFO (ABS-19030): 34 absSetBinOption("Block" "PinsPowerNames" "vdd")
+1
+INFO (ABS-19030): 35 absSetBinOption("Block" "PinsGroundNames" "gnd")
+1
+INFO (ABS-19030): 36 absSetBinOption("Block" "PinsOutputNames" output_pinnames)
+1
+INFO (ABS-19030): 37 absSetBinOption("Block" "PinsTextManipulation" "{_([0-9]+)_} {[\\1]}")
+1
+INFO (ABS-19030): 38 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 39 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 40 absSetBinOption("Block" "PinsPreserveRoutingBlockages" "true")
+1
+INFO (ABS-19030): 41 absSetBinOption("Block" "PinsCreatePwrPinsFromRouting" "true")
+1
+INFO (ABS-19030): 42 absSetBinOption("Block" "PinsPwrRoutingLayers" "metal1 metal2 via via2 ")
+1
+INFO (ABS-19030): 43 absSetBinOption("Block" "PinsBoundarySizeTop" "4.8")
+1
+INFO (ABS-19030): 44 absSetBinOption("Block" "PinsBoundarySizeBottom" "4.8")
+1
+INFO (ABS-19030): 45 absSetBinOption("Block" "PinsBoundarySizeLeft" "4.8")
+1
+INFO (ABS-19030): 46 absSetBinOption("Block" "PinsBoundarySizeRight" "4.8")
+1
+INFO (ABS-19030): 48 absSetBinOption("Block" "AbstractAdjustRingPinsDist" "50")
+1
+INFO (ABS-19030): 49 absSetBinOption("Block" "AbstractSiteName" "Block")
+1
+INFO (ABS-19030): 50 absSetBinOption("Block" "AbstractSiteNameDefine" "Block")
+1
+INFO (ABS-19030): 51 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "")
+1
+INFO (ABS-19030): 52 absSetBinOption("Block" "AbstractBlockageShrinkWrapLayers" "")
+1
+INFO (ABS-19030): 53 absSetBinOption("Block" "ExtractSig" "false")
+1
+INFO (ABS-19030): 54 absSetBinOption("Block" "AbstractAdjustPowerRailOp" "")
+1
+INFO (ABS-19030): 55 absSetBinOption("Block" "AbstractAdjustBoundaryPinsSig" "false")
+1
+INFO (ABS-19030): 56 absSetBinOption("Block" "AbstractAdjustBoundaryPinsPwr" "false")
+1
+INFO (ABS-19030): 57 absSetBinOption("Block" "AbstractAdjustPowerGeometryGroups" "single")
+1
+INFO (ABS-19030): 58 absSetBinOption("Block" "BlockageCutVia" "false")
+1
+INFO (ABS-19030): 59 absSetBinOption("Block" "AbstractOverlapLayerSize" "0.45")
+1
+INFO (ABS-19030): 60 absSetBinOption("Block" "AbstractOverlapLayerSmoothFactor" "0")
+1
+INFO (ABS-19030): 61 absSetBinOption("Block" "AbstractGridMode" "report")
+1
+INFO (ABS-19030): 62 absSetTerminalProp(bpm_custom "vdd" "shape" "ring") 
+*Error* (ABS-11910): Failed to change the value of the vdd terminal because the terminal does not exist. Ensure that the terminal name that you have specified is correct and then try again.
+
+*WARNING* (ABS-11025): Cell bpm_custom: Failed to set the property because the cell is either invalid or does not contain any of the valid views.Abstract Generator can set properties only on valid views, such as Pins,Extract,Abstract, that it has created.
+0
+INFO (ABS-19030): 63 absSetTerminalProp(bpm_custom "gnd" "shape" "ring") 
+*Error* (ABS-11910): Failed to change the value of the gnd terminal because the terminal does not exist. Ensure that the terminal name that you have specified is correct and then try again.
+
+*WARNING* (ABS-11025): Cell bpm_custom: Failed to set the property because the cell is either invalid or does not contain any of the valid views.Abstract Generator can set properties only on valid views, such as Pins,Extract,Abstract, that it has created.
+0
+INFO (ABS-19030): 64 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "metal1 metal2")
+1
+INFO (ABS-19030): 65 absSetBinOption("Block" "AbstractBlockageCoverLayers" "")
+1
+INFO (ABS-19030): 66 absSetBinOption("Block" "ExtractPwr" "true")
+1
+INFO (ABS-19030): 67 absSetBinOption("Block" "ExtractNumLevelsPwr" "1")
+1
+INFO (ABS-19030): 68 absSetBinOption("Block" "AbstractAdjustRingPinsPwr" "true")
+1
+INFO (ABS-19030): 70 absSetOption("ExportLEFFile" strcat( "./" bpm_custom "." "lef") )
+1
+INFO (ABS-19030): 72 absPins()
+INFO (ABS-10509): The bpm_custom library is saving existing options file to /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options.prev
+INFO (ABS-10511): Library bpm_custom: Saving options to the /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options file.
+INFO (ABS-11900): Cell bpm_custom: Step Pins started
+INFO (ABS-12014): Cell bpm_custom: The prBoundary has been created successfully.
+INFO (ABS-12005): Cell bpm_custom: The pin clk has been created for the label clk at (300,-4500).
+INFO (ABS-12005): Cell bpm_custom: The pin en has been created for the label en at (300,-1800).
+INFO (ABS-12005): Cell bpm_custom: The pin gnd has been created for the label gnd at (300,-7200).
+INFO (ABS-12005): Cell bpm_custom: The pin init has been created for the label init at (300,-12600).
+INFO (ABS-19022): Running Pins 10 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_0 has been created for the label mcand_0 at (152400,417900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_1 has been created for the label mcand_1 at (152400,363900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_2 has been created for the label mcand_2 at (152400,309900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_3 has been created for the label mcand_3 at (152400,255900).
+INFO (ABS-19022): Running Pins 20 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_4 has been created for the label mcand_4 at (152400,201900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_5 has been created for the label mcand_5 at (152400,147900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_6 has been created for the label mcand_6 at (152400,93900).
+INFO (ABS-12005): Cell bpm_custom: The pin mcand_7 has been created for the label mcand_7 at (152400,39900).
+INFO (ABS-19022): Running Pins 30 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_0 has been created for the label mplier_0 at (152400,415800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_1 has been created for the label mplier_1 at (152400,361800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_2 has been created for the label mplier_2 at (152400,307800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_3 has been created for the label mplier_3 at (152400,253800).
+INFO (ABS-19022): Running Pins 40 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_4 has been created for the label mplier_4 at (152400,199800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_5 has been created for the label mplier_5 at (152400,145800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_6 has been created for the label mplier_6 at (152400,91800).
+INFO (ABS-12005): Cell bpm_custom: The pin mplier_7 has been created for the label mplier_7 at (152400,37800).
+INFO (ABS-19022): Running Pins 50 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin q_0 has been created for the label q_0 at (152400,392100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_1 has been created for the label q_1 at (152400,338100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_10 has been created for the label q_10 at (72300,288900).
+INFO (ABS-19022): Running Pins 60 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin q_11 has been created for the label q_11 at (72300,234900).
+INFO (ABS-12005): Cell bpm_custom: The pin q_12 has been created for the label q_12 at (72300,180900).
+INFO (ABS-12005): Cell bpm_custom: The pin q_13 has been created for the label q_13 at (72300,126900).
+INFO (ABS-12005): Cell bpm_custom: The pin q_14 has been created for the label q_14 at (72300,72900).
+INFO (ABS-19022): Running Pins 70 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin q_15 has been created for the label q_15 at (72300,18900).
+INFO (ABS-12005): Cell bpm_custom: The pin q_2 has been created for the label q_2 at (152400,284100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_3 has been created for the label q_3 at (152400,230100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_4 has been created for the label q_4 at (152400,176100).
+INFO (ABS-19022): Running Pins 80 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin q_5 has been created for the label q_5 at (152400,122100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_6 has been created for the label q_6 at (152400,68100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_7 has been created for the label q_7 at (152400,14100).
+INFO (ABS-12005): Cell bpm_custom: The pin q_8 has been created for the label q_8 at (72300,396900).
+INFO (ABS-19022): Running Pins 90 percent complete...
+INFO (ABS-12005): Cell bpm_custom: The pin q_9 has been created for the label q_9 at (72300,342900).
+INFO (ABS-12005): Cell bpm_custom: The pin vdd has been created for the label vdd at (300,-9900).
+INFO (ABS-12005): Cell bpm_custom: The pin cout has been created for the label cout at (53400,300).
+INFO (ABS-12003): Cell bpm_custom: 38 pins have been created.
+INFO (ABS-19022): Running Pins 100 percent complete...
+INFO (ABS-11901): Cell bpm_custom: Step Pins finished
+1
+INFO (ABS-19030): 73 absExtract()
+INFO (ABS-10509): The bpm_custom library is saving existing options file to /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options.prev
+INFO (ABS-10511): Library bpm_custom: Saving options to the /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options file.
+INFO (ABS-11900): Cell bpm_custom: Step Extract started
+INFO (ABS-13002): Cell bpm_custom: extracting 38 nets
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net clk, 1 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net en, 2 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net init, 3 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_0, 4 of 38.
+INFO (ABS-19022): Running Extract 10 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_1, 5 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_2, 6 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_3, 7 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_4, 8 of 38.
+INFO (ABS-19022): Running Extract 20 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_5, 9 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_6, 10 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mcand_7, 11 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_0, 12 of 38.
+INFO (ABS-19022): Running Extract 30 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_1, 13 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_2, 14 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_3, 15 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_4, 16 of 38.
+INFO (ABS-19022): Running Extract 40 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_5, 17 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_6, 18 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net mplier_7, 19 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_0, 20 of 38.
+INFO (ABS-19022): Running Extract 50 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_1, 21 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_10, 22 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_11, 23 of 38.
+INFO (ABS-19022): Running Extract 60 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_12, 24 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_13, 25 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_14, 26 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_15, 27 of 38.
+INFO (ABS-19022): Running Extract 70 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_2, 28 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_3, 29 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_4, 30 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_5, 31 of 38.
+INFO (ABS-19022): Running Extract 80 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_6, 32 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_7, 33 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_8, 34 of 38.
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net q_9, 35 of 38.
+INFO (ABS-19022): Running Extract 90 percent complete...
+INFO (ABS-13005): Cell bpm_custom: using preset pins on the net cout, 36 of 38.
+INFO (ABS-13004): Cell bpm_custom: extracting the net gnd, 37 of 38.
+INFO (ABS-13004): Cell bpm_custom: extracting the net vdd, 38 of 38.
+INFO (ABS-19022): Running Extract 100 percent complete...
+INFO (ABS-11901): Cell bpm_custom: Step Extract finished
+1
+INFO (ABS-19030): 74 absAbstract()
+INFO (ABS-10509): The bpm_custom library is saving existing options file to /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options.prev
+INFO (ABS-10511): Library bpm_custom: Saving options to the /home/dshadoa/Desktop/BPM/chip/abstract/bpm_custom/.abstract.options file.
+INFO (ABS-11900): Cell bpm_custom: Step Abstract started
+INFO (ABS-14002): Cell bpm_custom, power ring for net gnd contains 8 shapes (within 50.000000 microns of boundary)
+INFO (ABS-14002): Cell bpm_custom, power ring for net vdd contains 17 shapes (within 50.000000 microns of boundary)
+INFO (ABS-19022): Running Abstract 10 percent complete...
+INFO (ABS-19026): Generating detailed blockages for layer metal1
+INFO (ABS-19026): Generating detailed blockages for layer metal2
+INFO (ABS-19022): Running Abstract 20 percent complete...
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal init terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_0 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_1 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_2 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_3 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_4 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_5 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_6 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal q_7 terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15060): Cell bpm_custom: The Terminal cout terminal has no pins on the Metal1-Metal2 Routing grid. The number of cells with off grid pins is %.
+*WARNING* (ABS-15061): Cell bpm_custom: The Terminal cout pin has no accessible pins on the Metal1-Metal2 Routing grid.
+*WARNING* (ABS-15063): Cell bpm_custom: The x prBoundary's 162.600006 dimension is not a multiple of Metal2 pitch 2.400000
+*WARNING* (ABS-15063): Cell bpm_custom: The y prBoundary's 457.200012 dimension is not a multiple of Metal1 pitch 3.000000
+*WARNING* (ABS-11026): Unable to get the logical view of Cell bpm_custom, Bus Annotation of Abstract can not be done
+INFO (ABS-19022): Running Abstract 50 percent complete...
+INFO (ABS-11901): Cell bpm_custom: Step Abstract finished
+INFO (ABS-15058): Metal1 pitch = 3 microns, Metal1 offset = 1.5 microns
+INFO (ABS-15058): Metal2 pitch = 2.4 microns, Metal2 offset = 1.2 microns
+INFO (ABS-15058): Metal1 pitch is 1.05 microns  greater than line to via spacing
+INFO (ABS-15058): Metal2 pitch is 0.45 microns  greater than line to via spacing
+INFO (ABS-15058): Diagonal vias are legal with this metal1 and metal2 pitch
+INFO (ABS-15058): Number of cells checked = 1
+INFO (ABS-15058): Number of cells whose pr boundary is not multiple of x pitch = 1
+INFO (ABS-15058): Number of cells whose pr boundary is not multiple of y pitch = 1
+INFO (ABS-15058): Number of cells with off grid terminals or blockages = 1
+INFO (ABS-15058): Number of cells with off grid terminals = 1
+INFO (ABS-15058): Number of cells with off grid pins = 1
+INFO (ABS-15058): Number of cells with inaccessible terminals = 1
+INFO (ABS-15058): Number of terminals checked = 38
+INFO (ABS-15058): Number of terminals off grid = 10
+INFO (ABS-15058): Number of terminals inaccessible = 1
+INFO (ABS-15058): Number of pins checked = 61
+INFO (ABS-15058): Number of pins off grid = 11
+INFO (ABS-15058): Number of pins off grid in x = 0
+INFO (ABS-15058): Number of pins off grid in y = 11
+INFO (ABS-15058): Number of blockages checked = 2481
+INFO (ABS-15058): Number of blockages off grid = 1241
+INFO (ABS-15058): Number of blockages off grid in x = 696
+INFO (ABS-15058): Number of blockages off grid in y = 553
+INFO (ABS-19022): Running Abstract 100 percent complete...
+1
+INFO (ABS-19030): 75 absExportLEF()
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out 
+Program   : @(#)$CDS: lefout version 6.1.7-64b 01/24/2017 19:52 (sjfhw307) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:04:02
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefout -lib bpm_custom -cells "bpm_custom" -views "abstract" -log lefout.log -lef ./bpm_custom.lef -ver 5.6 -noTech
+
+Elapsed Time: 0.3s
+
+lefout translation completed (errors: 0, warnings: 0).
+1
+INFO (ABS-19030): 76 exit
+

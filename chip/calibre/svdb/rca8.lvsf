@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/jstine/ecen4303/custom/calibre
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 1 0 0}
+lvs_LvsOutFile LVS_REPORT rca8.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/jstine/ecen4303/custom/calibre/./../sue/rca8.sp
+lvs_LvsOutFile RULES_FILE /home/jstine/ecen4303/custom/calibre/./_calibreLVS_scn3me_subm.rul_
+lvs_LvsRunTimes 1541109213 1541109213

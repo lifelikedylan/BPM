@@ -1,0 +1,523 @@
+* SPICE3 file created from rca8.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 vdd a_1 rca2_0[0]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=4640 pd=2064 as=220 ps=102
+M1001 rca2_0[0]/fa_1/a_2_74# b_1 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 rca2_0[0]/fa_1/a_25_6# rca2_0[0]/fa_1/C rca2_0[0]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1003 rca2_0[0]/fa_1/a_33_74# b_1 rca2_0[0]/fa_1/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1004 vdd a_1 rca2_0[0]/fa_1/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 rca2_0[0]/fa_1/a_46_74# a_1 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1006 vdd b_1 rca2_0[0]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 rca2_0[0]/fa_1/a_46_74# rca2_0[0]/fa_1/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 rca2_0[0]/fa_1/a_70_6# rca2_0[0]/fa_1/a_25_6# rca2_0[0]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1009 rca2_0[0]/fa_1/a_79_74# rca2_0[0]/fa_1/C rca2_0[0]/fa_1/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1010 rca2_0[0]/fa_1/a_84_74# b_1 rca2_0[0]/fa_1/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1011 vdd a_1 rca2_0[0]/fa_1/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 sum_1 rca2_0[0]/fa_1/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1013 rca2_0[1]/fa_0/C rca2_0[0]/fa_1/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1014 gnd a_1 rca2_0[0]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=2320 pd=1264 as=110 ps=62
+M1015 rca2_0[0]/fa_1/a_2_6# b_1 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 rca2_0[0]/fa_1/a_25_6# rca2_0[0]/fa_1/C rca2_0[0]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1017 rca2_0[0]/fa_1/a_33_6# b_1 rca2_0[0]/fa_1/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1018 gnd a_1 rca2_0[0]/fa_1/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 rca2_0[0]/fa_1/a_46_6# a_1 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1020 gnd b_1 rca2_0[0]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 rca2_0[0]/fa_1/a_46_6# rca2_0[0]/fa_1/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 rca2_0[0]/fa_1/a_70_6# rca2_0[0]/fa_1/a_25_6# rca2_0[0]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1023 rca2_0[0]/fa_1/a_79_6# rca2_0[0]/fa_1/C rca2_0[0]/fa_1/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1024 rca2_0[0]/fa_1/a_84_6# b_1 rca2_0[0]/fa_1/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1025 gnd a_1 rca2_0[0]/fa_1/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 sum_1 rca2_0[0]/fa_1/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1027 rca2_0[1]/fa_0/C rca2_0[0]/fa_1/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1028 vdd a_0 rca2_0[0]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1029 rca2_0[0]/fa_0/a_2_74# b_0 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 rca2_0[0]/fa_0/a_25_6# c_0 rca2_0[0]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1031 rca2_0[0]/fa_0/a_33_74# b_0 rca2_0[0]/fa_0/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1032 vdd a_0 rca2_0[0]/fa_0/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1033 rca2_0[0]/fa_0/a_46_74# a_0 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1034 vdd b_0 rca2_0[0]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1035 rca2_0[0]/fa_0/a_46_74# c_0 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 rca2_0[0]/fa_0/a_70_6# rca2_0[0]/fa_0/a_25_6# rca2_0[0]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1037 rca2_0[0]/fa_0/a_79_74# c_0 rca2_0[0]/fa_0/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1038 rca2_0[0]/fa_0/a_84_74# b_0 rca2_0[0]/fa_0/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1039 vdd a_0 rca2_0[0]/fa_0/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1040 sum_0 rca2_0[0]/fa_0/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1041 rca2_0[0]/fa_1/C rca2_0[0]/fa_0/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1042 gnd a_0 rca2_0[0]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1043 rca2_0[0]/fa_0/a_2_6# b_0 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1044 rca2_0[0]/fa_0/a_25_6# c_0 rca2_0[0]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1045 rca2_0[0]/fa_0/a_33_6# b_0 rca2_0[0]/fa_0/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1046 gnd a_0 rca2_0[0]/fa_0/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1047 rca2_0[0]/fa_0/a_46_6# a_0 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1048 gnd b_0 rca2_0[0]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1049 rca2_0[0]/fa_0/a_46_6# c_0 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 rca2_0[0]/fa_0/a_70_6# rca2_0[0]/fa_0/a_25_6# rca2_0[0]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1051 rca2_0[0]/fa_0/a_79_6# c_0 rca2_0[0]/fa_0/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1052 rca2_0[0]/fa_0/a_84_6# b_0 rca2_0[0]/fa_0/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1053 gnd a_0 rca2_0[0]/fa_0/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1054 sum_0 rca2_0[0]/fa_0/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1055 rca2_0[0]/fa_1/C rca2_0[0]/fa_0/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1056 vdd a_3 rca2_0[1]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1057 rca2_0[1]/fa_1/a_2_74# b_3 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 rca2_0[1]/fa_1/a_25_6# rca2_0[1]/fa_1/C rca2_0[1]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1059 rca2_0[1]/fa_1/a_33_74# b_3 rca2_0[1]/fa_1/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1060 vdd a_3 rca2_0[1]/fa_1/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1061 rca2_0[1]/fa_1/a_46_74# a_3 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1062 vdd b_3 rca2_0[1]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1063 rca2_0[1]/fa_1/a_46_74# rca2_0[1]/fa_1/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1064 rca2_0[1]/fa_1/a_70_6# rca2_0[1]/fa_1/a_25_6# rca2_0[1]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1065 rca2_0[1]/fa_1/a_79_74# rca2_0[1]/fa_1/C rca2_0[1]/fa_1/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1066 rca2_0[1]/fa_1/a_84_74# b_3 rca2_0[1]/fa_1/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1067 vdd a_3 rca2_0[1]/fa_1/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1068 sum_3 rca2_0[1]/fa_1/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1069 rca2_0[2]/fa_0/C rca2_0[1]/fa_1/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1070 gnd a_3 rca2_0[1]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1071 rca2_0[1]/fa_1/a_2_6# b_3 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1072 rca2_0[1]/fa_1/a_25_6# rca2_0[1]/fa_1/C rca2_0[1]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1073 rca2_0[1]/fa_1/a_33_6# b_3 rca2_0[1]/fa_1/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1074 gnd a_3 rca2_0[1]/fa_1/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1075 rca2_0[1]/fa_1/a_46_6# a_3 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1076 gnd b_3 rca2_0[1]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1077 rca2_0[1]/fa_1/a_46_6# rca2_0[1]/fa_1/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 rca2_0[1]/fa_1/a_70_6# rca2_0[1]/fa_1/a_25_6# rca2_0[1]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1079 rca2_0[1]/fa_1/a_79_6# rca2_0[1]/fa_1/C rca2_0[1]/fa_1/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1080 rca2_0[1]/fa_1/a_84_6# b_3 rca2_0[1]/fa_1/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1081 gnd a_3 rca2_0[1]/fa_1/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1082 sum_3 rca2_0[1]/fa_1/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1083 rca2_0[2]/fa_0/C rca2_0[1]/fa_1/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1084 vdd a_2 rca2_0[1]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1085 rca2_0[1]/fa_0/a_2_74# b_2 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1086 rca2_0[1]/fa_0/a_25_6# rca2_0[1]/fa_0/C rca2_0[1]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1087 rca2_0[1]/fa_0/a_33_74# b_2 rca2_0[1]/fa_0/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1088 vdd a_2 rca2_0[1]/fa_0/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1089 rca2_0[1]/fa_0/a_46_74# a_2 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1090 vdd b_2 rca2_0[1]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1091 rca2_0[1]/fa_0/a_46_74# rca2_0[1]/fa_0/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1092 rca2_0[1]/fa_0/a_70_6# rca2_0[1]/fa_0/a_25_6# rca2_0[1]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1093 rca2_0[1]/fa_0/a_79_74# rca2_0[1]/fa_0/C rca2_0[1]/fa_0/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1094 rca2_0[1]/fa_0/a_84_74# b_2 rca2_0[1]/fa_0/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1095 vdd a_2 rca2_0[1]/fa_0/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1096 sum_2 rca2_0[1]/fa_0/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1097 rca2_0[1]/fa_1/C rca2_0[1]/fa_0/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1098 gnd a_2 rca2_0[1]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1099 rca2_0[1]/fa_0/a_2_6# b_2 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 rca2_0[1]/fa_0/a_25_6# rca2_0[1]/fa_0/C rca2_0[1]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1101 rca2_0[1]/fa_0/a_33_6# b_2 rca2_0[1]/fa_0/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1102 gnd a_2 rca2_0[1]/fa_0/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1103 rca2_0[1]/fa_0/a_46_6# a_2 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1104 gnd b_2 rca2_0[1]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1105 rca2_0[1]/fa_0/a_46_6# rca2_0[1]/fa_0/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1106 rca2_0[1]/fa_0/a_70_6# rca2_0[1]/fa_0/a_25_6# rca2_0[1]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1107 rca2_0[1]/fa_0/a_79_6# rca2_0[1]/fa_0/C rca2_0[1]/fa_0/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1108 rca2_0[1]/fa_0/a_84_6# b_2 rca2_0[1]/fa_0/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1109 gnd a_2 rca2_0[1]/fa_0/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1110 sum_2 rca2_0[1]/fa_0/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1111 rca2_0[1]/fa_1/C rca2_0[1]/fa_0/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1112 vdd a_5 rca2_0[2]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1113 rca2_0[2]/fa_1/a_2_74# b_5 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 rca2_0[2]/fa_1/a_25_6# rca2_0[2]/fa_1/C rca2_0[2]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1115 rca2_0[2]/fa_1/a_33_74# b_5 rca2_0[2]/fa_1/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1116 vdd a_5 rca2_0[2]/fa_1/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1117 rca2_0[2]/fa_1/a_46_74# a_5 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1118 vdd b_5 rca2_0[2]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1119 rca2_0[2]/fa_1/a_46_74# rca2_0[2]/fa_1/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 rca2_0[2]/fa_1/a_70_6# rca2_0[2]/fa_1/a_25_6# rca2_0[2]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1121 rca2_0[2]/fa_1/a_79_74# rca2_0[2]/fa_1/C rca2_0[2]/fa_1/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1122 rca2_0[2]/fa_1/a_84_74# b_5 rca2_0[2]/fa_1/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1123 vdd a_5 rca2_0[2]/fa_1/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 sum_5 rca2_0[2]/fa_1/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1125 rca2_0[3]/fa_0/C rca2_0[2]/fa_1/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1126 gnd a_5 rca2_0[2]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1127 rca2_0[2]/fa_1/a_2_6# b_5 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 rca2_0[2]/fa_1/a_25_6# rca2_0[2]/fa_1/C rca2_0[2]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1129 rca2_0[2]/fa_1/a_33_6# b_5 rca2_0[2]/fa_1/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1130 gnd a_5 rca2_0[2]/fa_1/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1131 rca2_0[2]/fa_1/a_46_6# a_5 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1132 gnd b_5 rca2_0[2]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1133 rca2_0[2]/fa_1/a_46_6# rca2_0[2]/fa_1/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1134 rca2_0[2]/fa_1/a_70_6# rca2_0[2]/fa_1/a_25_6# rca2_0[2]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1135 rca2_0[2]/fa_1/a_79_6# rca2_0[2]/fa_1/C rca2_0[2]/fa_1/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1136 rca2_0[2]/fa_1/a_84_6# b_5 rca2_0[2]/fa_1/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1137 gnd a_5 rca2_0[2]/fa_1/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1138 sum_5 rca2_0[2]/fa_1/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1139 rca2_0[3]/fa_0/C rca2_0[2]/fa_1/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1140 vdd a_4 rca2_0[2]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1141 rca2_0[2]/fa_0/a_2_74# b_4 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1142 rca2_0[2]/fa_0/a_25_6# rca2_0[2]/fa_0/C rca2_0[2]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1143 rca2_0[2]/fa_0/a_33_74# b_4 rca2_0[2]/fa_0/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1144 vdd a_4 rca2_0[2]/fa_0/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1145 rca2_0[2]/fa_0/a_46_74# a_4 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1146 vdd b_4 rca2_0[2]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1147 rca2_0[2]/fa_0/a_46_74# rca2_0[2]/fa_0/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1148 rca2_0[2]/fa_0/a_70_6# rca2_0[2]/fa_0/a_25_6# rca2_0[2]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1149 rca2_0[2]/fa_0/a_79_74# rca2_0[2]/fa_0/C rca2_0[2]/fa_0/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1150 rca2_0[2]/fa_0/a_84_74# b_4 rca2_0[2]/fa_0/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1151 vdd a_4 rca2_0[2]/fa_0/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1152 sum_4 rca2_0[2]/fa_0/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1153 rca2_0[2]/fa_1/C rca2_0[2]/fa_0/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1154 gnd a_4 rca2_0[2]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1155 rca2_0[2]/fa_0/a_2_6# b_4 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 rca2_0[2]/fa_0/a_25_6# rca2_0[2]/fa_0/C rca2_0[2]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1157 rca2_0[2]/fa_0/a_33_6# b_4 rca2_0[2]/fa_0/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1158 gnd a_4 rca2_0[2]/fa_0/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1159 rca2_0[2]/fa_0/a_46_6# a_4 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1160 gnd b_4 rca2_0[2]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1161 rca2_0[2]/fa_0/a_46_6# rca2_0[2]/fa_0/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1162 rca2_0[2]/fa_0/a_70_6# rca2_0[2]/fa_0/a_25_6# rca2_0[2]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1163 rca2_0[2]/fa_0/a_79_6# rca2_0[2]/fa_0/C rca2_0[2]/fa_0/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1164 rca2_0[2]/fa_0/a_84_6# b_4 rca2_0[2]/fa_0/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1165 gnd a_4 rca2_0[2]/fa_0/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1166 sum_4 rca2_0[2]/fa_0/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1167 rca2_0[2]/fa_1/C rca2_0[2]/fa_0/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1168 vdd a_7 rca2_0[3]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1169 rca2_0[3]/fa_1/a_2_74# b_7 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1170 rca2_0[3]/fa_1/a_25_6# rca2_0[3]/fa_1/C rca2_0[3]/fa_1/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1171 rca2_0[3]/fa_1/a_33_74# b_7 rca2_0[3]/fa_1/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1172 vdd a_7 rca2_0[3]/fa_1/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1173 rca2_0[3]/fa_1/a_46_74# a_7 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1174 vdd b_7 rca2_0[3]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1175 rca2_0[3]/fa_1/a_46_74# rca2_0[3]/fa_1/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1176 rca2_0[3]/fa_1/a_70_6# rca2_0[3]/fa_1/a_25_6# rca2_0[3]/fa_1/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1177 rca2_0[3]/fa_1/a_79_74# rca2_0[3]/fa_1/C rca2_0[3]/fa_1/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1178 rca2_0[3]/fa_1/a_84_74# b_7 rca2_0[3]/fa_1/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1179 vdd a_7 rca2_0[3]/fa_1/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1180 sum_7 rca2_0[3]/fa_1/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1181 cout rca2_0[3]/fa_1/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1182 gnd a_7 rca2_0[3]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1183 rca2_0[3]/fa_1/a_2_6# b_7 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1184 rca2_0[3]/fa_1/a_25_6# rca2_0[3]/fa_1/C rca2_0[3]/fa_1/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1185 rca2_0[3]/fa_1/a_33_6# b_7 rca2_0[3]/fa_1/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1186 gnd a_7 rca2_0[3]/fa_1/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1187 rca2_0[3]/fa_1/a_46_6# a_7 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1188 gnd b_7 rca2_0[3]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1189 rca2_0[3]/fa_1/a_46_6# rca2_0[3]/fa_1/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1190 rca2_0[3]/fa_1/a_70_6# rca2_0[3]/fa_1/a_25_6# rca2_0[3]/fa_1/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1191 rca2_0[3]/fa_1/a_79_6# rca2_0[3]/fa_1/C rca2_0[3]/fa_1/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1192 rca2_0[3]/fa_1/a_84_6# b_7 rca2_0[3]/fa_1/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1193 gnd a_7 rca2_0[3]/fa_1/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1194 sum_7 rca2_0[3]/fa_1/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1195 cout rca2_0[3]/fa_1/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1196 vdd a_6 rca2_0[3]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1197 rca2_0[3]/fa_0/a_2_74# b_6 vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1198 rca2_0[3]/fa_0/a_25_6# rca2_0[3]/fa_0/C rca2_0[3]/fa_0/a_2_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1199 rca2_0[3]/fa_0/a_33_74# b_6 rca2_0[3]/fa_0/a_25_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1200 vdd a_6 rca2_0[3]/fa_0/a_33_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1201 rca2_0[3]/fa_0/a_46_74# a_6 vdd vdd pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1202 vdd b_6 rca2_0[3]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1203 rca2_0[3]/fa_0/a_46_74# rca2_0[3]/fa_0/C vdd vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1204 rca2_0[3]/fa_0/a_70_6# rca2_0[3]/fa_0/a_25_6# rca2_0[3]/fa_0/a_46_74# vdd pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1205 rca2_0[3]/fa_0/a_79_74# rca2_0[3]/fa_0/C rca2_0[3]/fa_0/a_70_6# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1206 rca2_0[3]/fa_0/a_84_74# b_6 rca2_0[3]/fa_0/a_79_74# vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1207 vdd a_6 rca2_0[3]/fa_0/a_84_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1208 sum_6 rca2_0[3]/fa_0/a_70_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1209 rca2_0[3]/fa_1/C rca2_0[3]/fa_0/a_25_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1210 gnd a_6 rca2_0[3]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1211 rca2_0[3]/fa_0/a_2_6# b_6 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1212 rca2_0[3]/fa_0/a_25_6# rca2_0[3]/fa_0/C rca2_0[3]/fa_0/a_2_6# Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1213 rca2_0[3]/fa_0/a_33_6# b_6 rca2_0[3]/fa_0/a_25_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1214 gnd a_6 rca2_0[3]/fa_0/a_33_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1215 rca2_0[3]/fa_0/a_46_6# a_6 gnd Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1216 gnd b_6 rca2_0[3]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1217 rca2_0[3]/fa_0/a_46_6# rca2_0[3]/fa_0/C gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1218 rca2_0[3]/fa_0/a_70_6# rca2_0[3]/fa_0/a_25_6# rca2_0[3]/fa_0/a_46_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1219 rca2_0[3]/fa_0/a_79_6# rca2_0[3]/fa_0/C rca2_0[3]/fa_0/a_70_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1220 rca2_0[3]/fa_0/a_84_6# b_6 rca2_0[3]/fa_0/a_79_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1221 gnd a_6 rca2_0[3]/fa_0/a_84_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1222 sum_6 rca2_0[3]/fa_0/a_70_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1223 rca2_0[3]/fa_1/C rca2_0[3]/fa_0/a_25_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+C0 rca2_0[3]/fa_0/a_70_6# rca2_0[3]/fa_0/C 2.233260fF
+C1 rca2_0[1]/fa_1/a_70_6# rca2_0[1]/fa_1/C 2.233260fF
+C2 vdd rca2_0[1]/fa_0/a_25_6# 3.134880fF
+C3 vdd rca2_0[0]/fa_0/a_25_6# 3.134880fF
+C4 vdd rca2_0[2]/fa_0/a_25_6# 3.134880fF
+C5 rca2_0[0]/fa_1/C rca2_0[0]/fa_1/a_70_6# 2.233260fF
+C6 rca2_0[3]/fa_1/C vdd 2.577630fF
+C7 vdd rca2_0[2]/fa_1/a_25_6# 3.134880fF
+C8 vdd rca2_0[2]/fa_1/C 2.577630fF
+C9 vdd rca2_0[1]/fa_1/C 2.577630fF
+C10 vdd rca2_0[1]/fa_1/a_25_6# 3.134880fF
+C11 rca2_0[3]/fa_1/a_25_6# vdd 3.134880fF
+C12 rca2_0[0]/fa_1/C vdd 2.577630fF
+C13 rca2_0[2]/fa_0/a_70_6# rca2_0[2]/fa_0/C 2.233260fF
+C14 c_0 rca2_0[0]/fa_0/a_70_6# 2.233260fF
+C15 rca2_0[2]/fa_1/C rca2_0[2]/fa_1/a_70_6# 2.233260fF
+C16 rca2_0[0]/fa_1/a_25_6# vdd 3.134880fF
+C17 rca2_0[1]/fa_0/a_70_6# rca2_0[1]/fa_0/C 2.233260fF
+C18 rca2_0[3]/fa_1/a_70_6# rca2_0[3]/fa_1/C 2.233260fF
+C19 vdd rca2_0[3]/fa_0/a_25_6# 3.134880fF
+C20 sum_6 gnd! 4.231800fF
+C21 rca2_0[3]/fa_0/a_70_6# gnd! 3.242790fF
+C22 rca2_0[3]/fa_0/a_25_6# gnd! 9.314280fF
+C23 rca2_0[3]/fa_0/C gnd! 14.118300fF
+C24 b_6 gnd! 7.853040fF
+C25 a_6 gnd! 7.341120fF
+C26 gnd gnd! 74.185195fF
+C27 cout gnd! 3.490560fF
+C28 sum_7 gnd! 4.231800fF
+C29 rca2_0[3]/fa_1/a_70_6# gnd! 3.242790fF
+C30 rca2_0[3]/fa_1/a_25_6# gnd! 9.314280fF
+C31 rca2_0[3]/fa_1/C gnd! 15.381271fF
+C32 b_7 gnd! 7.853040fF
+C33 a_7 gnd! 7.341120fF
+C34 vdd gnd! 118.766422fF
+C35 sum_4 gnd! 4.231800fF
+C36 rca2_0[2]/fa_0/a_70_6# gnd! 3.242790fF
+C37 rca2_0[2]/fa_0/a_25_6# gnd! 9.314280fF
+C38 b_4 gnd! 7.853040fF
+C39 a_4 gnd! 7.398720fF
+C40 sum_5 gnd! 4.231800fF
+C41 rca2_0[2]/fa_1/a_70_6# gnd! 3.242790fF
+C42 rca2_0[2]/fa_1/a_25_6# gnd! 9.314280fF
+C43 rca2_0[2]/fa_1/C gnd! 15.381271fF
+C44 b_5 gnd! 7.853040fF
+C45 a_5 gnd! 7.341120fF
+C46 sum_2 gnd! 4.231800fF
+C47 rca2_0[1]/fa_0/a_70_6# gnd! 3.242790fF
+C48 rca2_0[1]/fa_0/a_25_6# gnd! 9.314280fF
+C49 rca2_0[1]/fa_0/C gnd! 16.127640fF
+C50 b_2 gnd! 7.853040fF
+C51 a_2 gnd! 7.341120fF
+C52 rca2_0[2]/fa_0/C gnd! 13.063500fF
+C53 sum_3 gnd! 4.231800fF
+C54 rca2_0[1]/fa_1/a_70_6# gnd! 3.242790fF
+C55 rca2_0[1]/fa_1/a_25_6# gnd! 9.314280fF
+C56 rca2_0[1]/fa_1/C gnd! 15.381271fF
+C57 b_3 gnd! 7.867440fF
+C58 a_3 gnd! 7.369920fF
+C59 sum_0 gnd! 4.231800fF
+C60 rca2_0[0]/fa_0/a_70_6# gnd! 3.242790fF
+C61 rca2_0[0]/fa_0/a_25_6# gnd! 9.314280fF
+C62 c_0 gnd! 7.030440fF
+C63 b_0 gnd! 7.853040fF
+C64 a_0 gnd! 7.341120fF
+C65 sum_1 gnd! 4.231800fF
+C66 rca2_0[0]/fa_1/a_70_6# gnd! 3.242790fF
+C67 rca2_0[0]/fa_1/a_25_6# gnd! 9.314280fF
+C68 rca2_0[0]/fa_1/C gnd! 15.381271fF
+C69 b_1 gnd! 7.853040fF
+C70 a_1 gnd! 7.341120fF

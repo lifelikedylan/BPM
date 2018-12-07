@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/rca8.dv
+dv_start matched                                  
+dv_cell {rca8} {rca8} matched
+dv_obj_count -transformed_nets {51 51} -transformed_inst {80 80} -transformed_port {0 0}
+dv_end

@@ -1,0 +1,65 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 01/24/2017 19:49 (sjfhw308) $
+          : sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:03:58
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '13'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '14'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '22'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '23'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '24'. Therefore, this entry will be ignored during translation.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				bpm_custom
+	strmFile			bpm_custom.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/classes/ecen4303F18/osu_soc_3.0//flow/ami05/gds2_icfb.map
+	propSeparator			,
+
+INFO (XSTRM-61): Creating a new layer pwell in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair pwell:drawing in the technology file.
+INFO (XSTRM-220): 1. Translating STRUCTURE fa as cellView bpm_custom/fa/layout.
+INFO (XSTRM-61): Creating a new layer nselect in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nselect:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer pselect in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair pselect:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer active in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair active:drawing in the technology file.
+INFO (XSTRM-220): 2. Translating STRUCTURE mux21 as cellView bpm_custom/mux21/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE inverter as cellView bpm_custom/inverter/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE bc1a as cellView bpm_custom/bc1a/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE nand as cellView bpm_custom/nand/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE dffpos as cellView bpm_custom/dffpos/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE bs1 as cellView bpm_custom/bs1/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE bs2 as cellView bpm_custom/bs2/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE bpm_custom as cellView bpm_custom/bpm_custom/layout.
+
+Summary of Objects Translated:
+	Instances:                              9
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 2
+	Polygons:                               0
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             1293
+	Text:                                   92
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  9
+
+Elapsed Time: 0.5s   User Time: 0.2s   CPU Time: 0.2s   Peak VM: 81960KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '6' warning(s) found.

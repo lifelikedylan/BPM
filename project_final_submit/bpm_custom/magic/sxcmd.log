@@ -1,0 +1,275 @@
+### CustomExplorer log file, revision K-2015.06 (build 05/23/15) ###
+### created at 08:13:07 on Fri Dec  7 2018 (Linux AMD64) ###
+### Host Name: shire.ecen.okstate.edu   User ID: dshadoa   PID: 107082   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 25
+wv_move_window CustomWaveView 2 51
+wv_move_window CustomWaveView 130 4
+wv_resize_window CustomWaveView 1459 947
+wv_move_window CustomWaveView 130 25
+wv_select_menu_item {File} {Import Waveform File ...}
+wv_move_dialog FileDialog 656 171
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_select_list_item FileDialog.FileList bpm2.tr0
+wv_dclick_list_item FileDialog.FileList bpm2.tr0
+wv_expand_tree_item MainWindow.hierview {D0:bpm2.tr0}
+wv_select_tree_item MainWindow.hierview {D0:bpm2.tr0}
+wv_select_tree_item MainWindow.hierview {D0:bpm2.tr0/toplevel}
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(delay)
+wv_dclick_list_item MainWindow.sigview v(delay)
+wv_select_list_item MainWindow.sigview v(q_15)
+wv_dclick_list_item MainWindow.sigview v(q_15)
+wv_resize_window CustomWaveView 1460 947
+wv_resize_window CustomWaveView 1461 948
+wv_resize_window CustomWaveView 1465 950
+wv_resize_window CustomWaveView 1469 953
+wv_resize_window CustomWaveView 1487 956
+wv_resize_window CustomWaveView 1529 964
+wv_resize_window CustomWaveView 1558 975
+wv_resize_window CustomWaveView 1582 983
+wv_resize_window CustomWaveView 1608 990
+wv_resize_window CustomWaveView 1626 997
+wv_resize_window CustomWaveView 1647 1000
+wv_resize_window CustomWaveView 1662 1000
+wv_resize_window CustomWaveView 1673 1000
+wv_resize_window CustomWaveView 1681 1000
+wv_resize_window CustomWaveView 1690 1000
+wv_resize_window CustomWaveView 1708 1000
+wv_resize_window CustomWaveView 1715 1000
+wv_resize_window CustomWaveView 1722 1000
+wv_resize_window CustomWaveView 1726 1000
+wv_resize_window CustomWaveView 1727 1000
+wv_resize_window CustomWaveView 1729 1000
+wv_resize_window CustomWaveView 1730 1000
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 75 16
+wv_select_panel WV1.PANEL1:1 3.06061e-08 5.01894
+wv_drag_item_to WV1 329 49
+wv_zoom WV1.PANEL1:1 3.06061e-08 5.01894 5.34848e-08 -9.9053
+wv_select_wv_item WV1.ICON.zoomout
+wv_release_wv_item WV1 37 16
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 70 18
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 85 15
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 73 19
+wv_select_panel WV1.PANEL1:1 3.15152e-08 5.01894
+wv_drag_item_to WV1 335 49
+wv_zoom WV1.PANEL1:1 3.15152e-08 5.01894 5.75758e-08 -0.587121
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 114 15
+wv_select_wv_item WV1.PANEL2:1.CURSOR1
+wv_drag_item_to WV1 822 564
+wv_move_wv_item WV1.PANEL2:1.CURSOR1 604 192
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 113 11
+wv_select_panel WV1.PANEL3:1 4.36926e-08 2.06165
+wv_drag_item_to WV1 776 747
+wv_zoom WV1.PANEL3:1 4.36926e-08 2.06165 4.29432e-08 2.22228
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 90 12
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 66 18
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 70 16
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 441 52
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 566 229
+wv_select_panel WV1.PANEL1:1 2.912e-08 3.29545
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 379 139
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 89 17
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 89 17
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 58 15
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 69 15
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 81 16
+wv_press_key Esc
+wv_press_key Esc
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 59 15
+wv_select_panel WV1.PANEL1:1 2.288e-08 3.82576
+wv_drag_item_to WV1 341 112
+wv_zoom WV1.PANEL1:1 2.288e-08 3.82576 5.616e-08 -3.48485
+wv_select_wv_item WV1.PANEL3:1.CURSOR2
+wv_drag_item_to WV1 1013 793
+wv_move_wv_item WV1.PANEL3:1.CURSOR2 893 782
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 69 13
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 55 16
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 60 17
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 360 34
+wv_zoom_x WV1.PANEL1:1 2.608e-08 5.728e-08
+wv_select_panel WV1.PANEL1:1 3.32754e-08 2.06439
+wv_drag_item_to WV1 482 204
+wv_zoom_x WV1.PANEL1:1 3.32754e-08 4.05272e-08
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(q_15)
+wv_dclick_list_item MainWindow.sigview v(q_15)
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 72 17
+wv_select_panel WV1.PANEL1:1 3.81818e-08 4.86284
+wv_drag_item_to WV1 379 61
+wv_zoom_x WV1.PANEL1:1 3.81818e-08 5.75758e-08
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 114 17
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 822 447
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 314 269
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 106 15
+wv_select_panel WV1.PANEL2:1 4.77562e-08 1.74963
+wv_drag_item_to WV1 808 714
+wv_zoom_x WV1.PANEL2:1 4.77562e-08 3.53164e-08
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 54 16
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 57 17
+wv_release_wv_item WV1 529 354
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 58 15
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 57 17
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 73 18
+wv_release_wv_item WV1 606 208
+wv_select_panel WV1.PANEL1:1 6.464e-08 2.46883
+wv_move_wv_item WV1.PANEL1:1.CURSOR2 601 252
+wv_release_wv_item WV1 609 229
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 54 16
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 59 13
+wv_press_key Esc
+wv_press_key Esc
+wv_press_key Esc
+wv_press_key Esc
+wv_press_key Esc
+wv_press_key Esc
+wv_press_key Esc
+wv_release_wv_item WV1 14 63
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(q_15)
+wv_dclick_list_item MainWindow.sigview v(q_15)
+wv_select_wv_item WV1.ICON.unzoom
+wv_release_wv_item WV1 54 19
+wv_select_panel WV1.PANEL1:1 3.69697e-08 4.98753
+wv_drag_item_to WV1 371 51
+wv_zoom_x WV1.PANEL1:1 3.69697e-08 5.78788e-08
+wv_select_wv_item {WV1.ICON.measurement tool}
+wv_move_dialog MeasurementTool 664 234
+wv_select_dialog MeasurementTool
+wv_release_wv_item WV1 138 10
+wv_select_tree_item MeasurementTool.TypeList {Time Domain/Delay}
+wv_set_radio MeasurementTool.LevelSignalLevel
+wv_set_text MeasurementTool.LevelValue {2.5}
+wv_set_text MeasurementTool.ReferenceLevelValue {2.5}
+wv_press_button MeasurementTool.Apply
+wv_press_button MeasurementTool.Ok
+wv_select_panel WV1.PANEL1:1 5.32609e-08 2.4813
+wv_drag_item_to WV1 1150 250
+wv_select_panel WV1.PANEL1:1 5.34191e-08 2.75561
+wv_press_key Right
+wv_select_wv_item {WV1.ICON.measurement tool}
+wv_move_dialog MeasurementTool 664 234
+wv_select_dialog MeasurementTool
+wv_release_wv_item WV1 144 16
+wv_set_radio MeasurementTool.RiseEdge
+wv_set_radio MeasurementTool.OppositeEdge
+wv_set_radio MeasurementTool.EitherEdge
+wv_press_button MeasurementTool.Apply
+wv_press_button MeasurementTool.Ok
+wv_select_wv_item WV1.ICON.zoomout
+wv_release_wv_item WV1 41 12
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 90 16
+wv_select_panel WV1.PANEL1:1 3.70651e-08 5.03741
+wv_drag_item_to WV1 128 47
+wv_zoom_x WV1.PANEL1:1 3.70651e-08 5.91129e-08
+wv_select_wv_item WV1.MEAS3
+wv_drag_item_to WV1 638 663
+wv_move_wv_item WV1.MEAS3 971 663
+wv_select_panel WV1.PANEL2:1 5.11392e-08 1.63066
+wv_select_wv_item WV1.MEAS4
+wv_drag_item_to WV1 605 665
+wv_move_wv_item WV1.MEAS4 753 591
+wv_waveview_context_menu WV1.MEAS4
+wv_select_context_menu_item {Delete Meter}
+wv_select_menu_item {File} {Print ...}
+wv_move_dialog PrintSetup 730 240
+wv_move_dialog PrintSetup 730 194
+wv_select_dialog PrintSetup
+wv_set_check PrintSetup.PrintToFile 1
+wv_set_text PrintSetup.Path {tplhtphlprint.ps}
+wv_press_button PrintSetup.PathBrowser
+wv_move_dialog FileDialog 792 294
+wv_select_dialog FileDialog
+wv_move_dialog FileDialog 656 171
+wv_set_text FileDialog.FileName {}
+wv_press_button FileDialog.Ok
+wv_select_dialog PrintSetup
+wv_set_text PrintSetup.Path {tplh_tphl.ps}
+wv_press_button PrintSetup.Print
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Cancel
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 904 478
+wv_move_dialog Confirmation 904 353
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

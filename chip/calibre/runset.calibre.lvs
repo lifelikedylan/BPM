@@ -1,0 +1,20 @@
+*lvsRulesFile: /classes/ecen4303F18/calibre/calibreLVS_scn3me_subm.rul
+*lvsRunDir: .
+*lvsLayoutPaths: ../magic/rca8.gds
+*lvsLayoutPrimary: rca8
+*lvsSourcePath: ../sue/rca8.sp
+*lvsSourcePrimary: rca8
+*lvsSourceSystem: SPICE
+*lvsSpiceFile: extracted.sp
+*lvsPowerNames: vdd 
+*lvsGroundNames: gnd
+*lvsIgnorePorts: 1
+*lvsERCDatabase: rca8.erc.db
+*lvsERCSummaryFile: rca8.erc.summary
+*lvsReportFile: rca8.lvs.report
+*lvsMaskDBFile: rca8.maskdb
+*cmnShowOptions: 1
+*Cmnvconnectnames: VDD GND
+*cmnVConnectNamesState: ALL
+*cmnFDILayerMapFile: /classes/ecen4303F18/calibre/layer.map
+*cmnFDIUseLayerMap: 1

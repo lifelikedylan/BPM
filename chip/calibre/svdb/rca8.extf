@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1541109212 1541109213
+lvs_ExtOutFile RUNDIR /home/jstine/ecen4303/custom/calibre
+lvs_ExtOutFile RULES_FILE /home/jstine/ecen4303/custom/calibre/./_calibreLVS_scn3me_subm.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 7 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/jstine/ecen4303/custom/calibre/./extracted.sp
+lvs_ExtOutFile EXTRACTION_REPORT rca8.lvs.report.ext

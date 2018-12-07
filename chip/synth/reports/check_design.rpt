@@ -1,0 +1,61 @@
+Warning: Design 'bpm_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     M-2016.12-SP1
+Date:        Fri Dec  7 08:40:49 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     16
+    Multiply driven inputs (LINT-6)                                16
+
+Cells                                                              16
+    Cells do not drive (LINT-1)                                     8
+    Cells do not have output pins (LINT-10)                         8
+
+Nets                                                                1
+    Multiply driven net with constant driver (LINT-54)              1
+
+Tristate                                                            3
+    A tristate bus has a non tri-state driver (LINT-34)             3
+--------------------------------------------------------------------------------
+
+Warning: In design 'bpm_pad', cell 'p21' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'p20' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'p19' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'p18' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'c04' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'c03' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'c02' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', cell 'c01' does not drive any nets. (LINT-1)
+Warning: In design 'bpm_pad', input port 'mplier[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mplier[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', input port 'mcand[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'bpm_pad', cell 'p21' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'p20' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'p19' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'p18' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'c04' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'c03' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'c02' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', cell 'c01' has no output pins. (LINT-10)
+Warning: In design 'bpm_pad', three-state bus 'n16' has non three-state driver 'U1/**logic_1**'. (LINT-34)
+Warning: In design 'bpm_pad', three-state bus 'clk_i' has non three-state driver 'p16/DI'. (LINT-34)
+Warning: In design 'bpm_pad', three-state bus 'init' has non three-state driver 'U22/Y'. (LINT-34)
+Warning: In design 'bpm_pad', multiply-driven net 'n16' is driven by constant 1. (LINT-54)
+1

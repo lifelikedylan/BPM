@@ -1,0 +1,17 @@
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out 
+Program   : @(#)$CDS: lefout version 6.1.7-64b 01/24/2017 19:52 (sjfhw307) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:04:02
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefout -lib bpm_custom -cells "bpm_custom" -views "abstract" -log lefout.log -lef ./bpm_custom.lef -ver 5.6 -noTech
+
+Elapsed Time: 0.3s
+
+lefout translation completed (errors: 0, warnings: 0).

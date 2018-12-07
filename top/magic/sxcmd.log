@@ -1,0 +1,142 @@
+### CustomExplorer log file, revision K-2015.06 (build 05/23/15) ###
+### created at 00:47:45 on Fri Dec  7 2018 (Linux AMD64) ###
+### Host Name: shire.ecen.okstate.edu   User ID: dshadoa   PID: 6655   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 25
+wv_move_window CustomWaveView 220 4
+wv_resize_window CustomWaveView 1459 947
+wv_move_window CustomWaveView 220 25
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 746 171
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_resize_dialog FileDialog 412 663
+wv_resize_dialog FileDialog 590 663
+wv_resize_dialog FileDialog 640 663
+wv_resize_dialog FileDialog 698 663
+wv_select_list_item FileDialog.FileList top.tr0
+wv_dclick_list_item FileDialog.FileList top.tr0
+wv_expand_tree_item MainWindow.hierview {D0:top.tr0}
+wv_select_tree_item MainWindow.hierview {D0:top.tr0}
+wv_select_tree_item MainWindow.hierview {D0:top.tr0/toplevel}
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Backspace
+wv_move_dialog Confirmation 858 451
+wv_move_dialog Confirmation 858 335
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_list_item MainWindow.sigview v(q_15)
+wv_dclick_list_item MainWindow.sigview v(q_15)
+wv_select_list_item MainWindow.sigview v(q_14)
+wv_dclick_list_item MainWindow.sigview v(q_14)
+wv_select_list_item MainWindow.sigview v(q_13)
+wv_dclick_list_item MainWindow.sigview v(q_13)
+wv_select_list_item MainWindow.sigview v(q_12)
+wv_dclick_list_item MainWindow.sigview v(q_12)
+wv_select_list_item MainWindow.sigview v(q_11)
+wv_dclick_list_item MainWindow.sigview v(q_11)
+wv_select_list_item MainWindow.sigview v(q_10)
+wv_dclick_list_item MainWindow.sigview v(q_10)
+wv_select_list_item MainWindow.sigview v(q_9)
+wv_dclick_list_item MainWindow.sigview v(q_9)
+wv_select_list_item MainWindow.sigview v(q_8)
+wv_dclick_list_item MainWindow.sigview v(q_8)
+wv_select_list_item MainWindow.sigview v(q_7)
+wv_dclick_list_item MainWindow.sigview v(q_7)
+wv_select_list_item MainWindow.sigview v(q_6)
+wv_select_list_item MainWindow.sigview v(q_6)
+wv_select_list_item MainWindow.sigview v(q_6)
+wv_dclick_list_item MainWindow.sigview v(q_6)
+wv_select_list_item MainWindow.sigview v(q_5)
+wv_dclick_list_item MainWindow.sigview v(q_5)
+wv_select_list_item MainWindow.sigview v(q_4)
+wv_dclick_list_item MainWindow.sigview v(q_4)
+wv_select_list_item MainWindow.sigview v(q_3)
+wv_dclick_list_item MainWindow.sigview v(q_3)
+wv_select_list_item MainWindow.sigview v(q_2)
+wv_dclick_list_item MainWindow.sigview v(q_2)
+wv_select_list_item MainWindow.sigview v(q_1)
+wv_dclick_list_item MainWindow.sigview v(q_1)
+wv_select_list_item MainWindow.sigview v(q_0)
+wv_dclick_list_item MainWindow.sigview v(q_0)
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(init)
+wv_dclick_list_item MainWindow.sigview v(init)
+wv_select_list_item MainWindow.sigview v(en)
+wv_dclick_list_item MainWindow.sigview v(en)
+wv_select_panel WV1.PANEL8:1 1.64728e-05 2.69713
+wv_select_panel WV1.PANEL13:1 1.49714e-05 1.25853
+wv_select_wv_item WV1.PANEL19:1.LEGEND
+wv_select_panel WV1.PANEL19:1.LEGEND
+wv_ctrl_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Backspace
+wv_move_dialog Confirmation 858 451
+wv_move_dialog Confirmation 858 335
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL17:1.LEGEND
+wv_select_panel WV1.PANEL17:1.LEGEND
+wv_shift_select_panel WV1.PANEL1:1.LEGEND
+wv_release_wv_item WV1 55 68
+wv_press_key Backspace
+wv_move_dialog Confirmation 858 451
+wv_move_dialog Confirmation 858 335
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_list_item MainWindow.sigview v(mcand_0)
+wv_select_list_item MainWindow.sigview v(mcand_7)
+wv_dclick_list_item MainWindow.sigview v(mcand_7)
+wv_select_list_item MainWindow.sigview v(mcand_6)
+wv_dclick_list_item MainWindow.sigview v(mcand_6)
+wv_select_list_item MainWindow.sigview v(mcand_5)
+wv_dclick_list_item MainWindow.sigview v(mcand_5)
+wv_select_list_item MainWindow.sigview v(mcand_4)
+wv_dclick_list_item MainWindow.sigview v(mcand_4)
+wv_select_list_item MainWindow.sigview v(mcand_3)
+wv_dclick_list_item MainWindow.sigview v(mcand_3)
+wv_select_list_item MainWindow.sigview v(mcand_2)
+wv_dclick_list_item MainWindow.sigview v(mcand_2)
+wv_select_list_item MainWindow.sigview v(mcand_1)
+wv_dclick_list_item MainWindow.sigview v(mcand_1)
+wv_select_list_item MainWindow.sigview v(mcand_0)
+wv_drag_list_item MainWindow.sigview v(mcand_0)
+wv_dclick_list_item MainWindow.sigview v(mcand_0)
+wv_select_list_item MainWindow.sigview v(mplier_7)
+wv_dclick_list_item MainWindow.sigview v(mplier_7)
+wv_select_list_item MainWindow.sigview v(mplier_6)
+wv_dclick_list_item MainWindow.sigview v(mplier_6)
+wv_select_list_item MainWindow.sigview v(mplier_5)
+wv_dclick_list_item MainWindow.sigview v(mplier_5)
+wv_select_list_item MainWindow.sigview v(mplier_4)
+wv_dclick_list_item MainWindow.sigview v(mplier_4)
+wv_select_list_item MainWindow.sigview v(mplier_3)
+wv_dclick_list_item MainWindow.sigview v(mplier_3)
+wv_select_list_item MainWindow.sigview v(mplier_2)
+wv_dclick_list_item MainWindow.sigview v(mplier_2)
+wv_select_list_item MainWindow.sigview v(mplier_1)
+wv_dclick_list_item MainWindow.sigview v(mplier_1)
+wv_select_list_item MainWindow.sigview v(mplier_0)
+wv_dclick_list_item MainWindow.sigview v(mplier_0)
+wv_select_wv_item WV1.PANEL16:1.LEGEND
+wv_select_panel WV1.PANEL16:1.LEGEND
+wv_shift_select_panel WV1.PANEL1:1.LEGEND
+wv_release_wv_item WV1 45 80
+wv_press_key Backspace
+wv_move_dialog Confirmation 858 335
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 858 451
+wv_move_dialog Confirmation 858 335
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

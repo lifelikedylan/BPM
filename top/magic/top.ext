@@ -55,35 +55,35 @@ node "q_8" 0 432 239 1321 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
 node "mplier_0" 0 432 506 1384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
 node "mcand_0" 0 432 506 1391 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
 node "m1_297_1366#" 1 2145.6 297 1366 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 72 0 0 0 0
-cap "gnd" "vdd" 391.44
-cap "clk" "vdd" 391.44
-cap "clk" "gnd" 391.44
-cap "en" "vdd" 391.44
-cap "en" "gnd" 391.44
-cap "en" "clk" 391.44
-cap "m2_176_1440#" "m2_282_n8#" 124.8
-cap "init" "m2_282_n8#" 428.88
 cap "vdd" "init" 391.44
 cap "gnd" "init" 391.44
-cap "clk" "init" 391.44
-cap "en" "init" 391.44
+cap "gnd" "vdd" 391.44
+cap "m2_176_1440#" "m2_282_n8#" 124.8
+cap "init" "m2_282_n8#" 428.88
+cap "init" "clk" 391.44
+cap "vdd" "clk" 391.44
+cap "init" "en" 391.44
+cap "gnd" "clk" 391.44
+cap "vdd" "en" 391.44
+cap "gnd" "en" 391.44
+cap "en" "clk" 391.44
 cap "bs1_0[0]/vdd" "bs1_0[0]/muxA_in" 14.4
-cap "bs1_0[0]/vdd" "bs2_0[0]/en" -4.26326e-14
 cap "bs2_0[0]/Init" "bs2_0[0]/muxA_in" 1.42109e-14
+cap "bs1_0[0]/vdd" "bs2_0[0]/en" -4.26326e-14
 cap "bs2_0[0]/dffpos_0/D" "m2_282_n8#" 36.72
 cap "bs2_0[0]/bc1a_0/inverter_1/vdd" "m2_282_n8#" 213.84
 cap "bs2_0[0]/dffpos_0/clk_b" "m2_282_n8#" 102.06
+cap "m2_282_n8#" "bs2_0[0]/mcand" 216.9
+cap "m2_282_n8#" "bs2_0[0]/a_52_99#" 153.72
 cap "bs2_0[0]/dffpos_0/D" "m2_282_n8#" 201.96
 cap "bs2_0[0]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[0]/mplier" "m2_282_n8#" 85.68
 cap "bs2_0[0]/dffpos_0/clk_b" "m2_282_n8#" 40.5
-cap "m2_282_n8#" "bs2_0[0]/mcand" 216.9
-cap "m2_282_n8#" "bs2_0[0]/nand_0/gnd" 204.12
-cap "m2_282_n8#" "bs2_0[0]/a_52_99#" 153.72
-cap "bs2_0[1]/dffpos_0/clk_b" "m2_282_n8#" 142.56
+cap "bs2_0[0]/nand_0/gnd" "m2_282_n8#" 204.12
 cap "bs2_0[1]/dffpos_0/D" "m2_282_n8#" 174.42
 cap "bs2_0[0]/mcand" "m2_282_n8#" 14.58
 cap "bs2_0[1]/nand_0/vdd" "m2_282_n8#" 315.9
+cap "bs2_0[1]/dffpos_0/clk_b" "m2_282_n8#" 142.56
 cap "bs2_0[1]/dffpos_0/D" "m2_282_n8#" 64.26
 cap "bs2_0[1]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[1]/mplier" "m2_282_n8#" 85.68
@@ -95,34 +95,34 @@ cap "bs2_0[2]/dffpos_0/D" "m2_282_n8#" 238.68
 cap "bs2_0[2]/nand_0/vdd" "m2_282_n8#" 270.54
 cap "bs2_0[2]/dffpos_0/clk_b" "m2_282_n8#" 142.56
 cap "bs2_0[2]/nand_0/gnd" "m2_282_n8#" 158.76
-cap "bs2_0[2]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[2]/mplier" "m2_282_n8#" 85.68
 cap "bs2_0[2]/a_45_91#" "m2_282_n8#" 45.36
 cap "bs2_0[2]/mcand" "m2_282_n8#" 231.48
 cap "bs2_0[2]/a_52_99#" "m2_282_n8#" 153.72
 cap "bs2_0[3]/nand_0/vdd" "m2_282_n8#" 233.28
-cap "bs2_0[3]/dffpos_0/clk_b" "m2_282_n8#" 142.56
-cap "bs2_0[3]/nand_0/gnd" "m2_282_n8#" 204.12
-cap "bs2_0[3]/a_52_99#" "m2_282_n8#" 32.94
-cap "bs2_0[3]/mcand" "m2_282_n8#" 14.58
+cap "bs2_0[2]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[3]/dffpos_0/D" "m2_282_n8#" 238.68
 cap "bs2_0[3]/nand_0/vdd" "m2_282_n8#" 82.62
+cap "bs2_0[3]/dffpos_0/clk_b" "m2_282_n8#" 142.56
+cap "bs2_0[3]/mcand" "m2_282_n8#" 14.58
+cap "bs2_0[3]/nand_0/gnd" "m2_282_n8#" 204.12
+cap "bs2_0[3]/a_52_99#" "m2_282_n8#" 32.94
 cap "bs2_0[3]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[3]/mplier" "m2_282_n8#" 85.68
 cap "bs2_0[3]/mcand" "m2_282_n8#" 216.9
 cap "bs2_0[3]/a_52_99#" "m2_282_n8#" 120.78
-cap "bs2_0[4]/nand_0/vdd" "m2_282_n8#" 315.9
+cap "m2_282_n8#" "bs2_0[4]/nand_0/vdd" 315.9
 cap "bs2_0[4]/dffpos_0/D" "m2_282_n8#" 238.68
 cap "bs2_0[4]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[4]/mplier" "m2_282_n8#" 85.68
 cap "bs2_0[4]/dffpos_0/clk_b" "m2_282_n8#" 142.56
+cap "bs2_0[4]/mcand" "m2_282_n8#" 139.14
 cap "bs2_0[4]/nand_0/gnd" "m2_282_n8#" 204.12
 cap "bs2_0[4]/a_52_99#" "m2_282_n8#" 45.9
-cap "bs2_0[4]/mcand" "m2_282_n8#" 139.14
+cap "m2_282_n8#" "bs2_0[5]/dffpos_0/clk_b" 102.06
 cap "bs2_0[5]/dffpos_0/D" "m2_282_n8#" 36.72
 cap "bs2_0[4]/mcand" "m2_282_n8#" 92.34
 cap "bs2_0[4]/a_52_99#" "m2_282_n8#" 107.82
-cap "bs2_0[5]/dffpos_0/clk_b" "m2_282_n8#" 102.06
 cap "bs2_0[5]/nand_0/vdd" "m2_282_n8#" 315.9
 cap "bs2_0[5]/dffpos_0/D" "m2_282_n8#" 201.96
 cap "bs2_0[5]/Out" "m2_282_n8#" 85.68
@@ -138,10 +138,10 @@ cap "bs2_0[5]/mcand" "m2_282_n8#" 14.58
 cap "bs2_0[6]/mcand" "m2_282_n8#" 231.48
 cap "bs2_0[6]/nand_0/gnd" "m2_282_n8#" 204.12
 cap "bs2_0[6]/a_52_99#" "m2_282_n8#" 153.72
+cap "bs2_0[6]/vdd" "m2_282_n8#" 45.36
 cap "bs2_0[6]/dffpos_0/D" "m2_282_n8#" 64.26
 cap "bs2_0[6]/Out" "m2_282_n8#" 85.68
 cap "bs2_0[6]/mplier" "m2_282_n8#" 85.68
-cap "bs2_0[6]/vdd" "m2_282_n8#" 45.36
 cap "bs2_0[6]/bc1a_0/mux21_0/Vdd" "m2_282_n8#" 270.54
 cap "bs2_0[7]/dffpos_0/D" "m2_282_n8#" 238.68
 cap "bs2_0[7]/dffpos_0/clk_b" "m2_282_n8#" 142.56
@@ -155,17 +155,16 @@ cap "bs1_0[7]/add_out" "bs2_0[7]/bc1a_0/mux21_0/sel" 85.68
 cap "bs1_0[7]/add_out" "bs1_0[7]/fa_0/gnd" 85.68
 cap "bs1_0[7]/add_out" "bs2_0[7]/q0" 85.68
 cap "bs2_0[7]/vdd" "bs1_0[7]/add_out" 527.94
-cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/bc1a_0/mux21_0/Sel_bar" -7.10543e-15
-cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/bc1a_0/mux21_0/Out" 7.10543e-15
-cap "bs2_0[7]/bc1a_0/reg_in" "m2_282_n8#" 85.68
-cap "bs2_0[7]/bc1a_0/mux21_0/Vdd" "m2_282_n8#" 861.84
-cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/a_52_99#" 1.42109e-14
-cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/muxA_out" -2.84217e-14
-cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/bc1a_0/mux21_0/in_1" -7.10543e-15
 cap "bs2_0[7]/mcand" "m2_282_n8#" 231.48
 cap "bs2_0[7]/bc1a_0/mux21_0/in_1" "m2_282_n8#" 85.68
 cap "bs2_0[7]/bc1a_0/gnd" "m2_282_n8#" 45.36
 cap "bs2_0[7]/a_52_99#" "m2_282_n8#" 153.72
+cap "bs2_0[7]/bc1a_0/reg_in" "m2_282_n8#" 85.68
+cap "bs2_0[7]/bc1a_0/mux21_0/Vdd" "m2_282_n8#" 861.84
+cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/muxA_out" -2.84217e-14
+cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/bc1a_0/mux21_0/Sel_bar" -1.42109e-14
+cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/bc1a_0/mux21_0/in_1" -1.42109e-14
+cap "bs2_0[7]/bc1a_0/reg_in" "bs2_0[7]/a_52_99#" 1.42109e-14
 merge "bs2_0[6]/mplier" "mplier_1" -345.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -16 0 0 0 0
 merge "bs2_0[0]/mcand" "mcand_7" -345.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -16 0 0 0 0
 merge "bs2_0[1]/a_45_91#" "m1_506_261#" -943.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 -44 0 0 0 0
@@ -251,17 +250,17 @@ merge "bs1_0[0]/clk" "clk"
 merge "bs2_0[2]/mcand" "mcand_5" -345.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -16 0 0 0 0
 merge "bs2_0[2]/vdd" "bs1_0[1]/vdd" -655.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 0 0 0 0
 merge "bs2_0[4]/mcand" "mcand_3" -439.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -20 0 0 0 0
-cap "bs1_0[0:6]/vdd" "bs1_0[1:7]/muxA_in" 1.7053e-13
+cap "bs1_0[0:6]/Cin" "bs1_0[0:6]/vdd" 8.52651e-14
 cap "bs1_0[0:6]/vdd" "bs1_0[0:6]/m2_1_164#" 2.84217e-14
-cap "bs1_0[0:6]/vdd" "bs1_0[0:6]/clk" 2.84217e-14
-cap "bs1_0[0:6]/vdd" "bs1_0[0:6]/en" 2.84217e-14
-cap "bs1_0[0:6]/vdd" "bs1_0[0:6]/Cin" 8.52651e-14
-cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/m2_1_164#" 1.42109e-14
-cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/muxB_out" 1.42109e-14
-cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/q0" 1.42109e-14
+cap "bs1_0[1:7]/muxA_in" "bs1_0[0:6]/vdd" 1.7053e-13
+cap "bs1_0[0:6]/clk" "bs1_0[0:6]/vdd" 2.84217e-14
+cap "bs1_0[0:6]/en" "bs1_0[0:6]/vdd" 2.84217e-14
 cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/clk" 1.42109e-14
-cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/en" 1.42109e-14
+cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/muxB_out" 1.42109e-14
+cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/m2_1_164#" 1.42109e-14
+cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/q0" 1.42109e-14
 cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/gnd" 1.42109e-14
+cap "bs2_0[0:6]/bc1a_0/mux21_0/Vdd" "bs2_0[0:6]/en" 1.42109e-14
 merge "bs2_0[1:7]/en" "bs2_0[0:6]/en" -158.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
 merge "bs1_0[1:7]/en" "bs1_0[0:6]/en" -158.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
 merge "bs2_0[1:7]/Init" "bs2_0[0:6]/m2_1_164#" -158.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0

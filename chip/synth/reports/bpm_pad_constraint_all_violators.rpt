@@ -1,0 +1,37 @@
+Information: Building the design 'bpm_custom'. (HDL-193)
+Warning: Cannot find the design 'bpm_custom' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'bpm_custom' in 'bpm_pad'. (LINK-5)
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   CURRENT_STATE_reg[2]/D   1.023084       0.470984 f     -0.552099 (VIOLATED)
+   CURRENT_STATE_reg[0]/D   1.021690       0.562524 f     -0.459166 (VIOLATED)
+   CURRENT_STATE_reg[3]/D   1.021782       0.623977 r     -0.397805 (VIOLATED)
+   CURRENT_STATE_reg[1]/D   1.019861       0.655449 r     -0.364412 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   bpm_pad                  0.000000       36.026939      -36.026939
+                                                                    (VIOLATED)
+
+
+1

@@ -1,0 +1,234 @@
+INFO (ABS-19020): Starting @(#)$CDS: ui version 6.1.7-64b 01/24/2017 19:46 (sjfhw308) $, sub-version  IC6.1.7-64b.500.9 , on  3.18.26
+INFO (ABS-19023): This is the OpenAccess variant of Abstract Generator.
+INFO (ABS-19012): Replaying abstract.il file.
+INFO (ABS-19030): 1 /************************************************/
+
+INFO (ABS-19030): 2 /* Custom cell Abstract Generation Script 	*/
+
+INFO (ABS-19030): 3 /* Author: Ivan Castellanos			*/
+
+INFO (ABS-19030): 4 /* Oklahoma State University			*/
+
+INFO (ABS-19030): 5 /************************************************/
+
+INFO (ABS-19030): 7 /* To run Abstract Generation type:             */
+
+INFO (ABS-19030): 8 /* abstract -nogui -replay abstract.il          */
+
+INFO (ABS-19030): 10 /* All that needs to be changed are the custom_cell */
+
+INFO (ABS-19030): 11 /* and output_pinnames field.			    */
+
+INFO (ABS-19030): 13 absSkillMode()
+t
+INFO (ABS-19030): 14 /**************************************/
+
+INFO (ABS-19030): 15 custom_cell = "rca8"
+rca8
+INFO (ABS-19030): 16 output_pinnames = "sum_0 sum_1 sum_2 sum_3 sum_4 sum_5 sum_6 sum_7"
+sum_0 sum_1 sum_2 sum_3 sum_4 sum_5 sum_6 sum_7
+INFO (ABS-19030): 17 /**************************************/
+
+INFO (ABS-19030): 19 osucells = getShellEnvVar("OSUcells")
+nil
+INFO (ABS-19030): 20 lefin = "/lib/ami05/abstract.stacks/osu05_stdcells.lef"
+/lib/ami05/abstract.stacks/osu05_stdcells.lef
+INFO (ABS-19030): 21 gdsin = "/flow/ami05.stacks/gds2_icfb.map"
+/flow/ami05.stacks/gds2_icfb.map
+INFO (ABS-19030): 22 absSetOption("NewLibraryName" custom_cell)
+1
+INFO (ABS-19030): 23 absSetLibrary(custom_cell)
+ddCreateLib: Creating a new cds.lib file at '/home/jstine/ecen4303/custom/abstract/cds.lib'.
+INFO (ABS-10500): Library rca8 Opening /home/jstine/ecen4303/custom/abstract/rca8
+*WARNING* (ABS-20001): The manufacturing grid value has not been specified in the technology file. Either the default value 0.001 will be used or specify the manufacturing grid value in the controls section of the technology file.
+INFO (ABS-10503): Library rca8 Loading options from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.options
+INFO (ABS-10505): Library rca8 loading messages from /home/jstine/ecen4303/custom/abstract/rca8/.abstract.messages
+INFO (ABS-10502): Library rca8 Loaded 0 cells
+INFO (ABS-10507): Library rca8 opened
+t
+INFO (ABS-19030): 24 absSetOption("ImportLefFiles" strcat( osucells lefin ) )
+*Error* strcat: argument #1 should be either a string or a symbol (type template = "S") - nil
+INFO (ABS-19030): 25 absSetOption("ImportTechLef" "true")
+1
+INFO (ABS-19030): 26 absImportLEF()
+*Error* (ABS-17000): Failed to import ImportLefFiles option because the option has not been specified. Specify the option and then try again.
+
+0
+INFO (ABS-19030): 27 absSetOption("ImportGDSIIFiles" strcat( custom_cell "." "gds") )
+1
+INFO (ABS-19030): 28 absSetOption("ImportGDSIILayerMapFile" strcat( osucells gdsin ) )
+*Error* strcat: argument #1 should be either a string or a symbol (type template = "S") - nil
+INFO (ABS-19030): 29 absSetOption("DefaultBin" "Block")
+1
+INFO (ABS-19030): 30 absImportGDS()
+INFO (ABS-10516): Library rca8 ImportGDSIIFiles rca8.gds
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.09s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 01/24/2017 19:49 (sjfhw308) $
+          : sub-version  IC6.1.7-64b.500.9 
+Started at: 01-Nov-2018  16:08:42
+User Name : jstine
+Host Name : rivendell.ecen.okstate.edu
+Directory : /home/jstine/ecen4303/custom/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+*WARNING* (TECH-2000000): techOpenTechFile: Unable to lock tech database for library rca8.
+ERROR (XSTRM-76): Failed to open technology file `rca8:rca8` in the append mode. Therefore, automatic layer mapping cannot be done. Use the layer map file to continue.
+INFO (XSTRM-273): Translation failed. '1' error(s) and '0' warning(s) found.
+*Error* (ABS-19008): /programs/cadence/IC617/tools/dfII/bin/strmin -strmFile rca8.gds -library rca8 -logFile strmIn.log -case preserve 2>&1 has failed. For more information, refer to the abstract.log file in the run directory.
+
+0
+INFO (ABS-19030): 32 absSelectCellFrom(custom_cell custom_cell)
+*Error* (ABS-11908): Failed to open the rca8 cell because either the cell does not exist or you are using an options or replay file from another library and the cell does not exist in the destination library. Ensure that the cell exists and then try again.
+
+0
+INFO (ABS-19030): 33 absSetBinOption("Block" "PinsTextPinMap" "(metal1 (metal1 pin)(metal1 drawing))\n(metal2 (metal2 pin)(metal2 drawing))\n(metal3 (metal3 pin)(metal3 drawing))")
+*Error* (ABS-37000): Unknown layer "metal1". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal2". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal3". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal1". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal1 pin). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal1". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal1 drawing). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal2". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal2 pin). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal2". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal2 drawing). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal3". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal3 pin). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-37000): Unknown layer "metal3". Invalid layer name has been specified. Specify a valid layer name in the options file and then try again.
+
+*Error* (ABS-37002): Invalid layer purpose pair (metal3 drawing). Invalid layer purpose pair has been specified. Specify a valid layer purpose pair in the options file and then try again.
+
+*Error* (ABS-17008): Bin Block option PinsTextPinMap invalid value (metal1 (metal1 pin)(metal1 drawing))
+(metal2 (metal2 pin)(metal2 drawing))
+(metal3 (metal3 pin)(metal3 drawing))
+
+INFO (ABS-17010): Bin Block option PinsTextPinMap valid values are: 
+ Maps text labels in the layout view to pins on nets in the pins view.
+For example:
+(textLPP1 geomLPP1 geomLPP2)
+(textLPP2 geomLPP3 geomLPP4)
+Where textLPP has syntax of either:
+(textLayer textPurpose) or simply textLayer
+geomLPP uses the same syntax.
+If you specify a single layer rather than a layer purpose pair,
+then the abstract generator considers "all purpose" except the ones
+specified as ignore purpose(s) on the General tab (File ­ General Options).
+0
+INFO (ABS-19030): 34 absSetBinOption("Block" "PinsPowerNames" "vdd")
+1
+INFO (ABS-19030): 35 absSetBinOption("Block" "PinsGroundNames" "gnd")
+1
+INFO (ABS-19030): 36 absSetBinOption("Block" "PinsOutputNames" output_pinnames)
+1
+INFO (ABS-19030): 37 absSetBinOption("Block" "PinsTextManipulation" "{_([0-9]+)_} {[\\1]}")
+1
+INFO (ABS-19030): 38 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 39 absSetBinOption("Block" "PinsBoundaryCreate" "always")
+1
+INFO (ABS-19030): 40 absSetBinOption("Block" "PinsPreserveRoutingBlockages" "true")
+1
+INFO (ABS-19030): 41 absSetBinOption("Block" "PinsCreatePwrPinsFromRouting" "true")
+1
+INFO (ABS-19030): 42 absSetBinOption("Block" "PinsPwrRoutingLayers" "metal1 metal2 via via2 ")
+*Error* (ABS-17008): Bin Block option PinsPwrRoutingLayers invalid value metal1 metal2 via via2 
+
+INFO (ABS-17010): Bin Block option PinsPwrRoutingLayers valid values are: 
+ Specify the routing layers from which pins will
+be created in a routed block.
+0
+INFO (ABS-19030): 43 absSetBinOption("Block" "PinsBoundarySizeTop" "4.8")
+1
+INFO (ABS-19030): 44 absSetBinOption("Block" "PinsBoundarySizeBottom" "4.8")
+1
+INFO (ABS-19030): 45 absSetBinOption("Block" "PinsBoundarySizeLeft" "4.8")
+1
+INFO (ABS-19030): 46 absSetBinOption("Block" "PinsBoundarySizeRight" "4.8")
+1
+INFO (ABS-19030): 48 absSetBinOption("Block" "AbstractAdjustRingPinsDist" "50")
+1
+INFO (ABS-19030): 49 absSetBinOption("Block" "AbstractSiteName" "Block")
+1
+INFO (ABS-19030): 50 absSetBinOption("Block" "AbstractSiteNameDefine" "Block")
+1
+INFO (ABS-19030): 51 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "")
+1
+INFO (ABS-19030): 52 absSetBinOption("Block" "AbstractBlockageShrinkWrapLayers" "")
+1
+INFO (ABS-19030): 53 absSetBinOption("Block" "ExtractSig" "false")
+1
+INFO (ABS-19030): 54 absSetBinOption("Block" "AbstractAdjustPowerRailOp" "")
+1
+INFO (ABS-19030): 55 absSetBinOption("Block" "AbstractAdjustBoundaryPinsSig" "false")
+1
+INFO (ABS-19030): 56 absSetBinOption("Block" "AbstractAdjustBoundaryPinsPwr" "false")
+1
+INFO (ABS-19030): 57 absSetBinOption("Block" "AbstractAdjustPowerGeometryGroups" "single")
+1
+INFO (ABS-19030): 58 absSetBinOption("Block" "BlockageCutVia" "false")
+1
+INFO (ABS-19030): 59 absSetBinOption("Block" "AbstractOverlapLayerSize" "0.45")
+1
+INFO (ABS-19030): 60 absSetBinOption("Block" "AbstractOverlapLayerSmoothFactor" "0")
+1
+INFO (ABS-19030): 61 absSetBinOption("Block" "AbstractGridMode" "report")
+1
+INFO (ABS-19030): 62 absSetTerminalProp(custom_cell "vdd" "shape" "ring")
+0
+INFO (ABS-19030): 63 absSetTerminalProp(custom_cell "gnd" "shape" "ring")
+0
+INFO (ABS-19030): 64 absSetBinOption("Block" "AbstractBlockageDetailedLayers" "metal1 ")
+*Error* (ABS-17008): Bin Block option AbstractBlockageDetailedLayers invalid value metal1 
+
+INFO (ABS-17010): Bin Block option AbstractBlockageDetailedLayers valid values are: 
+ Enter a parenthesized layer-geometry spec.
+Example: "metal1 net andnot metal1 drawing"
+Specifies metal1 net minus metal1 drawing
+0
+INFO (ABS-19030): 65 absSetBinOption("Block" "AbstractBlockageCoverLayers" "metal2 metal3 ")
+*Error* (ABS-17008): Bin Block option AbstractBlockageCoverLayers invalid value metal2 metal3 
+
+INFO (ABS-17010): Bin Block option AbstractBlockageCoverLayers valid values are: 
+ Enter a parenthesized layer-geometry spec.
+Example: "metal1 net andnot metal1 drawing"
+Specifies metal1 net minus metal1 drawing
+0
+INFO (ABS-19030): 66 absSetBinOption("Block" "ExtractPwr" "true")
+1
+INFO (ABS-19030): 67 absSetBinOption("Block" "ExtractNumLevelsPwr" "1")
+1
+INFO (ABS-19030): 68 absSetBinOption("Block" "AbstractAdjustRingPinsPwr" "true")
+1
+INFO (ABS-19030): 70 absSetOption("ExportLEFFile" strcat( "./" custom_cell "." "lef") )
+1
+INFO (ABS-19030): 72 absPins()
+1
+INFO (ABS-19030): 73 absExtract()
+1
+INFO (ABS-19030): 74 absAbstract()
+1
+INFO (ABS-19030): 75 absExportLEF()
+*Error* (ABS-16103): LEFOUT Failed. Either no valid abstract views are present in the library or the cells given in the celllist file are not found in the abstract with valid views.
+
+0
+INFO (ABS-19030): 76 exit
+

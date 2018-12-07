@@ -1,0 +1,24 @@
+
+********************************************************************************
+Product   : Virtuoso(R) LEF In 
+Program   : @(#)$CDS: lefin version 6.1.7-64b 01/24/2017 19:52 (sjfhw308) $
+SubVersion: sub-version  IC6.1.7-64b.500.9 
+Started at: 07-Dec-2018  04:03:55
+User Name : dshadoa
+Host Name : shire.ecen.okstate.edu
+Directory : /home/dshadoa/Desktop/BPM/chip/abstract
+DB Version: 	20170124 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefin -lib bpm_custom -overwrite -lef "/classes/ecen4303F18/osu_soc_3.0//lib/ami05/abstract/osu05_stdcells.lef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-90024): The existing display.drf is saved as display.drf.orig. The new packet display information will be appended to a copy of display.drf. 
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(2972-2973) : MACRO PADGND: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3021-3022) : MACRO PADINC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3074-3075) : MACRO PADOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3099-3100) : MACRO PADNC: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3145-3146) : MACRO PADVDD: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+INFO: (OALEFDEF-50166): /classes/ecen4303F18/osu_soc_3.0/lib/ami05/abstract/osu05_stdcells.lef(3215-3216) : MACRO PADINOUT: Pure rotation symmetry (R90) isn't supported. This is mapped to the equivalent X Y R90 automatically.
+
+Elapsed Time: 1.0s
+
+lefin translation completed (errors: 0, warnings: 1).

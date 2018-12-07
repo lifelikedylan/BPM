@@ -1,0 +1,17 @@
+magic
+tech scmos
+magscale 1 2
+timestamp 1542725905
+<< metal1 >>
+rect -10 9 10 10
+rect -10 -9 -9 9
+rect 9 -9 10 9
+rect -10 -10 10 -9
+<< m2contact >>
+rect -9 -9 9 9
+<< metal2 >>
+rect -10 9 10 10
+rect -10 -9 -9 9
+rect 9 -9 10 9
+rect -10 -10 10 -9
+<< end >>

@@ -1,0 +1,20 @@
+*lvsRulesFile: /classes/ecen4303F18/calibre/calibreLVS_scn3me_subm.rul
+*lvsRunDir: .
+*lvsLayoutPaths: ../magic/bpm_custom.gds
+*lvsLayoutPrimary: bpm_custom
+*lvsSourcePath: ../sue/bpm_custom.sp
+*lvsSourcePrimary: bpm_custom
+*lvsSourceSystem: SPICE
+*lvsSpiceFile: extracted.sp
+*lvsPowerNames: vdd 
+*lvsGroundNames: gnd
+*lvsIgnorePorts: 1
+*lvsERCDatabase: bpm_custom.erc.db
+*lvsERCSummaryFile: bpm_custom.erc.summary
+*lvsReportFile: bpm_custom.lvs.report
+*lvsMaskDBFile: bpm_custom.maskdb
+*cmnShowOptions: 1
+*Cmnvconnectnames: VDD GND
+*cmnVConnectNamesState: ALL
+*cmnFDILayerMapFile: /classes/ecen4303F18/calibre/layer.map
+*cmnFDIUseLayerMap: 1

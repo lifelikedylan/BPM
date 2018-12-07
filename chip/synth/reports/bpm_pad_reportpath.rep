@@ -1,0 +1,19 @@
+Warning: Design 'bpm_pad' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : path_group
+Design : bpm_pad
+Version: M-2016.12-SP1
+Date   : Fri Dec  7 08:40:49 2018
+****************************************
+
+                        Critical
+Group Name    Weight    Range
+--------------------------------------------------------------------------------
+**default**   1.00      0.00                 
+clk           1.00      0.00                 
+
+Path Group clk:
+	-to      clk
+
+1

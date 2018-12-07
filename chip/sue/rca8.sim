@@ -1,0 +1,523 @@
+| units: 30.0  tech: scmos  format: MIT
+A A[0] input
+A A[1] input
+A A[2] input
+A A[3] input
+A A[4] input
+A A[5] input
+A A[6] input
+A A[7] input
+A B[0] input
+A B[1] input
+A B[2] input
+A B[3] input
+A B[4] input
+A B[5] input
+A B[6] input
+A B[7] input
+A C_0 input
+A Cout output
+A Sum[0] output
+A Sum[1] output
+A Sum[2] output
+A Sum[3] output
+A Sum[4] output
+A Sum[5] output
+A Sum[6] output
+A Sum[7] output
+| begin FA 350 270
+| device FA.nmos 430 370
+n FA.net_2 FA.net_9 FA.net_10 2 10
+| device FA.nmos_1 250 450
+n A[0] gnd FA.net_9 2 10
+| device FA.nmos_2 430 450
+n B[0] gnd FA.net_9 2 10
+| device FA.nmos_3 610 450
+n C_0 gnd FA.net_9 2 10
+| device FA.nmos_4 810 370
+n C_0 FA.net_12 FA.net_10 2 10
+| device FA.nmos_5 810 450
+n B[0] FA.net_8 FA.net_12 2 10
+| device FA.nmos_6 810 530
+n A[0] gnd FA.net_8 2 10
+| device FA.nmos_7 -250 370
+n C_0 FA.net_5 FA.net_2 2 10
+| device FA.nmos_8 -320 450
+n A[0] gnd FA.net_5 2 10
+| device FA.nmos_9 -150 450
+n B[0] gnd FA.net_5 2 10
+| device FA.nmos_10 40 370
+n B[0] FA.net_4 FA.net_2 2 10
+| device FA.nmos_11 40 450
+n A[0] gnd FA.net_4 2 10
+| device FA.pmos 250 210
+p A[0] vdd FA.net_11 2 20
+| device FA.pmos_1 430 210
+p B[0] vdd FA.net_11 2 20
+| device FA.pmos_2 610 210
+p C_0 vdd FA.net_11 2 20
+| device FA.pmos_3 430 290
+p FA.net_2 FA.net_11 FA.net_10 2 20
+| device FA.pmos_4 810 210
+p B[0] FA.net_3 FA.net_1 2 20
+| device FA.pmos_5 810 290
+p C_0 FA.net_1 FA.net_10 2 20
+| device FA.pmos_6 810 130
+p A[0] vdd FA.net_3 2 20
+| device FA.pmos_7 -320 210
+p A[0] vdd FA.net_6 2 20
+| device FA.pmos_8 -150 210
+p B[0] vdd FA.net_6 2 20
+| device FA.pmos_9 -250 290
+p C_0 FA.net_6 FA.net_2 2 20
+| device FA.pmos_10 40 290
+p B[0] FA.net_7 FA.net_2 2 20
+| device FA.pmos_11 40 210
+p A[0] vdd FA.net_7 2 20
+| begin FA.inv 890 680
+| device FA.inv.nmos 440 -610
+n FA.net_2 gnd net_1 2 10
+| device FA.inv.pmos 440 -770
+p FA.net_2 vdd net_1 2 20
+| end FA.inv
+| begin FA.inv_1 900 330
+| device FA.inv_1.nmos 440 -610
+n FA.net_10 gnd Sum[0] 2 10
+| device FA.inv_1.pmos 440 -770
+p FA.net_10 vdd Sum[0] 2 20
+| end FA.inv_1
+| end FA
+| begin FA_1 350 390
+| device FA_1.nmos 430 370
+n FA_1.net_2 FA_1.net_9 FA_1.net_10 2 10
+| device FA_1.nmos_1 250 450
+n A[1] gnd FA_1.net_9 2 10
+| device FA_1.nmos_2 430 450
+n B[1] gnd FA_1.net_9 2 10
+| device FA_1.nmos_3 610 450
+n net_1 gnd FA_1.net_9 2 10
+| device FA_1.nmos_4 810 370
+n net_1 FA_1.net_12 FA_1.net_10 2 10
+| device FA_1.nmos_5 810 450
+n B[1] FA_1.net_8 FA_1.net_12 2 10
+| device FA_1.nmos_6 810 530
+n A[1] gnd FA_1.net_8 2 10
+| device FA_1.nmos_7 -250 370
+n net_1 FA_1.net_5 FA_1.net_2 2 10
+| device FA_1.nmos_8 -320 450
+n A[1] gnd FA_1.net_5 2 10
+| device FA_1.nmos_9 -150 450
+n B[1] gnd FA_1.net_5 2 10
+| device FA_1.nmos_10 40 370
+n B[1] FA_1.net_4 FA_1.net_2 2 10
+| device FA_1.nmos_11 40 450
+n A[1] gnd FA_1.net_4 2 10
+| device FA_1.pmos 250 210
+p A[1] vdd FA_1.net_11 2 20
+| device FA_1.pmos_1 430 210
+p B[1] vdd FA_1.net_11 2 20
+| device FA_1.pmos_2 610 210
+p net_1 vdd FA_1.net_11 2 20
+| device FA_1.pmos_3 430 290
+p FA_1.net_2 FA_1.net_11 FA_1.net_10 2 20
+| device FA_1.pmos_4 810 210
+p B[1] FA_1.net_3 FA_1.net_1 2 20
+| device FA_1.pmos_5 810 290
+p net_1 FA_1.net_1 FA_1.net_10 2 20
+| device FA_1.pmos_6 810 130
+p A[1] vdd FA_1.net_3 2 20
+| device FA_1.pmos_7 -320 210
+p A[1] vdd FA_1.net_6 2 20
+| device FA_1.pmos_8 -150 210
+p B[1] vdd FA_1.net_6 2 20
+| device FA_1.pmos_9 -250 290
+p net_1 FA_1.net_6 FA_1.net_2 2 20
+| device FA_1.pmos_10 40 290
+p B[1] FA_1.net_7 FA_1.net_2 2 20
+| device FA_1.pmos_11 40 210
+p A[1] vdd FA_1.net_7 2 20
+| begin FA_1.inv 890 680
+| device FA_1.inv.nmos 440 -610
+n FA_1.net_2 gnd net_2 2 10
+| device FA_1.inv.pmos 440 -770
+p FA_1.net_2 vdd net_2 2 20
+| end FA_1.inv
+| begin FA_1.inv_1 900 330
+| device FA_1.inv_1.nmos 440 -610
+n FA_1.net_10 gnd Sum[1] 2 10
+| device FA_1.inv_1.pmos 440 -770
+p FA_1.net_10 vdd Sum[1] 2 20
+| end FA_1.inv_1
+| end FA_1
+| begin FA_2 350 510
+| device FA_2.nmos 430 370
+n FA_2.net_2 FA_2.net_9 FA_2.net_10 2 10
+| device FA_2.nmos_1 250 450
+n A[2] gnd FA_2.net_9 2 10
+| device FA_2.nmos_2 430 450
+n B[2] gnd FA_2.net_9 2 10
+| device FA_2.nmos_3 610 450
+n net_2 gnd FA_2.net_9 2 10
+| device FA_2.nmos_4 810 370
+n net_2 FA_2.net_12 FA_2.net_10 2 10
+| device FA_2.nmos_5 810 450
+n B[2] FA_2.net_8 FA_2.net_12 2 10
+| device FA_2.nmos_6 810 530
+n A[2] gnd FA_2.net_8 2 10
+| device FA_2.nmos_7 -250 370
+n net_2 FA_2.net_5 FA_2.net_2 2 10
+| device FA_2.nmos_8 -320 450
+n A[2] gnd FA_2.net_5 2 10
+| device FA_2.nmos_9 -150 450
+n B[2] gnd FA_2.net_5 2 10
+| device FA_2.nmos_10 40 370
+n B[2] FA_2.net_4 FA_2.net_2 2 10
+| device FA_2.nmos_11 40 450
+n A[2] gnd FA_2.net_4 2 10
+| device FA_2.pmos 250 210
+p A[2] vdd FA_2.net_11 2 20
+| device FA_2.pmos_1 430 210
+p B[2] vdd FA_2.net_11 2 20
+| device FA_2.pmos_2 610 210
+p net_2 vdd FA_2.net_11 2 20
+| device FA_2.pmos_3 430 290
+p FA_2.net_2 FA_2.net_11 FA_2.net_10 2 20
+| device FA_2.pmos_4 810 210
+p B[2] FA_2.net_3 FA_2.net_1 2 20
+| device FA_2.pmos_5 810 290
+p net_2 FA_2.net_1 FA_2.net_10 2 20
+| device FA_2.pmos_6 810 130
+p A[2] vdd FA_2.net_3 2 20
+| device FA_2.pmos_7 -320 210
+p A[2] vdd FA_2.net_6 2 20
+| device FA_2.pmos_8 -150 210
+p B[2] vdd FA_2.net_6 2 20
+| device FA_2.pmos_9 -250 290
+p net_2 FA_2.net_6 FA_2.net_2 2 20
+| device FA_2.pmos_10 40 290
+p B[2] FA_2.net_7 FA_2.net_2 2 20
+| device FA_2.pmos_11 40 210
+p A[2] vdd FA_2.net_7 2 20
+| begin FA_2.inv 890 680
+| device FA_2.inv.nmos 440 -610
+n FA_2.net_2 gnd net_3 2 10
+| device FA_2.inv.pmos 440 -770
+p FA_2.net_2 vdd net_3 2 20
+| end FA_2.inv
+| begin FA_2.inv_1 900 330
+| device FA_2.inv_1.nmos 440 -610
+n FA_2.net_10 gnd Sum[2] 2 10
+| device FA_2.inv_1.pmos 440 -770
+p FA_2.net_10 vdd Sum[2] 2 20
+| end FA_2.inv_1
+| end FA_2
+| begin FA_3 350 630
+| device FA_3.nmos 430 370
+n FA_3.net_2 FA_3.net_9 FA_3.net_10 2 10
+| device FA_3.nmos_1 250 450
+n A[3] gnd FA_3.net_9 2 10
+| device FA_3.nmos_2 430 450
+n B[3] gnd FA_3.net_9 2 10
+| device FA_3.nmos_3 610 450
+n net_3 gnd FA_3.net_9 2 10
+| device FA_3.nmos_4 810 370
+n net_3 FA_3.net_12 FA_3.net_10 2 10
+| device FA_3.nmos_5 810 450
+n B[3] FA_3.net_8 FA_3.net_12 2 10
+| device FA_3.nmos_6 810 530
+n A[3] gnd FA_3.net_8 2 10
+| device FA_3.nmos_7 -250 370
+n net_3 FA_3.net_5 FA_3.net_2 2 10
+| device FA_3.nmos_8 -320 450
+n A[3] gnd FA_3.net_5 2 10
+| device FA_3.nmos_9 -150 450
+n B[3] gnd FA_3.net_5 2 10
+| device FA_3.nmos_10 40 370
+n B[3] FA_3.net_4 FA_3.net_2 2 10
+| device FA_3.nmos_11 40 450
+n A[3] gnd FA_3.net_4 2 10
+| device FA_3.pmos 250 210
+p A[3] vdd FA_3.net_11 2 20
+| device FA_3.pmos_1 430 210
+p B[3] vdd FA_3.net_11 2 20
+| device FA_3.pmos_2 610 210
+p net_3 vdd FA_3.net_11 2 20
+| device FA_3.pmos_3 430 290
+p FA_3.net_2 FA_3.net_11 FA_3.net_10 2 20
+| device FA_3.pmos_4 810 210
+p B[3] FA_3.net_3 FA_3.net_1 2 20
+| device FA_3.pmos_5 810 290
+p net_3 FA_3.net_1 FA_3.net_10 2 20
+| device FA_3.pmos_6 810 130
+p A[3] vdd FA_3.net_3 2 20
+| device FA_3.pmos_7 -320 210
+p A[3] vdd FA_3.net_6 2 20
+| device FA_3.pmos_8 -150 210
+p B[3] vdd FA_3.net_6 2 20
+| device FA_3.pmos_9 -250 290
+p net_3 FA_3.net_6 FA_3.net_2 2 20
+| device FA_3.pmos_10 40 290
+p B[3] FA_3.net_7 FA_3.net_2 2 20
+| device FA_3.pmos_11 40 210
+p A[3] vdd FA_3.net_7 2 20
+| begin FA_3.inv 890 680
+| device FA_3.inv.nmos 440 -610
+n FA_3.net_2 gnd net_7 2 10
+| device FA_3.inv.pmos 440 -770
+p FA_3.net_2 vdd net_7 2 20
+| end FA_3.inv
+| begin FA_3.inv_1 900 330
+| device FA_3.inv_1.nmos 440 -610
+n FA_3.net_10 gnd Sum[3] 2 10
+| device FA_3.inv_1.pmos 440 -770
+p FA_3.net_10 vdd Sum[3] 2 20
+| end FA_3.inv_1
+| end FA_3
+| begin FA_4 840 270
+| device FA_4.nmos 430 370
+n FA_4.net_2 FA_4.net_9 FA_4.net_10 2 10
+| device FA_4.nmos_1 250 450
+n A[4] gnd FA_4.net_9 2 10
+| device FA_4.nmos_2 430 450
+n B[4] gnd FA_4.net_9 2 10
+| device FA_4.nmos_3 610 450
+n net_7 gnd FA_4.net_9 2 10
+| device FA_4.nmos_4 810 370
+n net_7 FA_4.net_12 FA_4.net_10 2 10
+| device FA_4.nmos_5 810 450
+n B[4] FA_4.net_8 FA_4.net_12 2 10
+| device FA_4.nmos_6 810 530
+n A[4] gnd FA_4.net_8 2 10
+| device FA_4.nmos_7 -250 370
+n net_7 FA_4.net_5 FA_4.net_2 2 10
+| device FA_4.nmos_8 -320 450
+n A[4] gnd FA_4.net_5 2 10
+| device FA_4.nmos_9 -150 450
+n B[4] gnd FA_4.net_5 2 10
+| device FA_4.nmos_10 40 370
+n B[4] FA_4.net_4 FA_4.net_2 2 10
+| device FA_4.nmos_11 40 450
+n A[4] gnd FA_4.net_4 2 10
+| device FA_4.pmos 250 210
+p A[4] vdd FA_4.net_11 2 20
+| device FA_4.pmos_1 430 210
+p B[4] vdd FA_4.net_11 2 20
+| device FA_4.pmos_2 610 210
+p net_7 vdd FA_4.net_11 2 20
+| device FA_4.pmos_3 430 290
+p FA_4.net_2 FA_4.net_11 FA_4.net_10 2 20
+| device FA_4.pmos_4 810 210
+p B[4] FA_4.net_3 FA_4.net_1 2 20
+| device FA_4.pmos_5 810 290
+p net_7 FA_4.net_1 FA_4.net_10 2 20
+| device FA_4.pmos_6 810 130
+p A[4] vdd FA_4.net_3 2 20
+| device FA_4.pmos_7 -320 210
+p A[4] vdd FA_4.net_6 2 20
+| device FA_4.pmos_8 -150 210
+p B[4] vdd FA_4.net_6 2 20
+| device FA_4.pmos_9 -250 290
+p net_7 FA_4.net_6 FA_4.net_2 2 20
+| device FA_4.pmos_10 40 290
+p B[4] FA_4.net_7 FA_4.net_2 2 20
+| device FA_4.pmos_11 40 210
+p A[4] vdd FA_4.net_7 2 20
+| begin FA_4.inv 890 680
+| device FA_4.inv.nmos 440 -610
+n FA_4.net_2 gnd net_4 2 10
+| device FA_4.inv.pmos 440 -770
+p FA_4.net_2 vdd net_4 2 20
+| end FA_4.inv
+| begin FA_4.inv_1 900 330
+| device FA_4.inv_1.nmos 440 -610
+n FA_4.net_10 gnd Sum[4] 2 10
+| device FA_4.inv_1.pmos 440 -770
+p FA_4.net_10 vdd Sum[4] 2 20
+| end FA_4.inv_1
+| end FA_4
+| begin FA_5 840 390
+| device FA_5.nmos 430 370
+n FA_5.net_2 FA_5.net_9 FA_5.net_10 2 10
+| device FA_5.nmos_1 250 450
+n A[5] gnd FA_5.net_9 2 10
+| device FA_5.nmos_2 430 450
+n B[5] gnd FA_5.net_9 2 10
+| device FA_5.nmos_3 610 450
+n net_4 gnd FA_5.net_9 2 10
+| device FA_5.nmos_4 810 370
+n net_4 FA_5.net_12 FA_5.net_10 2 10
+| device FA_5.nmos_5 810 450
+n B[5] FA_5.net_8 FA_5.net_12 2 10
+| device FA_5.nmos_6 810 530
+n A[5] gnd FA_5.net_8 2 10
+| device FA_5.nmos_7 -250 370
+n net_4 FA_5.net_5 FA_5.net_2 2 10
+| device FA_5.nmos_8 -320 450
+n A[5] gnd FA_5.net_5 2 10
+| device FA_5.nmos_9 -150 450
+n B[5] gnd FA_5.net_5 2 10
+| device FA_5.nmos_10 40 370
+n B[5] FA_5.net_4 FA_5.net_2 2 10
+| device FA_5.nmos_11 40 450
+n A[5] gnd FA_5.net_4 2 10
+| device FA_5.pmos 250 210
+p A[5] vdd FA_5.net_11 2 20
+| device FA_5.pmos_1 430 210
+p B[5] vdd FA_5.net_11 2 20
+| device FA_5.pmos_2 610 210
+p net_4 vdd FA_5.net_11 2 20
+| device FA_5.pmos_3 430 290
+p FA_5.net_2 FA_5.net_11 FA_5.net_10 2 20
+| device FA_5.pmos_4 810 210
+p B[5] FA_5.net_3 FA_5.net_1 2 20
+| device FA_5.pmos_5 810 290
+p net_4 FA_5.net_1 FA_5.net_10 2 20
+| device FA_5.pmos_6 810 130
+p A[5] vdd FA_5.net_3 2 20
+| device FA_5.pmos_7 -320 210
+p A[5] vdd FA_5.net_6 2 20
+| device FA_5.pmos_8 -150 210
+p B[5] vdd FA_5.net_6 2 20
+| device FA_5.pmos_9 -250 290
+p net_4 FA_5.net_6 FA_5.net_2 2 20
+| device FA_5.pmos_10 40 290
+p B[5] FA_5.net_7 FA_5.net_2 2 20
+| device FA_5.pmos_11 40 210
+p A[5] vdd FA_5.net_7 2 20
+| begin FA_5.inv 890 680
+| device FA_5.inv.nmos 440 -610
+n FA_5.net_2 gnd net_6 2 10
+| device FA_5.inv.pmos 440 -770
+p FA_5.net_2 vdd net_6 2 20
+| end FA_5.inv
+| begin FA_5.inv_1 900 330
+| device FA_5.inv_1.nmos 440 -610
+n FA_5.net_10 gnd Sum[5] 2 10
+| device FA_5.inv_1.pmos 440 -770
+p FA_5.net_10 vdd Sum[5] 2 20
+| end FA_5.inv_1
+| end FA_5
+| begin FA_6 840 510
+| device FA_6.nmos 430 370
+n FA_6.net_2 FA_6.net_9 FA_6.net_10 2 10
+| device FA_6.nmos_1 250 450
+n A[6] gnd FA_6.net_9 2 10
+| device FA_6.nmos_2 430 450
+n B[6] gnd FA_6.net_9 2 10
+| device FA_6.nmos_3 610 450
+n net_6 gnd FA_6.net_9 2 10
+| device FA_6.nmos_4 810 370
+n net_6 FA_6.net_12 FA_6.net_10 2 10
+| device FA_6.nmos_5 810 450
+n B[6] FA_6.net_8 FA_6.net_12 2 10
+| device FA_6.nmos_6 810 530
+n A[6] gnd FA_6.net_8 2 10
+| device FA_6.nmos_7 -250 370
+n net_6 FA_6.net_5 FA_6.net_2 2 10
+| device FA_6.nmos_8 -320 450
+n A[6] gnd FA_6.net_5 2 10
+| device FA_6.nmos_9 -150 450
+n B[6] gnd FA_6.net_5 2 10
+| device FA_6.nmos_10 40 370
+n B[6] FA_6.net_4 FA_6.net_2 2 10
+| device FA_6.nmos_11 40 450
+n A[6] gnd FA_6.net_4 2 10
+| device FA_6.pmos 250 210
+p A[6] vdd FA_6.net_11 2 20
+| device FA_6.pmos_1 430 210
+p B[6] vdd FA_6.net_11 2 20
+| device FA_6.pmos_2 610 210
+p net_6 vdd FA_6.net_11 2 20
+| device FA_6.pmos_3 430 290
+p FA_6.net_2 FA_6.net_11 FA_6.net_10 2 20
+| device FA_6.pmos_4 810 210
+p B[6] FA_6.net_3 FA_6.net_1 2 20
+| device FA_6.pmos_5 810 290
+p net_6 FA_6.net_1 FA_6.net_10 2 20
+| device FA_6.pmos_6 810 130
+p A[6] vdd FA_6.net_3 2 20
+| device FA_6.pmos_7 -320 210
+p A[6] vdd FA_6.net_6 2 20
+| device FA_6.pmos_8 -150 210
+p B[6] vdd FA_6.net_6 2 20
+| device FA_6.pmos_9 -250 290
+p net_6 FA_6.net_6 FA_6.net_2 2 20
+| device FA_6.pmos_10 40 290
+p B[6] FA_6.net_7 FA_6.net_2 2 20
+| device FA_6.pmos_11 40 210
+p A[6] vdd FA_6.net_7 2 20
+| begin FA_6.inv 890 680
+| device FA_6.inv.nmos 440 -610
+n FA_6.net_2 gnd net_5 2 10
+| device FA_6.inv.pmos 440 -770
+p FA_6.net_2 vdd net_5 2 20
+| end FA_6.inv
+| begin FA_6.inv_1 900 330
+| device FA_6.inv_1.nmos 440 -610
+n FA_6.net_10 gnd Sum[6] 2 10
+| device FA_6.inv_1.pmos 440 -770
+p FA_6.net_10 vdd Sum[6] 2 20
+| end FA_6.inv_1
+| end FA_6
+| begin FA_7 840 630
+| device FA_7.nmos 430 370
+n FA_7.net_2 FA_7.net_9 FA_7.net_10 2 10
+| device FA_7.nmos_1 250 450
+n A[7] gnd FA_7.net_9 2 10
+| device FA_7.nmos_2 430 450
+n B[7] gnd FA_7.net_9 2 10
+| device FA_7.nmos_3 610 450
+n net_5 gnd FA_7.net_9 2 10
+| device FA_7.nmos_4 810 370
+n net_5 FA_7.net_12 FA_7.net_10 2 10
+| device FA_7.nmos_5 810 450
+n B[7] FA_7.net_8 FA_7.net_12 2 10
+| device FA_7.nmos_6 810 530
+n A[7] gnd FA_7.net_8 2 10
+| device FA_7.nmos_7 -250 370
+n net_5 FA_7.net_5 FA_7.net_2 2 10
+| device FA_7.nmos_8 -320 450
+n A[7] gnd FA_7.net_5 2 10
+| device FA_7.nmos_9 -150 450
+n B[7] gnd FA_7.net_5 2 10
+| device FA_7.nmos_10 40 370
+n B[7] FA_7.net_4 FA_7.net_2 2 10
+| device FA_7.nmos_11 40 450
+n A[7] gnd FA_7.net_4 2 10
+| device FA_7.pmos 250 210
+p A[7] vdd FA_7.net_11 2 20
+| device FA_7.pmos_1 430 210
+p B[7] vdd FA_7.net_11 2 20
+| device FA_7.pmos_2 610 210
+p net_5 vdd FA_7.net_11 2 20
+| device FA_7.pmos_3 430 290
+p FA_7.net_2 FA_7.net_11 FA_7.net_10 2 20
+| device FA_7.pmos_4 810 210
+p B[7] FA_7.net_3 FA_7.net_1 2 20
+| device FA_7.pmos_5 810 290
+p net_5 FA_7.net_1 FA_7.net_10 2 20
+| device FA_7.pmos_6 810 130
+p A[7] vdd FA_7.net_3 2 20
+| device FA_7.pmos_7 -320 210
+p A[7] vdd FA_7.net_6 2 20
+| device FA_7.pmos_8 -150 210
+p B[7] vdd FA_7.net_6 2 20
+| device FA_7.pmos_9 -250 290
+p net_5 FA_7.net_6 FA_7.net_2 2 20
+| device FA_7.pmos_10 40 290
+p B[7] FA_7.net_7 FA_7.net_2 2 20
+| device FA_7.pmos_11 40 210
+p A[7] vdd FA_7.net_7 2 20
+| begin FA_7.inv 890 680
+| device FA_7.inv.nmos 440 -610
+n FA_7.net_2 gnd Cout 2 10
+| device FA_7.inv.pmos 440 -770
+p FA_7.net_2 vdd Cout 2 20
+| end FA_7.inv
+| begin FA_7.inv_1 900 330
+| device FA_7.inv_1.nmos 440 -610
+n FA_7.net_10 gnd Sum[7] 2 10
+| device FA_7.inv_1.pmos 440 -770
+p FA_7.net_10 vdd Sum[7] 2 20
+| end FA_7.inv_1
+| end FA_7

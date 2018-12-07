@@ -1,0 +1,6 @@
+read_lib custom.lib
+write_lib custom
+quit
+
+
+
