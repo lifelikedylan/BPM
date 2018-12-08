@@ -12,12 +12,12 @@
 
 
 REPORT FILE NAME:         bpm_custom.lvs.report
-LAYOUT NAME:              /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp ('bpm_custom')
-SOURCE NAME:              /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../sue/bpm_custom.sp ('bpm_custom')
-RULE FILE:                /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
+LAYOUT NAME:              /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp ('bpm_custom')
+SOURCE NAME:              /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../sue/bpm_custom.sp ('bpm_custom')
+RULE FILE:                /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
 RULE FILE TITLE:          LVS Rule File for scn3me_subm
-CREATION TIME:            Fri Dec  7 04:01:02 2018
-CURRENT DIRECTORY:        /home/dshadoa/Desktop/BPM/bpm_custom/lvs
+CREATION TIME:            Fri Dec  7 23:42:31 2018
+CURRENT DIRECTORY:        /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs
 USER NAME:                dshadoa
 CALIBRE VERSION:          v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
 
@@ -229,7 +229,7 @@ o Layout Names That Are Missing In The Source:
 
    Nets:         Q_15 Q_14 Q_13 Q_12 Q_11 Q_10 Q_9 Q_8 Q_0 Q_7 MPLIER_7 MCAND_7 Q_6 MPLIER_6
                  MCAND_6 Q_5 MPLIER_5 MCAND_5 Q_4 MPLIER_4 MCAND_4 Q_3 MPLIER_3 MCAND_3 Q_2
-                 MPLIER_2 MCAND_2 Q_1 MPLIER_1 MCAND_1 MPLIER_0 MCAND_0
+                 MPLIER_2 MCAND_2 Q_1 MPLIER_1 MCAND_1 MPLIER_0 MCAND_0 DELAY
 
 
 o Initial Correspondence Points:

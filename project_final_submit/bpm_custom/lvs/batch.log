@@ -11,7 +11,7 @@
 //  Running on Linux shire.ecen.okstate.edu 2.6.32-696.30.1.el6.x86_64 #1 SMP Fri May 18 11:50:44 EDT 2018 x86_64
 //  64 bit virtual addressing enabled
 //
-//  Starting time: Fri Dec  7 04:00:59 2018
+//  Starting time: Fri Dec  7 23:42:28 2018
 //
 //  calinteractive license acquired.
 //  Calibre Interactive authorized.
@@ -37,7 +37,7 @@
 Verifying the source netlist is complete before starting the run
 
 MGC_HOME = /programs/mentor/aoi_cal_2016.4_38.25
-$MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
+$MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
 
 //  Calibre v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
 //  Calibre Utility Library   v0-2_8-2016-2    Tue Feb 9 23:45:01 PST 2016
@@ -56,40 +56,40 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracte
 //  Entries in /proc/meminfo:
 //
 //  MemTotal:       132118976 kB
-//  MemFree:        105321208 kB
-//  Buffers:          315196 kB
-//  Cached:         13706312 kB
+//  MemFree:        102943264 kB
+//  Buffers:          315224 kB
+//  Cached:         15314056 kB
 //  SwapCached:            0 kB
-//  Active:         18800676 kB
-//  Inactive:        5560596 kB
-//  Active(anon):   10370884 kB
-//  Inactive(anon):   124488 kB
-//  Active(file):    8429792 kB
-//  Inactive(file):  5436108 kB
+//  Active:         20200196 kB
+//  Inactive:        6502724 kB
+//  Active(anon):   11105776 kB
+//  Inactive(anon):   193828 kB
+//  Active(file):    9094420 kB
+//  Inactive(file):  6308896 kB
 //  Unevictable:           0 kB
 //  Mlocked:               0 kB
 //  SwapTotal:       4194300 kB
 //  SwapFree:        4194300 kB
-//  Dirty:              2580 kB
+//  Dirty:              1616 kB
 //  Writeback:             0 kB
-//  AnonPages:      10335000 kB
-//  Mapped:           394552 kB
-//  Shmem:            155616 kB
-//  Slab:            1168880 kB
-//  SReclaimable:     884680 kB
-//  SUnreclaim:       284200 kB
-//  KernelStack:       30928 kB
-//  PageTables:       397396 kB
+//  AnonPages:      11072084 kB
+//  Mapped:           421952 kB
+//  Shmem:            225972 kB
+//  Slab:            1199816 kB
+//  SReclaimable:     913188 kB
+//  SUnreclaim:       286628 kB
+//  KernelStack:       33488 kB
+//  PageTables:       398312 kB
 //  NFS_Unstable:          0 kB
 //  Bounce:                0 kB
 //  WritebackTmp:          0 kB
 //  CommitLimit:    70253788 kB
-//  Committed_AS:   21012076 kB
+//  Committed_AS:   23850420 kB
 //  VmallocTotal:   34359738367 kB
 //  VmallocUsed:      512768 kB
 //  VmallocChunk:   34291657832 kB
 //  HardwareCorrupted:     0 kB
-//  AnonHugePages:   6305792 kB
+//  AnonHugePages:   6647808 kB
 //  HugePages_Total:       0
 //  HugePages_Free:        0
 //  HugePages_Rsvd:        0
@@ -111,10 +111,10 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracte
 //  CPU Info: Cores = 12, SMT capable but is disabled
 //  Max file descriptors: 1024
 //  64 bit virtual addressing enabled
-//  Running aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
-//  Process ID: 21875
+//  Running aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre -spice /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
+//  Process ID: 29356
 //
-//  Starting time: Fri Dec  7 04:01:01 2018
+//  Starting time: Fri Dec  7 23:42:30 2018
 //
 //  Running on 1 CPU (pending licensing) 
 //
@@ -126,21 +126,21 @@ $MGC_HOME/bin/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracte
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
---- RULE FILE = /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
+--- RULE FILE = /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
 
 //
-//  Rule file generated on Fri Dec 07 04:01:00 CST 2018
+//  Rule file generated on Fri Dec 07 23:42:30 CST 2018
 //     by Calibre Interactive - LVS (v2016.4_38.25)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "/home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../magic/bpm_custom.gds"
+LAYOUT PATH  "/home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../magic/bpm_custom.gds"
 LAYOUT PRIMARY "bpm_custom"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../sue/bpm_custom.sp"
+SOURCE PATH "/home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../sue/bpm_custom.sp"
 SOURCE PRIMARY "bpm_custom"
 SOURCE SYSTEM SPICE
 
@@ -193,14 +193,14 @@ INCLUDE "/classes/ecen4303F18/calibre/calibreLVS_scn3me_subm.rul"
 
 --- CALIBRE_* ENVIRONMENT VARIABLES:
 
-CALIBRE_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre  -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_'
+CALIBRE_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre  -spice /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_'
 CALIBRE_HOME=/programs/mentor/aoi_cal_2016.4_38.25
-CALIBRE_INITIAL_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/bin/calibre -spice /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_'
+CALIBRE_INITIAL_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/bin/calibre -spice /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp -lvs -hier -nowait /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_'
 CALIBRE_READDB_LD_LIBRARY_PATH=/programs/mentor/aoi_cal_2016.4_38.25/shared/pkgs/icv/tools/calibre_client/lib/64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/calibre_base/lib64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv_lib/lib64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv_qt_comp/plugins:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/umc_libs/lib/lnx32:/programs/mentor/aoi_cal_2016.4_38.25/shared/pkgs/icv_oa/22.41.004/lib/linux_rhel40_gcc44x_64/opt
 CALIBRE_SKIP_OS_CHECKS=
 CALIBRE_SSE3_SUPPORTED=1
 
---- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - Fri Dec  7 04:01:01 2018
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - Fri Dec  7 23:42:30 2018
 
 //  Applying licensing policy...
 //  calibrehlvs license acquired.
@@ -225,11 +225,11 @@ CALIBRE_SSE3_SUPPORTED=1
 -----                     GDS FILE SUMMARY INFORMATION                     -----
 --------------------------------------------------------------------------------
 
-GDS FILENAME:        /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../magic/bpm_custom.gds
+GDS FILENAME:        /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../magic/bpm_custom.gds
 GDS VERSION:         3
 LIBRARY NAME:        bpm_custom
-LAST MODIFIED:       ON 2018/12/4 AT 19:19:59
-LAST ACCESSED:       ON 2018/12/7 AT 3:49:45
+LAST MODIFIED:       ON 2018/12/7 AT 7:45:21
+LAST ACCESSED:       ON 2018/12/7 AT 7:59:38
 DATABASE PRECISION:  0.001 user units per database unit
 PHYSICAL PRECISION:  1e-09 meters per database unit
 MAGNIFICATION:       1
@@ -247,7 +247,7 @@ nand                                     0        0         65        0        4
 dffpos                                   0        0        278        0        4
 bs1                                      4        0         73        0       12
 bs2                                      3        0        175        0       13
-bpm_custom                               0        2        116        0       38
+bpm_custom                               0        2        117        0       39
 
 NOTE: UNUSED geometric data is present on the following layer/datatype pairs:
 
@@ -344,41 +344,41 @@ CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67
 
 init (0.3,-12.6) 49 bpm_custom          vdd (0.3,-9.9) 49 bpm_custom
 gnd (0.3,-7.2) 49 bpm_custom            clk (0.3,-4.5) 49 bpm_custom
-en (0.3,-1.8) 49 bpm_custom             cout (53.4,0.3) 51 bpm_custom
-q_15 (72.3,18.9) 49 bpm_custom          q_14 (72.3,72.9) 49 bpm_custom
-q_13 (72.3,126.9) 49 bpm_custom         q_12 (72.3,180.9) 49 bpm_custom
-q_11 (72.3,234.9) 49 bpm_custom         q_10 (72.3,288.9) 49 bpm_custom
-q_9 (72.3,342.9) 49 bpm_custom          q_8 (72.3,396.9) 49 bpm_custom
-q_7 (152.4,14.1) 49 bpm_custom          mplier_7 (152.4,37.8) 49 bpm_custom
-mcand_7 (152.4,39.9) 49 bpm_custom      q_6 (152.4,68.1) 49 bpm_custom
-mplier_6 (152.4,91.8) 49 bpm_custom     mcand_6 (152.4,93.9) 49 bpm_custom
-q_5 (152.4,122.1) 49 bpm_custom         mplier_5 (152.4,145.8) 49 bpm_custom
-mcand_5 (152.4,147.9) 49 bpm_custom     q_4 (152.4,176.1) 49 bpm_custom
-mplier_4 (152.4,199.8) 49 bpm_custom    mcand_4 (152.4,201.9) 49 bpm_custom
-q_3 (152.4,230.1) 49 bpm_custom         mplier_3 (152.4,253.8) 49 bpm_custom
-mcand_3 (152.4,255.9) 49 bpm_custom     q_2 (152.4,284.1) 49 bpm_custom
-mplier_2 (152.4,307.8) 49 bpm_custom    mcand_2 (152.4,309.9) 49 bpm_custom
-q_1 (152.4,338.1) 49 bpm_custom         mplier_1 (152.4,361.8) 49 bpm_custom
-mcand_1 (152.4,363.9) 49 bpm_custom     q_0 (152.4,392.1) 49 bpm_custom
-mplier_0 (152.4,415.8) 49 bpm_custom    mcand_0 (152.4,417.9) 49 bpm_custom
-muxA_out (-12.9,29.7) 62 bs2            vdd (-11.7,1.5) 51 bs2
-gnd (-9.6,0.3) 51 bs2                   en (-7.5,0) 51 bs2
-clk (-5.4,0) 51 bs2                     q0 (-3.3,51.9) 51 bs2
-muxA_in (-1.2,-0.3) 51 bs2              muxB_out (-1.2,51.6) 51 bs2
-Init (0.9,-0.3) 51 bs2                  muxB_in (5.1,16.2) 51 bs2
-Out (65.4,13.5) 49 bs2                  mplier (65.4,36.9) 49 bs2
-mcand (65.4,38.7) 49 bs2                vdd (-6.6,0.3) 49 bs1
-gnd (-6.6,26.1) 49 bs1                  vdd (-6.6,51.9) 49 bs1
-en (-6,-0.3) 51 bs1                     clk (-3.6,-0.3) 51 bs1
-Init (0.9,0) 51 bs1                     Cout (46.2,-0.6) 51 bs1
-Cin (46.2,52.5) 51 bs1                  muxA_in (61.5,0) 62 bs1
-add_out (61.5,52.5) 62 bs1              Out (65.1,18) 49 bs1
-fa_in (65.1,29.4) 62 bs1                clk_b (6.9,13.5) 49 dffpos
-D (7.2,21.9) 51 dffpos                  clk (12.9,13.5) 49 dffpos
-Q (40.5,13.5) 49 dffpos                 gnd (3,0) 49 nand
-vdd (3,23.4) 49 nand                    reg_in (2.1,26.7) 49 bc1a
-gnd (2.4,22.5) 49 bc1a                  a_in (4.2,9.6) 51 bc1a
-b_in (4.2,11.7) 51 bc1a
+en (0.3,-1.8) 49 bpm_custom             delay (33.3,15.3) 51 bpm_custom
+cout (53.4,0.3) 51 bpm_custom           q_15 (72.3,18.9) 49 bpm_custom
+q_14 (72.3,72.9) 49 bpm_custom          q_13 (72.3,126.9) 49 bpm_custom
+q_12 (72.3,180.9) 49 bpm_custom         q_11 (72.3,234.9) 49 bpm_custom
+q_10 (72.3,288.9) 49 bpm_custom         q_9 (72.3,342.9) 49 bpm_custom
+q_8 (72.3,396.9) 49 bpm_custom          q_7 (152.4,14.1) 49 bpm_custom
+mplier_7 (152.4,37.8) 49 bpm_custom     mcand_7 (152.4,39.9) 49 bpm_custom
+q_6 (152.4,68.1) 49 bpm_custom          mplier_6 (152.4,91.8) 49 bpm_custom
+mcand_6 (152.4,93.9) 49 bpm_custom      q_5 (152.4,122.1) 49 bpm_custom
+mplier_5 (152.4,145.8) 49 bpm_custom    mcand_5 (152.4,147.9) 49 bpm_custom
+q_4 (152.4,176.1) 49 bpm_custom         mplier_4 (152.4,199.8) 49 bpm_custom
+mcand_4 (152.4,201.9) 49 bpm_custom     q_3 (152.4,230.1) 49 bpm_custom
+mplier_3 (152.4,253.8) 49 bpm_custom    mcand_3 (152.4,255.9) 49 bpm_custom
+q_2 (152.4,284.1) 49 bpm_custom         mplier_2 (152.4,307.8) 49 bpm_custom
+mcand_2 (152.4,309.9) 49 bpm_custom     q_1 (152.4,338.1) 49 bpm_custom
+mplier_1 (152.4,361.8) 49 bpm_custom    mcand_1 (152.4,363.9) 49 bpm_custom
+q_0 (152.4,392.1) 49 bpm_custom         mplier_0 (152.4,415.8) 49 bpm_custom
+mcand_0 (152.4,417.9) 49 bpm_custom     muxA_out (-12.9,29.7) 62 bs2
+vdd (-11.7,1.5) 51 bs2                  gnd (-9.6,0.3) 51 bs2
+en (-7.5,0) 51 bs2                      clk (-5.4,0) 51 bs2
+q0 (-3.3,51.9) 51 bs2                   muxA_in (-1.2,-0.3) 51 bs2
+muxB_out (-1.2,51.6) 51 bs2             Init (0.9,-0.3) 51 bs2
+muxB_in (5.1,16.2) 51 bs2               Out (65.4,13.5) 49 bs2
+mplier (65.4,36.9) 49 bs2               mcand (65.4,38.7) 49 bs2
+vdd (-6.6,0.3) 49 bs1                   gnd (-6.6,26.1) 49 bs1
+vdd (-6.6,51.9) 49 bs1                  en (-6,-0.3) 51 bs1
+clk (-3.6,-0.3) 51 bs1                  Init (0.9,0) 51 bs1
+Cout (46.2,-0.6) 51 bs1                 Cin (46.2,52.5) 51 bs1
+muxA_in (61.5,0) 62 bs1                 add_out (61.5,52.5) 62 bs1
+Out (65.1,18) 49 bs1                    fa_in (65.1,29.4) 62 bs1
+clk_b (6.9,13.5) 49 dffpos              D (7.2,21.9) 51 dffpos
+clk (12.9,13.5) 49 dffpos               Q (40.5,13.5) 49 dffpos
+gnd (3,0) 49 nand                       vdd (3,23.4) 49 nand
+reg_in (2.1,26.7) 49 bc1a               gnd (2.4,22.5) 49 bc1a
+a_in (4.2,9.6) 51 bc1a                  b_in (4.2,11.7) 51 bc1a
 
 --------------------------------------------------------------------------------
 -----                TEXT OBJECTS FOR WITH TEXT OPERATIONS                 -----
@@ -401,41 +401,41 @@ b_in (4.2,11.7) 51 bc1a
 
 init (0.3,-12.6) 49 bpm_custom          vdd (0.3,-9.9) 49 bpm_custom
 gnd (0.3,-7.2) 49 bpm_custom            clk (0.3,-4.5) 49 bpm_custom
-en (0.3,-1.8) 49 bpm_custom             cout (53.4,0.3) 51 bpm_custom
-q_15 (72.3,18.9) 49 bpm_custom          q_14 (72.3,72.9) 49 bpm_custom
-q_13 (72.3,126.9) 49 bpm_custom         q_12 (72.3,180.9) 49 bpm_custom
-q_11 (72.3,234.9) 49 bpm_custom         q_10 (72.3,288.9) 49 bpm_custom
-q_9 (72.3,342.9) 49 bpm_custom          q_8 (72.3,396.9) 49 bpm_custom
-q_7 (152.4,14.1) 49 bpm_custom          mplier_7 (152.4,37.8) 49 bpm_custom
-mcand_7 (152.4,39.9) 49 bpm_custom      q_6 (152.4,68.1) 49 bpm_custom
-mplier_6 (152.4,91.8) 49 bpm_custom     mcand_6 (152.4,93.9) 49 bpm_custom
-q_5 (152.4,122.1) 49 bpm_custom         mplier_5 (152.4,145.8) 49 bpm_custom
-mcand_5 (152.4,147.9) 49 bpm_custom     q_4 (152.4,176.1) 49 bpm_custom
-mplier_4 (152.4,199.8) 49 bpm_custom    mcand_4 (152.4,201.9) 49 bpm_custom
-q_3 (152.4,230.1) 49 bpm_custom         mplier_3 (152.4,253.8) 49 bpm_custom
-mcand_3 (152.4,255.9) 49 bpm_custom     q_2 (152.4,284.1) 49 bpm_custom
-mplier_2 (152.4,307.8) 49 bpm_custom    mcand_2 (152.4,309.9) 49 bpm_custom
-q_1 (152.4,338.1) 49 bpm_custom         mplier_1 (152.4,361.8) 49 bpm_custom
-mcand_1 (152.4,363.9) 49 bpm_custom     q_0 (152.4,392.1) 49 bpm_custom
-mplier_0 (152.4,415.8) 49 bpm_custom    mcand_0 (152.4,417.9) 49 bpm_custom
-muxA_out (-12.9,29.7) 62 bs2            vdd (-11.7,1.5) 51 bs2
-gnd (-9.6,0.3) 51 bs2                   en (-7.5,0) 51 bs2
-clk (-5.4,0) 51 bs2                     q0 (-3.3,51.9) 51 bs2
-muxA_in (-1.2,-0.3) 51 bs2              muxB_out (-1.2,51.6) 51 bs2
-Init (0.9,-0.3) 51 bs2                  muxB_in (5.1,16.2) 51 bs2
-Out (65.4,13.5) 49 bs2                  mplier (65.4,36.9) 49 bs2
-mcand (65.4,38.7) 49 bs2                vdd (-6.6,0.3) 49 bs1
-gnd (-6.6,26.1) 49 bs1                  vdd (-6.6,51.9) 49 bs1
-en (-6,-0.3) 51 bs1                     clk (-3.6,-0.3) 51 bs1
-Init (0.9,0) 51 bs1                     Cout (46.2,-0.6) 51 bs1
-Cin (46.2,52.5) 51 bs1                  muxA_in (61.5,0) 62 bs1
-add_out (61.5,52.5) 62 bs1              Out (65.1,18) 49 bs1
-fa_in (65.1,29.4) 62 bs1                clk_b (6.9,13.5) 49 dffpos
-D (7.2,21.9) 51 dffpos                  clk (12.9,13.5) 49 dffpos
-Q (40.5,13.5) 49 dffpos                 gnd (3,0) 49 nand
-vdd (3,23.4) 49 nand                    reg_in (2.1,26.7) 49 bc1a
-gnd (2.4,22.5) 49 bc1a                  a_in (4.2,9.6) 51 bc1a
-b_in (4.2,11.7) 51 bc1a
+en (0.3,-1.8) 49 bpm_custom             delay (33.3,15.3) 51 bpm_custom
+cout (53.4,0.3) 51 bpm_custom           q_15 (72.3,18.9) 49 bpm_custom
+q_14 (72.3,72.9) 49 bpm_custom          q_13 (72.3,126.9) 49 bpm_custom
+q_12 (72.3,180.9) 49 bpm_custom         q_11 (72.3,234.9) 49 bpm_custom
+q_10 (72.3,288.9) 49 bpm_custom         q_9 (72.3,342.9) 49 bpm_custom
+q_8 (72.3,396.9) 49 bpm_custom          q_7 (152.4,14.1) 49 bpm_custom
+mplier_7 (152.4,37.8) 49 bpm_custom     mcand_7 (152.4,39.9) 49 bpm_custom
+q_6 (152.4,68.1) 49 bpm_custom          mplier_6 (152.4,91.8) 49 bpm_custom
+mcand_6 (152.4,93.9) 49 bpm_custom      q_5 (152.4,122.1) 49 bpm_custom
+mplier_5 (152.4,145.8) 49 bpm_custom    mcand_5 (152.4,147.9) 49 bpm_custom
+q_4 (152.4,176.1) 49 bpm_custom         mplier_4 (152.4,199.8) 49 bpm_custom
+mcand_4 (152.4,201.9) 49 bpm_custom     q_3 (152.4,230.1) 49 bpm_custom
+mplier_3 (152.4,253.8) 49 bpm_custom    mcand_3 (152.4,255.9) 49 bpm_custom
+q_2 (152.4,284.1) 49 bpm_custom         mplier_2 (152.4,307.8) 49 bpm_custom
+mcand_2 (152.4,309.9) 49 bpm_custom     q_1 (152.4,338.1) 49 bpm_custom
+mplier_1 (152.4,361.8) 49 bpm_custom    mcand_1 (152.4,363.9) 49 bpm_custom
+q_0 (152.4,392.1) 49 bpm_custom         mplier_0 (152.4,415.8) 49 bpm_custom
+mcand_0 (152.4,417.9) 49 bpm_custom     muxA_out (-12.9,29.7) 62 bs2
+vdd (-11.7,1.5) 51 bs2                  gnd (-9.6,0.3) 51 bs2
+en (-7.5,0) 51 bs2                      clk (-5.4,0) 51 bs2
+q0 (-3.3,51.9) 51 bs2                   muxA_in (-1.2,-0.3) 51 bs2
+muxB_out (-1.2,51.6) 51 bs2             Init (0.9,-0.3) 51 bs2
+muxB_in (5.1,16.2) 51 bs2               Out (65.4,13.5) 49 bs2
+mplier (65.4,36.9) 49 bs2               mcand (65.4,38.7) 49 bs2
+vdd (-6.6,0.3) 49 bs1                   gnd (-6.6,26.1) 49 bs1
+vdd (-6.6,51.9) 49 bs1                  en (-6,-0.3) 51 bs1
+clk (-3.6,-0.3) 51 bs1                  Init (0.9,0) 51 bs1
+Cout (46.2,-0.6) 51 bs1                 Cin (46.2,52.5) 51 bs1
+muxA_in (61.5,0) 62 bs1                 add_out (61.5,52.5) 62 bs1
+Out (65.1,18) 49 bs1                    fa_in (65.1,29.4) 62 bs1
+clk_b (6.9,13.5) 49 dffpos              D (7.2,21.9) 51 dffpos
+clk (12.9,13.5) 49 dffpos               Q (40.5,13.5) 49 dffpos
+gnd (3,0) 49 nand                       vdd (3,23.4) 49 nand
+reg_in (2.1,26.7) 49 bc1a               gnd (2.4,22.5) 49 bc1a
+a_in (4.2,9.6) 51 bc1a                  b_in (4.2,11.7) 51 bc1a
 
 --------------------------------------------------------------------------------
 -----             LAYER READ SUMMARY (SIMPLE LAYER GEOMETRIES)             -----
@@ -454,7 +454,7 @@ SIMPLE LAYER      GEOMETRIES
   48                   334
   49                   276
   50                    77
-  51                   119
+  51                   120
   61                     6
   62                     9
 
@@ -472,7 +472,7 @@ pwell                     22 (280)                         22 (280)
 nwell                     62 (298)                         62 (298)             
 via1                      77 (712)                         77 (712)             
 metal1                   276 (2733)                       276 (2733)            
-metal2                   119 (1039)                       119 (1039)            
+metal2                   120 (1040)                       120 (1040)            
 via2                       6 (34)                           6 (34)              
 metal3                     9 (44)                           9 (44)              
 contact                    0 (0)                            0 (0)               
@@ -486,7 +486,7 @@ SIMPLE LAYER              TEXTS
 --------------------------------------------------------------------------------
 
   49                      51 (205)             
-  51                      18 (161)             
+  51                      19 (162)             
   62                       4 (32)              
 
 --------------------------------------------------------------------------------
@@ -517,7 +517,7 @@ SIMPLE LAYER              TEXTS
 --------------------------------------------------------------------------------
 
   49                      51 (205)             
-  51                      18 (161)             
+  51                      19 (162)             
   62                       4 (32)              
 
 --------------------------------------------------------------------------------
@@ -537,18 +537,18 @@ TOTAL                         8                   14                    76
 -----                   LAYOUT DATA INPUT MODULE SUMMARY                   -----
 --------------------------------------------------------------------------------
 
---- TOTAL GEOMETRIES READ FROM SIMPLE LAYERS = 1293
---- TOTAL GEOMETRIES READ FROM ORIGINAL LAYERS = 1293 (13868)
---- TOTAL GEOMETRIES WRITTEN TO ORIGINAL LAYERS = 1293 (13868)
+--- TOTAL GEOMETRIES READ FROM SIMPLE LAYERS = 1294
+--- TOTAL GEOMETRIES READ FROM ORIGINAL LAYERS = 1294 (13869)
+--- TOTAL GEOMETRIES WRITTEN TO ORIGINAL LAYERS = 1294 (13869)
 --- LVHEAP = 2/5/67
 --- DATABASE EXTENT = [ 0 , -13.5 ] -> [ 153 , 434.1 ]
 --- GEOMETRIC DEPTH = ALL
 --- TEXT DEPTH FOR CONNECTIVITY EXTRACTION = PRIMARY
---- TOTAL TEXT OBJECTS FOR CONNECTIVITY EXTRACTION = 73 (398)
+--- TOTAL TEXT OBJECTS FOR CONNECTIVITY EXTRACTION = 74 (399)
 --- TOTAL TEXT OBJECTS FOR WITH TEXT OPERATIONS = 0 (0)
 --- TOTAL TEXT OBJECTS FOR EXPAND TEXT OPERATIONS = 0 (0)
 --- TOTAL TEXT OBJECTS FOR CAPI OPERATIONS = 0 (0)
---- TOTAL PORT OBJECTS = 73 (398)
+--- TOTAL PORT OBJECTS = 74 (399)
 --- GEOMETRY FLAGGING = ACUTE (NO)  SKEW (NO)  ANGLED (NO)  OFFGRID (NO)
                         NONSIMPLE POLYGON (NO)  NONSIMPLE PATH (NO)
 --- PRIMARY CELL = bpm_custom
@@ -580,7 +580,7 @@ Original Layer metal1 DELETED -- LVHEAP = 2/5/67
 
 metal2 = OR metal2
 ------------------
-metal2 (HIER TYP=1 CFG=3 HGC=60 FGC=476 HEC=360 FEC=3062 IGC=87 VHC=F VPC=F)
+metal2 (HIER TYP=1 CFG=3 HGC=61 FGC=477 HEC=364 FEC=3066 IGC=91 VHC=F VPC=F)
 CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 3 OF 29  ELAPSED TIME = 1
 
 Original Layer metal2 DELETED -- LVHEAP = 2/5/67
@@ -776,21 +776,21 @@ CELL dffpos
      dffpos (NC=21 IPC=0 CEC=626 PEC=0 CFGC=257)
      dffpos  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
 CELL bs1
-     bs1 (NC=27 IPC=23 CEC=931 PEC=108 CFGC=849)
+     bs1 (NC=27 IPC=23 CEC=931 PEC=110 CFGC=849)
      bs1  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
 CELL bs2
-     bs2 (NC=15 IPC=23 CEC=344 PEC=108 CFGC=615)
+     bs2 (NC=15 IPC=23 CEC=344 PEC=110 CFGC=615)
      bs2  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
 CELL ICV_1
-     ICV_1 (NC=20 IPC=24 CEC=0 PEC=103 CFGC=1464)
+     ICV_1 (NC=21 IPC=25 CEC=0 PEC=105 CFGC=1464)
      ICV_1  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
 CELL ICV_2
-     ICV_2 (NC=26 IPC=38 CEC=0 PEC=174 CFGC=2928)
+     ICV_2 (NC=28 IPC=40 CEC=0 PEC=178 CFGC=2928)
      ICV_2  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
 CELL bpm_custom
-     bpm_custom (NC=49 IPC=92 CEC=227 PEC=500 CFGC=11823)
+     bpm_custom (NC=53 IPC=96 CEC=229 PEC=508 CFGC=11824)
      bpm_custom  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
-TOTAL CEC=2611 PEC=993
+TOTAL CEC=2613 PEC=1011
 
 POST-PROCESSING CONNECTIVITY DATA STRUCTURE...
     MARKING TRUE NETS AND EXTERNAL PINS...
@@ -806,13 +806,13 @@ POST-PROCESSING CONNECTIVITY DATA STRUCTURE...
     COMPUTING FINAL NET NAMES AND REPORTING TEXT WARNINGS...
         CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37
     REMOVING SCONNECT/HIGH SHORT REMOVAL TRIGGERED TRIVIAL PINS/NETS...
-        CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37
-POST-PROCESSING completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 38/38/38
+POST-PROCESSING completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 38/38/38
 
-CONNECTIVITY EXTRACTION completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 1
+CONNECTIVITY EXTRACTION completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 38/38/38 ELAPSED TIME = 1
 
 WRITING CELL INFORMATION to PHDB svdb
-PHDB CELL DATA WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 37/37/37  ELAPSED TIME = 1
+PHDB CELL DATA WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38/38/38  ELAPSED TIME = 1
 
 WRITING CONNECT INFORMATION to PHDB svdb
 PHDB CONNECT INFORMATION written. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 38/38/38  ELAPSED TIME = 1
@@ -829,9 +829,9 @@ Layer pcont DELETED -- LVHEAP = 3/5/67
 
 Layer ncont DELETED -- LVHEAP = 3/5/67
 
-Layer ncont1 DELETED -- LVHEAP = 2/5/67
+Layer ncont1 DELETED -- LVHEAP = 3/5/67
 
-Layer pcont1 DELETED -- LVHEAP = 2/5/67
+Layer pcont1 DELETED -- LVHEAP = 3/5/67
 
 Layer active_contact DELETED -- LVHEAP = 2/5/67
 
@@ -892,16 +892,16 @@ Layer poly DELETED -- LVHEAP = 3/5/67
 
 Layer nsrcdrn DELETED -- LVHEAP = 3/5/67
 
-Layer pwell DELETED -- LVHEAP = 2/5/67
+Layer pwell DELETED -- LVHEAP = 3/5/67
 
 WRITING PHDB to directory svdb
 PHDB WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 39/39/39  ELAPSED TIME = 1
 
---- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR COMPLETED - Fri Dec  7 04:01:02 2018
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR COMPLETED - Fri Dec  7 23:42:31 2018
 --- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 39/39/39  ELAPSED TIME = 1
 --- PROCESSOR COUNT = 1
 
---- SPICE NETLIST FILE = /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp
+--- SPICE NETLIST FILE = /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp
 --- CIRCUIT EXTRACTION REPORT FILE = bpm_custom.lvs.report.ext
 --- PERSISTENT HIERARCHICAL DATABASE(PHDB) = svdb/bpm_custom.phdb
 --- QUERY DATABASE = svdb  TOP CELL = bpm_custom
@@ -923,7 +923,7 @@ PHDB WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 39
 
 
 
---- CALIBRE::LVS-H - Fri Dec  7 04:01:02 2018
+--- CALIBRE::LVS-H - Fri Dec  7 23:42:31 2018
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -951,7 +951,7 @@ LVS started ...
 //  - LVS (Hierarchical)
 
 READING layout ...
-Layout READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69  MALLOC = 42/42/42
+Layout READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69  MALLOC = 43/43/43
 
 READING source ...
 Source READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69  MALLOC = 43/43/43
@@ -1117,11 +1117,11 @@ LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/75/75  MALLOC = 58/58/5
 --- LVS REPORT FILE = bpm_custom.lvs.report
 --- CALIBRE::LVS/xRC EXECUTIVE MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/11/75  MALLOC = 50/50/58  ELAPSED TIME = 1
 
---- CALIBRE::LVS/xRC COMPLETED - Fri Dec  7 04:01:02 2018
+--- CALIBRE::LVS/xRC COMPLETED - Fri Dec  7 23:42:31 2018
 --- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/11/75  MALLOC = 50/50/58  ELAPSED TIME = 1
 --- XDB CROSS REFERENCE DATABASE = svdb/bpm_custom.xdb
 
---- SPICE NETLIST FILE = /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./extracted.sp
+--- SPICE NETLIST FILE = /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./extracted.sp
 --- CIRCUIT EXTRACTION REPORT FILE = bpm_custom.lvs.report.ext
 --- PERSISTENT HIERARCHICAL DATABASE(PHDB) = svdb/bpm_custom.phdb
 --- QUERY DATABASE = svdb  TOP CELL = bpm_custom

@@ -1,0 +1,219 @@
+magic
+tech scmos
+timestamp 1543950283
+<< ntransistor >>
+rect 66 109 68 119
+rect 74 109 76 119
+rect 50 99 52 109
+<< ptransistor >>
+rect 50 145 52 165
+rect 66 145 68 155
+rect 74 145 76 155
+<< ndiffusion >>
+rect 65 109 66 119
+rect 68 109 69 119
+rect 73 109 74 119
+rect 76 109 77 119
+rect 49 99 50 109
+rect 52 99 53 109
+<< pdiffusion >>
+rect 49 145 50 165
+rect 52 145 53 165
+rect 65 145 66 155
+rect 68 145 69 155
+rect 73 145 74 155
+rect 76 145 77 155
+<< ndcontact >>
+rect 61 109 65 119
+rect 69 109 73 119
+rect 77 109 81 119
+rect 45 99 49 109
+rect 53 99 57 109
+<< pdcontact >>
+rect 45 145 49 165
+rect 53 145 57 165
+rect 61 145 65 155
+rect 69 145 73 155
+rect 77 145 81 155
+<< psubstratepcontact >>
+rect 45 91 49 95
+rect 53 91 57 95
+rect 64 91 68 95
+rect 77 91 81 95
+<< nsubstratencontact >>
+rect 45 169 49 173
+rect 53 169 57 173
+rect 65 169 69 173
+rect 78 169 82 173
+<< polysilicon >>
+rect 50 165 52 167
+rect 66 155 68 160
+rect 74 155 76 157
+rect 50 109 52 145
+rect 66 126 68 145
+rect 74 144 76 145
+rect 74 142 84 144
+rect 66 124 76 126
+rect 66 119 68 121
+rect 74 119 76 124
+rect 66 104 68 109
+rect 74 107 76 109
+rect 66 102 84 104
+rect 50 97 52 99
+<< polycontact >>
+rect 66 160 70 164
+rect 46 131 50 135
+rect 84 141 88 145
+rect 84 101 88 105
+<< metal1 >>
+rect -46 174 221 177
+rect -46 173 -1 174
+rect -46 169 -41 173
+rect -37 169 -1 173
+rect -46 168 -1 169
+rect 41 173 221 174
+rect 41 169 45 173
+rect 49 169 53 173
+rect 57 169 65 173
+rect 69 169 78 173
+rect 82 169 221 173
+rect 41 168 221 169
+rect 45 165 49 168
+rect 53 139 57 145
+rect -9 135 8 139
+rect 23 128 27 132
+rect 53 109 57 135
+rect 61 119 65 145
+rect 45 96 49 99
+rect 61 96 65 109
+rect 69 119 73 145
+rect 77 132 81 145
+rect 77 119 81 128
+rect 84 139 88 141
+rect 84 105 88 135
+rect 95 128 221 132
+rect 95 121 221 125
+rect -46 89 -1 96
+rect 44 95 221 96
+rect 44 91 45 95
+rect 49 91 53 95
+rect 57 91 64 95
+rect 68 91 77 95
+rect 81 91 221 95
+rect 52 89 221 91
+rect -46 85 -34 89
+rect -30 85 -1 89
+rect -46 78 -1 85
+rect 64 83 221 89
+rect 64 78 87 83
+rect 93 78 221 83
+rect 86 54 87 58
+rect -2 49 -1 53
+rect 66 48 68 52
+rect -2 42 -1 46
+rect 193 42 210 47
+rect 214 42 221 47
+rect 67 38 71 42
+rect -16 24 8 28
+rect -23 17 8 21
+rect -46 3 87 6
+rect -46 -1 -41 3
+rect -37 1 87 3
+rect 93 1 221 6
+rect -37 -1 221 1
+rect -46 -3 221 -1
+<< m2contact >>
+rect -41 169 -37 173
+rect 62 160 66 164
+rect -13 135 -9 139
+rect 8 135 12 139
+rect 46 135 50 139
+rect 53 135 57 139
+rect 31 121 35 125
+rect 23 105 27 109
+rect 15 99 19 103
+rect 77 128 81 132
+rect 84 135 88 139
+rect 69 105 73 109
+rect 91 128 95 132
+rect 91 121 95 125
+rect -34 85 -30 89
+rect -6 49 -2 53
+rect 68 48 72 52
+rect -6 42 -2 46
+rect 210 42 214 47
+rect 61 38 65 42
+rect -20 24 -16 28
+rect 8 24 12 28
+rect -27 17 -23 21
+rect 8 17 12 21
+rect -41 -1 -37 3
+<< metal2 >>
+rect -41 173 -37 177
+rect -41 3 -37 169
+rect -41 -3 -37 -1
+rect -34 89 -30 177
+rect -34 -3 -30 85
+rect -27 21 -23 177
+rect -27 -3 -23 17
+rect -20 28 -16 177
+rect -20 -3 -16 24
+rect -13 139 -9 177
+rect -13 -3 -9 135
+rect -6 53 -2 177
+rect 1 164 5 177
+rect 46 160 62 164
+rect 46 139 50 160
+rect 12 135 46 139
+rect 57 135 84 139
+rect 81 128 91 132
+rect 35 121 91 125
+rect 15 112 214 116
+rect 15 103 19 112
+rect 23 89 27 105
+rect 69 101 73 105
+rect 15 85 27 89
+rect 15 52 19 85
+rect 58 71 87 75
+rect -6 -3 -2 42
+rect 12 24 56 28
+rect 61 24 65 38
+rect 68 21 72 48
+rect 210 47 214 112
+rect 12 17 56 21
+rect 62 17 72 21
+rect 1 -3 5 10
+<< m3contact >>
+rect 69 96 74 101
+<< metal3 >>
+rect -46 101 75 102
+rect -46 96 69 101
+rect 74 96 75 101
+rect -46 95 75 96
+use bc1a  bc1a_0
+timestamp 1543295583
+transform 1 0 0 0 1 12
+box -1 -12 64 162
+use nand  nand_0
+timestamp 1543290081
+transform 1 0 59 0 -1 81
+box -4 -3 28 81
+use dffpos  dffpos_0
+timestamp 1543271063
+transform 1 0 57 0 1 0
+box 18 0 139 84
+<< labels >>
+rlabel metal1 218 45 218 45 7 Out
+rlabel metal2 17 54 17 54 1 muxB_in
+rlabel metal2 -11 173 -11 173 5 q0
+rlabel metal2 -39 5 -39 5 1 vdd
+rlabel metal2 -32 1 -32 1 1 gnd
+rlabel metal2 -25 0 -25 0 1 en
+rlabel metal2 -18 0 -18 0 1 clk
+rlabel metal2 3 -1 3 -1 1 Init
+rlabel metal3 -43 99 -43 99 3 muxA_out
+rlabel metal1 218 123 218 123 7 mplier
+rlabel metal1 218 129 218 129 7 mcand
+rlabel metal2 -4 -1 -4 -1 1 muxA_in
+rlabel metal2 -4 172 -4 172 5 muxB_out
+<< end >>

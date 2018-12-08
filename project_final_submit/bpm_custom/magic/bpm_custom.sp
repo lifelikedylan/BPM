@@ -16,21 +16,21 @@
 
 Vmp0 mplier_0 gnd DC 5V
 Vmp1 mplier_1 gnd DC 5V
-Vmp2 mplier_2 gnd DC 5V
-Vmp3 mplier_3 gnd DC 5V
-Vmp4 mplier_4 gnd DC 5V
-Vmp5 mplier_5 gnd DC 5V
-Vmp6 mplier_6 gnd DC 5V
-Vmp7 mplier_7 gnd DC 5V
+Vmp2 mplier_2 gnd DC 0V
+Vmp3 mplier_3 gnd DC 0V
+Vmp4 mplier_4 gnd DC 0V
+Vmp5 mplier_5 gnd DC 0V
+Vmp6 mplier_6 gnd DC 0V
+Vmp7 mplier_7 gnd DC 0V
 
 Vmc0 mcand_0 gnd DC 5V
 Vmc1 mcand_1 gnd DC 5V
-Vmc2 mcand_2 gnd DC 0
-Vmc3 mcand_3 gnd DC 0
-Vmc4 mcand_4 gnd DC 0
-Vmc5 mcand_5 gnd DC 0
-Vmc6 mcand_6 gnd DC 0
-Vmc7 mcand_7 gnd DC 0
+Vmc2 mcand_2 gnd DC 5V
+Vmc3 mcand_3 gnd DC 5V
+Vmc4 mcand_4 gnd DC 5V
+Vmc5 mcand_5 gnd DC 5V
+Vmc6 mcand_6 gnd DC 5V
+Vmc7 mcand_7 gnd DC 5V
 
 
 

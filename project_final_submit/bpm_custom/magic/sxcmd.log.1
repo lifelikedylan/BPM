@@ -1,6 +1,6 @@
 ### CustomExplorer log file, revision K-2015.06 (build 05/23/15) ###
-### created at 08:11:53 on Fri Dec  7 2018 (Linux AMD64) ###
-### Host Name: shire.ecen.okstate.edu   User ID: dshadoa   PID: 102374   ###
+### created at 23:38:08 on Fri Dec  7 2018 (Linux AMD64) ###
+### Host Name: shire.ecen.okstate.edu   User ID: dshadoa   PID: 14521   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
@@ -8,38 +8,27 @@ wv_start_log
 # (0) HOME defined
 wv_move_window CustomWaveView 0 0
 wv_resize_window CustomWaveView 800 400
-wv_move_window CustomWaveView 0 25
-wv_move_window CustomWaveView 2 51
-wv_move_window CustomWaveView 136 4
-wv_resize_window CustomWaveView 1459 947
-wv_move_window CustomWaveView 136 25
-wv_select_menu_item {File} {Import Waveform File ...}
-wv_move_dialog FileDialog 662 171
+wv_move_window CustomWaveView 126 30
+wv_resize_window CustomWaveView 1730 1000
+wv_move_window CustomWaveView 126 25
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 788 189
 wv_select_dialog FileDialog
 wv_set_text FileDialog.FileName {}
-wv_select_list_item FileDialog.FileList bpm2.tr0
-wv_dclick_list_item FileDialog.FileList bpm2.tr0
-wv_expand_tree_item MainWindow.hierview {D0:bpm2.tr0}
-wv_select_tree_item MainWindow.hierview {D0:bpm2.tr0}
-wv_select_tree_item MainWindow.hierview {D0:bpm2.tr0/toplevel}
+wv_select_list_item FileDialog.FileList bpm_custom.st0
+wv_select_list_item FileDialog.FileList bpm_custom.tr0
+wv_dclick_list_item FileDialog.FileList bpm_custom.tr0
+wv_expand_tree_item MainWindow.hierview {D0:bpm_custom.tr0}
+wv_select_tree_item MainWindow.hierview {D0:bpm_custom.tr0}
+wv_select_tree_item MainWindow.hierview {D0:bpm_custom.tr0/toplevel}
 wv_select_list_item MainWindow.sigview v(clk)
 wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(init)
+wv_dclick_list_item MainWindow.sigview v(init)
 wv_select_list_item MainWindow.sigview v(q_15)
 wv_dclick_list_item MainWindow.sigview v(q_15)
-wv_select_list_item MainWindow.sigview v(q_14)
-wv_dclick_list_item MainWindow.sigview v(q_14)
-wv_select_list_item MainWindow.sigview v(q_13)
-wv_dclick_list_item MainWindow.sigview v(q_13)
-wv_select_list_item MainWindow.sigview v(q_12)
-wv_dclick_list_item MainWindow.sigview v(q_12)
-wv_select_list_item MainWindow.sigview v(q_11)
-wv_dclick_list_item MainWindow.sigview v(q_11)
-wv_select_list_item MainWindow.sigview v(q_10)
-wv_dclick_list_item MainWindow.sigview v(q_10)
-wv_select_list_item MainWindow.sigview v(q_1)
-wv_dclick_list_item MainWindow.sigview v(q_1)
 wv_close_window CustomWaveView
-wv_move_dialog Confirmation 774 451
-wv_move_dialog Confirmation 774 335
+wv_move_dialog Confirmation 900 478
+wv_move_dialog Confirmation 900 353
 wv_select_dialog Confirmation
 # wv_press_button Confirmation.Ok

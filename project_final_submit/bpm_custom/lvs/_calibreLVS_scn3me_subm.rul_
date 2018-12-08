@@ -1,16 +1,16 @@
 //
-//  Rule file generated on Fri Dec 07 04:01:00 CST 2018
+//  Rule file generated on Fri Dec 07 23:42:30 CST 2018
 //     by Calibre Interactive - LVS (v2016.4_38.25)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "/home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../magic/bpm_custom.gds"
+LAYOUT PATH  "/home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../magic/bpm_custom.gds"
 LAYOUT PRIMARY "bpm_custom"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../sue/bpm_custom.sp"
+SOURCE PATH "/home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../sue/bpm_custom.sp"
 SOURCE PRIMARY "bpm_custom"
 SOURCE SYSTEM SPICE
 

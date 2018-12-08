@@ -53,39 +53,39 @@ M24 15 9 3 3 p L=6e-07 W=6e-06 AD=5.4e-12 AS=1.26e-11 PD=1.38e-05 PS=1.62e-05 $X
 M25 Q 9 15 3 p L=6e-07 W=6e-06 AD=9e-12 AS=5.4e-12 PD=1.5e-05 PS=1.38e-05 $X=38700 $Y=2700 $D=0
 .ENDS
 ***************************************
-.SUBCKT bs1 en clk muxA_in Out fa_in Cin add_out Cout gnd vdd Init
-** N=26 EP=11 IP=21 FDC=68
-M0 14 12 gnd gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=4.5e-12 PD=9.6e-06 PS=9e-06 $X=15000 $Y=29700 $D=1
-M1 gnd fa_in 14 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=5.4e-12 PD=9e-06 PS=9.6e-06 $X=17400 $Y=29700 $D=1
-M2 13 Cin 14 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=22200 $Y=29700 $D=1
+.SUBCKT bs1 en clk muxA_in Out fa_in Cin add_out Cout gnd vdd Init 12
+** N=26 EP=12 IP=21 FDC=68
+M0 15 13 gnd gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=4.5e-12 PD=9.6e-06 PS=9e-06 $X=15000 $Y=29700 $D=1
+M1 gnd fa_in 15 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=5.4e-12 PD=9e-06 PS=9.6e-06 $X=17400 $Y=29700 $D=1
+M2 14 Cin 15 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=22200 $Y=29700 $D=1
 M3 24 fa_in gnd gnd n L=6e-07 W=3e-06 AD=2.7e-12 AS=4.5e-12 PD=7.8e-06 PS=9e-06 $X=27000 $Y=29700 $D=1
-M4 13 12 24 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=2.7e-12 PD=9e-06 PS=7.8e-06 $X=28500 $Y=29700 $D=1
-M5 17 Cin gnd gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=4.5e-12 PD=9.6e-06 PS=9e-06 $X=33300 $Y=29700 $D=1
-M6 gnd fa_in 17 gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=5.4e-12 PD=9.6e-06 PS=9.6e-06 $X=35700 $Y=29700 $D=1
-M7 17 12 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=5.4e-12 PD=9e-06 PS=9.6e-06 $X=38100 $Y=29700 $D=1
-M8 19 13 17 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=42900 $Y=29700 $D=1
+M4 14 13 24 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=2.7e-12 PD=9e-06 PS=7.8e-06 $X=28500 $Y=29700 $D=1
+M5 18 Cin gnd gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=4.5e-12 PD=9.6e-06 PS=9e-06 $X=33300 $Y=29700 $D=1
+M6 gnd fa_in 18 gnd n L=6e-07 W=3e-06 AD=5.4e-12 AS=5.4e-12 PD=9.6e-06 PS=9.6e-06 $X=35700 $Y=29700 $D=1
+M7 18 13 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=5.4e-12 PD=9e-06 PS=9.6e-06 $X=38100 $Y=29700 $D=1
+M8 20 14 18 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=42900 $Y=29700 $D=1
 M9 25 Cin gnd gnd n L=6e-07 W=3e-06 AD=2.7e-12 AS=4.5e-12 PD=7.8e-06 PS=9e-06 $X=47700 $Y=29700 $D=1
 M10 26 fa_in 25 gnd n L=6e-07 W=3e-06 AD=2.7e-12 AS=2.7e-12 PD=7.8e-06 PS=7.8e-06 $X=49200 $Y=29700 $D=1
-M11 19 12 26 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=2.7e-12 PD=9e-06 PS=7.8e-06 $X=50700 $Y=29700 $D=1
-M12 add_out 19 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=55500 $Y=29700 $D=1
-M13 Cout 13 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=60300 $Y=29700 $D=1
-M14 15 12 vdd vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=9e-12 PD=1.56e-05 PS=1.5e-05 $X=15000 $Y=43500 $D=0
-M15 vdd fa_in 15 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=1.08e-11 PD=1.5e-05 PS=1.56e-05 $X=17400 $Y=43500 $D=0
-M16 13 Cin 15 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=22200 $Y=43500 $D=0
+M11 20 13 26 gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=2.7e-12 PD=9e-06 PS=7.8e-06 $X=50700 $Y=29700 $D=1
+M12 add_out 20 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=55500 $Y=29700 $D=1
+M13 Cout 14 gnd gnd n L=6e-07 W=3e-06 AD=4.5e-12 AS=4.5e-12 PD=9e-06 PS=9e-06 $X=60300 $Y=29700 $D=1
+M14 16 13 vdd vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=9e-12 PD=1.56e-05 PS=1.5e-05 $X=15000 $Y=43500 $D=0
+M15 vdd fa_in 16 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=1.08e-11 PD=1.5e-05 PS=1.56e-05 $X=17400 $Y=43500 $D=0
+M16 14 Cin 16 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=22200 $Y=43500 $D=0
 M17 21 fa_in vdd vdd p L=6e-07 W=6e-06 AD=5.4e-12 AS=9e-12 PD=1.38e-05 PS=1.5e-05 $X=27000 $Y=43500 $D=0
-M18 13 12 21 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=5.4e-12 PD=1.5e-05 PS=1.38e-05 $X=28500 $Y=43500 $D=0
-M19 18 Cin vdd vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=9e-12 PD=1.56e-05 PS=1.5e-05 $X=33300 $Y=43500 $D=0
-M20 vdd fa_in 18 vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=1.08e-11 PD=1.56e-05 PS=1.56e-05 $X=35700 $Y=43500 $D=0
-M21 18 12 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=1.08e-11 PD=1.5e-05 PS=1.56e-05 $X=38100 $Y=43500 $D=0
-M22 19 13 18 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=42900 $Y=43500 $D=0
+M18 14 13 21 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=5.4e-12 PD=1.5e-05 PS=1.38e-05 $X=28500 $Y=43500 $D=0
+M19 19 Cin vdd vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=9e-12 PD=1.56e-05 PS=1.5e-05 $X=33300 $Y=43500 $D=0
+M20 vdd fa_in 19 vdd p L=6e-07 W=6e-06 AD=1.08e-11 AS=1.08e-11 PD=1.56e-05 PS=1.56e-05 $X=35700 $Y=43500 $D=0
+M21 19 13 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=1.08e-11 PD=1.5e-05 PS=1.56e-05 $X=38100 $Y=43500 $D=0
+M22 20 14 19 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=42900 $Y=43500 $D=0
 M23 22 Cin vdd vdd p L=6e-07 W=6e-06 AD=5.4e-12 AS=9e-12 PD=1.38e-05 PS=1.5e-05 $X=47700 $Y=43500 $D=0
 M24 23 fa_in 22 vdd p L=6e-07 W=6e-06 AD=5.4e-12 AS=5.4e-12 PD=1.38e-05 PS=1.38e-05 $X=49200 $Y=43500 $D=0
-M25 19 12 23 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=5.4e-12 PD=1.5e-05 PS=1.38e-05 $X=50700 $Y=43500 $D=0
-M26 add_out 19 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=55500 $Y=43500 $D=0
-M27 Cout 13 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=60300 $Y=43500 $D=0
-X28 Init muxA_in gnd 20 vdd Out 12 gnd gnd bc1a $T=0 3600 0 0 $X=-300 $Y=-600
-X29 clk en gnd 16 vdd nand $T=17700 24300 1 0 $X=16200 $Y=-600
-X30 16 20 vdd gnd Out dffpos $T=17100 0 0 0 $X=22500 $Y=-600
+M25 20 13 23 vdd p L=6e-07 W=6e-06 AD=9e-12 AS=5.4e-12 PD=1.5e-05 PS=1.38e-05 $X=50700 $Y=43500 $D=0
+M26 add_out 20 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=55500 $Y=43500 $D=0
+M27 Cout 14 vdd vdd p L=6e-07 W=6e-06 AD=9e-12 AS=9e-12 PD=1.5e-05 PS=1.5e-05 $X=60300 $Y=43500 $D=0
+X28 Init muxA_in gnd 12 vdd Out 13 gnd gnd bc1a $T=0 3600 0 0 $X=-300 $Y=-600
+X29 clk en gnd 17 vdd nand $T=17700 24300 1 0 $X=16200 $Y=-600
+X30 17 12 vdd gnd Out dffpos $T=17100 0 0 0 $X=22500 $Y=-600
 .ENDS
 ***************************************
 .SUBCKT bs2 vdd gnd en clk q0 muxA_in muxB_in Out mplier muxA_out mcand Init
@@ -102,24 +102,33 @@ X8 14 15 vdd gnd Out dffpos $T=17100 0 0 0 $X=22500 $Y=-600
 *.CALIBRE WARNING SHORT Short circuit(s) detected by extraction in this cell. See extraction report for details.
 .ENDS
 ***************************************
-.SUBCKT ICV_1 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
-** N=17 EP=16 IP=23 FDC=114
-X0 8 9 15 1 17 12 16 11 3 2 10 bs1 $T=0 0 0 0 $X=-7200 $Y=-900
-X1 2 3 8 9 5 13 14 4 6 17 7 10 bs2 $T=79500 0 0 0 $X=65700 $Y=-900
+.SUBCKT ICV_1 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+** N=18 EP=17 IP=24 FDC=114
+X0 8 9 16 1 18 13 17 12 3 2 10 11 bs1 $T=0 0 0 0 $X=-7200 $Y=-900
+X1 2 3 8 9 5 14 15 4 6 18 7 10 bs2 $T=79500 0 0 0 $X=65700 $Y=-900
 .ENDS
 ***************************************
 .SUBCKT ICV_2 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
-** N=23 EP=20 IP=32 FDC=228
-X0 2 1 5 3 4 6 7 12 13 14 15 21 16 22 19 23 ICV_1 $T=0 0 0 0 $X=-7200 $Y=-900
-X1 8 1 5 9 4 10 11 12 13 14 21 17 22 18 23 20 ICV_1 $T=0 54000 0 0 $X=-7200 $Y=53100
++ 21
+** N=25 EP=21 IP=34 FDC=228
+X0 2 1 5 3 4 6 7 12 13 14 15 16 22 17 23 20 25 ICV_1 $T=0 0 0 0 $X=-7200 $Y=-900
+X1 8 1 5 9 4 10 11 12 13 14 24 22 18 23 19 25 21 ICV_1 $T=0 54000 0 0 $X=-7200 $Y=53100
 .ENDS
 ***************************************
 .SUBCKT bpm_custom en clk init vdd gnd q_15 q_14 q_13 q_12 q_11 q_10 q_9 q_8 q_0 q_7 mplier_7 mcand_7 q_6 mplier_6 mcand_6
-+ q_5 mplier_5 mcand_5 q_4 mplier_4 mcand_4 q_3 mplier_3 mcand_3 q_2 mplier_2 mcand_2 q_1 mplier_1 mcand_1 mplier_0 mcand_0 cout
-** N=49 EP=38 IP=80 FDC=912
-X0 vdd q_15 q_7 q_0 gnd mplier_7 mcand_7 q_14 q_6 mplier_6 mcand_6 en clk init cout 39 40 41 cout 47 ICV_2 $T=7200 900 0 0 $X=0 $Y=0
-X1 vdd q_13 q_5 q_0 gnd mplier_5 mcand_5 q_12 q_4 mplier_4 mcand_4 en clk init 40 41 42 43 47 48 ICV_2 $T=7200 108900 0 0 $X=0 $Y=108000
-X2 vdd q_11 q_3 q_0 gnd mplier_3 mcand_3 q_10 q_2 mplier_2 mcand_2 en clk init 42 43 44 45 48 49 ICV_2 $T=7200 216900 0 0 $X=0 $Y=216000
-X3 vdd q_9 q_1 q_0 gnd mplier_1 mcand_1 q_8 q_0 mplier_0 mcand_0 en clk init 44 45 gnd 46 49 39 ICV_2 $T=7200 324900 0 0 $X=0 $Y=324000
++ q_5 mplier_5 mcand_5 q_4 mplier_4 mcand_4 q_3 mplier_3 mcand_3 q_2 mplier_2 mcand_2 q_1 mplier_1 mcand_1 mplier_0 mcand_0 delay cout
+** N=53 EP=39 IP=84 FDC=912
+X0 vdd q_15 q_7 q_0 gnd mplier_7 mcand_7 q_14 q_6 mplier_6 mcand_6 en clk init delay cout 40 41 42 cout
++ 51
++ ICV_2 $T=7200 900 0 0 $X=0 $Y=0
+X1 vdd q_13 q_5 q_0 gnd mplier_5 mcand_5 q_12 q_4 mplier_4 mcand_4 en clk init 43 41 42 44 45 51
++ 52
++ ICV_2 $T=7200 108900 0 0 $X=0 $Y=108000
+X2 vdd q_11 q_3 q_0 gnd mplier_3 mcand_3 q_10 q_2 mplier_2 mcand_2 en clk init 46 44 45 47 48 52
++ 53
++ ICV_2 $T=7200 216900 0 0 $X=0 $Y=216000
+X3 vdd q_9 q_1 q_0 gnd mplier_1 mcand_1 q_8 q_0 mplier_0 mcand_0 en clk init 49 47 48 gnd 50 53
++ 40
++ ICV_2 $T=7200 324900 0 0 $X=0 $Y=324000
 .ENDS
 ***************************************

@@ -1,0 +1,59 @@
+stepsize 1500.0
+vector A {mcand[7]} {mcand[6]} {mcand[5]} {mcand[4]} {mcand[3]} {mcand[2]} {mcand[1]} {mcand[0]}
+vector B {mplier[7]} {mplier[6]} {mplier[5]} {mplier[4]} {mplier[3]} {mplier[2]} {mplier[1]} {mplier[0]}
+vector Out {q[15]} {q[14]} {q[13]} {q[12]} {q[11]} {q[10]} {q[9]} {q[8]} {q[7]} {q[6]} {q[5]} {q[4]} {q[3]} {q[2]} {q[1]} {q[0]}
+
+ana -h A B Out clk init en 
+analyzer
+clock clk 0 1
+
+set a {0x45 0x76 0x28 0x5D 0x6F 0x18 0x0E 0x4B 0x52 0x7A 0x00 0x01}
+set b {0x74 0x94 0x19 0x96 0x0A 0x94 0x8C 0x5B 0x2C 0x7A 0x55 0x01}
+set c {0001111101000100 0100010000111000 0000001111101000 0011011001111110 0000010001010110 0000110111100000 0000011110101000 0001101010101001 0000111000011000 0011101000100100 0000000000000000 0000000000000001}
+
+for {set i 0} {$i < [llength $a]} {incr i} {
+	setvector A [lindex $a $i]
+	setvector B [lindex $b $i]
+	h en
+	h init
+	c
+	c
+	c
+	h en
+	h init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	c
+	h en
+	l init
+	l en
+	c
+	c
+	assert Out [lindex $c $i]
+}
+
+
+
+

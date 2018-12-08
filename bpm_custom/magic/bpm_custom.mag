@@ -1,0 +1,152 @@
+magic
+tech scmos
+timestamp 1544190321
+<< metal1 >>
+rect 297 1366 301 1398
+rect 506 1391 510 1395
+rect 506 1384 510 1388
+rect 239 1321 243 1325
+rect 506 1305 510 1310
+rect 506 1211 510 1215
+rect 506 1204 510 1208
+rect 506 1161 510 1179
+rect 239 1141 243 1145
+rect 506 1125 510 1130
+rect 506 1031 510 1035
+rect 506 1024 510 1028
+rect 506 981 510 999
+rect 239 961 243 965
+rect 506 945 510 950
+rect 506 851 510 855
+rect 506 844 510 848
+rect 506 801 510 819
+rect 239 781 243 785
+rect 506 765 510 770
+rect 506 671 510 675
+rect 506 664 510 668
+rect 506 621 510 639
+rect 239 601 243 605
+rect 506 585 510 590
+rect 506 491 510 495
+rect 506 484 510 488
+rect 506 441 510 459
+rect 239 421 243 425
+rect 506 405 510 410
+rect 506 311 510 315
+rect 506 304 510 308
+rect 506 261 510 279
+rect 239 241 243 245
+rect 506 225 510 230
+rect 506 131 510 135
+rect 506 124 510 128
+rect 506 81 510 99
+rect 239 61 243 65
+rect 506 45 510 50
+rect 0 -4 267 -3
+rect 0 -8 3 -4
+rect 7 -8 262 -4
+rect 266 -8 267 -4
+rect 0 -9 267 -8
+rect 0 -13 274 -12
+rect 0 -17 10 -13
+rect 14 -17 269 -13
+rect 273 -17 274 -13
+rect 0 -18 274 -17
+rect 0 -22 260 -21
+rect 0 -26 255 -22
+rect 259 -26 260 -22
+rect 0 -27 260 -26
+rect 0 -31 253 -30
+rect 0 -35 248 -31
+rect 252 -35 253 -31
+rect 0 -36 253 -35
+rect 0 -40 295 -39
+rect 0 -44 25 -40
+rect 29 -44 290 -40
+rect 294 -44 295 -40
+rect 0 -45 295 -44
+<< m2contact >>
+rect 3 -8 7 -4
+rect 262 -8 266 -4
+rect 10 -17 14 -13
+rect 269 -17 273 -13
+rect 255 -26 259 -22
+rect 248 -35 252 -31
+rect 25 -44 29 -40
+rect 290 -44 294 -40
+<< metal2 >>
+rect 176 1443 259 1447
+rect 176 1440 180 1443
+rect 255 1440 259 1443
+rect 109 49 113 53
+rect 3 -4 7 2
+rect 10 -13 14 2
+rect 25 -40 29 2
+rect 176 0 180 3
+rect 248 -31 252 2
+rect 255 -22 259 2
+rect 262 -4 266 2
+rect 269 -13 273 2
+rect 283 -3 287 0
+rect 290 -40 294 2
+<< m3contact >>
+rect 227 7 232 12
+rect 282 -8 287 -3
+<< metal3 >>
+rect 233 1433 374 1440
+rect 367 -2 374 1433
+rect 281 -3 374 -2
+rect 281 -8 282 -3
+rect 287 -8 374 -3
+rect 281 -9 374 -8
+use bs1  bs1_0
+array 0 0 245 0 7 180
+timestamp 1543950581
+transform 1 0 24 0 1 3
+box -24 -3 219 177
+use bs2  bs2_0
+array 0 0 257 0 7 180
+timestamp 1543950283
+transform 1 0 289 0 1 3
+box -46 -3 221 177
+<< labels >>
+rlabel metal1 1 -6 1 -6 3 en
+rlabel metal1 1 -15 1 -15 3 clk
+rlabel metal2 178 1 178 1 1 cout
+rlabel metal1 1 -24 1 -24 3 gnd
+rlabel metal1 1 -33 1 -33 3 vdd
+rlabel metal1 1 -42 1 -42 2 init
+rlabel metal1 508 1393 508 1393 7 mcand_0
+rlabel metal1 508 1386 508 1386 7 mplier_0
+rlabel metal1 508 1307 508 1307 7 q_0
+rlabel metal1 508 1213 508 1213 7 mcand_1
+rlabel metal1 508 1206 508 1206 7 mplier_1
+rlabel metal1 508 1127 508 1127 7 q_1
+rlabel metal1 508 1033 508 1033 7 mcand_2
+rlabel metal1 508 1026 508 1026 7 mplier_2
+rlabel metal1 508 947 508 947 7 q_2
+rlabel metal1 508 853 508 853 7 mcand_3
+rlabel metal1 508 846 508 846 7 mplier_3
+rlabel metal1 508 767 508 767 7 q_3
+rlabel metal1 508 673 508 673 7 mcand_4
+rlabel metal1 508 666 508 666 7 mplier_4
+rlabel metal1 508 587 508 587 7 q_4
+rlabel metal1 508 493 508 493 7 mcand_5
+rlabel metal1 508 486 508 486 7 mplier_5
+rlabel metal1 508 407 508 407 7 q_5
+rlabel metal1 508 313 508 313 7 mcand_6
+rlabel metal1 508 306 508 306 7 mplier_6
+rlabel metal1 508 227 508 227 7 q_6
+rlabel metal1 508 133 508 133 7 mcand_7
+rlabel metal1 508 126 508 126 7 mplier_7
+rlabel metal1 508 47 508 47 7 q_7
+rlabel metal1 241 1323 241 1323 1 q_8
+rlabel metal1 241 1143 241 1143 1 q_9
+rlabel metal1 241 963 241 963 1 q_10
+rlabel metal1 241 783 241 783 1 q_11
+rlabel metal1 241 603 241 603 1 q_12
+rlabel metal1 241 423 241 423 1 q_13
+rlabel metal1 241 243 241 243 1 q_14
+rlabel metal1 241 63 241 63 1 q_15
+rlabel metal2 111 51 111 51 1 delay
+<< end >>

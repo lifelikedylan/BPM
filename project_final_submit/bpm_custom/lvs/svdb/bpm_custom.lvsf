@@ -1,9 +1,9 @@
 # Automagically generated file: Please do not edit!
-lvs_LvsOutFile RUNDIR /home/dshadoa/Desktop/BPM/bpm_custom/lvs
+lvs_LvsOutFile RUNDIR /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs
 lvs_LvsfVersion 2
 lvs_LvsInputSummary {0 0 0}
 lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT bpm_custom.lvs.report
-lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./../sue/bpm_custom.sp
-lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
-lvs_LvsRunTimes 1544176862 1544176862
+lvs_LvsOutFile SOURCE_NETLIST /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./../sue/bpm_custom.sp
+lvs_LvsOutFile RULES_FILE /home/dshadoa/Desktop/BPM/project_final_submit/bpm_custom/lvs/./_calibreLVS_scn3me_subm.rul_
+lvs_LvsRunTimes 1544247751 1544247751
